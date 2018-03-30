@@ -9,7 +9,7 @@
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/timeline">Timeline</a>
     </li>
     <li class="nav-item">
-        <a class="nav-item nav-link active" href="<?= BASE_URL ?>/stories">Stories</a>
+        <a class="nav-item nav-link active" href="<?= BASE_URL ?>/stories">Medal Of Honor</a>
     </li>
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/forum">Forum</a>
@@ -27,72 +27,157 @@
 <div class="main">
     <div class="main-content">
 
-        <!-- Stories Container -->
         <br>
         <br>
-        <h1 style="text-align:center"><b>The Untold Stories of the Heroes of Peleliu</b></h1>
-        <div class="storyWrapper">
-            <div class="row">
-                <div class="column">
-                    <div class="portrait">
-                        <img src="<?= BASE_URL ?>/public/img/portraits/img_avatar.png" alt="Jane" style="width:100%">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="story_container">
-                            <h2>Mike Ross</h2>
-                            <p class="title">Art Director</p>
-                            <p>Mike Ross is an esteemed alumni of the Harver Law School. He is currently
-                                working full-time for the law firm Pearson Specter Litt. He specializes in
-                                corporate cases including fraud, collusion, and even espionage. Ross is the
-                                on track to becoming the youngest partner at his firm.</p>
-                            <p><button class="button_contact">Read More</button></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h1 style="text-align:center"><b>Medal Of Honor Recipients</b></h1>
 
-            <div class="row">
-                <div class="column">
-                    <div class="portrait">
-                        <img src="<?= BASE_URL ?>/public/img/portraits/img_avatar.png" alt="Jane" style="width:100%">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="story_container">
-                            <h2>Rodney Erickson</h2>
-                            <p class="title">Marketing</p>
-                            <p>Rodney Erickson is a content marketing professional at HubSpot, an inbound
-                                marketing and sales platform that helps companies attract visitors, convert
-                                leads, and close customers. Previously, Rodney worked as a marketing manager
-                                for a tech software startup.</p>
-                            <p><button class="button_contact">Read More</button></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="profile-card">
+            <header>
 
-            <div class="row">
-                <div class="column">
-                    <div class="portrait">
-                        <img src="<?= BASE_URL ?>/public/img/portraits/img_avatar.png" alt="Jane" style="width:100%">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="story_container">
-                            <h2>Michelle Obama</h2>
-                            <p class="title">Marketing</p>
-                            <p>Rodney Erickson is a content marketing professional at HubSpot, an inbound
-                                marketing and sales platform that helps companies attract visitors, convert
-                                leads, and close customers. Previously, Rodney worked as a marketing manager
-                                for a tech software startup.</p>
-                            <p><button class="button_contact">Read More</button></p>
-                        </div>
-                    </div>
-                </div>
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
+
+                <h1>Lewis Kenneth Bausell</h1>
+                <h2>Corporal, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>While serving with the 1st Battalion, 5th Marines, 1st Marine Division, during action against enemy Japanese forces on Peleliu Island, Palau Group, 15 September 1944. </p>
+                <strong>Born: </strong><p>17 April 1924, Pulaski, Virginia.</p>
+                <strong>Accredited to: </strong><p>District of Columbia.</p>
+
             </div>
         </div>
-        <!-- END Stories Container -->
+
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/arthur.jpg">
+
+                <h1>Arthur J. Jackson</h1>
+                <h2>Private First Class, U.S. Marine Corps</h2>
+
+            </header>
+
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
+                <strong>Born: </strong><p>18 October 1924, Cleveland, Ohio.</p>
+                <strong>Accredited to: </strong><p>Oregon</p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
+
+                <h1>Richard Edward Kraus</h1>
+                <h2>Private First Class, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
+                <strong>Born: </strong><p>24 November 1925, Chicago, Illinois.</p>
+                <strong>Accredited to: </strong><p>Minnesota</p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
+
+                <h1>John Dury New</h1>
+                <h2>Private First Class, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 25 September 1944.
+                </p>
+                <strong>Born: </strong><p>12 August 1924, Mobile, Alabama. </p>
+                <strong>Accredited to: </strong><p>Alabama</p>
+
+            </div>
+        </div>
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
+
+                <h1>Wesley Phelps</h1>
+                <h2>Private, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 4 October 1944.
+                </p>
+                <strong>Born: </strong><p>12 June 1923, Neafus, Kentucky. </p>
+                <strong>Accredited to: </strong><p>Kentucky</p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/everett.jpg">
+
+                <h1>Everett Parker Pope</h1>
+                <h2>Captain, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Peleliu Island, Palau group, 19-20 September 1944.
+                </p>
+                <strong>Born: </strong><p>16 July 1919, Milton, Massachusetts.
+                </p>
+                <strong>Accredited to: </strong><p>Massachusetts</p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/charles.jpg">
+
+                <h1>Charles Howard Roan</h1>
+                <h2>Private First Class, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Peleliu Island, Palau group, 18 September 1944.
+                </p>
+                <strong>Born: </strong><p>16 August 1923, Claude, Texas. </p>
+                <strong>Accredited to: </strong><p>Texas</p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <header>
+
+                <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/carlton.jpg">
+
+                <h1>Carlton Robert Rouh</h1>
+                <h2>First Lieutenant, U.S. Marine Corps</h2>
+
+            </header>
+
+            <div class="profile-bio">
+                <strong>Place and date: </strong><p>Peleliu Island, Palau group, 15 September 1944.
+                </p>
+                <strong>Born: </strong><p>11 May 1919, Lindenwold, New Jersey. </p>
+                <strong>Accredited to: </strong><p>New Jersey</p>
+
+            </div>
+        </div>

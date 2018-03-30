@@ -11,7 +11,7 @@
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/stories">Stories</a>
     </li>
     <li class="nav-item">
-        <a class="nav-item nav-link active" href="<?= BASE_URL ?>/forum">Forum</a>
+        <a class="nav-item nav-link active" href="<?= BASE_URL ?>/forum">Medal Of Honor</a>
     </li>
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/logout">Logout</a>

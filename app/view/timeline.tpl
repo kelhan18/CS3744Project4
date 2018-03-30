@@ -9,7 +9,7 @@
         <a class="nav-item nav-link active" href="<?= BASE_URL ?>/timeline">Timeline</a>
     </li>
     <li class="nav-item">
-        <a class="nav-item nav-link" href="<?= BASE_URL ?>/stories">Stories</a>
+        <a class="nav-item nav-link" href="<?= BASE_URL ?>/stories">Medal Of Honor</a>
     </li>
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/forum">Forum</a>
