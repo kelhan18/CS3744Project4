@@ -7,8 +7,8 @@ class Profile {
   public $profile_id = 0;
   public $firstname = '';
   public $lastname = '';
-  public $username = null;
-  public $password = null;
+  public $username = '';
+  public $password = '';
   public $photo = null;
   public $number_posts = 0;
 
@@ -80,14 +80,13 @@ class Profile {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (firstname, lastname, username, password, photo, number_posts)
+    $q = sprintf("INSERT INTO profiles (firstname, lastname, username, password, photo)
     VALUES (%s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
       $db->escape($this->password),
-      $db->escape($this->photo),
-      $db->escape($this->number_posts)
+      $db->escape($this->photo)
       );
 
     $db->query($q); // execute query
