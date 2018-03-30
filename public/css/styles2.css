@@ -158,6 +158,7 @@ img {
 .row{
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 16px;
   margin:auto;
 }
 
@@ -258,8 +259,6 @@ img {
 }
 .column {
   float: left;
-  height: 10.3%;
-  margin-top: 50px;
   width:50%;
 }
 
@@ -843,7 +842,6 @@ button:hover, a:hover {
     text-align: left;
   }
   .column {
-    height: 100%;
     display: block;
   }
   .col-25, .col-75, .col-50{
