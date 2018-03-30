@@ -42,7 +42,7 @@
             </header>
 
             <div class="profile-bio">
-                <strong>Place and date: </strong><p>While serving with the 1st Battalion, 5th Marines, 1st Marine Division, during action against enemy Japanese forces on Peleliu Island, Palau Group, 15 September 1944. </p>
+                <strong>Place and date: </strong><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
                 <strong>Born: </strong><p>17 April 1924, Pulaski, Virginia.</p>
                 <strong>Accredited to: </strong><p>District of Columbia.</p>
 
