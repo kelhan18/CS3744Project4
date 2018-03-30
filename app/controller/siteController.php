@@ -39,6 +39,9 @@ class SiteController
                     $this->signup();
                 }
                 break;
+            case 'signupProcess':
+    				    $this->signupProcess();
+                break;
             case 'logout':
                 $this->logout();
                 break;
@@ -47,17 +50,32 @@ class SiteController
 //Runs the login process to gain access to the website
     public function loginProcess($un, $pw)
     {
-        $correctUser = 'tony';
-        $correctPass = 'gui';
-        if ($un != $correctUser)
-            header('Location: ' . BASE_URL);
-        elseif ($pw != $correctPass)
-            header('Location: ' . BASE_URL);
-        else {
-            $_SESSION['username'] = $un;
-            header('Location: ' . BASE_URL);
-            exit();
-        }
+      $correctUser = 'tony';
+      $correctPass = 'gui';
+      $sql="SELECT * FROM profiles WHERE username='$un' and password='$pw'";
+      $result = mysql_query($sql);
+
+      // Mysql_num_row is counting table row
+      $count=mysql_num_rows($result);
+      // If result matched $username and $password, table row must be 1 row
+      if ($count > 0) {
+        $_SESSION['username'] = $un;
+        header('Location: '.BASE_URL); exit();
+      } else {
+        header('Location: '.BASE_URL);
+      }
+
+
+
+
+  // if($un != $correctUser)
+  // 	header('Location: '.BASE_URL);
+  // elseif($pw != $correctPass)
+  // 	header('Location: '.BASE_URL);
+  // else {
+  // 	$_SESSION['username'] = $un;
+  // 	header('Location: '.BASE_URL); exit();
+  // }
     }
     //Runs the signup process to gain access to the website
     public function signup()
@@ -67,6 +85,29 @@ class SiteController
         include_once SYSTEM_PATH . '/view/signup.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
+
+    public function signupProcess() {
+		$firstname 	 = $_POST['firstname']; // required
+		$lastname 	 = $_POST['lastname']; // required
+		$username  	 = $_POST['username'];
+		$password  	 = $_POST['password'];
+		$photo       = $_POST['photo'];
+
+		if( empty($firstname) || empty($lastname) || empty($username) || empty($password) ) {
+			header('Location: '.BASE_URL.'/member/add/'); exit();
+		}
+
+		$profile = new Profile();
+		$profile->firstname    = $firstname;
+		$profile->lastname     = $lastname;
+		$profile->username    	= $username;
+		$profile->password    	= $password;
+		$profile->photo        = $photo;
+
+		$profile_id = $profile->save();
+		header('Location: '.BASE_URL.'/login/'); exit();
+	 }
+
     //Brings the user to the home page
     public function home()
     {
