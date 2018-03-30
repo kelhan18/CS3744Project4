@@ -1,0 +1,8 @@
+
+phpMyAdmin link
+http://ec2-18-222-16-185.us-east-2.compute.amazonaws.com/phpMyAdmin
+username: root
+password: CS3744!P4
+
+site link
+http://ec2-18-222-16-185.us-east-2.compute.amazonaws.com/CS3744Project4
