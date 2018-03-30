@@ -31,6 +31,7 @@
         <h1 style="text-align: left;margin-left:7%;">Forum Discussion</h1>
         <ul class="breadcrumb">
             <li>Discussion Topics</li>
+            <button class="btn btn-lg btn-primary btn-block" name="submit" value="Login" type="submit">New Discussion</button>
         </ul>
         <div class="row_forum" >
             <div class="col-15" style="text-align:center;border-right: double;margin-top:0;margin-right:7px; width:13%">
