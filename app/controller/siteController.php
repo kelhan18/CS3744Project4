@@ -11,7 +11,6 @@ $sc->route($action);
 
 class SiteController
 {
-
     // route us to the appropriate class method for this action
     public function route($action)
     {
@@ -28,8 +27,6 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
-
-
             case 'login':
                 $this->login();
                 break;
@@ -42,46 +39,26 @@ class SiteController
                     $this->signup();
                 }
                 break;
-            case 'signupProcess':
-				        $this->signupProcess();
             case 'logout':
                 $this->logout();
                 break;
         }
-
     }
-
 //Runs the login process to gain access to the website
     public function loginProcess($un, $pw)
     {
-      $correctUser = 'tony';
-      $correctPass = 'gui';
-      $sql = "SELECT * FROM profiles WHERE username='$un' and password='$pw'";
-      $result = mysql_query($sql);
-
-      // Mysql_num_row is counting table row
-      $count=mysql_num_rows($result);
-    // If result matched $username and $password, table row must be 1 row
-      if ($count > 0) {
-        $_SESSION['username'] = $un;
-        header('Location: '.BASE_URL); exit();
-      } else {
-        header('Location: '.BASE_URL);
-      }
-
-
-
-
-  // if($un != $correctUser)
-  // 	header('Location: '.BASE_URL);
-  // elseif($pw != $correctPass)
-  // 	header('Location: '.BASE_URL);
-  // else {
-  // 	$_SESSION['username'] = $un;
-  // 	header('Location: '.BASE_URL); exit();
-  // }
+        $correctUser = 'tony';
+        $correctPass = 'gui';
+        if ($un != $correctUser)
+            header('Location: ' . BASE_URL);
+        elseif ($pw != $correctPass)
+            header('Location: ' . BASE_URL);
+        else {
+            $_SESSION['username'] = $un;
+            header('Location: ' . BASE_URL);
+            exit();
+        }
     }
-
     //Runs the signup process to gain access to the website
     public function signup()
     {
@@ -90,33 +67,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/signup.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
-    public function signupProcess() {
-		$firstname 	 = $_POST['firstname']; // required
-		$lastname 	 = $_POST['lastname']; // required
-		$username  	 = $_POST['username'];
-		$password  	 = $_POST['password'];
-		$photo       = $_POST['photo'];
-
-		if( empty($firstname) || empty($lastname) || empty($username) || empty($password) ) {
-			header('Location: '.BASE_URL); exit();
-		}
-
-		$profile = new Profile();
-		$profile->firstname    = $firstname;
-		$profile->lastname     = $lastname;
-		$profile->username    	= $username;
-		$profile->password    	= $password;
-		$profile->photo        = $photo;
-
-		$profile_id = $profile->save();
-    if ($profile_id == null)
-    {
-      header('Location: '.BASE_URL.); exit();
-    }
-		header('Location: '.BASE_URL.'/login/'); exit();
-	}
-
     //Brings the user to the home page
     public function home()
     {
@@ -125,7 +75,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/home.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
     public function timeline()
     {
         $pageTitle = 'Timeline';
@@ -133,7 +82,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/timeline.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
     public function stories()
     {
         $pageTitle = 'Stories';
@@ -141,7 +89,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/stories.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
     public function forum()
     {
         $pageTitle = 'Forum';
@@ -149,8 +96,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/forum.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
-
     // Brings the user to the login page
     public function login()
     {
@@ -159,7 +104,6 @@ class SiteController
         include_once SYSTEM_PATH . '/view/login.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-
     //Logs the user out and sends them to hte unregistered home page
     public function logout()
     {
