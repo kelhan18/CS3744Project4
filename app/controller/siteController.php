@@ -17,31 +17,29 @@ class SiteController {
 			case 'home':
 				$this->home();
 				break;
-            //KELLER CHANGED THIS: home_unreg->home
-			//case 'home_unreg':
-			//	$this->home();
-			//	break;
-			//case 'myfamily':
-			//	$this->myfamily();
-			//	break;
-            case 'timeline':
-                $this->timeline();
-                break;
-            case 'stories':
-                $this->stories();
-                break;
-            case 'forum':
-                $this->forum();
-                break;
+      case 'timeline':
+        $this->timeline();
+        break;
+      case 'stories':
+          $this->stories();
+          break;
+      case 'forum':
+          $this->forum();
+          break;
 
 
 			case 'login':
 				$this->login();
 				break;
 			case 'loginProcess':
-				$user = $_POST['user'];
-				$pass = $_POST['pass'];
-				$this->loginProcess($user, $pass);
+				if (isset($_POST['login'])) {
+					$user = $_POST['user'];
+					$pass = $_POST['pass'];
+					$this->loginProcess($user, $pass);
+				}
+				else if (isset($_POST['signup'])) {
+					$this->signup();
+				}
 				break;
 			case 'logout':
 				$this->logout();
@@ -64,6 +62,15 @@ class SiteController {
 			header('Location: '.BASE_URL); exit();
 		}
 	}
+
+	//Runs the signup process to gain access to the website
+		public function signup() {
+			$pageTitle = 'Home';
+			include_once SYSTEM_PATH.'/view/header.tpl';
+			include_once SYSTEM_PATH.'/view/signup.tpl';
+			include_once SYSTEM_PATH.'/view/footer.tpl';
+			}
+		}
 
 	//Brings the user to the home page
   public function home() {
@@ -94,23 +101,7 @@ class SiteController {
         include_once SYSTEM_PATH.'/view/footer.tpl';
     }
 
-	//Brings the user to the not logeed in home page
-	public function home_unreg() {
-		$pageTitle = 'Home';
-		include_once SYSTEM_PATH.'/view/header.tpl';
-		include_once SYSTEM_PATH.'/view/homenotsignedin.tpl';
-		include_once SYSTEM_PATH.'/view/footer.tpl';
-  }
 
-
-	//Brings the user to the family list page
-	public function myfamily() {
-		$pageTitle = 'My Family';
-		$members= Member::getMembers();
-		include_once SYSTEM_PATH.'/view/header.tpl';
-		include_once SYSTEM_PATH.'/view/myfamily.tpl';
-		include_once SYSTEM_PATH.'/view/footer.tpl';
-  }
 
 	// Brings the user to the login page
 	public function login() {

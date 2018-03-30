@@ -33,8 +33,8 @@
             <input type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
             <input type="password" class="form-control" name="pass" placeholder="Password" required=""/>
 
-            <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Login" type="submit">Login</button>
-            <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Signup" type="submit">Sign Up</button>
+            <button class="btn btn-lg btn-primary btn-block"  name="login" value="Login" type="submit">Login</button>
+            <button class="btn btn-lg btn-primary btn-block"  name="signup" value="Signup" type="submit">Sign Up</button>
         </form>
     </div>
 </div>
