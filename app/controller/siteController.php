@@ -56,7 +56,7 @@ class SiteController
     {
       $correctUser = 'tony';
       $correctPass = 'gui';
-      $sql="SELECT * FROM profiles WHERE username='$un' and password='$pw'";
+      $sql = "SELECT * FROM profiles WHERE username='$un' and password='$pw'";
       $result = mysql_query($sql);
 
       // Mysql_num_row is counting table row
@@ -110,6 +110,10 @@ class SiteController
 		$profile->photo        = $photo;
 
 		$profile_id = $profile->save();
+    if ($profile_id == null)
+    {
+      header('Location: '.BASE_URL.); exit();
+    }
 		header('Location: '.BASE_URL.'/login/'); exit();
 	}
 
