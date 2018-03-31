@@ -1,21 +1,3 @@
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-<!-- <script>
-    (function($){
-        function processPostForm( e ){
-          alert('click');
-          e.preventDefault();
-          $.ajax({
-              url: '<?= BASE_URL ?>/app/model/postsAjax.php',
-              type: 'post',
-              contentType: 'application/json',
-              data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
-          });
-        }
-        $('#newPostForm').submit( processPostForm );
-    })(jQuery);
-</script> -->
-
-
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>">Home</a>
@@ -57,7 +39,7 @@
                 <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
                 <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
                 <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
-                <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</button>
+                <input class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</input>
             </form>
 
         <div id="postHolder">
