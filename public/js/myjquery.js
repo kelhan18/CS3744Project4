@@ -39,13 +39,18 @@ $(document).ready(function(){
     });
 
     $('#postButton').click(function( e ) {
-        // alert($('#post').val());
         e.preventDefault();
         $.ajax({
             url: 'postsAjax.php',
             type: 'post',
             contentType: 'application/json',
-            data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
+            data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'post': $('#post').val() } ),
+            success: function(result,status,xhr) {
+              console.log('success');
+            },
+            error: function(xhr,status,error) {
+              console.log('error');
+            }
         });
     });
 
