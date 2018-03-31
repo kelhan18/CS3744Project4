@@ -1,7 +1,7 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script>
     (function($){
-        $('#newPostForm').on('click', function( e ){
+        $('#newPostButton').on('click', function( e ){
           alert('clcik');
           e.preventDefault();
           $.ajax({
@@ -59,7 +59,7 @@
                 <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
                 <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
                 <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
-                <div class="btn btn-lg btn-primary btn-block">New Post</div>
+                <div id="newPostButton" class="btn btn-lg btn-primary btn-block">New Post</div>
             </div>
 
         <div id="postHolder">
