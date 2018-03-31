@@ -41,7 +41,7 @@ $(document).ready(function(){
     $('#postButton').click(function( e ) {
         e.preventDefault();
         $.ajax({
-            url: 'postsAjax.php',
+            url: 'newpost',
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'post': $('#post').val() } ),
