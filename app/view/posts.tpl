@@ -39,9 +39,9 @@
                 <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
                 <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
                 <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
-                <button id="postButt" class="btn btn-lg btn-primary btn-block" name="submit" type="submit"></button>
+                <button id="postButton" class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</button>
             </form>
-
+            <button id="postButt">work??</button>
         <div id="postHolder">
           <?php foreach($posts as $post): ?>
           <?php $profile = Profile::getProfile($post->profile_id)?>
