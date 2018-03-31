@@ -1,17 +1,19 @@
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script>
     (function($){
-        function processPostForm( e ){
+        $('#newPostForm').on('click', function( e ){
+          alert('clcik');
+          e.preventDefault();
           $.ajax({
               url: '<?= BASE_URL ?>/app/model/postsAjax.php',
-              dataType: 'text',
               type: 'post',
               contentType: 'application/json',
               data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
+              success: function(data, status) {
+                alert('sometin');
+              }
           });
-          e.preventDefault();
-        }
-        $('#newPostForm').submit( processPostForm );
+        });
     })(jQuery);
 </script>
 
@@ -48,7 +50,7 @@
         <h1 style="text-align: left;margin-left:7%;"><?= $topic->topic?></h1>
 
             <!-- <form method="POST" action="<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>/" name="Post_Form" class="form-signin"> -->
-            <form id="newPostForm" class="form-signin">
+            <div id="newPostForm" class="form-signin">
 
                 <h3 class="form-signin-heading">Please Enter Your Post Below</h3>
                 <hr class="colorgraph"><br>
@@ -57,8 +59,8 @@
                 <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
                 <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
                 <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
-                <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</button>
-            </form>
+                <div class="btn btn-lg btn-primary btn-block">New Post</div>
+            </div>
 
         <div id="postHolder">
           <?php foreach($posts as $post): ?>
