@@ -1,4 +1,4 @@
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script>
     (function($){
         function processPostForm( e ){
@@ -20,7 +20,7 @@
 
         $('#newPostForm').submit( processPostForm );
     })(jQuery);
-</script> -->
+</script>
 
 
 <ul class="nav nav-pills nav-justified justify-content-center">
