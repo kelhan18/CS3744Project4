@@ -43,7 +43,6 @@ $(document).ready(function(){
         $.ajax({
             url: 'newpost',
             type: 'post',
-            dataType: 'json',
             contentType: 'application/json',
             data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'description': $('#post').val() } ),
             success: function(result,status,xhr,data) {
