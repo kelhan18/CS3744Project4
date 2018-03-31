@@ -39,7 +39,7 @@ $(document).ready(function(){
     });
 
     $('#postButton').click(function( e ) {
-        e.preventDefault();
+        // e.preventDefault();
         $.ajax({
             url: 'newpost',
             type: 'post',
