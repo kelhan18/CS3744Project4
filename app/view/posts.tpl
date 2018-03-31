@@ -5,7 +5,7 @@
             $.ajax({
                 url: '<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>',
                 dataType: 'text',
-                method: 'post',
+                type: 'post',
                 contentType: 'application/x-www-form-urlencoded',
                 data: $(this).serialize(),
                 success: function( data, textStatus, jQxhr ){
