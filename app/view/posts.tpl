@@ -9,7 +9,8 @@
                 contentType: 'application/x-www-form-urlencoded',
                 data: $(this).serialize(),
                 success: function( data, textStatus, jQxhr ){
-                    $('#postHolder').append('<div>hi</div>');
+                    // $('#postHolder').append('<div>hi</div>');
+                    echo('success');
                 },
                 error: function( jqXhr, textStatus, errorThrown ){
                     console.log( errorThrown );
