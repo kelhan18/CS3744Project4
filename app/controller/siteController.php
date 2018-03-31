@@ -45,6 +45,9 @@ class SiteController
             case 'logout':
                 $this->logout();
                 break;
+            case 'topic':
+                $this->topic();
+                break;
         }
     }
 //Runs the login process to gain access to the website
@@ -52,31 +55,25 @@ class SiteController
     {
       $correctUser = 'tony';
       $correctPass = 'gui';
-      $sql="SELECT * FROM profiles WHERE username='$un' and password='$pw'";
-      $result = mysql_query($sql);
+      $db = Db::instance();
+      $q = "SELECT * FROM profiles WHERE username='$un' and password='$pw'";
+      $result = $db->query($q);
 
-      // Mysql_num_row is counting table row
-      $count=mysql_num_rows($result);
+      $row = $result->fetch_assoc(); // get results as associative array
+      $profile = new Profile();
+      $profile->profile_id   = $row['profile_id'];
+      $profile->firstname    = $row['firstname'];
+
       // If result matched $username and $password, table row must be 1 row
-      if ($count > 0) {
-        $_SESSION['username'] = $un;
+      if($result->num_rows != 0) {
+        $_SESSION['username'] = $profile->firstname;
+        $_SESSION['profile_id'] = $profile->profile_id;
         header('Location: '.BASE_URL); exit();
       } else {
         header('Location: '.BASE_URL);
       }
-
-
-
-
-  // if($un != $correctUser)
-  // 	header('Location: '.BASE_URL);
-  // elseif($pw != $correctPass)
-  // 	header('Location: '.BASE_URL);
-  // else {
-  // 	$_SESSION['username'] = $un;
-  // 	header('Location: '.BASE_URL); exit();
-  // }
     }
+
     //Runs the signup process to gain access to the website
     public function signup()
     {
@@ -88,13 +85,13 @@ class SiteController
 
     public function signupProcess() {
 		$firstname 	 = $_POST['firstname']; // required
-		$lastname 	 = $_POST['lastname']; // required
-		$username  	 = $_POST['username'];
-		$password  	 = $_POST['password'];
+		$lastname 	 = $_POST['lastname'];  // required
+		$username  	 = $_POST['username'];  // required
+		$password  	 = $_POST['password'];  // required
 		$photo       = $_POST['photo'];
 
 		if( empty($firstname) || empty($lastname) || empty($username) || empty($password) ) {
-			header('Location: '.BASE_URL.'/member/add/'); exit();
+			header('Location: '.BASE_URL); exit();
 		}
 
 		$profile = new Profile();
@@ -103,8 +100,13 @@ class SiteController
 		$profile->username    	= $username;
 		$profile->password    	= $password;
 		$profile->photo        = $photo;
+    $profile->number_posts        = 0;
 
-		$profile_id = $profile->save();
+		$profile_id = $profile->save(0);
+    if ($profile_id == null)
+    {
+      header('Location: '.BASE_URL); exit();
+    }
 		header('Location: '.BASE_URL.'/login/'); exit();
 	 }
 
@@ -133,6 +135,7 @@ class SiteController
     public function forum()
     {
         $pageTitle = 'Forum';
+        $topics= Topic::getTopics();
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/forum.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';

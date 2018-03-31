@@ -64,9 +64,8 @@ class Profile {
   }
 
   //Saves the new family member and adds them to the database
-  public function save(){
-
-    if($this->profile_id == 0) {
+  public function save($profile_id){
+    if($profile_id == 0) {
       return $this->insert();
     }
     else {
@@ -76,17 +75,18 @@ class Profile {
 
   //Inserts the family member into the database
   public function insert() {
-    if($this->profile_id != 0)
+    if($this->topic_id != 0)
       return null;
-
+      
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (firstname, lastname, username, password, photo)
+    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `photo`, `number_posts`)
     VALUES (%s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
       $db->escape($this->password),
-      $db->escape($this->photo)
+      $db->escape($this->photo),
+      $db->escape($this->number_posts)
       );
 
     $db->query($q); // execute query

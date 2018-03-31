@@ -33,8 +33,8 @@ class Topic {
         $row = $result->fetch_assoc(); // get results as associative array
 
         $topic = new Topic(); // instantiate
-        $topic->topic_id   = $row['profile_id'];
-        $topic->topic    = $row['topic'];
+        $topic->topic_id   = $row['topic_id'];
+        $topic->topic       = $row['topic'];
         $topic->date_posted     = $row['date_posted'];
         $topic->number_posts     = $row['number_posts'];
 
@@ -74,7 +74,7 @@ class Topic {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO topic (topic, date_posted, number_posts)
+    $q = sprintf("INSERT INTO topic (`topic`, `date_posted`, `number_posts`)
     VALUES (%s, %s, %d);",
       $db->escape($this->topic),
       $db->escape($this->date_posted),
