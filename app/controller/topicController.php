@@ -33,7 +33,12 @@ class TopicController
                 break;
             case 'view':
                 $topic_id = $_GET['topic_id'];
-                $this->view($topic_id);
+                if ($topic_id != 'newpost') {
+                  $this->view($topic_id);
+                }
+                else {
+                  $this->addPost();
+                }
                 break;
         }
     }
