@@ -1,3 +1,3 @@
 <?php
-  echo "<script type='text/javascript'>alert('$_POST['post']');</script>";
-  echo ($_POST['post']);
+  echo "<script type='text/javascript'>alert('working!');</script>";
+  echo "please";
