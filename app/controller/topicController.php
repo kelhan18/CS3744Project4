@@ -22,6 +22,9 @@ class TopicController
                 $topic_id = $_GET['topic_id'];
                 $this->newPost($topic_id);
                 break;
+            case 'addPost':
+                $this->addPost();
+                break;
             case 'topic':
                 $this->topic();
                 break;
@@ -35,6 +38,13 @@ class TopicController
         }
     }
 
+    public function addPost()
+    {
+        $post = $_POST['post']; // required
+        $profile_id = $_POST['profile_id']; // required
+        $topic_id = $_POST['topic_id']; // required
+        echo "<script type='text/javascript'>alert('working!');</script>";
+    }
 
     public function newPost($topic_id)
     {

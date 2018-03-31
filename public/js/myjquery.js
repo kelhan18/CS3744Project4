@@ -39,8 +39,9 @@ $(document).ready(function(){
     });
 
     $('#postButton').click(function( e ) {
+        e.preventDefault();
         $.ajax({
-            url: '<?= BASE_URL ?>/public/ajaxPHP/postsAjax.php',
+            url: 'postsAjax.php',
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'post': $('#post').val() } ),
@@ -51,7 +52,6 @@ $(document).ready(function(){
               console.log('error');
             }
         });
-        e.preventDefault();
     });
 
     //     url: '<?= BASE_URL ?>/app/model/postsAjax.php',
