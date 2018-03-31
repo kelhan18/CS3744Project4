@@ -43,12 +43,11 @@ $(document).ready(function(){
         $.ajax({
             url: 'newpost',
             type: 'post',
+            dataType: 'json',
             contentType: 'application/json',
-            // data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'post': $('#post').val() } ),
-            data: JSON.stringify( { 'topic_id': $('199').val(), 'profile_id': $('455').val(), 'post': $('hello').val() } ),
+            data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'description': $('#post').val() } ),
             success: function(result,status,xhr,data) {
               console.log('success');
-              console.log(data);
             },
             error: function(xhr,status,error) {
               console.log('error');
