@@ -44,7 +44,8 @@ $(document).ready(function(){
             url: 'newpost',
             type: 'post',
             contentType: 'application/json',
-            data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'description': $('#post').val() } ),
+            // data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'description': $('#post').val() } ),
+            data: '{ \'topic_id\': '$('#topic_id').val()', \'profile_id\': '$('#profile_id').val()', \'description\': '$('#post').val()' }',
             success: function(result,status,xhr,data) {
               console.log('success');
               console.log($('#topic_id').val());
