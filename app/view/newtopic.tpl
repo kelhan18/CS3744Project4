@@ -31,11 +31,8 @@
 
           <!-- Edit topic info -->
           <label>New topic: <input type="text" name="topic" required="required"></input></label></br>
-          <input type="submit" name="submit" value="Create New Topic"></input></br>
-          </form>
-
-
           <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Create New Profile" type="submit">Create New Topic</button>
-      </form>
+
+        </form>
   </div>
 </div>

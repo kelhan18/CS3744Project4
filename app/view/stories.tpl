@@ -29,7 +29,7 @@
 
         <br>
         <br>
-        <h1 style="text-align:center"><b>Medal Of Honor Recipients</b></h1>
+        <h1 id="timeline-header">Medal Of Honor Recipients</h1>
 
         <div class="profile-card">
             <header>
