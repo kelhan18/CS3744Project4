@@ -2,16 +2,15 @@
 <script>
     (function($){
         function processPostForm( e ){
-            $.ajax({
-                url: '<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>',
-                dataType: 'text',
-                type: 'post',
-                contentType: 'application/x-www-form-urlencoded',
-                data: $(this).serialize()
-            });
-            // e.preventDefault();
+          $.ajax({
+              url: '<?= BASE_URL ?>/app/model/postsAjax.php',
+              dataType: 'text',
+              type: 'post',
+              contentType: 'application/json',
+              data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
+          });
+          e.preventDefault();
         }
-
         $('#newPostForm').submit( processPostForm );
     })(jQuery);
 </script>
@@ -55,8 +54,9 @@
                 <hr class="colorgraph"><br>
 
                 <!-- Edit topic info -->
-                <label>New Post: <input type="text" name="post" required="required"></input></label></br>
-                <input type='hidden' name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
+                <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
+                <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
+                <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
                 <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</button>
             </form>
 
