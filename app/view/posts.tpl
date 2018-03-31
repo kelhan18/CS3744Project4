@@ -15,7 +15,6 @@
                     console.log( errorThrown );
                 }
             });
-
             e.preventDefault();
         }
 

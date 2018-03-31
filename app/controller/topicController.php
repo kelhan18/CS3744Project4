@@ -22,6 +22,11 @@ class TopicController
                 $topic_id = $_GET['topic_id'];
                 $this->newPost($topic_id);
                 break;
+            case 'postViaAjax':
+                $post = $_GET['post'];
+                $profile_id = $_GET['profile_id'];
+                $this-> postViaAjax($profile_id, $post);
+                break
             case 'topic':
                 $this->topic();
                 break;
