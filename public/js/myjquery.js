@@ -45,7 +45,7 @@ $(document).ready(function(){
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify( { 'topic_id': $('#topic_id').val(), 'profile_id': $('#profile_id').val(), 'post': $('#post').val() } ),
-            success: function(result,status,xhr) {
+            success: function(result,status,xhr,data) {
               console.log('success');
               console.log(data);
             },
