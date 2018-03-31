@@ -1,3 +1,28 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    (function($){
+        function processPostForm( e ){
+            $.ajax({
+                url: '<?= BASE_URL ?>/topic/newpost/',
+                dataType: 'text',
+                method: 'post',
+                contentType: 'application/x-www-form-urlencoded',
+                data: $(this).serialize(),
+                success: function( data, textStatus, jQxhr ){
+                    $('#postHolder').append(data);
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+
+            e.preventDefault();
+        }
+
+        $('#newPostForm').submit( processPostForm );
+    })(jQuery);
+</script>
+
 
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
@@ -30,7 +55,9 @@
         <br>
         <h1 style="text-align: left;margin-left:7%;"><?= $topic->topic?></h1>
 
-            <form method="POST" action="<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>/" name="Post_Form" class="form-signin">
+            <!-- <form method="POST" action="<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>/" name="Post_Form" class="form-signin"> -->
+            <form id="newPostForm" class="form-signin">
+
                 <h3 class="form-signin-heading">Please Enter Your Post Below</h3>
                 <hr class="colorgraph"><br>
 
@@ -40,23 +67,25 @@
                 <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Post</button>
             </form>
 
-        <?php foreach($posts as $post): ?>
-        <?php $profile = Profile::getProfile($post->profile_id)?>
-        <div class="row_forum" >
-          <div class="profile-card">
-              <header>
-                <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
-                <h5 style="margin-left:20px;margin-top:8px;"><?= $post->description?></h5>
-                <p  style="margin-left:20px;margin-top:8px;"><?= $post->date_posted?></p>
-              </header>
+        <div id="postHolder">
+          <?php foreach($posts as $post): ?>
+          <?php $profile = Profile::getProfile($post->profile_id)?>
+          <div class="row_forum" >
+            <div class="profile-card">
+                <header>
+                  <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
+                  <h5 style="margin-left:20px;margin-top:8px;"><?= $post->description?></h5>
+                  <p  style="margin-left:20px;margin-top:8px;"><?= $post->date_posted?></p>
+                </header>
 
-              <div class="profile-bio">
-                <div class="posts"><?= $profile->number_posts?></div>
-                <p>Posts</p>
-              </div>
+                <div class="profile-bio">
+                  <div class="posts"><?= $profile->number_posts?></div>
+                  <p>Posts</p>
+                </div>
+            </div>
           </div>
+          <?php endforeach; ?>
         </div>
-        <?php endforeach; ?>
         <!-- END Container -->
 
 </div>
