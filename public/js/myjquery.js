@@ -39,25 +39,16 @@ $(document).ready(function(){
     });
 
     $('#postButton').click(function( e ) {
-        alert($('#post').val());
+        // alert($('#post').val());
         e.preventDefault();
         $.ajax({
-            url: '<?= BASE_URL ?>/app/model/postsAjax.php',
+            url: 'postsAjax.php',
             type: 'post',
             contentType: 'application/json',
             data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
         });
     });
 
-    // $('#newPostForm').submit(function processPostForm( e ){
-    //   alert('click');
-    //   e.preventDefault();
-    //   $.ajax({
     //     url: '<?= BASE_URL ?>/app/model/postsAjax.php',
-    //     type: 'post',
-    //     contentType: 'application/json',
-    //     data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
-    //   });
-    // });
 
 });
