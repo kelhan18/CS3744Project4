@@ -41,6 +41,8 @@ class TopicController
       $post = $_POST['post']; // required
       $profile_id = $_POST['profile_id'];
 
+      echo 'newPost funct';
+
   		if( empty($post) ) {
   			header('Location: '.BASE_URL); exit();
   		}

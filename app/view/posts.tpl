@@ -3,7 +3,7 @@
     (function($){
         function processPostForm( e ){
             $.ajax({
-                url: '<?= BASE_URL ?>/topic/newpost/',
+                url: '<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>',
                 dataType: 'text',
                 method: 'post',
                 contentType: 'application/x-www-form-urlencoded',
