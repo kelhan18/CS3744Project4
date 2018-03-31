@@ -13,3 +13,4 @@
   $mypost->profile_id = $profile_id;
 
   $post_id = $mypost->save($profile_id, $topic_id);
+  $mypost->insert($profile_id, $topic_id);
