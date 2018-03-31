@@ -7,16 +7,9 @@
                 dataType: 'text',
                 type: 'post',
                 contentType: 'application/x-www-form-urlencoded',
-                data: $(this).serialize(),
-                success: function( data, textStatus, jQxhr ){
-                    // $('#postHolder').append('<div>hi</div>');
-                    echo('success');
-                },
-                error: function( jqXhr, textStatus, errorThrown ){
-                    console.log( errorThrown );
-                }
+                data: $(this).serialize()
             });
-            e.preventDefault();
+            // e.preventDefault();
         }
 
         $('#newPostForm').submit( processPostForm );
