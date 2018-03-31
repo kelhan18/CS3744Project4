@@ -38,8 +38,15 @@ $(document).ready(function(){
         }
     });
 
-    $('#postButt').click(function() {
-      alert('asasg');
+    $('#postButton').click(function( e ) {
+        alert('click');
+        e.preventDefault();
+        $.ajax({
+            url: '<?= BASE_URL ?>/app/model/postsAjax.php',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify( { "topic_id": $('#topic_id').val(), "profile_id": $('#profile_id').val(), "post": $('#post').val() } )
+        });
     });
 
     // $('#newPostForm').submit(function processPostForm( e ){
