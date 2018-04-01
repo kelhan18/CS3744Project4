@@ -43,30 +43,38 @@ class TopicController
         }
     }
 
-    public function addPost()
-    {
-        $description = $_POST['description']; // required
-        $profile_id = $_POST['profile_id']; // required
-        $topic_id = $_POST['topic_id']; // required
-
-        $mypost = new Post();
-        $mypost->description  = $description;
-        $mypost->date_posted  = date("Y-m-d");
-        $mypost->number_posts = 0;
-        $mypost->topic_id = $topic_id;
-        $mypost->profile_id = $profile_id;
-
-        $post_id = $mypost->save($profile_id, $topic_id);
-    }
-
     public function newPost($topic_id)
     {
       $post = $_POST['post']; // required
       $profile_id = $_POST['profile_id'];
 
-  		if( empty($post) ) {
-  			header('Location: '.BASE_URL); exit();
-  		}
+      if( empty($post) ) {
+        header('Location: '.BASE_URL); exit();
+      }
+
+      //Censors out curse words from the post name using neutrino api
+      function curl_post_request($url, $data)
+      {
+          $ch = curl_init($url);
+          curl_setopt($ch, CURLOPT_POST, 1);
+          curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+          $content = curl_exec($ch);
+          curl_close($ch);
+          return $content;
+      }
+
+      $postData = array(
+        "user-id" => "campbel1",
+        "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
+        "content" => $post,
+        "censor-character" => "*"
+      );
+
+      $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
+      $result = json_decode($json, true);
+
+      $post = $result["censored-content"];
 
   		$mypost = new Post();
   		$mypost->description  = $post;
@@ -117,7 +125,8 @@ class TopicController
   		if( empty($topic) ) {
   			header('Location: '.BASE_URL); exit();
   		}
-      //Censors out curse words using neutrino api
+
+      //Censors out curse words from the topic name using neutrino api
       function curl_post_request($url, $data)
       {
           $ch = curl_init($url);
