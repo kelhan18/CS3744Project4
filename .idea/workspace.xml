@@ -12,16 +12,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="serverlogin.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serverlogin.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="71" lean-forward="true" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,26 +47,9 @@
       <file leaf-file-name="styles2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="1409" column="19" lean-forward="true" selection-start-line="1409" selection-start-column="19" selection-end-line="1409" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <marker date="1522592047000" expanded="false" signature="3298:3330" ph="..." />
-                <marker date="1522592047000" expanded="false" signature="5024:5040" ph="..." />
-                <marker date="1522592047000" expanded="false" signature="5178:5189" ph="..." />
-                <marker date="1522592047000" expanded="false" signature="8434:8445" ph="..." />
-                <marker date="1522592047000" expanded="false" signature="8712:8723" ph="..." />
-                <marker date="1522592047000" expanded="false" signature="8807:8841" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,11 +64,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <marker date="1522592128000" expanded="false" signature="3296:3328" ph="..." />
+                <marker date="1522592128000" expanded="false" signature="5022:5038" ph="..." />
+                <marker date="1522592128000" expanded="false" signature="5176:5187" ph="..." />
+                <marker date="1522592128000" expanded="false" signature="8432:8443" ph="..." />
+                <marker date="1522592128000" expanded="false" signature="8710:8721" ph="..." />
+                <marker date="1522592128000" expanded="false" signature="8805:8839" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="3456" column="40" lean-forward="true" selection-start-line="3456" selection-start-column="40" selection-end-line="3456" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,6 +120,7 @@
       <find>colorg</find>
       <find>forum-pos</find>
       <find>posts</find>
+      <find>banner</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -145,9 +146,9 @@
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/app/view/posts.tpl" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
-        <option value="$PROJECT_DIR$/public/css/styles2.css" />
         <option value="$PROJECT_DIR$/app/view/header.tpl" />
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
+        <option value="$PROJECT_DIR$/public/css/styles2.css" />
       </list>
     </option>
   </component>
@@ -349,8 +350,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/old" />
     </key>
@@ -1032,7 +1033,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15994000" />
+    <option name="totallyTimeSpent" value="16155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="614" y="130" width="1064" height="797" extended-state="0" />
@@ -1103,14 +1104,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="66" lean-forward="false" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1171,12 +1164,12 @@
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <marker date="1522592047000" expanded="false" signature="3298:3330" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="5024:5040" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="5178:5189" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8434:8445" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8712:8723" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8807:8841" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="3296:3328" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="5022:5038" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="5176:5187" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8432:8443" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8710:8721" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8805:8839" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1286,14 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="96" column="34" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="96" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1438,14 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="1409" column="19" lean-forward="true" selection-start-line="1409" selection-start-column="19" selection-end-line="1409" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1467,14 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1491,18 +1460,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1522592047000" expanded="false" signature="3298:3330" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="5024:5040" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="5178:5189" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8434:8445" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8712:8723" ph="..." />
-            <marker date="1522592047000" expanded="false" signature="8807:8841" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="3296:3328" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="5022:5038" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="5176:5187" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8432:8443" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8710:8721" ph="..." />
+            <marker date="1522592128000" expanded="false" signature="8805:8839" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="3456" column="40" lean-forward="true" selection-start-line="3456" selection-start-column="40" selection-end-line="3456" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

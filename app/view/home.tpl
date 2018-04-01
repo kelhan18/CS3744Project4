@@ -30,8 +30,6 @@
     <section id="banner">
         <div class="inner">
             <h2>Spectral</h2>
-
-
         </div>
     </section>
 
