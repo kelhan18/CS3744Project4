@@ -3390,7 +3390,6 @@
 			transform: scale(1);
 			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
 			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
 			font-size: 3.5em;
@@ -3398,6 +3397,7 @@
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+            background: #fff;
 		}
 
 			#banner h2:before, #banner h2:after {
