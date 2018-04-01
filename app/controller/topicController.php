@@ -131,15 +131,8 @@ class TopicController
     }
 
     //Censors out words that might be deemed inappropriate/offensive
-    public function censor($input)
+    function censor($input)
     {
-      $postData = array(
-        "user-id" => "campbel1",
-        "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
-        "content" => $input,
-        "censor-character" => "*"
-      );
-
       function curl_post_request($url, $data)
       {
           $ch = curl_init($url);
@@ -151,10 +144,18 @@ class TopicController
           return $content;
       }
 
+      $postData = array(
+        "user-id" => "campbel1",
+        "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
+        "content" => $input,
+        "censor-character" => "*"
+      );
+
       $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
       $result = json_decode($json, true);
 
-      return $result["censored-content"];
+      $final = $result["censored-content"];
+      return $final;
     }
 
 }
