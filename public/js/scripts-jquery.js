@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     // send form data via Ajax
     $.post(
-      'topic/newpost/' + topicid,
+      '/newpost/',
       {
         description: post,
         profile_id: profileid,
