@@ -14,6 +14,26 @@ $(document).ready(function(){
     });
   });
 
+  $('#userIdInput').on('change', function(e) {
+    e.preventDefault();
+    if ($('#userIdInput').val().length != 0) {
+      $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val() {
+        alert('gotten');
+      },
+      function(data) {
+        if(data.success == 'success') {,
+          var suggest = data.suggest;
+          console.log(suggest);
+          $('#suggestedUsr').text(suggest);
+        }
+        else {
+          // server data wasn't saved successfully
+          alert('Server error: ' + data.error);
+        }
+      });
+      }
+  });
+
   $('#postButton').on('click', function(e){
     e.preventDefault();
     // grab the data from the form

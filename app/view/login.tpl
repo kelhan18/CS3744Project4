@@ -30,7 +30,8 @@
             <h3 class="form-signin-heading">Please Sign In!</h3>
             <hr class="colorgraph"><br>
 
-            <input class="input-text" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
+            <input class="input-text" id="userIdInput" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
+            <br>Suggested: <p id="suggestedUsr"></p>
             <input class="input-text" type="password" class="form-control" name="pass" placeholder="Password" required=""/>
 
             <button class="btn btn-lg btn-primary btn-block"  name="login" value="Login" type="submit">Login</button>

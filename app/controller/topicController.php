@@ -22,8 +22,9 @@ class TopicController
                 $topic_id = $_GET['topic_id'];
                 $this->newPost($topic_id);
                 break;
-            case 'addPost':
-                $this->addPost();
+            case 'suggest':
+                $partial = $_GET['temp'];
+                $this->suggest($partial);
                 break;
             case 'topic':
                 $this->topic();
@@ -41,6 +42,34 @@ class TopicController
                 }
                 break;
         }
+    }
+
+    public function suggest($partial) {
+      $users = array();
+      $users = Profile::getProfileUsrs();
+      $suggest = "";
+      if ($partial !== "") {
+          $partial = strtolower($partial);
+          $len = strlen($partial);
+          foreach($users as $user) {
+              if (stristr($partial, substr($user, 0, $len))) {
+                  if ($suggest === "") {
+                      $suggest = $user;
+                  } else {
+                      $suggest .= ", $user";
+                  }
+              }
+          }
+          $json = array(
+            'success' => 'success',
+            'suggest' => $suggest,
+          );
+      }
+      else {
+  			$json = array('error' => 'No suggest available.');
+  		}
+      header('Content-Type: application/json'); // let client know it's Ajax
+      echo json_encode($json); // print the JSON
     }
 
     public function newPost($topic_id)
@@ -96,10 +125,10 @@ class TopicController
 			);
 		} else {
 			$json = array('error' => 'Could not save post.');
-		}
+  		}
 
-		header('Content-Type: application/json'); // let client know it's Ajax
-		echo json_encode($json); // print the JSON
+  		header('Content-Type: application/json'); // let client know it's Ajax
+  		echo json_encode($json); // print the JSON
 
     }
 
