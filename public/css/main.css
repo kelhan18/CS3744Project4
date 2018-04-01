@@ -2508,6 +2508,7 @@
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+            color: #fff;
 		}
 
 		.spotlight:nth-child(2n) {
