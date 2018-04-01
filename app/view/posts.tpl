@@ -36,9 +36,9 @@
                 <hr class="colorgraph"><br>
 
                 <!-- Edit topic info -->
-                <label>New Post: <input type="text" id="post" name="post" required="required"></input></label></br>
-                <input type='hidden' id="profile_id" name="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
-                <input type='hidden' id="topic_id" name="topic_id" value="<?= $topic->topic_id ?>"></input>
+                <label>New Post: <input type="text" id="post" required="required"></input></label></br>
+                <input type='hidden' id="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
+                <input type='hidden' id="topic_id" value="<?= $topic->topic_id ?>"></input>
                 <button id="postButton" class="btn btn-lg btn-primary btn-block">New Post</button>
             </form>
             <!-- <button id="postButt">work??</button> -->
