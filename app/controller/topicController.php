@@ -117,6 +117,9 @@ class TopicController
   		if( empty($topic) ) {
   			header('Location: '.BASE_URL); exit();
   		}
+      else {
+        $topic = censor($topic);
+      }
 
   		$mytopic = new Topic();
   		$mytopic->topic        = $topic;
@@ -125,6 +128,33 @@ class TopicController
 
   		$topic_id = $mytopic->save(0);
   		header('Location: '.BASE_URL.'/forum/'); exit();
+    }
+
+    //Censors out words that might be deemed inappropriate/offensive
+    public function censor($input)
+    {
+      $postData = array(
+        "user-id" => "campbel1",
+        "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
+        "content" => $input,
+        "censor-character" => "*"
+      );
+
+      function curl_post_request($url, $data)
+      {
+          $ch = curl_init($url);
+          curl_setopt($ch, CURLOPT_POST, 1);
+          curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+          $content = curl_exec($ch);
+          curl_close($ch);
+          return $content;
+      }
+
+      $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
+      $result = json_decode($json, true);
+
+      return $result["censored-content"];
     }
 
 }
