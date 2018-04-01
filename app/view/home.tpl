@@ -30,7 +30,7 @@
 
     <section id="banner">
         <div class="inner">
-            <h2>Spectral</h2>
+            <h2>The Battle Of Peleliu</h2>
         </div>
     </section>
 
@@ -38,10 +38,14 @@
     <section id="one" class="wrapper style1 special">
         <div class="inner">
             <header class="major">
-                <h2>Arcu aliquet vel lobortis ata nisl<br />
-                    eget augue amet aliquet nisl cep donec</h2>
-                <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-                    fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+                <h2>The Battle of Peleliu, codenamed Operation Stalemate II by the US military,
+                was fought between the U.S. and Japan during WWII, from September to November 1944
+                on the island of Peleliu in the Pacific.</h2>
+                <p>Major General William Rupertus, Commander of the 1st Marine Division, predicted that
+                the island would be secured in 4 days. However, Japan had adapted from previous defeats
+                and developed new island-defense tactics and well-crafted fortifications that allowed
+                stiff resistance, extending the battle for more than 2 months.
+                </p>
             </header>
             <ul class="icons major">
                 <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
