@@ -30,6 +30,7 @@ $(document).ready(function(){
         topic_id: topicid
       },
       function(data){
+        console.log(data);
         if(data.success == 'success') {
           // data was saved successfully on the server
           // build the title and details paragraph
