@@ -35,69 +35,36 @@
               <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Discussion</button>
           </form>
         <?php foreach($topics as $mytopic): ?>
-
-        <div id="featuredProfileBox" >
-
-            <div class="featuredProfileName">
-                <h4>Persons Name</h4>
-            </div>
-
-            <div class="featuredProfileLine"></div>
-
-            <div class="featuredProfileImage">
-                <img src="#">
-
-                <div class="featuredProfileSocialContainer">
-                    <ul>
-
-                        <li class="featuredSocialButton" style="margin-left:13px;">
-                            <a href="#" class="featuredSocialIconButton"><span class="icon-globe"></span>
-                            </a>
-                        </li>
-
-                        <li class="featuredSocialButton">
-                            <a href="#" class="featuredSocialIconButton"><span class="icon-facebook"></span>
-                            </a>
-                        </li>
-
-                        <li class="featuredSocialButton">
-                            <a href="#" class="featuredSocialIconButton"><span class="icon-twitter"></span>
-                            </a>
-                        </li>
-
-                        <li class="featuredSocialButton">
-                            <a href="#" class="featuredSocialIconButton"><span class="icon-gplus"></span>
-                            </a>
-                        </li>
-
-                        <li class="featuredSocialButton">
-                            <a href="#" class="featuredSocialIconButton"><span class="icon-linkedin"></span>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="row panel">
+                <div class="col-md-4 bg_blur ">
+                    <a href="#" class="follow_btn hidden-xs">Follow</a>
+                </div>
+                <div class="col-md-8  col-xs-12">
+                    <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture hidden-xs" />
+                    <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail visible-xs picture_mob" />
+                    <div class="header">
+                        <h1>Lorem Ipsum</h1>
+                        <h4>Web Developer</h4>
+                        <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="featuredProfileBio">
-                <p>Your Bio Text Here</p>
-            </div>
-
-            <div style="clear:both;"></div>
-        </div>
-        <!--
-          <div id="forum-post">
-              <header>
-                <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
-                <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
-              </header>
-              <div class="outer">
-                  <p>Responses</p>
-                <div class="posts inner">
-                    <?= $mytopic->number_posts?>
-                </div>
+            <!--
+              <div id="forum-post">
+                  <header>
+                    <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
+                    <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
+                  </header>
+                  <div class="outer">
+                      <p>Responses</p>
+                    <div class="posts inner">
+                        <?= $mytopic->number_posts?>
+                    </div>
+                  </div>
               </div>
-          </div>
-          -->
+              -->
         <?php endforeach; ?>
         <!-- END Container -->
 
