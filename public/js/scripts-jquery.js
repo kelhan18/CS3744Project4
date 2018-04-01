@@ -20,6 +20,7 @@ $(document).ready(function(){
     var profileid = $('#profile_id').val();
     var topicid = $('#topic_id').val();
 
+    console.log("postButton clicked" + post + profileid + topicid);
     // send form data via Ajax
     $.post(
       window.location.href +'/newpost/',
