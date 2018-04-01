@@ -17,10 +17,9 @@ $(document).ready(function(){
   $('#userIdInput').on('change', function(e) {
     e.preventDefault();
     if ($('#userIdInput').val().length != 0) {
-      $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val() {
-        alert('gotten');
-      },
+      $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val(),
       function(data) {
+        alert('!!!');
         if(data.success == 'success') {
           var suggest = data.suggest;
           console.log(suggest);
@@ -31,7 +30,7 @@ $(document).ready(function(){
           alert('Server error: ' + data.error);
         }
       });
-      }
+    }
   });
 
   $('#postButton').on('click', function(e){
