@@ -26,7 +26,8 @@ $(document).ready(function(){
         }
         else {
           // server data wasn't saved successfully
-          alert('Server error: ' + data.error);
+          console.log('error:' + data.error);
+          // alert('Server error: ' + data.error);
         }
       });
     }
