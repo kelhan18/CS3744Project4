@@ -69,7 +69,7 @@ class TopicController
   		}
 
   		$mypost = new Post();
-  		$mypost->description  = $post;
+  		$mypost->description  = censor($post);
   		$mypost->date_posted  = date("Y-m-d");
       $mypost->number_posts = 0;
       $mypost->topic_id = $topic_id;
