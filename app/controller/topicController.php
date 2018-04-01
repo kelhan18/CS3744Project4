@@ -94,7 +94,6 @@ class TopicController
 
     public function view($topic_id)
     {
-        echo(censor(fuck));
         $pageTitle = 'Topic';
         $posts= Post::getPosts($topic_id);
         $topic = Topic::getTopic($topic_id);
