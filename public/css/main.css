@@ -1871,7 +1871,6 @@
 					}
 
 		#menu .close {
-			background-image: url("images/close.svg");
 			background-position: 4.85em 1em;
 			background-repeat: no-repeat;
 			border: 0;
@@ -1988,7 +1987,6 @@
 						}
 
 							#header nav > ul > li > a.menuToggle:after {
-								background-image: url("images/bars.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -2063,7 +2061,8 @@
 			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 3.5em;
+			font-size: 5em;
+            font-color: #fff;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -2131,7 +2130,6 @@
 		}
 
 			#banner .more:after {
-				background-image: url("images/arrow.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
