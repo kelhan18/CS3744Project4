@@ -16,7 +16,7 @@ $(document).ready(function(){
 
   $('#postButton').click(function(){
     // grab the data from the form
-    var post = $('#post').val();
+    var post = $('#postfield').val();
     var profileid = $('#profile_id').val();
     var topicid = $('#topic_id').val();
 
