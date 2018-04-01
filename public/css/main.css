@@ -2485,9 +2485,6 @@
 /* Spotlight */
 
 	.spotlight {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
 		align-items: center;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2495,19 +2492,25 @@
 		display: flex;
 	}
 
+		.spotlight .image {
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight .image img {
+				border-radius: 0;
+				width: 100%;
+			}
 
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
 			order: 2;
 			max-width: 48em;
 			width: 60%;
 		}
 
 		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
@@ -3353,9 +3356,6 @@
 		}
 
 			#header.alt h1 {
-				-moz-pointer-events: none;
-				-webkit-pointer-events: none;
-				-ms-pointer-events: none;
 				pointer-events: none;
 				opacity: 0;
 			}
@@ -3402,13 +3402,8 @@
 		}
 
 			#banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
-				-ms-transition: width 0.85s ease;
+
 				transition: width 0.85s ease;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				background: #fff;
 				content: '';
@@ -3440,11 +3435,9 @@
 		#banner .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
-			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
 			-moz-transition-delay: 3.5s;
 			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
 			transition-delay: 3.5s;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
@@ -3484,17 +3477,13 @@
 			}
 
 		#banner:after {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
+
 			pointer-events: none;
 			-moz-transition: opacity 3s ease-in-out;
 			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
 			transition: opacity 3s ease-in-out;
 			-moz-transition-delay: 1.25s;
 			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
 			background: #2e3842;
@@ -3564,9 +3553,7 @@
 	}
 
 		#cta .inner header {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
+
 			order: 1;
 			padding-right: 3em;
 			width: 70%;
@@ -3577,9 +3564,6 @@
 			}
 
 		#cta .inner .actions {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
 			order: 2;
 			width: 30%;
 		}
