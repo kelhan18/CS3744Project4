@@ -40,9 +40,12 @@
                 <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
                 <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
               </header>
-                <div class="posts"><?= $mytopic->number_posts?></div>
+              <div class="outer">
+                <div class="posts inner">
+                    <?= $mytopic->number_posts?>
+                </div>
+              </div>
                 <p>Responses</p>
-
           </div>
         <?php endforeach; ?>
         <!-- END Container -->

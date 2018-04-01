@@ -49,8 +49,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+.outer {
+    float: right;
+}
+
+.inner {
+    position: fixed;
+}
+
 #forum-post {
     border: 1px solid black;
+    position: relative;
 }
 
 #forum-post.posts {
