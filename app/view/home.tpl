@@ -41,11 +41,6 @@
                 <h2>The Battle of Peleliu, codenamed Operation Stalemate II by the US military,
                 was fought between the U.S. and Japan during WWII, from September to November 1944
                 on the island of Peleliu in the Pacific.</h2>
-                <p>Major General William Rupertus, Commander of the 1st Marine Division, predicted that
-                the island would be secured in 4 days. However, Japan had adapted from previous defeats
-                and developed new island-defense tactics and well-crafted fortifications that allowed
-                stiff resistance, extending the battle for more than 2 months.
-                </p>
             </header>
             <ul class="icons major">
                 <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
@@ -54,28 +49,40 @@
             </ul>
         </div>
     </section>
-
     <!-- Two -->
     <section id="two" class="wrapper alt style2">
         <section class="spotlight">
             <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-                <h2>Magna primis lobortis<br />
-                    sed ullamcorper</h2>
-                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-            </div>
+                <h2>The Never-ending Battle</h2>
+                <p>Major General William Rupertus, Commander of the 1st Marine Division, predicted that
+                    the island would be secured in 4 days. However, Japan had adapted from previous defeats
+                    and developed new island-defense tactics and well-crafted fortifications that allowed
+                    stiff resistance, extending the battle for more than 2 months.
+                </p>            </div>
         </section>
         <section class="spotlight">
             <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-                <h2>Tortor dolore feugiat<br />
-                    elementum magna</h2>
-                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+                <h2>American Casualties</h2>
+                <ul>
+                    <li>47,561 Americans participated</li>
+                    <li>2,336 killed</li>
+                    <li>8,450 wounded</li>
+                </ul>
             </div>
         </section>
         <section class="spotlight">
             <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-                <h2>Augue eleifend aliquet<br />
-                    sed condimentum</h2>
-                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+                <h2>Japanese Casualties</h2>
+                <ul>
+                    <li>10,900 Japanese participated</li>
+                    <li>10,695 killed</li>
+                    <li>202 captured</li>
+                        <ul>
+                            <li>183 foreign laborers</li>
+                            <li>19 Japanese soldiers</li>
+                        </ul>
+                    <li>17 tanks lost</li>
+                </ul>
             </div>
         </section>
     </section>
