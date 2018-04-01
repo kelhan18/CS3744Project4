@@ -45,7 +45,7 @@ class TopicController
 
     public function newPost($topic_id)
     {
-      $post = $_POST['post']; // required
+      $post = $_POST['description']; // required
       $profile_id = $_POST['profile_id'];
 
       if( empty($post) ) {
@@ -84,8 +84,7 @@ class TopicController
       $mypost->profile_id = $profile_id;
 
   		$post_id = $mypost->save($profile_id, $topic_id);
-  		header('Location: '.BASE_URL.'/topic/view/'.$topic_id); exit();
-
+      
       if($mypost->post_id != 0) {
 			$json = array(
 				'success' => 'success',
