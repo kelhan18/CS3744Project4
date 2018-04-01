@@ -84,11 +84,14 @@ class TopicController
       $mypost->profile_id = $profile_id;
 
   		$post_id = $mypost->save($profile_id, $topic_id);
-
+      $profile = Profile::getProfile($profile_id);
       if($post_id != 0) {
 			$json = array(
 				'success' => 'success',
-				'post_id' => $post_id
+				'post_id' => $post_id,
+        'firstname' => $profile->firstname,
+        'lastname' => $profile->lastname,
+        'date' => $mypost->date_posted
 			);
 		} else {
 			$json = array('error' => 'Could not save post.');

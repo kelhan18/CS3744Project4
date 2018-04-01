@@ -14,7 +14,8 @@ $(document).ready(function(){
     });
   });
 
-  $('#postButton').click(function(){
+  $('#postButton').on('click', function(e){
+    e.preventDefault();
     // grab the data from the form
     var post = $('#postfield').val();
     var profileid = $('#profile_id').val();
@@ -33,10 +34,14 @@ $(document).ready(function(){
         if(data.success == 'success') {
           // data was saved successfully on the server
           // build the title and details paragraph
-          var fullpost = $('<h4>' + post + '</h4>');
+          var firstname = data.firstname;
+          var lastname = data.lastname;
+          var date = data.date;
+
+          var fullpost = $('<div class="container" style="margin-top: 20px; margin-bottom: 20px;"><div class="row panel"><div class="col-md-8  col-xs-12"><div class="header"><h4 style="margin-left:20px;margin-top:8px;color: red;">' + firstname + ' ' + lastname + '</h4><h5 style="margin-left:20px;margin-top:8px;">' + post +'</h5><p  style="margin-left:20px;margin-top:8px;">' + date + '</p></div></div></div>');
 
           // add new content to events list
-          $('#postHolder').prepend(fullpost);
+          $('#postHolder').append(fullpost);
 
         } else {
           // server data wasn't saved successfully
