@@ -52,7 +52,7 @@
     <!-- Two -->
     <section id="two" class="wrapper alt style2">
         <section class="spotlight">
-            <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/battle.jpg" alt="" /></div><div class="content">
                 <h2>The Never-ending Battle</h2>
                 <p>Major General William Rupertus, Commander of the 1st Marine Division, predicted that
                     the island would be secured in 4 days. However, Japan had adapted from previous defeats
@@ -61,7 +61,7 @@
                 </p>            </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/american.jpg" alt="" /></div><div class="content">
                 <h2>American Casualties</h2>
                 <ul>
                     <li>47,561 Americans participated</li>
@@ -71,7 +71,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/japan.jpg" alt="" /></div><div class="content">
                 <h2>Japanese Casualties</h2>
                 <ul>
                     <li>10,900 Japanese participated</li>

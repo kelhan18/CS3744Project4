@@ -3387,7 +3387,7 @@
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
-		background-image: url(../img/Icons/pelileu.jpg);
+		background-image: url("../img/Icons/pelileu.jpg");
 		justify-content: center;
 		cursor: default;
 		height: 100vh;
