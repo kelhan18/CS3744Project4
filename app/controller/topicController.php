@@ -129,7 +129,7 @@ class TopicController
     }
 
     //Censors out words that might be deemed inappropriate/offensive
-    function censor($input)
+    public function censor($input)
     {
       $data = array(
         "user-id" => "campbel1",
