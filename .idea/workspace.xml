@@ -92,8 +92,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="2064" column="29" lean-forward="false" selection-start-line="2064" selection-start-column="29" selection-end-line="2064" selection-end-column="29" />
+            <state relative-caret-position="66">
+              <caret line="1821" column="40" lean-forward="true" selection-start-line="1821" selection-start-column="40" selection-end-line="1821" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -141,6 +141,7 @@
       <find>#fff</find>
       <find>strong</find>
       <find>banner</find>
+      <find>1d242a</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -1014,7 +1015,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20399000" />
+    <option name="totallyTimeSpent" value="20463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="530" y="160" width="1064" height="797" extended-state="0" />
@@ -1478,8 +1479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="2064" column="29" lean-forward="false" selection-start-line="2064" selection-start-column="29" selection-end-line="2064" selection-end-column="29" />
+        <state relative-caret-position="66">
+          <caret line="1821" column="40" lean-forward="true" selection-start-line="1821" selection-start-column="40" selection-end-line="1821" selection-end-column="40" />
           <folding />
         </state>
       </provider>
