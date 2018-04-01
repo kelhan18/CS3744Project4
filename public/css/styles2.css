@@ -1357,4 +1357,86 @@ button:hover, a:hover {
     width: 100%;
     padding-top: 20px;
   }
+
+    #featuredProfileBox {
+        background:#2A729B;
+        box-shadow:1px 1px 1px;
+        border:2px solid #195371;
+        border-radius:8px;
+        padding:10px;
+    }
+
+    #featuredProfileBox .featuredProfileName {
+        background:#3E9CD2;
+        box-shadow:1px 1px 1px #055269;
+        border-radius:4px;
+        padding:0 20px;
+    }
+
+    #featuredProfileBox .featuredProfileName h4 {
+        color:white;
+        text-shadow:1px 1px 1px rgba(1,1,1,0.5);
+        padding-top:6px;
+        padding-bottom:6px;
+    }
+
+    #featuredProfileBox .featuredProfileLine {
+        width:100%;
+        height:10px;
+    }
+
+    #featuredProfileBox .featuredProfileImage {
+        float:left;
+        width:160px;
+    }
+
+    #featuredProfileBox .featuredProfileImage img {
+        width:150px;
+        height:150px;
+        border:1px solid #70CBFF;
+        float:left;
+    }
+
+    #featuredProfileBox .featuredProfileImage .featuredProfileSocialContainer {
+        background:rgba(42,114,155,0.55);
+        margin-top:-29px;
+        color:white;
+        box-shadow:inset 1px 1px 1px #0E5A76;
+        width:148px;
+        float:left;
+        margin-left:1px;
+        margin-right:1px;
+    }
+
+    #featuredProfileBox .featuredProfileImage .featuredProfileSocialContainer ul {
+        display:0;
+        border-top:1px solid rgba(0,0,0,0.35);
+        border-bottom:1px solid rgba(0,0,0,0.65);
+    }
+
+    #featuredProfileBox .featuredProfileImage .featuredProfileSocialContainer .featuredSocialButton {
+        list-style:none;
+    }
+
+    #featuredProfileBox .featuredProfileBio {
+        padding-left:10px;
+        width:auto;
+        color:white;
+        font-style:italic;
+    }
+
+    #featuredProfileBox .featuredProfileImage .featuredProfileSocialContainer .featuredSocialButton .featuredSocialIconButton {
+        color:white;
+        border:1px solid #0F445B;
+        background:#1B4F6D;
+        padding:1px 3px 3px;
+        transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -webkit-transition: .25s ease-in-out;
+    }
+
+    #featuredProfileBox .featuredProfileImage .featuredProfileSocialContainer .featuredSocialButton .featuredSocialIconButton:hover {
+        border: 1px solid #3DACDC !important;
+        background: #4F8FB3 !important;
+    }
 }

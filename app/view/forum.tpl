@@ -35,6 +35,56 @@
               <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Discussion</button>
           </form>
         <?php foreach($topics as $mytopic): ?>
+
+        <div id="featuredProfileBox" >
+
+            <div class="featuredProfileName">
+                <h4>Persons Name</h4>
+            </div>
+
+            <div class="featuredProfileLine"></div>
+
+            <div class="featuredProfileImage">
+                <img src="#">
+
+                <div class="featuredProfileSocialContainer">
+                    <ul>
+
+                        <li class="featuredSocialButton" style="margin-left:13px;">
+                            <a href="#" class="featuredSocialIconButton"><span class="icon-globe"></span>
+                            </a>
+                        </li>
+
+                        <li class="featuredSocialButton">
+                            <a href="#" class="featuredSocialIconButton"><span class="icon-facebook"></span>
+                            </a>
+                        </li>
+
+                        <li class="featuredSocialButton">
+                            <a href="#" class="featuredSocialIconButton"><span class="icon-twitter"></span>
+                            </a>
+                        </li>
+
+                        <li class="featuredSocialButton">
+                            <a href="#" class="featuredSocialIconButton"><span class="icon-gplus"></span>
+                            </a>
+                        </li>
+
+                        <li class="featuredSocialButton">
+                            <a href="#" class="featuredSocialIconButton"><span class="icon-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="featuredProfileBio">
+                <p>Your Bio Text Here</p>
+            </div>
+
+            <div style="clear:both;"></div>
+        </div>
+        <!--
           <div id="forum-post">
               <header>
                 <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
@@ -47,6 +97,7 @@
                 </div>
               </div>
           </div>
+          -->
         <?php endforeach; ?>
         <!-- END Container -->
 
