@@ -162,7 +162,7 @@ ul.nav li a {
 }
 
 ul.nav li a:hover:not(.active) {
-    background-color: #e4a221;
+    background-color: springgreen;
     color: black;
 }
 
