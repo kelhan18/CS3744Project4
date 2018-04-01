@@ -30,7 +30,7 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit topic info -->
-          <label>New topic: <input type="text" name="topic" required="required"></input></label></br>
+          <label>New topic: <input class ="input-text" type="text" name="topic" required="required"></input></label></br>
           <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Create New Profile" type="submit">Create New Topic</button>
 
         </form>
