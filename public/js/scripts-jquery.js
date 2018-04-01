@@ -14,21 +14,38 @@ $(document).ready(function(){
     });
   });
 
-  $('#submitEventButton').click(function(){
-    // build the title
-    var year = $('#eventYear').val();
-    var title = $('#eventTitle').val();
-    var fullTitle = $('<h4>' + year + ' - ' + title + '</h4>');
+  $('#postButton').click(function(){
+    // grab the data from the form
+    var post = $('#post').val();
+    var profileid = $('#profile_id').val();
+    var topicid = $('#topic_id').val();
 
-    // build the details paragraph
-    var details = $('#eventDescription').val();
-    var fullDetails = $('<p class="details">' + details + '</p>');
+    // send form data via Ajax
+    $.post(
+      window.location.href + 'topic/newpost/' + topicid,
+      {
+        description: post,
+        profile_id: profileid,
+        topic_id: topicid
+      },
+      function(data){
+        if(data.success == 'success') {
+          // data was saved successfully on the server
+          // build the title and details paragraph
+          var fullpost = $('<h4>' + post + '</h4>');
 
-    // add new content to events list
-    $('#events').append(fullTitle).append(fullDetails);
+          // add new content to events list
+          $('#postHolder').append(fullpost);
 
-    // now that we've submitted the form, hide it
-    $('#addEventForm').hide();
+        } else {
+          // server data wasn't saved successfully
+          alert('Server error: ' + data.error);
+        }
+      })
+      .fail(function(){
+        // the Ajax call failed
+        alert("Ajax call failed");
+      });
   });
 
     (function(){

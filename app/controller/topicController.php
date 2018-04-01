@@ -64,8 +64,6 @@ class TopicController
       $post = $_POST['post']; // required
       $profile_id = $_POST['profile_id'];
 
-      echo 'newPost funct';
-
   		if( empty($post) ) {
   			header('Location: '.BASE_URL); exit();
   		}
@@ -79,6 +77,19 @@ class TopicController
 
   		$post_id = $mypost->save($profile_id, $topic_id);
   		header('Location: '.BASE_URL.'/topic/view/'.$topic_id); exit();
+
+      if($mypost->post_id != 0) {
+			$json = array(
+				'success' => 'success',
+				'post_id' => $mypost->post_id
+			);
+		} else {
+			$json = array('error' => 'Could not save post.');
+		}
+
+		header('Content-Type: application/json'); // let client know it's Ajax
+		echo json_encode($json); // print the JSON
+
     }
 
     public function view($topic_id)
