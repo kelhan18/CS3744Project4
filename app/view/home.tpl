@@ -27,11 +27,13 @@
 <div id="page-wrapper">
 
     <!-- Banner -->
+    <header id="header" class="alt">
     <section id="banner">
         <div class="inner">
             <h2>Spectral</h2>
         </div>
     </section>
+    </header>
 
     <!-- One -->
     <section id="one" class="wrapper style1 special">
