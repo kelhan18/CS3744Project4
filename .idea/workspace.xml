@@ -54,11 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            <state relative-caret-position="634">
+              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="804" column="37" lean-forward="false" selection-start-line="804" selection-start-column="37" selection-end-line="804" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -130,7 +140,6 @@
         <option value="$PROJECT_DIR$/public/js/scripts-jquery.js" />
         <option value="$PROJECT_DIR$/posttoserverinstructions.txt" />
         <option value="$PROJECT_DIR$/app/view/login.tpl" />
-        <option value="$PROJECT_DIR$/public/css/styles2.css" />
         <option value="$PROJECT_DIR$/app/view/timeline.tpl" />
         <option value="$PROJECT_DIR$/app/controller/siteController.php" />
         <option value="$PROJECT_DIR$/app/view/stories.tpl" />
@@ -138,6 +147,7 @@
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
+        <option value="$PROJECT_DIR$/public/css/styles2.css" />
       </list>
     </option>
   </component>
@@ -149,8 +159,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="531" />
-    <option name="y" value="103" />
+    <option name="x" value="376" />
+    <option name="y" value="53" />
     <option name="width" value="1288" />
     <option name="height" value="923" />
   </component>
@@ -1022,10 +1032,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13268000" />
+    <option name="totallyTimeSpent" value="13388000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="531" y="103" width="1288" height="923" extended-state="0" />
+    <frame x="376" y="53" width="1288" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1351,14 +1361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/timeline.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1465,8 +1467,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="634">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="804" column="37" lean-forward="false" selection-start-line="804" selection-start-column="37" selection-end-line="804" selection-end-column="37" />
           <folding />
         </state>
       </provider>

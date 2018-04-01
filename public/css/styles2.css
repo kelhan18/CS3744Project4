@@ -49,6 +49,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+#forum-post {
+    border: 1px solid black;
+}
+
+#forum-post.posts {
+    float: right;
+}
 #portrait {
     height: 80px;
     width: 80px;
@@ -795,8 +802,7 @@ ul.breadcrumb li a:hover {
 }
 
 .posts{
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: cornflowerblue;
     color: white;
     padding: 15px;
     text-align: center;
@@ -804,7 +810,7 @@ ul.breadcrumb li a:hover {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
-    width: 20px;
+    width: 30px;
 }
 
 .forum_container{
