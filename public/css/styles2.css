@@ -53,9 +53,6 @@
     float: right;
 }
 
-.inner {
-    position: fixed;
-}
 
 #forum-post {
     border: 1px solid black;
@@ -65,6 +62,7 @@
 #forum-post.posts {
     float: right;
 }
+
 #portrait {
     height: 80px;
     width: 80px;

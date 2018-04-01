@@ -42,10 +42,10 @@
               </header>
               <div class="outer">
                 <div class="posts inner">
+                    <p>Responses</p>
                     <?= $mytopic->number_posts?>
                 </div>
               </div>
-                <p>Responses</p>
           </div>
         <?php endforeach; ?>
         <!-- END Container -->
