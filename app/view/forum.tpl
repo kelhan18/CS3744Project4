@@ -35,19 +35,17 @@
               <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Discussion</button>
           </form>
         <?php foreach($topics as $mytopic): ?>
+
         <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
             <div class="row panel">
-                <div class="col-md-4 bg_blur ">
-                    <a href="#" class="follow_btn hidden-xs">Follow</a>
+                <p>Responses</p>
+                <div class="posts">
+                    <?= $mytopic->number_posts?>
                 </div>
                 <div class="col-md-8  col-xs-12">
-                    <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture hidden-xs" />
-                    <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail visible-xs picture_mob" />
                     <div class="header">
-                        <h1>Lorem Ipsum</h1>
-                        <h4>Web Developer</h4>
-                        <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
+                        <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
+                        <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
                     </div>
                 </div>
             </div>
