@@ -67,8 +67,8 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="58" />
               <folding>
                 <marker date="1522592128000" expanded="false" signature="3296:3328" ph="..." />
                 <marker date="1522592128000" expanded="false" signature="5022:5038" ph="..." />
@@ -84,8 +84,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="3456" column="40" lean-forward="true" selection-start-line="3456" selection-start-column="40" selection-end-line="3456" selection-end-column="40" />
+            <state relative-caret-position="429">
+              <caret line="3805" column="111" lean-forward="false" selection-start-line="3805" selection-start-column="111" selection-end-line="3805" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -121,6 +121,7 @@
       <find>forum-pos</find>
       <find>posts</find>
       <find>banner</find>
+      <find>banner.jpg</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -149,6 +150,7 @@
         <option value="$PROJECT_DIR$/app/view/header.tpl" />
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
         <option value="$PROJECT_DIR$/public/css/styles2.css" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
       </list>
     </option>
   </component>
@@ -1033,7 +1035,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16155000" />
+    <option name="totallyTimeSpent" value="16456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="614" y="130" width="1064" height="797" extended-state="0" />
@@ -1452,10 +1454,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="213">
+          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1468,18 +1478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="58" />
           <folding>
             <marker date="1522592128000" expanded="false" signature="3296:3328" ph="..." />
             <marker date="1522592128000" expanded="false" signature="5022:5038" ph="..." />
@@ -1491,18 +1493,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="3456" column="40" lean-forward="true" selection-start-line="3456" selection-start-column="40" selection-end-line="3456" selection-end-column="40" />
+        <state relative-caret-position="429">
+          <caret line="3805" column="111" lean-forward="false" selection-start-line="3805" selection-start-column="111" selection-end-line="3805" selection-end-column="111" />
           <folding />
         </state>
       </provider>
