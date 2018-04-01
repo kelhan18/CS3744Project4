@@ -48,6 +48,7 @@ class TopicController
       $users = array();
       $users = Profile::getProfileUsrs();
       $suggest = "";
+      echo ($suggest);
       if ($partial !== "") {
           $partial = strtolower($partial);
           $len = strlen($partial);
