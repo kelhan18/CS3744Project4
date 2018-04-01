@@ -131,7 +131,7 @@ class TopicController
     //Censors out words that might be deemed inappropriate/offensive
     function censor($input)
     {
-      $postData = array(
+      $data = array(
         "user-id" => "campbel1",
         "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
         "content" => $input,
