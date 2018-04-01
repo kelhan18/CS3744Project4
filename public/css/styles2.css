@@ -811,6 +811,9 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
+.responses {
+    vertical-align: middle;
+}
 .posts{
     background-color: cornflowerblue;
     color: white;
@@ -821,7 +824,7 @@ ul.breadcrumb li a:hover {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
-    height: 60px;
+    height: 50px;
     width: 30px;
     margin-left: 5px;
 }

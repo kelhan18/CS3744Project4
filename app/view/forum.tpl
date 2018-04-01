@@ -38,7 +38,7 @@
 
         <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
             <div class="row panel">
-                <p>Responses</p>
+                <p class="responses">Responses</p>
                 <div class="posts">
                     <?= $mytopic->number_posts?>
                 </div>
