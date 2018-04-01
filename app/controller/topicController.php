@@ -91,7 +91,8 @@ class TopicController
 				'post_id' => $post_id,
         'firstname' => $profile->firstname,
         'lastname' => $profile->lastname,
-        'date' => $mypost->date_posted
+        'date' => $mypost->date_posted,
+        'censored' => $post
 			);
 		} else {
 			$json = array('error' => 'Could not save post.');
