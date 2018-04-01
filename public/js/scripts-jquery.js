@@ -42,9 +42,10 @@ $(document).ready(function(){
           alert('Server error: ' + data.error);
         }
       })
-      .fail(function(){
-        // the Ajax call failed
-        alert("Ajax call failed");
+      .fail(function(function ( jqXHR, textStatus, errorThrown ) {
+          console.log(jqXHR);
+          console.log(textStatus);
+          console.log(errorThrown);
       });
   });
 
