@@ -54,11 +54,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+            <state relative-caret-position="148">
+              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -69,25 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="50" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="1391" column="0" lean-forward="false" selection-start-line="1391" selection-start-column="0" selection-end-line="1391" selection-end-column="0" />
+            <state relative-caret-position="364">
+              <caret line="820" column="20" lean-forward="true" selection-start-line="820" selection-start-column="20" selection-end-line="820" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -121,6 +121,7 @@
       <find>story_</find>
       <find>colorg</find>
       <find>forum-pos</find>
+      <find>posts</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -147,8 +148,8 @@
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
-        <option value="$PROJECT_DIR$/public/css/styles2.css" />
         <option value="$PROJECT_DIR$/app/view/posts.tpl" />
+        <option value="$PROJECT_DIR$/public/css/styles2.css" />
       </list>
     </option>
   </component>
@@ -1033,7 +1034,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14784000" />
+    <option name="totallyTimeSpent" value="14864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="525" y="38" width="1288" height="923" extended-state="0" />
@@ -1442,14 +1443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1391" column="0" lean-forward="false" selection-start-line="1391" selection-start-column="0" selection-end-line="1391" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/newtopic.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1468,8 +1461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="50" selection-end-column="18" />
+        <state relative-caret-position="372">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1480,14 +1473,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+        <state relative-caret-position="148">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <marker date="1522590837000" expanded="false" signature="2180:2223" ph="..." />
             <marker date="1522590837000" expanded="false" signature="2310:2342" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="820" column="20" lean-forward="true" selection-start-line="820" selection-start-column="20" selection-end-line="820" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
