@@ -24,7 +24,7 @@
 </ul>
 
 <div class = "container">
-    <div class="wrapper">
+    <div class="wrapper2">
       <form method="POST" action="<?= BASE_URL ?>/topic/" name="Topic_Form" class="form-signin">
           <h3 class="form-signin-heading">Please Enter Your Topic Below</h3>
           <hr class="colorgraph"><br>
