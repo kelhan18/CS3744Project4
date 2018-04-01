@@ -69,7 +69,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div><img src="<?= BASE_URL ?>/public/img/Icons/japan.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/japan.jpg" alt="" /></div><div class="content">
                 <h2>Japanese Casualties</h2>
                 <ul>
                     <li>10,900 Japanese participated</li>
