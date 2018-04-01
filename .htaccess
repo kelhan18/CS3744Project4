@@ -26,7 +26,6 @@ RewriteRule ^signup/?$ app/controller/siteController.php?action=signupProcess [Q
 
 RewriteRule ^topic/new/?$ app/controller/topicController.php?action=newTopic [QSA,L]
 RewriteRule ^topic/?$ app/controller/topicController.php?action=topic [QSA,L]
-RewriteRule ^topic/view/newpost/?$ app/controller/ajaxpost.php [QSA,L]
 RewriteRule ^topic/view/(\d+)/?$ app/controller/topicController.php?action=view&topic_id=$1 [QSA,L]
 RewriteRule ^topic/newpost/(\d+)/?$ app/controller/topicController.php?action=newPost&topic_id=$1 [QSA,L]
 
