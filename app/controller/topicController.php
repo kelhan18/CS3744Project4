@@ -139,7 +139,7 @@ class TopicController
       $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
       $result = json_decode($json, true);
 
-      echo $result["censored-content"];
+      $topic = $result["censored-content"];
 
   		$mytopic = new Topic();
   		$mytopic->topic        = $topic;
@@ -147,7 +147,7 @@ class TopicController
       $mytopic->number_posts = 0;
 
   		$topic_id = $mytopic->save(0);
-  		// header('Location: '.BASE_URL.'/forum/'); exit();
+  		header('Location: '.BASE_URL.'/forum/'); exit();
     }
 
     // //Censors out words that might be deemed inappropriate/offensive
