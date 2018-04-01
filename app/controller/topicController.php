@@ -131,17 +131,6 @@ class TopicController
     //Censors out words that might be deemed inappropriate/offensive
     function censor($input)
     {
-      function curl_post_request($url, $data)
-      {
-          $ch = curl_init($url);
-          curl_setopt($ch, CURLOPT_POST, 1);
-          curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-          curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-          $content = curl_exec($ch);
-          curl_close($ch);
-          return $content;
-      }
-
       $postData = array(
         "user-id" => "campbel1",
         "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
@@ -149,7 +138,13 @@ class TopicController
         "censor-character" => "*"
       );
 
-      $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
+      $ch = curl_init("https://neutrinoapi.com/bad-word-filter");
+      curl_setopt($ch, CURLOPT_POST, 1);
+      curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      $result = curl_exec($ch);
+      curl_close($ch);
+
       $result = json_decode($json, true);
 
       $final = $result["censored-content"];
