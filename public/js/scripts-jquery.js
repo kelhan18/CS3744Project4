@@ -19,7 +19,6 @@ $(document).ready(function(){
     if ($('#userIdInput').val().length != 0) {
       $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val(),
       function(data) {
-        alert('!!!');
         if(data.success == 'success') {
           var suggest = data.suggest;
           console.log(suggest);
