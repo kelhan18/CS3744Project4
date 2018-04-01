@@ -36,7 +36,7 @@
           </form>
         <?php foreach($topics as $mytopic): ?>
 
-        <div class="container">
+        <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
             <div class="row panel">
                 <p>Responses</p>
                 <div class="posts">
