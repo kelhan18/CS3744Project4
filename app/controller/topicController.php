@@ -117,9 +117,6 @@ class TopicController
   		if( empty($topic) ) {
   			header('Location: '.BASE_URL); exit();
   		}
-      else {
-        $topic = censor($topic);
-      }
 
   		$mytopic = new Topic();
   		$mytopic->topic        = $topic;
