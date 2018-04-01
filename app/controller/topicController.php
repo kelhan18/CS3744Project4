@@ -104,29 +104,7 @@ class TopicController
 
     public function newTopic()
     {
-        function curl_post_request($url, $data)
-        {
-            $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            $content = curl_exec($ch);
-            curl_close($ch);
-            return $content;
-        }
-
-        $postData = array(
-          "user-id" => "campbel1",
-          "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
-          "content" => 'shit',
-          "censor-character" => "*"
-        );
-
-        $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
-        $result = json_decode($json, true);
-
-        echo $result["censored-content"];
-
+        echo(censor('shit'));
         $pageTitle = 'New Topic';
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/newtopic.tpl';
