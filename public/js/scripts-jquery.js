@@ -21,7 +21,7 @@ $(document).ready(function(){
         alert('gotten');
       },
       function(data) {
-        if(data.success == 'success') {,
+        if(data.success == 'success') {
           var suggest = data.suggest;
           console.log(suggest);
           $('#suggestedUsr').text(suggest);
