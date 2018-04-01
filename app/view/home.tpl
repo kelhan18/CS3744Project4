@@ -42,26 +42,24 @@
                 was fought between the U.S. and Japan during WWII, from September to November 1944
                 on the island of Peleliu in the Pacific.</h2>
             </header>
-            <ul class="icons major">
-                <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-                <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-                <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-            </ul>
         </div>
     </section>
     <!-- Two -->
     <section id="two" class="wrapper alt style2">
         <section class="spotlight">
-            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/battle.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/battle.jpg" alt="" /></div>
+            <div class="content">
                 <h2>The Never-ending Battle</h2>
                 <p>Major General William Rupertus, Commander of the 1st Marine Division, predicted that
                     the island would be secured in 4 days. However, Japan had adapted from previous defeats
                     and developed new island-defense tactics and well-crafted fortifications that allowed
                     stiff resistance, extending the battle for more than 2 months.
-                </p>            </div>
+                </p>
+            </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/american.jpg" alt="" /></div><div class="content">
+            <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/american.jpg" alt="" /></div>
+            <div class="content">
                 <h2>American Casualties</h2>
                 <ul>
                     <li>47,561 Americans participated</li>

@@ -2495,19 +2495,6 @@
 		display: flex;
 	}
 
-		.spotlight .image {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			border-radius: 0;
-			width: 40%;
-		}
-
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
 
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
