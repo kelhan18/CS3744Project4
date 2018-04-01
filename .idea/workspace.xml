@@ -67,7 +67,7 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="795">
               <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
               <folding>
                 <marker date="1522594628000" expanded="false" signature="3420:3452" ph="..." />
@@ -84,8 +84,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="3761" column="26" lean-forward="true" selection-start-line="3761" selection-start-column="26" selection-end-line="3761" selection-end-column="26" />
+            <state relative-caret-position="213">
+              <caret line="3376" column="0" lean-forward="false" selection-start-line="3376" selection-start-column="0" selection-end-line="3376" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,10 +122,10 @@
       <find>posts</find>
       <find>banner.jpg</find>
       <find>major</find>
-      <find>banner</find>
       <find>icon</find>
       <find>spotlight</find>
       <find>moz</find>
+      <find>banner</find>
       <find>peli</find>
     </findStrings>
   </component>
@@ -1018,7 +1018,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18753000" />
+    <option name="totallyTimeSpent" value="18954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="597" y="76" width="1064" height="797" extended-state="0" />
@@ -1465,7 +1465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="795">
           <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
           <folding>
             <marker date="1522594628000" expanded="false" signature="3420:3452" ph="..." />
@@ -1480,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="3761" column="26" lean-forward="true" selection-start-line="3761" selection-start-column="26" selection-end-line="3761" selection-end-column="26" />
+        <state relative-caret-position="213">
+          <caret line="3376" column="0" lean-forward="false" selection-start-line="3376" selection-start-column="0" selection-end-line="3376" selection-end-column="0" />
           <folding />
         </state>
       </provider>
