@@ -42,7 +42,7 @@ $(document).ready(function(){
           alert('Server error: ' + data.error);
         }
       })
-      .fail(function(function ( jqXHR, textStatus, errorThrown ) {
+      .fail(function ( jqXHR, textStatus, errorThrown ) {
           console.log(jqXHR);
           console.log(textStatus);
           console.log(errorThrown);
