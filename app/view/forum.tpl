@@ -20,6 +20,7 @@
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/login">Login</a>
     </li>
+
     <?php endif; ?>
 </ul>
 
@@ -34,13 +35,13 @@
               <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Discussion</button>
           </form>
         <?php foreach($topics as $mytopic): ?>
-          <div class="profile-card">
+          <div>
               <header>
                 <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
                 <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
               </header>
 
-              <div class="profile-bio">
+              <div>
                 <div class="posts"><?= $mytopic->number_posts?></div>
                 <p>Responses</p>
               </div>
