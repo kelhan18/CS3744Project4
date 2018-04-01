@@ -88,7 +88,7 @@ class TopicController
       if($post_id != 0) {
 			$json = array(
 				'success' => 'success',
-				'post_id' => $mypost->post_id
+				'post_id' => $post_id
 			);
 		} else {
 			$json = array('error' => 'Could not save post.');

@@ -30,14 +30,13 @@ $(document).ready(function(){
         topic_id: topicid
       },
       function(data){
-        console.log(data);
         if(data.success == 'success') {
           // data was saved successfully on the server
           // build the title and details paragraph
           var fullpost = $('<h4>' + post + '</h4>');
 
           // add new content to events list
-          $('#postHolder').append(fullpost);
+          $('#postHolder').prepend(fullpost);
 
         } else {
           // server data wasn't saved successfully
