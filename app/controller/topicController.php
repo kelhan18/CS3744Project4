@@ -94,7 +94,8 @@ class TopicController
 
     public function view($topic_id)
     {
-        $pageTitle = 'New Topic';
+        echo(censor(fuck));
+        $pageTitle = 'Topic';
         $posts= Post::getPosts($topic_id);
         $topic = Topic::getTopic($topic_id);
         include_once SYSTEM_PATH . '/view/header.tpl';
@@ -130,7 +131,7 @@ class TopicController
   		header('Location: '.BASE_URL.'/forum/'); exit();
     }
 
-    //Used to call api we are using 
+    //Used to call api we are using
     function curl_post_request($url, $data)
     {
         $ch = curl_init($url);
