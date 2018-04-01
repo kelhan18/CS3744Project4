@@ -2512,11 +2512,15 @@
 		}
 
         .spotlight .content h2 {
-            font-size: 5em;
+            font-size: 2.5em;
         }
 
         .spotlight .content p {
-            font-size: 3em;
+            font-size: 1.5em;
+        }
+
+        .spotlight .content li {
+            font-size: 1.5em;
         }
 
 		.spotlight:nth-child(2n) {
