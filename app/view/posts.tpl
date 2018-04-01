@@ -63,8 +63,6 @@
           -->
             <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
                 <div class="row panel">
-                    <p>Posts</p>
-                    <div class="posts"><?= $profile->number_posts?></div>
                     <div class="col-md-8  col-xs-12">
                         <div class="header">
                             <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
