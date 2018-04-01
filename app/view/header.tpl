@@ -20,8 +20,8 @@ else
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/styles2.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/bootstrap.css">
+        <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/main.js"></script>
-    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/myjquery.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/scripts.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/scripts-jquery.js"></script>
