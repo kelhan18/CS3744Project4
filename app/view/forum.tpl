@@ -41,8 +41,8 @@
                 <p  style="margin-left:20px;margin-top:8px;"><?= $mytopic->date_posted?></p>
               </header>
               <div class="outer">
+                  <p>Responses</p>
                 <div class="posts inner">
-                    <p>Responses</p>
                     <?= $mytopic->number_posts?>
                 </div>
               </div>

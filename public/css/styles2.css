@@ -53,6 +53,10 @@
     float: right;
 }
 
+.inner {
+    position: absolute;
+    right: 0;
+}
 
 #forum-post {
     border: 1px solid black;
