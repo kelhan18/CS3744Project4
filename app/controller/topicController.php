@@ -118,6 +118,26 @@ class TopicController
   		if( empty($topic) ) {
   			header('Location: '.BASE_URL); exit();
   		}
+      //Censors out bad words using neutrino api
+      else {
+        $data = array(
+          "user-id" => "campbel1",
+          "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
+          "content" => $topic,
+          "censor-character" => "*"
+        );
+
+        $ch = curl_init("https://neutrinoapi.com/bad-word-filter");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        $result = json_decode($json, true);
+
+        $topic = $result["censored-content"];
+      }
 
   		$mytopic = new Topic();
   		$mytopic->topic        = $topic;
@@ -128,27 +148,27 @@ class TopicController
   		header('Location: '.BASE_URL.'/forum/'); exit();
     }
 
-    //Censors out words that might be deemed inappropriate/offensive
-    public function censor($input)
-    {
-      $data = array(
-        "user-id" => "campbel1",
-        "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
-        "content" => $input,
-        "censor-character" => "*"
-      );
-
-      $ch = curl_init("https://neutrinoapi.com/bad-word-filter");
-      curl_setopt($ch, CURLOPT_POST, 1);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      $result = curl_exec($ch);
-      curl_close($ch);
-
-      $result = json_decode($json, true);
-
-      $final = $result["censored-content"];
-      return $final;
-    }
+    // //Censors out words that might be deemed inappropriate/offensive
+    // public function censor($input)
+    // {
+    //   $data = array(
+    //     "user-id" => "campbel1",
+    //     "api-key" => "DXthaen9oPaCDI7yWykvYfzicRSFsEQY7OfBctf8Ugvwmul0",
+    //     "content" => $input,
+    //     "censor-character" => "*"
+    //   );
+    //
+    //   $ch = curl_init("https://neutrinoapi.com/bad-word-filter");
+    //   curl_setopt($ch, CURLOPT_POST, 1);
+    //   curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    //   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    //   $result = curl_exec($ch);
+    //   curl_close($ch);
+    //
+    //   $result = json_decode($json, true);
+    //
+    //   $final = $result["censored-content"];
+    //   return $final;
+    // }
 
 }
