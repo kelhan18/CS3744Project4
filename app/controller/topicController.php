@@ -84,8 +84,8 @@ class TopicController
       $mypost->profile_id = $profile_id;
 
   		$post_id = $mypost->save($profile_id, $topic_id);
-      
-      if($mypost->post_id != 0) {
+
+      if($post_id != 0) {
 			$json = array(
 				'success' => 'success',
 				'post_id' => $mypost->post_id
