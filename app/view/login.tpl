@@ -32,10 +32,10 @@
 
             <input class="input-text" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
             <input class="input-text" type="password" class="form-control" name="pass" placeholder="Password" required=""/>
-            <!-- <button class="btn btn-sml btn-primary btn-block" id="findAccount">Find Account</button>
+            <button class="btn btn-sml btn-primary btn-block" id="findAccount">Find Account</button>
             <ul id="User List">
 
-            </ul> -->
+            </ul>
 
             <button class="btn btn-lg btn-primary btn-block"  name="login" value="Login" type="submit">Login</button>
             <button class="btn btn-lg btn-primary btn-block"  name="signup" value="Signup" type="submit">Sign Up</button>
