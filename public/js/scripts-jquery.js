@@ -27,7 +27,7 @@ $(document).ready(function(){
         else {
           // server data wasn't saved successfully
           // console.log('error:' + data.error);
-          console.log('error:' + data.suggest);
+          console.log('suggest:' + data.suggest);
           // alert('Server error: ' + data.error);
         }
       });
