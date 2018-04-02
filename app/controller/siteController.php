@@ -59,7 +59,6 @@ class SiteController
       $users = array();
       $users = Profile::getProfileUsrs();
       $suggest = "";
-      echo ($suggest);
       if ($partial !== "") {
           $partial = strtolower($partial);
           $len = strlen($partial);
@@ -72,11 +71,14 @@ class SiteController
                   }
               }
           }
+          $json = array(
+            'success' => 'success',
+            'suggest' => $suggest
+          );
       }
-      $json = array(
-        'success' => 'success',
-        'suggest' => $suggest
-      );
+      else {
+  			$json = array('error' => 'Could not suggest username.');
+  		}
       header('Content-Type: application/json'); // let client know it's Ajax
       echo json_encode($json); // print the JSON
     }

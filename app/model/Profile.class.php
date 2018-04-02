@@ -72,7 +72,7 @@ class Profile {
     $users = array();
     if($result->num_rows != 0) {
       while($row = $result->fetch_assoc()) {
-        $users[] = self::getProfile($row['profile_id']);
+        $users[] = self::getProfile($row['username']);
       }
     }
     return $users;

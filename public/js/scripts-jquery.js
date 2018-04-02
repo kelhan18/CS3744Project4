@@ -21,14 +21,12 @@ $(document).ready(function(){
       function(data) {
         if(data.success == 'success') {
           var suggest = data.suggest;
-          console.log(suggest);
+          console.log('suggest: ' + suggest);
           $('#suggestedUsr').text(suggest);
         }
         else {
           // server data wasn't saved successfully
-          // console.log('error:' + data.error);
-          console.log('suggest:' + data.suggest);
-          // alert('Server error: ' + data.error);
+          console.log('error:' + data.error);
         }
       });
     }
