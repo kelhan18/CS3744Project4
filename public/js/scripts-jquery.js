@@ -16,7 +16,7 @@ $(document).ready(function(){
 
   $('#findAccount').on('click', function(e) {
     e.preventDefault();
-    $.get(window.location.href + '/suggestUser/',
+    $.get(window.location.href + '/findAccount/',
     function(data) {
       if(data.success == 'success') {
         var usernames = data.usernames;

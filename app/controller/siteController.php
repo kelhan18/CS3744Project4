@@ -27,9 +27,8 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
-            case 'suggest':
-                $partial = $_GET['temp'];
-                $this->suggest($partial);
+            case 'findAccount':
+                $this->findAccount();
                 break;
             case 'login':
                 $this->login();
@@ -55,25 +54,17 @@ class SiteController
         }
     }
 
-    public function suggest($partial) {
+    public function findAccount() {
       $profiles = array();
       $profiles = Profile::getProfileUsrs();
-      $suggest = "";
-      if ($partial !== "") {
-          $partial = strtolower($partial);
-          $len = strlen($partial);
-          $usernames = array();
-          foreach($profiles as $profile) {
-            $usernames = $profile->username;
-          }
-          $json = array(
-            'success' => 'success',
-            'suggest' => $usernames
-          );
+      $usernames = array();
+      foreach($profiles as $profile) {
+        $usernames = $profile->username;
       }
-      else {
-  			$json = array('error' => 'Could not suggest username.');
-  		}
+      $json = array(
+        'success' => 'success',
+        'suggest' => $usernames
+      );
       header('Content-Type: application/json'); // let client know it's Ajax
       echo json_encode($json); // print the JSON
     }
