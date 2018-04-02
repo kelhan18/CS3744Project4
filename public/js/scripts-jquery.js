@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
 
   $('#userIdInput').on('change', function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     if ($('#userIdInput').val().length != 0) {
       $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val(),
       function(data) {
