@@ -51,7 +51,7 @@ class Profile {
   // return all Family Members in an array
   public static function getProfiles() {
     $db = Db::instance();
-    $q = "SELECT profile_id FROM `".self::DB_TABLE."`";
+    $q = "SELECT * FROM `".self::DB_TABLE."`";
     $result = $db->query($q);
 
     $profiles = array();
