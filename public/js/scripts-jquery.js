@@ -18,15 +18,9 @@ $(document).ready(function(){
     e.preventDefault();
     $.get(window.location.href + '/findAccount/',
     function(data) {
-      if(data.success == 'success') {
-        var usernames = data.usernames;
-        for (var i = 0; i < usernames.length; i++) {
-          console.log(usernames[i]);
-        }
-      }
-      else {
-        // server data wasn't saved successfully
-        console.log('error:' + data.error);
+      var usernames = data.usernames;
+      for (var i = 0; i < usernames.length; i++) {
+        console.log(usernames[i]);
       }
     });
   });
