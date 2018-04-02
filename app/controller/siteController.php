@@ -27,6 +27,10 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
+            case 'suggest':
+                $partial = $_GET['temp'];
+                $this->suggest($partial);
+                break;
             case 'login':
                 $this->login();
                 break;
@@ -50,6 +54,33 @@ class SiteController
                 break;
         }
     }
+
+    public function suggest($partial) {
+      $users = array();
+      $users = Profile::getProfileUsrs();
+      $suggest = "";
+      echo ($suggest);
+      if ($partial !== "") {
+          $partial = strtolower($partial);
+          $len = strlen($partial);
+          foreach($users as $user) {
+              if (stristr($partial, substr($user, 0, $len))) {
+                  if ($suggest === "") {
+                      $suggest = $user;
+                  } else {
+                      $suggest .= ", $user";
+                  }
+              }
+          }
+      }
+      $json = array(
+        'success' => 'success',
+        'suggest' => $suggest
+      );
+      header('Content-Type: application/json'); // let client know it's Ajax
+      echo json_encode($json); // print the JSON
+    }
+
 //Runs the login process to gain access to the website
     public function loginProcess($un, $pw)
     {
