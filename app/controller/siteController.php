@@ -56,13 +56,11 @@ class SiteController
 
     public function findAccount() {
       $profiles = array();
-      $profiles = Profile::getProfileUsrs();
-      echo "<script>console.log('" . json_encode($profiles) . "');</script>";
+      $profiles = Profile::getProfiles();
       $usernames = array();
       foreach($profiles as $profile) {
         $usernames = $profile->username;
       }
-      echo "<script>console.log('" . json_encode($usernames) . "');</script>";
       header('Content-Type: application/json'); // let client know it's Ajax
       echo json_encode($usernames); // print the JSON
     }
