@@ -27,10 +27,10 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
-            // case 'suggest':
-            //     $partial = $_GET['temp'];
-            //     $this->suggest($partial);
-            //     break;
+            case 'suggest':
+                $partial = $_GET['temp'];
+                $this->suggest($partial);
+                break;
             case 'login':
                 $this->login();
                 break;
