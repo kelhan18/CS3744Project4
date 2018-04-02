@@ -56,26 +56,26 @@ class SiteController
     }
 
     public function suggest($partial) {
-      // $profiles = array();
-      // $profiles = Profile::getProfileUsrs();
-      // $suggest = "";
-      // if ($partial !== "") {
-      //     $partial = strtolower($partial);
-      //     $len = strlen($partial);
-      //     $usernames = array();
-      //     foreach($profiles as $profile) {
-      //       $usernames = $profile->username;
-      //     }
-      //     $json = array(
-      //       'success' => 'success',
-      //       'suggest' => $usernames
-      //     );
-      // }
-      // else {
-  		// 	$json = array('error' => 'Could not suggest username.');
-  		// }
-      // header('Content-Type: application/json'); // let client know it's Ajax
-      // echo json_encode($json); // print the JSON
+      $profiles = array();
+      $profiles = Profile::getProfileUsrs();
+      $suggest = "";
+      if ($partial !== "") {
+          $partial = strtolower($partial);
+          $len = strlen($partial);
+          $usernames = array();
+          foreach($profiles as $profile) {
+            $usernames = $profile->username;
+          }
+          $json = array(
+            'success' => 'success',
+            'suggest' => $usernames
+          );
+      }
+      else {
+  			$json = array('error' => 'Could not suggest username.');
+  		}
+      header('Content-Type: application/json'); // let client know it's Ajax
+      echo json_encode($json); // print the JSON
     }
 
 //Runs the login process to gain access to the website
