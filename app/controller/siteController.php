@@ -56,7 +56,7 @@ class SiteController
 
     public function findAccount() {
       $profiles = array();
-      $profiles = Profile::getProfileUsrs();
+      $profiles = Profile::getProfiles();
       $usernames = array();
       foreach($profiles as $profile) {
         $usernames = $profile->username;
