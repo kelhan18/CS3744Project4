@@ -32,7 +32,7 @@
 
             <input class="input-text" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
             <input class="input-text" type="password" class="form-control" name="pass" placeholder="Password" required=""/>
-            <ul id="User List">
+            <ul id="UserList">
 
             </ul>
 

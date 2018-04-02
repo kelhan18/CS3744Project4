@@ -22,6 +22,8 @@ $(document).ready(function(){
       var usernames = data.usernames;
       for (var i = 0; i < usernames.length; i++) {
         console.log(usernames[i]);
+        var fullusername = $('<li>' + usernames[i] + '</li>');
+        $('#UserList').append(fullusername);
       }
     });
   });
