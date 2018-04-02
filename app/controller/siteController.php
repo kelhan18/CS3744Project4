@@ -28,7 +28,8 @@ class SiteController
                 $this->forum();
                 break;
             case 'suggest':
-                $this->suggest();
+                $partial = $_GET['temp'];
+                $this->suggest($partial);
                 break;
             case 'login':
                 $this->login();
@@ -54,17 +55,21 @@ class SiteController
         }
     }
 
-    public function suggest() {
-      $profiles = array();
-      $profiles = Profile::getProfiles();
-          $usernames = array();
-          foreach($profiles as $profile) {
-            $usernames = $profile->username;
-          }
-          $json = array(
-            'success' => 'success',
-            'usernames' => $usernames
-          );
+    public function suggest($partial) {
+      // $profiles = array();
+      // $profiles = Profile::getProfileUsrs();
+      // $suggest = "";
+      // if ($partial !== "") {
+      //     $partial = strtolower($partial);
+      //     $len = strlen($partial);
+      //     $usernames = array();
+      //     foreach($profiles as $profile) {
+      //       $usernames = $profile->username;
+      //     }
+      //     $json = array(
+      //       'success' => 'success',
+      //       'suggest' => $usernames
+      //     );
       }
       else {
   			$json = array('error' => 'Could not suggest username.');
