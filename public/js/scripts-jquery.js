@@ -20,7 +20,7 @@ $(document).ready(function(){
     function(data) {
       if(data.success == 'success') {
         var usernames = data.usernames;
-        for (var i = 0, i < usernames.length; i++) {
+        for (var i = 0; i < usernames.length; i++) {
           console.log(usernames[i]);
         }
       }
