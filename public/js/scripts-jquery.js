@@ -14,22 +14,22 @@ $(document).ready(function(){
     });
   });
 
-  $('#userIdInput').on('change', function(e) {
+  $('#findAccount').on('click', function(e) {
     // e.preventDefault();
-    if ($('#userIdInput').val().length != 0) {
-      $.get(window.location.href + '/suggestUser/' +  $('#userIdInput').val(),
-      function(data) {
-        if(data.success == 'success') {
-          var suggest = data.suggest;
-          console.log('suggest: ' + suggest);
-          $('#suggestedUsr').text(suggest);
+    $.get(window.location.href + '/suggestUser/',
+    function(data) {
+      if(data.success == 'success') {
+        var usernames = data.usernames;
+        console.log('username 1: ' + usernames[0]);
+        for (var i = 0, i < usernames.length; i++) {
+          console.log(usernames[i]);
         }
-        else {
-          // server data wasn't saved successfully
-          console.log('error:' + data.error);
-        }
-      });
-    }
+      }
+      else {
+        // server data wasn't saved successfully
+        console.log('error:' + data.error);
+      }
+    });
   });
 
   $('#postButton').on('click', function(e){

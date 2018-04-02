@@ -63,21 +63,6 @@ class Profile {
     return $profiles;
   }
 
-  // return all profile usernames in an array
-  public static function getProfileUsrs() {
-    $db = Db::instance();
-    $q = "SELECT username FROM `".self::DB_TABLE."`";
-    $result = $db->query($q);
-
-    $users = array();
-    if($result->num_rows != 0) {
-      while($row = $result->fetch_assoc()) {
-        $users[] = self::getProfile($row['username']);
-      }
-    }
-    return $users;
-  }
-
   //Saves the new family member and adds them to the database
   public function save($profile_id){
     if($profile_id == 0) {
