@@ -30,7 +30,7 @@
             <h3 class="form-signin-heading">Please Sign In!</h3>
             <hr class="colorgraph"><br>
 
-            <input class="input-text" id="userIdInput" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
+            <input class="input-text" type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
             <input class="input-text" type="password" class="form-control" name="pass" placeholder="Password" required=""/>
             <!-- <button class="btn btn-sml btn-primary btn-block" id="findAccount">Find Account</button>
             <ul id="User List">

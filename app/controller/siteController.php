@@ -27,10 +27,10 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
-            case 'suggest':
-                $partial = $_GET['temp'];
-                $this->suggest($partial);
-                break;
+            // case 'suggest':
+            //     $partial = $_GET['temp'];
+            //     $this->suggest($partial);
+            //     break;
             case 'login':
                 $this->login();
                 break;
@@ -70,12 +70,12 @@ class SiteController
       //       'success' => 'success',
       //       'suggest' => $usernames
       //     );
-      }
-      else {
-  			$json = array('error' => 'Could not suggest username.');
-  		}
-      header('Content-Type: application/json'); // let client know it's Ajax
-      echo json_encode($json); // print the JSON
+      // }
+      // else {
+  		// 	$json = array('error' => 'Could not suggest username.');
+  		// }
+      // header('Content-Type: application/json'); // let client know it's Ajax
+      // echo json_encode($json); // print the JSON
     }
 
 //Runs the login process to gain access to the website
