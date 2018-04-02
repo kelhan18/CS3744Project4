@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 31, 2018 at 03:17 AM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Host: localhost
+-- Generation Time: Apr 02, 2018 at 02:05 AM
+-- Server version: 5.6.39
+-- PHP Version: 7.0.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,11 +41,12 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `description`, `date_posted`, `topic_id`, `profile_id`) VALUES
-(3, 'NUKES ARE COOLLL', '2018-03-30', 10, 3),
-(22, 'you dont', '2018-03-31', 12, 4),
-(23, 'why not', '2018-03-31', 12, 4),
-(24, 'hnj', '2018-03-31', 12, 4),
-(25, 'ihnjmk', '2018-03-31', 13, 4);
+(49, 'The countries involved were the Unites states and Japan!', '2018-04-02', 32, 8),
+(50, 'Nuclear bombs!!', '2018-04-02', 33, 8),
+(51, 'The battle was very gruesome and lasted a while.', '2018-04-02', 32, 5),
+(52, 'The us and japanese lost many soldiers.', '2018-04-02', 34, 5),
+(53, 'They turn everything to **** ', '2018-04-02', 33, 5),
+(54, 'Ooops, I apologize.', '2018-04-02', 33, 5);
 
 -- --------------------------------------------------------
 
@@ -68,9 +69,11 @@ CREATE TABLE `profiles` (
 --
 
 INSERT INTO `profiles` (`profile_id`, `firstname`, `lastname`, `username`, `password`, `photo`, `number_posts`) VALUES
-(1, 'Anthony', 'Medovar', 'my', 'test', NULL, 1),
-(3, 'czxc', 'cxzzxc', 'zxczxc', 'zxczxcz', 'xczxc', 1),
-(4, 'Anthony', 'Medovar', 'tony', 'test', NULL, 7);
+(5, 'Keller', 'Han', 'kelhan18', 'gui', NULL, 5),
+(6, 'Campbell', 'johnson', 'campbel1', 'gui', NULL, 0),
+(7, 'Staci', 'Williams', 'staciw93', 'gui', NULL, 15),
+(8, 'Anthony', 'Medovar', 'tonym301', 'gui', NULL, 9),
+(12, 'Professor', 'cs3744', 'prof', 'gui', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -80,7 +83,7 @@ INSERT INTO `profiles` (`profile_id`, `firstname`, `lastname`, `username`, `pass
 
 CREATE TABLE `topic` (
   `topic_id` int(10) NOT NULL,
-  `topic` varchar(40) NOT NULL,
+  `topic` varchar(400) NOT NULL,
   `date_posted` date DEFAULT NULL,
   `number_posts` int(10) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -90,8 +93,9 @@ CREATE TABLE `topic` (
 --
 
 INSERT INTO `topic` (`topic_id`, `topic`, `date_posted`, `number_posts`) VALUES
-(12, 'How to raise cattle?', '2018-03-31', 3),
-(13, 'jblinjkm', '2018-03-31', 1);
+(32, 'What was the battle like and who were the countries that were involved?', '2018-04-02', 2),
+(33, 'What kind of technology has developed since then?', '2005-05-10', 3),
+(34, 'What were some of the experiences from the battle? (From both sides)', '2018-03-30', 1);
 
 --
 -- Indexes for dumped tables
@@ -123,19 +127,19 @@ ALTER TABLE `topic`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `post_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `profiles`
 --
 ALTER TABLE `profiles`
-  MODIFY `profile_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `profile_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `topic`
 --
 ALTER TABLE `topic`
-  MODIFY `topic_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `topic_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
