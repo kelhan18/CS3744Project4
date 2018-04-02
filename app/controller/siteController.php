@@ -55,6 +55,7 @@ class SiteController
     }
 
     public function findAccount() {
+        echo "<script>console.log('" findAccount called "');</script>";
       $profiles = array();
       $profiles = Profile::getProfileUsrs();
       echo "<script>console.log('" . json_encode($profiles) . "');</script>";
