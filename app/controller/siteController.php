@@ -62,18 +62,19 @@ class SiteController
       if ($partial !== "") {
           $partial = strtolower($partial);
           $len = strlen($partial);
-          foreach($users as $user) {
-              if (stristr($partial, substr($user, 0, $len))) {
-                  if ($suggest === "") {
-                      $suggest = $user;
-                  } else {
-                      $suggest .= ", $user";
-                  }
-              }
-          }
+          // foreach($users as $user) {
+          //     if (stristr($partial, substr($user, 0, $len))) {
+          //         if ($suggest === "") {
+          //             $suggest = $user;
+          //         } else {
+          //             $suggest .= ", $user";
+          //         }
+          //     }
+          // }
           $json = array(
             'success' => 'success',
-            'suggest' => $suggest
+            // 'suggest' => $suggest
+            'suggest' => $users[0];
           );
       }
       else {
