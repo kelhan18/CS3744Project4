@@ -61,14 +61,11 @@ class TopicController
                   }
               }
           }
-          $json = array(
-            'success' => 'success',
-            'suggest' => $suggest,
-          );
       }
-      else {
-  			$json = array('error' => 'No suggest available.');
-  		}
+      $json = array(
+        'success' => 'success',
+        'suggest' => $suggest,
+      );
       header('Content-Type: application/json'); // let client know it's Ajax
       echo json_encode($json); // print the JSON
     }
