@@ -15,6 +15,7 @@ $(document).ready(function(){
   });
 
   $('#findAccount').on('click', function(e) {
+    debugger;
     e.preventDefault();
     $.get(window.location.href + '/findAccount/',
     function(data) {
