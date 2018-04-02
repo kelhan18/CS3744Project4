@@ -59,7 +59,7 @@ class SiteController
       $profiles = Profile::getProfiles();
       $usernames = array();
       foreach($profiles as $profile) {
-        $usernames = $profile->username;
+        array_push($usernames, $profile->username);
       }
       $json = array('usernames' => $usernames);
       header('Content-Type: application/json'); // let client know it's Ajax
