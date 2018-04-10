@@ -39,28 +39,27 @@
                 <div class="tab-pane active in" id="home">
                     <form id="tab">
                         <label>Username</label>
-                        <input type="text" value="jsmith" class="input-xlarge">
+                        <input type="text" value="kelhan18" class="input-xlarge">
                         <label>First Name</label>
-                        <input type="text" value="John" class="input-xlarge">
+                        <input type="text" value="Keller" class="input-xlarge">
                         <label>Last Name</label>
-                        <input type="text" value="Smith" class="input-xlarge">
+                        <input type="text" value="Han" class="input-xlarge">
                         <label>Email</label>
-                        <input type="text" value="jsmith@yourcompany.com" class="input-xlarge">
+                        <input type="text" value="kelhan18@vt.edu" class="input-xlarge">
                         <label>Address</label>
-                        <textarea value="Smith" rows="3" class="input-xlarge">2817 S 49th
-    Apt 314
-    San Jose, CA 95101
-            </textarea>
+                        <textarea value="Smith" rows="1" class="input-xlarge">
+                            1201 Happy Valley Rd, Somewhere NC
+                        </textarea>
                         <label>Time Zone</label>
                         <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge">
                             <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
                             <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
                             <option value="-10.0">(GMT -10:00) Hawaii</option>
                             <option value="-9.0">(GMT -9:00) Alaska</option>
-                            <option selected="selected" value="-8.0">(GMT -8:00) Pacific Time (US & Canada)</option>
+                            <option value="-8.0">(GMT -8:00) Pacific Time (US & Canada)</option>
                             <option value="-7.0">(GMT -7:00) Mountain Time (US & Canada)</option>
                             <option value="-6.0">(GMT -6:00) Central Time (US & Canada), Mexico City</option>
-                            <option value="-5.0">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
+                            <option selected="selected" value="-5.0">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
                             <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
                             <option value="-3.5">(GMT -3:30) Newfoundland</option>
                             <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
