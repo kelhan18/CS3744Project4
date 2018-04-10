@@ -14,6 +14,9 @@
         <a class="nav-item nav-link active" href="<?= BASE_URL ?>/forum">Forum</a>
     </li>
     <li class="nav-item">
+        <a class="nav-item nav-link" href="<?= BASE_URL ?>/myaccount">My Account</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/logout">Logout</a>
     </li>
     <?php else: ?>

@@ -529,4 +529,9 @@ a:hover {
     .btn-pref .btn {
         -webkit-border-radius:0 !important;
     }
+
+    #person-info {
+        float: left;
+        line-height: .5;
+    }
 }

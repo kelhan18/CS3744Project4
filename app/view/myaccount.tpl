@@ -30,86 +30,41 @@
 
 <div class="main">
     <div class="main-content">
+        <div id="person-info">
+            <h1 id="name">Maxi Kleber</h1>
+            <img id ="portrait" src="<?= BASE_URL ?>/public/img/maxikleber.png" alt="Maxi Kleber"  />
+            <!-- https://b.fssta.com/uploads/application/nba/players/1072048.vresize.350.425.medium.2.png -->
 
+            <p><strong>DOB:</strong> January 29, 1992</p>
+            <p><strong>Death:</strong> N/A</p>
+            <p><strong>Birthplace:</strong> Wurzburg, Germany</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Height:</strong> 6' 11''</p>
+            <p><strong>Weight:</strong> 220lbs</p>
+            <p><strong>Profession:</strong> NBA Player</p>
+            <!--<button type="button" class="my-button" id="add-info">Add/Edit Important Info</button>-->
+            <button type="button" class="my-button btn btn-outline-primary" id="add-info">Add/Edit Important Info</button>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-                    <A href="edit.html" >Edit Profile</A>
-
-                    <A href="edit.html" >Logout</A>
+            <div class="hide align-input" id="info-form">
+                <button id="close-info" style="float: right;">X</button>
+                <form>
+                    Title:<br>
+                    <input type="text" class="text" name="identifier" id="identifier">
                     <br>
-                    <p class=" text-info">May 05,2014,03:00 pm </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+                    Description:<br>
+                    <input type="text" class="text" name="description" id="description">
+                    <br><br>
+                    <button type="button" class="my-button" id="submit-basic-info">Submit</button>
+                </form>
+            </div>
 
 
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Sheena Shrestha</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+            <div id="check-family">
+                <h2>Check Family Geneaology</h2>
+                <!--<button type="button" class="my-button" id="check-family-button">Family Geneaology</button>-->
+                <button type="button" class="my-button btn btn-outline-primary" id="check-family-button">Family Geneaology</button>
 
-                                <div class=" col-md-9 col-lg-9 ">
-                                    <table class="table table-user-information">
-                                        <tbody>
-                                        <tr>
-                                            <td>Department:</td>
-                                            <td>Programming</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hire date:</td>
-                                            <td>06/23/2013</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Date of Birth</td>
-                                            <td>01/24/1988</td>
-                                        </tr>
-
-                                        <tr>
-                                        <tr>
-                                            <td>Gender</td>
-                                            <td>Female</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Home Address</td>
-                                            <td>Kathmandu,Nepal</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Email</td>
-                                            <td><a href="mailto:info@support.com">info@support.com</a></td>
-                                        </tr>
-                                        <td>Phone Number</td>
-                                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                                        </td>
-
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-
-                                    <a href="#" class="btn btn-primary">My Sales Performance</a>
-                                    <a href="#" class="btn btn-primary">Team Sales Performance</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-                            <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
-
-
-
-
     </div>
 </div>
