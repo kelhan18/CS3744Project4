@@ -67,7 +67,7 @@
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <label>Username: </label>
-                        <input value="kelhan18" class="input-xlarge" id="input-username">
+                        <input type="text" value="kelhan18" class="input-xlarge" id="input-username">
                         <label>First Name: *</label>
                         <input type="text" value="Keller" class="input-xlarge" required>
                         <label>Last Name: *</label>
