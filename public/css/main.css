@@ -908,7 +908,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(144, 144, 144, 0.25);
+			background-color: white;
 		}
 
 		input[type="submit"]:active,
@@ -916,7 +916,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(144, 144, 144, 0.5);
+			background-color: white;
 		}
 
 		input[type="submit"].icon:before,
