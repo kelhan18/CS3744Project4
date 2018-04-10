@@ -173,9 +173,11 @@ class SiteController
         $profile->number_posts        = 0;
 
         $profile_id = $profile->save(0);
+
         if ($profile_id == null)
         {
-            header('Location: '.BASE_URL); exit();
+            console.log("Yo");
+            #header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/login/'); exit();
     }
