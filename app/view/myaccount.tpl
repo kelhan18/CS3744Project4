@@ -51,18 +51,28 @@
                 <li class="nav-item">
                     <a class="nav-item nav-link" href="#password" data-toggle="tab">Password</a>
                 </li>
-
             </ul>
+
             <div id="myTabContent" class="tab-content">
+
                 <div class="tab-pane active in" id="activity-feed">
                     <h2>Activity Feed</h2>
                 </div>
+
                 <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
+                    <li>
+                        <p>Keller Han</p>
+                        <p>Tony Medovar</p>
+                    </li>
                 </div>
+
                 <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
+                    <p>Michael Kidd Gilchrist</p>
+                    <p>Lebron James</p>
                 </div>
+
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
@@ -117,6 +127,8 @@
                         </div>
                     </form>
                 </div>
+
+
                 <div class="tab-pane fade" id="password">
                     <h2>Change Password</h2>
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
