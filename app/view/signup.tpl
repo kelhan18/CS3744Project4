@@ -33,14 +33,14 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit personal info -->
-          <label>Username: <input type="text" name="username" required="required"></input></label></br>
-          <label>First Name: <input type="text" name="firstname" required="required"></input></label></br>
-          <label>Last Name: <input type="text" name="lastname" required="required"></input></label></br>
-          <label>Password: <input type="text" name="password" required="required"></input></label></br>
-          <label>Email: <input type="text" name="email" required="required"></input></label></br>
+          <label>Username: *<input type="text" name="username" required="required"></input></label></br>
+          <label>First Name: *<input type="text" name="firstname" required="required"></input></label></br>
+          <label>Last Name: *<input type="text" name="lastname" required="required"></input></label></br>
+          <label>Password: *<input type="text" name="password" required="required"></input></label></br>
+          <label>Email: *<input type="text" name="email" required="required"></input></label></br>
           <label>Address: <input type="text" name="address" ></input></label></br>
 
-          <label>Time Zone</label>
+          <label>Time Zone: *</label>
           <select name="timezone" id="DropDownTimezone" class="input-xlarge" required="required">
               <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
               <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
@@ -75,8 +75,8 @@
               <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
           </select>
 
-
-          <button class="btn btn-lg btn-primary btn-block" id="sign-up-button" name="submit" value="Create New Profile" type="submit">Create New Profile</button>
+            <p>(* detonates required field)</p>
+          <button class="btn btn-lg btn-primary btn-block" name="submit" value="Create New Profile" type="submit">Create New Profile</button>
       </form>
   </div>
 </div>
