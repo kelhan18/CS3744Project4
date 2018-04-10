@@ -57,10 +57,10 @@
                 <div class="tab-pane active in" id="activity-feed">
                     <h2>Activity Feed</h2>
                 </div>
-                <div class="tab-pane fade" id="#following">
+                <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
                 </div>
-                <div class="tab-pane fade" id="#followers">
+                <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
                 </div>
                 <div class="tab-pane fade" id="profile">
