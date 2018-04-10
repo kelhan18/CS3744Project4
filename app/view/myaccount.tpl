@@ -26,7 +26,9 @@
 </ul>
 
 <body>
-<div class="col-lg-6 col-sm-6">
+
+<div class="main">
+    <div class="main-content">
     <div class="card hovercard">
         <div class="card-background">
             <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
@@ -70,6 +72,5 @@
             </div>
         </div>
     </div>
-
+    </div>
 </div>
-            

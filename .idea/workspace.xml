@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/header.tpl" afterPath="$PROJECT_DIR$/app/view/header.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +49,18 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+            <state relative-caret-position="516">
+              <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -67,21 +76,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <marker date="1523374060000" expanded="false" signature="3541:3573" ph="..." />
+                <marker date="1523374060000" expanded="false" signature="5267:5283" ph="..." />
+                <marker date="1523374060000" expanded="false" signature="5421:5432" ph="..." />
+                <marker date="1523374060000" expanded="false" signature="8677:8688" ph="..." />
+                <marker date="1523374060000" expanded="false" signature="8955:8966" ph="..." />
+                <marker date="1523374060000" expanded="false" signature="9050:9084" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -125,8 +141,8 @@
       <find>wrapper</find>
       <find>list-group</find>
       <find>col-md-7</find>
-      <find>panel</find>
       <find>.map</find>
+      <find>panel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,10 +189,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="299" />
-    <option name="y" value="117" />
-    <option name="width" value="938" />
-    <option name="height" value="613" />
+    <option name="x" value="46" />
+    <option name="y" value="124" />
+    <option name="width" value="1115" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -1042,15 +1058,15 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="2334000" />
+      <workItem from="1523373113654" duration="2444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24301000" />
+    <option name="totallyTimeSpent" value="24411000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="299" y="117" width="938" height="613" extended-state="0" />
+    <frame x="46" y="124" width="1115" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1067,7 +1083,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26972282" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22690582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1331,21 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <marker date="1523374060000" expanded="false" signature="3541:3573" ph="..." />
-            <marker date="1523374060000" expanded="false" signature="5267:5283" ph="..." />
-            <marker date="1523374060000" expanded="false" signature="5421:5432" ph="..." />
-            <marker date="1523374060000" expanded="false" signature="8677:8688" ph="..." />
-            <marker date="1523374060000" expanded="false" signature="8955:8966" ph="..." />
-            <marker date="1523374060000" expanded="false" signature="9050:9084" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1358,22 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1431,14 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1463,10 +1440,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <marker date="1523374060000" expanded="false" signature="3541:3573" ph="..." />
+            <marker date="1523374060000" expanded="false" signature="5267:5283" ph="..." />
+            <marker date="1523374060000" expanded="false" signature="5421:5432" ph="..." />
+            <marker date="1523374060000" expanded="false" signature="8677:8688" ph="..." />
+            <marker date="1523374060000" expanded="false" signature="8955:8966" ph="..." />
+            <marker date="1523374060000" expanded="false" signature="9050:9084" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        <state relative-caret-position="516">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
           <folding />
         </state>
       </provider>
