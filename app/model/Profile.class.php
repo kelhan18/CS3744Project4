@@ -111,14 +111,15 @@ class Profile {
 
       echo 'Profile ID: '.$this->profile_id;
     $db = Db::instance(); // connect to db
-    $q = sprintf("UPDATE `profiles` SET
+    $q = sprintf("UPDATE profiles SET
     `firstname` = %s,
     `lastname`  = %s,
     `username`  =   %s,
     `password`  =   %s,
     `email`     =   %s,
     `address`   =  %s,
-    `timezone`    =  %s
+    `timezone`    =  %s,
+    `number_posts`    =  %s
     WHERE `profile_id` = %d;",
         $db->escape($this->firstname),
         $db->escape($this->lastname),
@@ -127,6 +128,7 @@ class Profile {
         $db->escape($this->email),
         $db->escape($this->address),
         $db->escape($this->timezone),
+        $db->escape($this->number_posts),
         $db->escape($this->profile_id)
   );
 

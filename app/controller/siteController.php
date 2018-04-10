@@ -100,6 +100,7 @@ class SiteController
       if($result->num_rows != 0) {
         $_SESSION['username'] = $profile->firstname;
         $_SESSION['profile_id'] = $profile->profile_id;
+        $_SESSION['number_posts'] = $profile->number_posts;
         header('Location: '.BASE_URL); exit();
       } else {
         header('Location: '.BASE_URL);
@@ -170,6 +171,7 @@ class SiteController
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
+        $profile->number_posts = $_SESSION['number_posts'];
         $profile->profile_id = $_SESSION['profile_id'];
 
         $profile_id = $profile->save($profile->profile_id);
