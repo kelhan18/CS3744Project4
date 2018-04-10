@@ -32,7 +32,7 @@
     <div class="main-content">
         <div id="person-info">
             <h1 id="name">Maxi Kleber</h1>
-            <img id ="portrait" src="<?= BASE_URL ?>/public/img/maxikleber.png" alt="Maxi Kleber"  />
+            <!--<img id ="portrait" src="<?= BASE_URL ?>/public/img/maxikleber.png" alt="Maxi Kleber"  /> -->
             <!-- https://b.fssta.com/uploads/application/nba/players/1072048.vresize.350.425.medium.2.png -->
 
             <p><strong>DOB:</strong> January 29, 1992</p>
@@ -43,28 +43,7 @@
             <p><strong>Weight:</strong> 220lbs</p>
             <p><strong>Profession:</strong> NBA Player</p>
             <!--<button type="button" class="my-button" id="add-info">Add/Edit Important Info</button>-->
-            <button type="button" class="my-button btn btn-outline-primary" id="add-info">Add/Edit Important Info</button>
 
-            <div class="hide align-input" id="info-form">
-                <button id="close-info" style="float: right;">X</button>
-                <form>
-                    Title:<br>
-                    <input type="text" class="text" name="identifier" id="identifier">
-                    <br>
-                    Description:<br>
-                    <input type="text" class="text" name="description" id="description">
-                    <br><br>
-                    <button type="button" class="my-button" id="submit-basic-info">Submit</button>
-                </form>
-            </div>
-
-
-            <div id="check-family">
-                <h2>Check Family Geneaology</h2>
-                <!--<button type="button" class="my-button" id="check-family-button">Family Geneaology</button>-->
-                <button type="button" class="my-button btn btn-outline-primary" id="check-family-button">Family Geneaology</button>
-
-            </div>
         </div>
     </div>
 </div>
