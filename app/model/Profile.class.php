@@ -134,9 +134,16 @@ class Profile {
       echo 'First Name: '.$this->firstname;
       echo 'Email: '.$this->email;
       echo 'Address: '.$this->address;
-      echo 'Password: '.$this->password;
 
-    $db->query($q); // execute query
+
+    $query = $db->query($q); // execute query
+      if($query) // will return true if succefull else it will return false
+      {
+            echo 'query was successful';
+      }
+      else {
+          echo 'query unsuccesful';
+      }
       echo 'Final DB Profile ID: '.$this->profile_id;
     return $this->profile_id; // return this object's ID
   }
