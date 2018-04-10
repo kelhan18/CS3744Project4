@@ -61,7 +61,7 @@
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
-                <div class="tab-pane fade" id="following">
+                <div class="" id="following">
                     <h2>Following</h2>
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
