@@ -99,7 +99,6 @@
             <div class="inner">
                 <header class="major">
                     <h2>Activity Feed</h2>
-                    <p>Your and Your Friend's Activites</p>
                 </header>
                 <ul class="features">
                     <li class="icon fa-paper-plane-o">

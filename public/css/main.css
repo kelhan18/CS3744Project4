@@ -293,7 +293,7 @@
 
 		header.major p {
 			color: #fff;
-			margin-top: 50px;
+			top: 0;
 		}
 
 		@media screen and (max-width: 736px) {
