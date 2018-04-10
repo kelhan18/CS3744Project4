@@ -68,12 +68,18 @@
 
                 <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
+                        <label>To Follow: </label>
+                        <input type="text" required>
+                        <br>
                         <button class="btn btn-primary" name="followButton">Follow</button>
                     </form>
                 </div>
 
                 <div class="col-sm-6 text-right">
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                        <label>Unfollow: </label>
+                        <input type="text" required>
+                        <br>
                         <button class="btn btn-primary" name="unfollowButton">Unfollow</button>
                     </form>
                 </div>
