@@ -42,10 +42,9 @@
         <div class="inner">
             <header class="major">
                 <h2>The Battle of Peleliu, codenamed Operation Stalemate II by the US military,
-                was fought between the U.S. and Japan during WWII, from September to November 1944
-                on the island of Peleliu in the Pacific.</h2>
+                was fought between the U.S. and Japan during WWII.</h2>
                 <p>
-                    The Battle of Peleliu resulted in the highest casualty rate of any amphibious assault in American military history
+                    It occured from September to November 1944 on the island of Peleliu in the Pacific.
                 </p>
             </header>
         </div>

@@ -82,8 +82,8 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="47" column="134" lean-forward="false" selection-start-line="47" selection-start-column="134" selection-end-line="47" selection-end-column="134" />
+            <state relative-caret-position="318">
+              <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="66" column="110" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="66" selection-end-column="110" />
+            <state relative-caret-position="280">
+              <caret line="71" column="71" lean-forward="false" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -1068,12 +1068,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="9671000" />
+      <workItem from="1523373113654" duration="9772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31638000" />
+    <option name="totallyTimeSpent" value="31739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="655" y="155" width="1088" height="715" extended-state="0" />
@@ -1474,16 +1474,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/old/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="66" column="110" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="66" selection-end-column="110" />
+        <state relative-caret-position="280">
+          <caret line="71" column="71" lean-forward="false" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="47" column="134" lean-forward="false" selection-start-line="47" selection-start-column="134" selection-end-line="47" selection-end-column="134" />
+        <state relative-caret-position="318">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding />
         </state>
       </provider>
