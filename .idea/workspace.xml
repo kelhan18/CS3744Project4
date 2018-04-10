@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/footer.tpl" afterPath="$PROJECT_DIR$/app/view/footer.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/forum.tpl" afterPath="$PROJECT_DIR$/app/view/forum.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/header.tpl" afterPath="$PROJECT_DIR$/app/view/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/login.tpl" afterPath="$PROJECT_DIR$/app/view/login.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/newtopic.tpl" afterPath="$PROJECT_DIR$/app/view/newtopic.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/posts.tpl" afterPath="$PROJECT_DIR$/app/view/posts.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/signup.tpl" afterPath="$PROJECT_DIR$/app/view/signup.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +18,8 @@
       <file leaf-file-name="header.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -36,6 +30,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,13 +116,13 @@
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/app/view/footer.tpl" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
         <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
         <option value="$PROJECT_DIR$/app/view/login.tpl" />
         <option value="$PROJECT_DIR$/app/view/signup.tpl" />
         <option value="$PROJECT_DIR$/app/view/posts.tpl" />
         <option value="$PROJECT_DIR$/app/view/newtopic.tpl" />
+        <option value="$PROJECT_DIR$/app/view/footer.tpl" />
         <option value="$PROJECT_DIR$/app/view/header.tpl" />
       </list>
     </option>
@@ -998,12 +1002,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="18209000" />
+      <workItem from="1523373113654" duration="18292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40176000" />
+    <option name="totallyTimeSpent" value="40259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="506" y="205" width="1156" height="715" extended-state="0" />
@@ -1327,14 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/timeline.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1410,10 +1406,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
+    <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding />
         </state>
       </provider>

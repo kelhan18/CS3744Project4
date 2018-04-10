@@ -22,5 +22,16 @@ else
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/bootstrap.css">
 
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/myjquery.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/scripts.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/scripts-jquery.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery.scrollex.min.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery.scrolly.min.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/skel.min.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/util.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/bootstrap.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/main.js"></script>
+    
 </head>
 
