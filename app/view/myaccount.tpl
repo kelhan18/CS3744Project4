@@ -66,6 +66,14 @@
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
 
+
+                    <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
+                        <button class="btn btn-lg btn-primary" name="followButton">Follow</button>
+                    </form>
+                    <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                        <button class="btn btn-lg btn-primary" name="unfollowButton">Unfollow</button>
+                    </form>
+
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
