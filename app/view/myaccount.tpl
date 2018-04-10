@@ -55,23 +55,26 @@
 
             <div id="myTabContent" class="tab-content">
 
+                <!--Not sure how to implement yet -->
                 <div class="tab-pane active in" id="activity-feed">
                     <h2>Activity Feed</h2>
                 </div>
 
+                <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
-                    <li>
-                        <p>Keller Han</p>
-                        <p>Tony Medovar</p>
-                    </li>
+                    <p>Keller Han</p>
+                    <p>Tony Medovar</p>
                 </div>
 
+                <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
                     <p>Michael Kidd Gilchrist</p>
                     <p>Lebron James</p>
                 </div>
+
+
 
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
