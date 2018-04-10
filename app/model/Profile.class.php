@@ -105,19 +105,32 @@ class Profile {
       return null; // can't update something without an ID
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("UPDATE `profiles` SET
-    `firstname` =   $db->escape($this->firstname),
-    `lastname`  =   $db->escape($this->lastname),
-    `username` =   $db->escape($this->username),
-    `password` =   $db->escape($this->password),
-    `email`     =   $db->escape($this->email),
-    `address`     =   $db->escape($this->address),
-    `timezone`     =   $db->escape($this->timezone),
-    `number_posts`     = $db->escape($this->number_posts)
-    WHERE `profile_id`     = $db->escape($this->profile_id);");
+    $q = sprintf("UPDATE `%s` SET
+    `firstname` = %s,
+    `lastname`  = %s,
+    `username`  =   %s,
+    `password`  =   %s,
+    `email`     =   %s,
+    `address`   =  %s,
+    `timezone`    =  %s,
+    `number_posts`  = %d 
+    WHERE `profile_id` = %d;",
+        self::DB_TABLE,
+        $db->escape($this->firstname),
+        $db->escape($this->lastname),
+        $db->escape($this->username),
+        $db->escape($this->password),
+        $db->escape($this->email),
+        $db->escape($this->address),
+        $db->escape($this->timezone),
+        $db->escape($this->number_posts),
+        $db->escape($this->profile_id)
+  );
 
     $db->query($q); // execute query
     return $db->profile_id; // return this object's ID
   }
+
+
 
 }
