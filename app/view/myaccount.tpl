@@ -96,7 +96,7 @@
 
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
-                    <form method="POST" id ="tab" action="<?= BASE_URL ?>/signup/" name="updateInfoForm">
+                    <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
                             <input type="text" name="username" value="kelhan18" class="input-xlarge" id="input-username">
