@@ -48,7 +48,8 @@
                 </p>
             </header>
             <ul class="icons major">
-                <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+                <i class="fab fa-hotjar"></i>
+
                 <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
                 <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
             </ul>
