@@ -46,7 +46,7 @@ class SiteController
                 }
                 break;
             case 'signupProcess':
-    				    $this->signupProcess();
+                $this->signupProcess();
                 break;
             case 'logout':
                 $this->logout();
