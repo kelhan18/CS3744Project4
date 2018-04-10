@@ -103,13 +103,16 @@ class SiteController
     }
 
     public function signupProcess() {
+        $username  	 = $_POST['username'];  // required
 		$firstname 	 = $_POST['firstname']; // required
 		$lastname 	 = $_POST['lastname'];  // required
-		$username  	 = $_POST['username'];  // required
 		$password  	 = $_POST['password'];  // required
-		$photo       = $_POST['photo'];
+		$email       = $_POST['email'];     // required
+        $address 	 = $_POST['address'];
+        $timezone 	 = $_POST['timezone'];  // required
 
-		if( empty($firstname) || empty($lastname) || empty($username) || empty($password) ) {
+
+        if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($email) || empty($timezone)) {
 			header('Location: '.BASE_URL); exit();
 		}
 
@@ -118,8 +121,10 @@ class SiteController
 		$profile->lastname     = $lastname;
 		$profile->username    	= $username;
 		$profile->password    	= $password;
-		$profile->photo        = $photo;
-    $profile->number_posts        = 0;
+		$profile->email        = $email;
+		$profile->address      = $address;
+		$profile->timezone     = $timezone;
+        $profile->number_posts        = 0;
 
 		$profile_id = $profile->save(0);
     if ($profile_id == null)
