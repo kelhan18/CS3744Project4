@@ -63,24 +63,17 @@
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
-                    <div>
-                        <ul class="twitter-ul">
-                            <li>Keller Han</li>
-                            <li>Tony Medovar</li>
-                        </ul>
-                    </div>
+                    <p>Keller Han</p>
+                    <p>Tony Medovar</p>
 
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
-                    <div>
-                        <ul class="twitter-ul">
-                            <li>Lebron James</li>
-                            <li>Kevin Durant</li>
-                        </ul>
-                    </div>
+                    <p>Lebron James</p>
+                    <p>Kevin Durant</p>
+
                 </div>
 
 
