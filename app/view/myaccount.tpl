@@ -28,8 +28,8 @@
 <body>
 
 
-<div class="">
-    <div class="">
+<div class="main">
+    <div class="main-content">
 
             <ul class="nav nav-pills nav-justified justify-content-center">
                 <!--
