@@ -55,10 +55,13 @@
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane active in" id="activity-feed">
+                    <h2>Activity Feed</h2>
                 </div>
                 <div class="tab-pane fade" id="#following">
+                    <h2>Following</h2>
                 </div>
                 <div class="tab-pane fade" id="#followers">
+                    <h2>Followers</h2>
                 </div>
                 <div class="tab-pane fade" id="profile">
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
