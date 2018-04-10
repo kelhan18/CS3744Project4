@@ -16,8 +16,8 @@ else
     <title><?= $pageTitle ?> | The Battle of Peleliu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public//css/main.css">
-    <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public//css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/styles2.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/style.css">
