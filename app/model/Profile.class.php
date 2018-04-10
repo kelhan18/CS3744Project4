@@ -105,7 +105,7 @@ class Profile {
       return null; // can't update something without an ID
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("UPDATE `%s` SET
+    $q = sprintf("UPDATE profiles SET
     `firstname` = %s,
     `lastname`  = %s,
     `username`  =   %s,
