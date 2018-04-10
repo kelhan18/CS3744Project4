@@ -33,12 +33,6 @@ class SiteController
             case 'findAccount':
                 $this->findAccount();
                 break;
-            case 'updateInfo':
-                $this->updateInfo();
-                break;
-            case 'updatePassword':
-                $this->updatePassword();
-                break;
             case 'login':
                 $this->login();
                 break;
@@ -59,6 +53,19 @@ class SiteController
                 break;
             case 'topic':
                 $this->topic();
+                break;
+
+            case 'updateInfo':
+                $this->updateInfo();
+                break;
+            case 'updatePassword':
+                $this->updatePassword();
+                break;
+            case 'follow':
+                $this->follow();
+                break;
+            case 'unfollow':
+                $this->unfollow();
                 break;
         }
     }
@@ -204,4 +211,15 @@ class SiteController
     {
         //When user updates password in profile page
     }
+
+    public function follow()
+    {
+
+    }
+
+    public function unfollow()
+    {
+
+    }
+
 }

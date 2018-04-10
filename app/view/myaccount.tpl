@@ -84,7 +84,6 @@
                     </form>
                 </div>
 
-
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
