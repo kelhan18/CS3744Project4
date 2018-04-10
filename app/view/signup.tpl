@@ -74,7 +74,7 @@
               <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
               <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
           </select>
-
+      <br>
             <p>(* detonates required field)</p>
           <button class="btn btn-lg btn-primary btn-block" name="submit" value="Create New Profile" type="submit">Create New Profile</button>
       </form>
