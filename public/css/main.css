@@ -552,10 +552,8 @@
 			border: solid 2px #fff;
 			display: inline-block;
 			font-size: 4em;
-			height: calc(3em + 2px);
 			line-height: 3em;
 			text-align: center;
-			width: calc(3em + 2px);
 		}
 
 		.icon.major:before {
@@ -576,15 +574,15 @@
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: orangered;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: ghostwhite;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: yellow;
 		}
 
 /* Image */
