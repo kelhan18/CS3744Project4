@@ -538,4 +538,9 @@ a:hover {
     .custom-label {
         color: black;
     }
+
+    #sign-up-button {
+        margin-top: 10px;
+    }
+
 }

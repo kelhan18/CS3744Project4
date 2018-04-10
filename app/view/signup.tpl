@@ -76,7 +76,7 @@
           </select>
 
 
-          <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Create New Profile" type="submit">Create New Profile</button>
+          <button class="btn btn-lg btn-primary btn-block" id="sign-up-button" name="submit" value="Create New Profile" type="submit">Create New Profile</button>
       </form>
   </div>
 </div>
