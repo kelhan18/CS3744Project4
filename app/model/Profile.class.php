@@ -107,7 +107,6 @@ class Profile {
   public function update() {
       echo 'Update Profile ID: '.$this->profile_id;
     if($this->profile_id == 0)
-        echo 'Its 0';
       return null; // can't update something without an ID
 
       echo 'Profile ID: '.$this->profile_id;
