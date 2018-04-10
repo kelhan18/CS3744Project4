@@ -111,7 +111,7 @@ class Profile {
 
       echo 'Profile ID: '.$this->profile_id;
     $db = Db::instance(); // connect to db
-    $q = sprintf("UPDATE profiles SET
+    $q = sprintf("UPDATE `profiles` SET
     `firstname` = %s,
     `lastname`  = %s,
     `username`  =   %s,
