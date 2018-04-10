@@ -97,9 +97,9 @@
 
         <section id="three" class="wrapper style3 special">
             <div class="inner">
-                <header class="major">
+        
                     <h2>Activity Feed</h2>
-                </header>
+
                 <ul class="features">
                     <li class="icon fa-paper-plane-o">
                         <h3>Arcu accumsan</h3>
