@@ -125,7 +125,6 @@ class SiteController
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
 
-
         if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($email) || empty($timezone)) {
 			header('Location: '.BASE_URL); exit();
 		}
@@ -140,7 +139,7 @@ class SiteController
 		$profile->timezone     = $timezone;
         $profile->number_posts        = 0;
 
-        echo '<script>console.log("Hey")</script>';
+        echo 'FirstName: '.$profile->firstname;
 
 		$profile_id = $profile->save(0);
 
