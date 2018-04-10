@@ -67,7 +67,7 @@
                     <p>Tony Medovar</p>
 
                 <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                    <div class="input-group mb-1">
+                    <div class="input-group mb-5">
                         <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-primary" name="followButton" type="button">Follow</button>
@@ -76,7 +76,7 @@
                 </form>
 
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <div class="input-group mb-1">
+                        <div class="input-group mb-5">
                             <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
@@ -85,7 +85,6 @@
                     </form>
                 </div>
 
-                </div>
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" id="followers">
