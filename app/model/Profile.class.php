@@ -105,11 +105,10 @@ class Profile {
 
   //Updates specified data in the database
   public function update() {
-      echo 'Update Profile ID: '.$this->profile_id;
     if($this->profile_id == 0)
       return null; // can't update something without an ID
 
-      echo 'Profile ID: '.$this->profile_id;
+      echo ' IN Update Profile ID: '.$this->profile_id;
     $db = Db::instance(); // connect to db
     $q = sprintf("UPDATE profiles SET
     `firstname` = %s,
@@ -131,6 +130,11 @@ class Profile {
         $db->escape($this->number_posts),
         $db->escape($this->profile_id)
   );
+
+      echo 'First Name: '.$this->firstname;
+      echo 'Email: '.$this->email;
+      echo 'Address: '.$this->address;
+      echo 'Password: '.$this->password;
 
     $db->query($q); // execute query
       echo 'Final DB Profile ID: '.$this->profile_id;

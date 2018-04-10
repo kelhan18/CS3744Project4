@@ -176,13 +176,13 @@ class SiteController
 
         $profile_id = $profile->save($profile->profile_id);
 
-
+        /*
         if ($profile_id == null)
         {
             header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/myaccount/'); exit();
-
+        */
 
     }
 
