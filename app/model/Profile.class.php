@@ -70,13 +70,9 @@ class Profile {
   //Saves the new family member and adds them to the database
   public function save($profile_id){
     if($profile_id == 0) {
-        echo 'Insert';
-        echo 'Profile ID: '.$this->profile_id;
       return $this->insert();
     }
     else {
-        echo 'Update';
-        echo 'Profile ID: '.$this->profile_id;
       return $this->update();
     }
   }
@@ -108,7 +104,6 @@ class Profile {
     if($this->profile_id == 0)
       return null; // can't update something without an ID
 
-      echo ' IN Update Profile ID: '.$this->profile_id;
     $db = Db::instance(); // connect to db
     $q = sprintf("UPDATE profiles SET
     `firstname` = %s,
@@ -130,20 +125,8 @@ class Profile {
         $db->escape($this->number_posts)
   );
 
-      echo 'First Name: '.$this->firstname;
-      echo 'Email: '.$this->email;
-      echo 'Address: '.$this->address;
-
 
     $query = $db->query($q); // execute query
-      if($query) // will return true if succefull else it will return false
-      {
-            echo 'query was successful';
-      }
-      else {
-          echo 'query unsuccesful';
-      }
-      echo 'Final DB Profile ID: '.$this->profile_id;
     return $this->profile_id; // return this object's ID
   }
 
