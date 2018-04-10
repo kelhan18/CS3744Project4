@@ -42,15 +42,24 @@
             <p><strong>Password:</strong> gui</p>
             <p><strong>DOB:</strong> July 11th, 1997</p>
             <p><strong>Profession:</strong> Student</p>
-            <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Favorite Food (Security Question)
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pizza</a>
-                <a class="dropdown-item" href="#">Taco</a>
-                <a class="dropdown-item" href="#">Sushi</a>
-            </div>
+            <form>
+                <p>Favorite Food: (Security Question)</p>
+                <div>
+                    <input type="radio" id="choice1"
+                           name="contact" value="pizza">
+                    <label for="choice1">Pizza</label>
+
+                    <input type="radio" id="choice2"
+                           name="contact" value="taco">
+                    <label for="choice2">Tacos</label>
+
+                    <input type="radio" id="choice3"
+                           name="contact" value="sushi">
+                    <label for="choice3">Syshi</label>
+                </div>
+            </form>
+
+
         </div>
             <!--<button type="button" class="my-button" id="add-info">Add/Edit Important Info</button>-->
 
