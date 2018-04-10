@@ -107,8 +107,10 @@ class Profile {
   public function update() {
       echo 'Profile ID: '.$this->profile_id;
     if($this->profile_id == 0)
+        echo 'Its 0';
       return null; // can't update something without an ID
 
+      echo 'Profile ID: '.$this->profile_id;
     $db = Db::instance(); // connect to db
     $q = sprintf("UPDATE profiles SET
     `firstname` = %s,
