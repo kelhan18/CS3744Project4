@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Profile.class.php" afterPath="$PROJECT_DIR$/app/model/Profile.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/siteController.php" afterPath="$PROJECT_DIR$/app/controller/siteController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,23 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siteController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="siteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="167" column="43" lean-forward="true" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
+            <state relative-caret-position="276">
+              <caret line="171" column="43" lean-forward="true" selection-start-line="171" selection-start-column="43" selection-end-line="171" selection-end-column="43" />
               <folding>
-                <marker date="1523402755000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
+                <marker date="1523403267000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Profile.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+            <state relative-caret-position="445">
+              <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
               <folding>
                 <marker date="1523403231000" expanded="true" signature="505:548" ph="DELETE FROM " />
                 <marker date="1523403231000" expanded="true" signature="822:864" ph="SELECT * FRO... %s" />
@@ -176,8 +176,8 @@
         <option value="$PROJECT_DIR$/app/model/Topic.class.php" />
         <option value="$PROJECT_DIR$/app/view/signup.tpl" />
         <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
-        <option value="$PROJECT_DIR$/app/controller/siteController.php" />
         <option value="$PROJECT_DIR$/app/model/Profile.class.php" />
+        <option value="$PROJECT_DIR$/app/controller/siteController.php" />
       </list>
     </option>
   </component>
@@ -988,12 +988,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="25518000" />
+      <workItem from="1523373113654" duration="25553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47485000" />
+    <option name="totallyTimeSpent" value="47520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="524" y="127" width="1137" height="869" extended-state="0" />
@@ -1403,16 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="167" column="43" lean-forward="true" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
-          <folding>
-            <marker date="1523402755000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Db.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1423,8 +1413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+        <state relative-caret-position="445">
+          <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
           <folding>
             <marker date="1523403231000" expanded="true" signature="505:548" ph="DELETE FROM " />
             <marker date="1523403231000" expanded="true" signature="822:864" ph="SELECT * FRO... %s" />
@@ -1433,6 +1423,16 @@
             <marker date="1523403231000" expanded="true" signature="2623:2785" ph="INSERT INTO profiles... " />
             <marker date="1523403231000" expanded="true" signature="3481:3691" ph="UPDATE `%s` " />
             <marker date="1523403231000" expanded="true" signature="3481:3995" ph="UPDATE `prof... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="171" column="43" lean-forward="true" selection-start-line="171" selection-start-column="43" selection-end-line="171" selection-end-column="43" />
+          <folding>
+            <marker date="1523403267000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
           </folding>
         </state>
       </provider>
