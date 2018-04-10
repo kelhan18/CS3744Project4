@@ -26,62 +26,50 @@
 </ul>
 
 <body>
-<div id="todo">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <img id = "twitter-logo" src="twitterlogo.png" alt="Twitter Logo" style="width:64px; height:64px;">
-                <h1 id ="Twitter">Twitter</h1>
-            </div>
+<div class="col-lg-6 col-sm-6">
+    <div class="card hovercard">
+        <div class="card-background">
+            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
+            <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h4 id="current-user-header"></h4>
-                            <hr />
-                            <div class="form-group">
-                                <input id="switch-user-input" class="form-control" type="text" placeholder="User" />
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-default" id="switch-user-button">Switch User</button>
-                            </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Following</div>
-                    <div class="panel-body">
-                        <ul id="following-list">
-                        </ul>
-                        <hr />
-                        <div class="form-group">
-                            <input id="follow-input" class="form-control" type="text" placeholder="Username" />
-                        </div>
-                        <button id="follow-button" class="btn btn-default">Follow</button>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Followers</div>
-                    <div class="panel-body">
-                        <ul id="follower-list">
-                        </ul>
-                    </div>
-                </div>
+        <div class="useravatar">
+            <img alt="" src="http://lorempixel.com/100/100/people/9/">
+        </div>
+        <div class="card-info"> <span class="card-title">Pamela Anderson</span>
+
+        </div>
+    </div>
+    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <div class="hidden-xs">Stars</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                <div class="hidden-xs">Favorites</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <div class="hidden-xs">Following</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="well">
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1">
+                <h3>This is tab 1</h3>
             </div>
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="form-group">
-                            <textarea id="tweet-input" class="form-control" rows="3" placeholder="What's Happening?"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button id="tweet-button" class="btn btn-primary">Tweet</button>
-                        </div>
-                    </div>
-                </div>
-                <ul id="tweet-list" class="list-group">
-                </ul>
+            <div class="tab-pane fade in" id="tab2">
+                <h3>This is tab 2</h3>
+            </div>
+            <div class="tab-pane fade in" id="tab3">
+                <h3>This is tab 3</h3>
             </div>
         </div>
     </div>
+
 </div>
+            

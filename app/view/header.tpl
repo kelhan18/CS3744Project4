@@ -20,7 +20,6 @@ else
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/styles2.css">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/myjquery.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/scripts.js"></script>
