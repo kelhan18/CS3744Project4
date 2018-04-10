@@ -539,8 +539,8 @@ a:hover {
         color: black;
     }
 
-    .twitter-div {
-        margin-left: 10px;
+    .twitter-ul{
+        overflow: hidden;
     }
 
 }
