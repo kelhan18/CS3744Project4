@@ -30,9 +30,16 @@
 
 <div class="main">
     <div class="main-content">
-            <ul class="nav nav-pills nav-justified justify-content-center">
-                <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
-                <li><a href="#profile" data-toggle="tab">Password</a></li>
+        <div class="well">
+            <ul class="nav nav-pills nav-justified">
+               
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" data-toggle="tab">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" data-toggle="tab">Medal Of Honor</a>
+                </li>
+
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane active in" id="home">
@@ -96,5 +103,6 @@
                     </form>
                 </div>
             </div>
+    </div>
 </div>
 </div>
