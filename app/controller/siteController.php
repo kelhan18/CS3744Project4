@@ -97,6 +97,10 @@ class SiteController
       } else {
         header('Location: '.BASE_URL);
       }
+      else {
+        header('Location: '.BASE_URL.'/login');
+
+    }
     }
 
     //Runs the signup process to gain access to the website

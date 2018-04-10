@@ -100,7 +100,7 @@
                 </div>
                 <div class="tab-pane fade" id="profile">
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
-                        <label>New Password</label>
+                        <label>New Password: *</label>
                         <input type="password" class="input-xlarge" required>
                         <br>
                         <p>(* detonates required field)</p>
