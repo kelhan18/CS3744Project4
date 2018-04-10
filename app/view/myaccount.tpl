@@ -37,15 +37,30 @@
                 <li><a href="#profile" data-toggle="tab">Password</a></li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#home" data-toggle="tab">Profile</a>
+                    <a class="nav-item nav-link active" href="#activity-feed" data-toggle="tab">Activity Feed</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#profile" data-toggle="tab">Password</a>
+                    <a class="nav-item nav-link active" href="#following" data-toggle="tab">Following</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" href="#followers" data-toggle="tab">Followers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" href="#profile" data-toggle="tab">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#password" data-toggle="tab">Password</a>
                 </li>
 
             </ul>
             <div id="myTabContent" class="tab-content">
-                <div class="tab-pane active in" id="home">
+                <div class="tab-pane active in" id="activity-feed">
+                </div>
+                <div class="tab-pane fade" id="#following">
+                </div>
+                <div class="tab-pane fade" id="#followers">
+                </div>
+                <div class="tab-pane fade" id="profile">
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <label>Username: *</label>
                         <input type="text" value="kelhan18" class="input-xlarge" required>
@@ -98,7 +113,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="tab-pane fade" id="profile">
+                <div class="tab-pane fade" id="password">
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <label>New Password: *</label>
                         <input type="password" class="input-xlarge" required>
