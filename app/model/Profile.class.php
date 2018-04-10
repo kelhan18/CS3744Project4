@@ -115,7 +115,6 @@ class Profile {
     `timezone`    =  %s,
     `number_posts`  = %d 
     WHERE `profile_id` = %d;",
-        self::DB_TABLE,
         $db->escape($this->firstname),
         $db->escape($this->lastname),
         $db->escape($this->username),
