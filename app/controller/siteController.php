@@ -140,7 +140,7 @@ class SiteController
 		$profile->timezone     = $timezone;
         $profile->number_posts        = 0;
 
-        console.log($profile);
+        console.log("Hello");
 		$profile_id = $profile->save(0);
     if ($profile_id == null)
     {
