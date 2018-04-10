@@ -43,19 +43,19 @@
             <p><strong>DOB:</strong> July 11th, 1997</p>
             <p><strong>Profession:</strong> Student</p>
             <form>
-                <p>Favorite Food: (Security Question)</p>
+                <p><strong>Favorite Food:</strong> (Security Question)</p>
                 <div>
                     <input type="radio" id="choice1"
                            name="contact" value="pizza">
-                    <label for="choice1">Pizza</label>
+                    <label class="custom-label" for="choice1">Pizza</label>
 
                     <input type="radio" id="choice2"
                            name="contact" value="taco">
-                    <label for="choice2">Tacos</label>
+                    <label class="custom-label" for="choice2">Tacos</label>
 
                     <input type="radio" id="choice3"
                            name="contact" value="sushi">
-                    <label for="choice3">Syshi</label>
+                    <label class="custom-label" for="choice3">Sushi</label>
                 </div>
             </form>
 

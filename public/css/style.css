@@ -534,4 +534,8 @@ a:hover {
         float: left;
         line-height: .3;
     }
+
+    .custom-label {
+        color: black;
+    }
 }
