@@ -119,7 +119,7 @@ class Profile {
     `address`   =  %s,
     `timezone`    =  %s,
     `number_posts`    =  %s
-    WHERE `profile_id` = %d;",
+    WHERE `profile_id` = 15;",
         $db->escape($this->firstname),
         $db->escape($this->lastname),
         $db->escape($this->username),
