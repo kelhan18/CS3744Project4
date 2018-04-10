@@ -48,17 +48,17 @@
                 <div class="tab-pane active in" id="home">
                     <form id="tab">
                         <label>Username</label>
-                        <input type="text" value="kelhan18" class="input-xlarge">
+                        <input type="text" value="kelhan18" class="input-xlarge" required>
                         <label>First Name</label>
-                        <input type="text" value="Keller" class="input-xlarge">
+                        <input type="text" value="Keller" class="input-xlarge" required>
                         <label>Last Name</label>
-                        <input type="text" value="Han" class="input-xlarge">
+                        <input type="text" value="Han" class="input-xlarge" required>
                         <label>Email</label>
-                        <input type="text" value="kelhan18@vt.edu" class="input-xlarge">
+                        <input type="text" value="kelhan18@vt.edu" class="input-xlarge" required>
                         <label>Address</label>
                         <input type="text" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
                         <label>Time Zone</label>
-                        <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge">
+                        <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge" required>
                             <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
                             <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
                             <option value="-10.0">(GMT -10:00) Hawaii</option>
@@ -99,7 +99,7 @@
                 <div class="tab-pane fade" id="profile">
                     <form id="tab2">
                         <label>New Password</label>
-                        <input type="password" class="input-xlarge">
+                        <input type="password" class="input-xlarge" required>
                         <div>
                             <button class="btn btn-lg btn-primary btn-block">Update</button>
                         </div>
