@@ -37,10 +37,10 @@
                 <li><a href="#profile" data-toggle="tab">Password</a></li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#" data-toggle="tab">Profile</a>
+                    <a class="nav-item nav-link active" href="#home" data-toggle="tab">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#" data-toggle="tab">Password</a>
+                    <a class="nav-item nav-link" href="#profile" data-toggle="tab">Password</a>
                 </li>
 
             </ul>
