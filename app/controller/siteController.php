@@ -179,7 +179,7 @@ class SiteController
         {
             header('Location: '.BASE_URL); exit();
         }
-        header('Location: '.BASE_URL.'/myAccount/'); exit();
+        header('Location: '.BASE_URL.'/myaccount/'); exit();
 
 
     }
