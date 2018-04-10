@@ -131,8 +131,8 @@ class Profile {
   );
 
     $db->query($q); // execute query
-      echo 'Final DB Profile ID: '.$db->profile_id;
-    return $db->profile_id; // return this object's ID
+      echo 'Final DB Profile ID: '.$this->profile_id;
+    return $this->profile_id; // return this object's ID
   }
 
 
