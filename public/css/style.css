@@ -351,6 +351,36 @@ h1#login {
 }
 
 
+#tweet-list li {
+    margin: 5px 0px;
+}
+
+.tweet-username {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#Twitter {
+    font-family: impact;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+#current-user-header {
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+}
+
+.panel-heading {
+    font-family: cursive;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
 
 /* Home page */

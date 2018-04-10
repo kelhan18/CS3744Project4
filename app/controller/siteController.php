@@ -27,6 +27,9 @@ class SiteController
             case 'forum':
                 $this->forum();
                 break;
+            case 'myAccount':
+                $this->myAccount();
+                break;
             case 'findAccount':
                 $this->findAccount();
                 break;
@@ -154,6 +157,13 @@ class SiteController
         $topics= Topic::getTopics();
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/forum.tpl';
+        include_once SYSTEM_PATH . '/view/footer.tpl';
+    }
+    public function myAccount()
+    {
+        $pageTitle = 'My Account';
+        include_once SYSTEM_PATH . '/view/header.tpl';
+        include_once SYSTEM_PATH . '/view/myaccount.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
     // Brings the user to the login page
