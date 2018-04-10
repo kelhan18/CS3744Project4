@@ -127,8 +127,7 @@ class SiteController
 
 
         if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($email) || empty($timezone)) {
-            console.log("Error");
-			#header('Location: '.BASE_URL); exit();
+			header('Location: '.BASE_URL); exit();
 		}
 
 		$profile = new Profile();
@@ -144,7 +143,8 @@ class SiteController
 		$profile_id = $profile->save(0);
     if ($profile_id == null)
     {
-      header('Location: '.BASE_URL); exit();
+        console.log("Profile ID is null!");
+      #header('Location: '.BASE_URL); exit();
     }
 		header('Location: '.BASE_URL.'/login/'); exit();
 	 }
