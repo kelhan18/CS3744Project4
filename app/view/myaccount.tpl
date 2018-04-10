@@ -28,8 +28,8 @@
 <body>
 
 
-<div class="main">
-    <div class="main-content">
+<div class="">
+    <div class="">
 
             <ul class="nav nav-pills nav-justified justify-content-center">
                 <!--
@@ -61,7 +61,7 @@
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
-                <div class="" id="following">
+                <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
