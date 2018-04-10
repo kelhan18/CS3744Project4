@@ -47,9 +47,7 @@
                         <label>Email</label>
                         <input type="text" value="kelhan18@vt.edu" class="input-xlarge">
                         <label>Address</label>
-                        <textarea value="Smith" rows="1" class="input-xlarge">
-                            1201 Happy Valley Rd, Somewhere NC
-                        </textarea>
+                        <input type="text" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
                         <label>Time Zone</label>
                         <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge">
                             <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
