@@ -32,12 +32,15 @@
     <div class="main-content">
         <div class="well">
             <ul class="nav nav-pills nav-justified">
-               
+                <!--
+                <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
+                <li><a href="#profile" data-toggle="tab">Password</a></li>
+                -->
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" data-toggle="tab">Timeline</a>
+                    <a class="nav-item nav-link active" href="#" data-toggle="tab">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" data-toggle="tab">Medal Of Honor</a>
+                    <a class="nav-item nav-link" href="#" data-toggle="tab">Password</a>
                 </li>
 
             </ul>
