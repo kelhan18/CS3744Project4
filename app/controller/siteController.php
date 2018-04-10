@@ -172,7 +172,7 @@ class SiteController
         $profile->timezone     = $timezone;
         $profile->number_posts = 0;
 
-        $profile_id = $profile->save();
+        $profile_id = $profile->save(1);
 
         /*
         if ($profile_id == null)
