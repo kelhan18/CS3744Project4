@@ -84,7 +84,7 @@ class Profile {
 
     $db = Db::instance(); // connect to db
     $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `email`, `address`, `timezone`, `number_posts`)
-    VALUES (%s, %s, %s, %s, %s, %d);",
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
