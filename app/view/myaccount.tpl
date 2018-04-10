@@ -35,13 +35,23 @@
             <!--<img id ="portrait" src="<?= BASE_URL ?>/public/img/maxikleber.png" alt="Maxi Kleber"  /> -->
             <!-- https://b.fssta.com/uploads/application/nba/players/1072048.vresize.350.425.medium.2.png -->
 
-            <p><strong>DOB:</strong> January 29, 1992</p>
-            <p><strong>Death:</strong> N/A</p>
-            <p><strong>Birthplace:</strong> Wurzburg, Germany</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Height:</strong> 6' 11''</p>
-            <p><strong>Weight:</strong> 220lbs</p>
-            <p><strong>Profession:</strong> NBA Player</p>
+            <p><strong>Username:</strong> kelhan18</p>
+            <p><strong>First Name:</strong> Keller</p>
+            <p><strong>Last Name:</strong> Han</p>
+            <p><strong>Email:</strong> kelhan18@vt.edu</p>
+            <p><strong>Password:</strong> gui</p>
+            <p><strong>DOB:</strong> July 11th, 1997</p>
+            <p><strong>Profession:</strong> Student</p>
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Favorite Food (Security Question)
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Pizza</a>
+                <a class="dropdown-item" href="#">Taco</a>
+                <a class="dropdown-item" href="#">Sushi</a>
+            </div>
+        </div>
             <!--<button type="button" class="my-button" id="add-info">Add/Edit Important Info</button>-->
 
         </div>
