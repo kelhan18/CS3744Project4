@@ -155,7 +155,7 @@
                             <br>
                             <p>(* detonates required field)</p>
                             <div>
-                                <button class="btn btn-lg btn-primary btn-block">Update</button>
+                                <button name="submit" value="updateProfile" type="submit" class="btn btn-lg btn-primary btn-block">Update</button>
                             </div>
                         </div>
                     </form>
