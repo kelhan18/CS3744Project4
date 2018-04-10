@@ -148,6 +148,63 @@ class SiteController
 		header('Location: '.BASE_URL.'/login/'); exit();
 	 }
 
+    public function updateInfo()
+    {
+        $username  	 = $_POST['username'];  // required
+        $firstname 	 = $_POST['firstname']; // required
+        $lastname 	 = $_POST['lastname'];  // required
+        $password  	 = $_POST['password'];  // required
+        $email       = $_POST['email'];     // required
+        $address 	 = $_POST['address'];
+        $timezone 	 = $_POST['timezone'];  // required
+
+        if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($email) || empty($timezone)) {
+            header('Location: '.BASE_URL); exit();
+        }
+
+        $profile = new Profile();
+        $profile->firstname    = $firstname;
+        $profile->lastname     = $lastname;
+        $profile->username    	= $username;
+        $profile->password    	= $password;
+        $profile->email        = $email;
+        $profile->address      = $address;
+        $profile->timezone     = $timezone;
+        $profile->number_posts        = 0;
+
+        $profile_id = $profile->save(0);
+        if ($profile_id == null)
+        {
+            header('Location: '.BASE_URL); exit();
+        }
+        header('Location: '.BASE_URL.'/login/'); exit();
+    }
+
+
+
+    public function updatePassword()
+    {
+        //When user updates password in profile page
+    }
+
+    public function follow()
+    {
+
+    }
+
+    public function unfollow()
+    {
+
+    }
+
+
+
+
+
+
+
+
+
     //Brings the user to the home page
     public function home()
     {
@@ -202,24 +259,5 @@ class SiteController
         exit(); // sends to home page
     }
 
-    public function updateInfo()
-    {
-        //When user updates info in profile page
-    }
-
-    public function updatePassword()
-    {
-        //When user updates password in profile page
-    }
-
-    public function follow()
-    {
-
-    }
-
-    public function unfollow()
-    {
-
-    }
 
 }

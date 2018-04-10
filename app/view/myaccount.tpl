@@ -99,27 +99,27 @@
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
-                            <input type="text" value="kelhan18" class="input-xlarge" id="input-username">
+                            <input type="text" name="username" value="kelhan18" class="input-xlarge" id="input-username">
                         </div>
                         <div class ="form-group">
                             <label>First Name: *</label>
-                            <input type="text" value="Keller" class="input-xlarge" required>
+                            <input type="text" name="firstname" value="Keller" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Last Name: *</label>
-                            <input type="text" value="Han" class="input-xlarge" required>
+                            <input type="text" name="lastname" value="Han" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Email: *</label>
-                            <input type="email" value="kelhan18@vt.edu" class="input-xlarge" required>
+                            <input type="email" name="email" value="kelhan18@vt.edu" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Address</label>
-                            <input type="text" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
+                            <input type="text" name="address" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
                         </div>
                         <div class ="form-group">
                             <label>Time Zone: *</label>
-                            <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge" required>
+                            <select name="timezone" id="DropDownTimezone" class="input-xlarge" required>
                             <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
                             <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
                             <option value="-10.0">(GMT -10:00) Hawaii</option>
@@ -167,7 +167,7 @@
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
                             <label>New Password: *</label>
-                            <input type="password" class="input-xlarge" required>
+                            <input type="password" name="password" class="input-xlarge" required>
                         </div>
                         <br>
                         <p>(* detonates required field)</p>
