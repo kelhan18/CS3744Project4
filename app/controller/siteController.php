@@ -140,15 +140,17 @@ class SiteController
 		$profile->timezone     = $timezone;
         $profile->number_posts        = 0;
 
-        echo '<script>console.log('.$profile.')</script>';
+        echo '<script>console.log("Hey")</script>';
 
 		$profile_id = $profile->save(0);
-    if ($profile_id == null)
-    {
-      header('Location: '.BASE_URL); exit();
+
+        if ($profile_id == null)
+        {
+          header('Location: '.BASE_URL); exit();
+        }
+        header('Location: '.BASE_URL.'/login/'); exit();
+
     }
-		header('Location: '.BASE_URL.'/login/'); exit();
-	 }
 
 
     public function updateInfo()
