@@ -30,7 +30,7 @@
 
 <div class="main">
     <div class="main-content">
-        <div class="well">
+
             <ul class="nav nav-pills nav-justified justify-content-center">
                 <!--
                 <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
@@ -178,7 +178,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+
     </div>
 </div>
 </div>
