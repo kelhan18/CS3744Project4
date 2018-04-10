@@ -83,6 +83,14 @@
                     </div>
                     -->
 
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Follow</button>
+                    </div>
+                </div>
+                <!--
                 <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <label>To Follow: </label>
@@ -100,7 +108,7 @@
                         <button class="btn btn-primary" name="unfollowButton">Unfollow</button>
                     </form>
                 </div>
-
+                -->
 
 
                 </div>
