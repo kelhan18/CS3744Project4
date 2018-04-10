@@ -113,7 +113,7 @@
                         </div>
                         <div class ="form-group">
                             <label>Email: *</label>
-                            <input type="text" value="kelhan18@vt.edu" class="input-xlarge" required>
+                            <input type="email" value="kelhan18@vt.edu" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Address</label>
