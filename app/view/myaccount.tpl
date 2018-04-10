@@ -67,7 +67,7 @@
                     <p>Tony Medovar</p>
 
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <div class="input-group mb-1>
+                        <div class="input-group mb-1">
                             <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" name="followButton" type="button">Follow</button>
