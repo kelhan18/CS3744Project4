@@ -66,15 +66,15 @@
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
 
-                <div class="text-left">
+                <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <button class="btn btn-sm btn-primary" name="followButton">Follow</button>
+                        <button class="btn btn-primary" name="followButton">Follow</button>
                     </form>
                 </div>
 
-                <div class="text-right">
+                <div class="col-sm-6 text-right">
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <button class="btn btn-sm btn-primary" name="unfollowButton">Unfollow</button>
+                        <button class="btn btn-primary" name="unfollowButton">Unfollow</button>
                     </form>
                 </div>
 
