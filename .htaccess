@@ -23,6 +23,9 @@ RewriteRule ^stories/?$ app/controller/siteController.php?action=stories [QSA,L]
 RewriteRule ^forum/?$ app/controller/siteController.php?action=forum [QSA,L]
 RewriteRule ^signup/?$ app/controller/siteController.php?action=signupProcess [QSA,L]
 RewriteRule ^myaccount/?$ app/controller/siteController.php?action=myAccount [QSA,L]
+RewriteRule ^updateInfo/?$ app/controller/siteController.php?action=updateInfo [QSA,L]
+RewriteRule ^updatePassword/?$ app/controller/siteController.php?action=updatePassword [QSA,L]
+
 
 #topic
 

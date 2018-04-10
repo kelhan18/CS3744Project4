@@ -33,6 +33,12 @@ class SiteController
             case 'findAccount':
                 $this->findAccount();
                 break;
+            case 'updateInfo':
+                $this->updateInfo();
+                break;
+            case 'updatePassword':
+                $this->updatePassword();
+                break;
             case 'login':
                 $this->login();
                 break;
@@ -186,5 +192,15 @@ class SiteController
         session_destroy();
         header('Location: ' . BASE_URL);
         exit(); // sends to home page
+    }
+
+    public function updateInfo()
+    {
+        //When user updates info in profile page
+    }
+
+    public function updatePassword()
+    {
+        //When user updates password in profile page
     }
 }
