@@ -66,19 +66,24 @@
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
 
-                    <div class="input-group mb-3">
+                <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
+                    <div class="input-group mb-1">
                         <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-primary" name="followButton" type="button">Follow</button>
                         </div>
                     </div>
+                </form>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
+                    <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                        <div class="input-group mb-1">
+                            <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
+                </div>
 
                 </div>
 
