@@ -9,7 +9,9 @@ class Profile {
   public $lastname = '';
   public $username = '';
   public $password = '';
-  public $photo = null;
+  public $email = '';
+  public $address = '';
+  public $timezone = '';
   public $number_posts = 0;
 
   //Deletes a profile with a specific id
@@ -41,7 +43,9 @@ class Profile {
         $profile->lastname     = $row['lastname'];
         $profile->username     = $row['username'];
         $profile->password     = $row['password'];
-        $profile->photo        = $row['photo'];
+        $profile->email        = $row['email'];
+        $profile->address      = $row['address'];
+        $profile->timezone     = $row['timezone'];
         $profile->number_posts = $row['number_posts'];
 
         return $profile; // return the member
@@ -79,13 +83,15 @@ class Profile {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `photo`, `number_posts`)
+    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `email`, `address`, `timezone`, `number_posts`)
     VALUES (%s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
       $db->escape($this->password),
-      $db->escape($this->photo),
+      $db->escape($this->email),
+      $db->escape($this->address),
+      $db->escape($this->timezone),
       $db->escape($this->number_posts)
       );
 
@@ -104,7 +110,9 @@ class Profile {
     `lastname`  =   $db->escape($this->lastname),
     `username` =   $db->escape($this->username),
     `password` =   $db->escape($this->password),
-    `photo`     =   $db->escape($this->photo),
+    `email`     =   $db->escape($this->email),
+    `address`     =   $db->escape($this->address),
+    `timezone`     =   $db->escape($this->timezone),
     `number_posts`     = $db->escape($this->number_posts)
     WHERE `profile_id`     = $db->escape($this->profile_id);");
 

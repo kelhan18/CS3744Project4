@@ -96,7 +96,9 @@ class Topic {
     `lastname`  =   $db->escape($this->lastname),
     `username` =   $db->escape($this->username),
     `password` =   $db->escape($this->password),
-    `photo`     =   $db->escape($this->photo),
+    `email`     =   $db->escape($this->email),
+    `address`     =   $db->escape($this->address),
+    `timezone`     =   $db->escape($this->timezone),
     `number_posts`     = $db->escape($this->number_posts)
     WHERE `profile_id`     = $db->escape($this->profile_id);");
 
