@@ -23,6 +23,9 @@
     <?php endif; ?>
 </ul>
 
+
+<div class="main">
+    <div class="main-content">
 <div class = "container">
     <div class="wrapper">
       <form method="POST" action="<?= BASE_URL ?>/signup/" name="Sign_Form" class="form-signin">
@@ -76,4 +79,6 @@
           <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Create New Profile" type="submit">Create New Profile</button>
       </form>
   </div>
+</div>
+    </div>
 </div>
