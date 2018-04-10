@@ -48,9 +48,9 @@
                 </p>
             </header>
             <ul class="icons major">
-                <i class="fab fa-hotjar"></i>
-                <i class="fas fa-chess-king"></i>
-                <i class="fas fa-bolt"></i>
+                <li><span class="icon major"><i class="fab fa-hotjar"></i></span></li>
+                <li><span class="icon major"><i class="fas fa-chess-king"></i></span></li>
+                <li><span class="icon major"><i class="fas fa-bolt"></i></span></li>
             </ul>
         </div>
     </section>
