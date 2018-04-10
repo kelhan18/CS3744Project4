@@ -29,6 +29,7 @@ else
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/jquery.scrolly.min.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/skel.min.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/util.js"></script>
+    <script type="text/javascript" src="<?= BASE_URL ?>/public/js/popper.min.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/bootstrap.js"></script>
     <script type="text/javascript" src="<?= BASE_URL ?>/public/js/main.js"></script>
 </head>
