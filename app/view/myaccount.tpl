@@ -83,7 +83,7 @@
                             <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
                         </select>
                         <div>
-                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-lg btn-primary btn-block">Update</button>
                         </div>
                     </form>
                 </div>
@@ -92,7 +92,7 @@
                         <label>New Password</label>
                         <input type="password" class="input-xlarge">
                         <div>
-                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-lg btn-primary btn-block">Update</button>
                         </div>
                     </form>
                 </div>
