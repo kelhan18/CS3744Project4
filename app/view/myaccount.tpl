@@ -64,6 +64,7 @@
                     <h2>Followers</h2>
                 </div>
                 <div class="tab-pane fade" id="profile">
+                    <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <label>Username: *</label>
                         <input type="text" value="kelhan18" class="input-xlarge" required>
@@ -117,6 +118,7 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="password">
+                    <h2>Change Password</h2>
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <label>New Password: *</label>
                         <input type="password" class="input-xlarge" required>
