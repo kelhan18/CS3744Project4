@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
@@ -549,7 +549,7 @@
 
 		.icon.major {
 			display: inline-block;
-			font-size: 6em;
+			font-size: 4em;
 			line-height: 3em;
 			text-align: center;
 		}
@@ -908,7 +908,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: white;
+			background-color: rgba(144, 144, 144, 0.25);
 		}
 
 		input[type="submit"]:active,
@@ -916,7 +916,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: white;
+			background-color: rgba(144, 144, 144, 0.5);
 		}
 
 		input[type="submit"].icon:before,
