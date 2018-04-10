@@ -63,15 +63,20 @@
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following">
                     <h2>Following</h2>
-                    <p>Keller Han</p>
-                    <p>Tony Medovar</p>
+                    <ul>
+                        <li>Keller Han</li>
+                        <li>Tony Medovar</li>
+                    </ul>
+
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" id="followers">
                     <h2>Followers</h2>
-                    <p>Michael Kidd Gilchrist</p>
-                    <p>Lebron James</p>
+                    <ul>
+                        <li>Lebron James</li>
+                        <li>Kevin Durant</li>
+                    </ul>
                 </div>
 
 
