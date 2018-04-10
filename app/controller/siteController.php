@@ -140,6 +140,7 @@ class SiteController
 		$profile->timezone     = $timezone;
         $profile->number_posts        = 0;
 
+        console.log($profile);
 		$profile_id = $profile->save(0);
     if ($profile_id == null)
     {
@@ -147,6 +148,7 @@ class SiteController
     }
 		header('Location: '.BASE_URL.'/login/'); exit();
 	 }
+
 
     public function updateInfo()
     {
