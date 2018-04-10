@@ -170,9 +170,9 @@ class SiteController
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
-        $profile->number_posts = 0;
+        $profile->profile_id = $_SESSION['profile_id'];
 
-        $profile_id = $profile->save(1);
+        $profile_id = $profile->save();
 
         /*
         if ($profile_id == null)
