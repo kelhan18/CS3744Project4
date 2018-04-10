@@ -556,13 +556,13 @@
 			border: solid 2px #fff;
 			display: inline-block;
 			font-size: 2.8em;
-			height: calc(3em + 2px);
+
 			line-height: 3em;
 			text-align: center;
-			width: calc(3em + 2px);
+
 		}
 
-		.icon.major::before {
+		.icon.major:before {
 			-moz-transform: rotate(45deg);
 			-webkit-transform: rotate(45deg);
 			-ms-transform: rotate(45deg);
