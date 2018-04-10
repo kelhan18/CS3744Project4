@@ -68,10 +68,10 @@
 
 
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <button class="btn btn-lg btn-primary" name="followButton">Follow</button>
+                        <button class="btn btn-sm btn-primary" name="followButton">Follow</button>
                     </form>
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <button class="btn btn-lg btn-primary" name="unfollowButton">Unfollow</button>
+                        <button class="btn btn-sm btn-primary" name="unfollowButton">Unfollow</button>
                     </form>
 
                 </div>
