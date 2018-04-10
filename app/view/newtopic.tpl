@@ -1,3 +1,4 @@
+<body>
 <!--nav bar-->
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">

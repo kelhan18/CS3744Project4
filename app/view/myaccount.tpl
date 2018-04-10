@@ -1,3 +1,5 @@
+<body>
+
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>">Home</a>
@@ -24,9 +26,6 @@
     </li>
     <?php endif; ?>
 </ul>
-
-<body>
-
 
 <div class="main">
     <div class="main-content">
