@@ -165,12 +165,12 @@ class SiteController
         $profile = new Profile();
         $profile->firstname    = $firstname;
         $profile->lastname     = $lastname;
-        $profile->username    	= $username;
-        $profile->password    	= $password;
+        $profile->username     = $username;
+        $profile->password     = $password;
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
-        $profile->number_posts        = 0;
+        $profile->number_posts = 0;
 
         $profile_id = $profile->save(0);
 
@@ -179,7 +179,7 @@ class SiteController
             console.log("Yo");
             #header('Location: '.BASE_URL); exit();
         }
-        header('Location: '.BASE_URL.'/login/'); exit();
+        header('Location: '.BASE_URL.'/myAccount/'); exit();
     }
 
 
