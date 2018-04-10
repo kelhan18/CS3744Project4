@@ -548,10 +548,7 @@
 		}
 
 		.icon.major {
-			-moz-transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
-			-ms-transform: rotate(-45deg);
-			transform: rotate(-45deg);
+
 			border-radius: 3px;
 			border: solid 2px #fff;
 			display: inline-block;
@@ -563,10 +560,7 @@
 		}
 
 			.icon.major:before {
-				-moz-transform: rotate(45deg);
-				-webkit-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
+
 				display: inline-block;
 				font-size: 2.5em;
 			}
