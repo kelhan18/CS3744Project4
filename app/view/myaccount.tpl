@@ -40,13 +40,13 @@
                     <a class="nav-item nav-link active" href="#activity-feed" data-toggle="tab">Activity Feed</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#following" data-toggle="tab">Following</a>
+                    <a class="nav-item nav-link" href="#following" data-toggle="tab">Following</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#followers" data-toggle="tab">Followers</a>
+                    <a class="nav-item nav-link" href="#followers" data-toggle="tab">Followers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#profile" data-toggle="tab">Profile</a>
+                    <a class="nav-item nav-link" href="#profile" data-toggle="tab">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-item nav-link" href="#password" data-toggle="tab">Password</a>
