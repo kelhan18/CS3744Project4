@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    $('#input-username').focus(function(){
+
+        $('#input-username').blur();
+
+    });
 
   //On button press show information to update table
   $('#addRelButton').click(function(){
