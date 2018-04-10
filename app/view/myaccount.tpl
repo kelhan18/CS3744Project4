@@ -66,6 +66,26 @@
                     <p>Keller Han</p>
                     <p>Tony Medovar</p>
 
+
+                <div data-role="main" class="ui-content">
+                    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
+
+                    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+                        <form method="post" action="/action_page_post.php">
+                            <div>
+                                <h3>Login information</h3>
+                                <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+                                <input type="text" name="user" id="usrnm" placeholder="Username">
+                                <label for="pswd" class="ui-hidden-accessible">Password:</label>
+                                <input type="password" name="passw" id="pswd" placeholder="Password">
+                                <label for="log">Keep me logged in</label>
+                                <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+                                <input type="submit" data-inline="true" value="Log in">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <label>To Follow: </label>
@@ -75,7 +95,7 @@
                     </form>
                 </div>
 
-                <div class="col-sm-6 text-right">
+                <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
                         <label>Unfollow: </label>
                         <input type="text" required>
