@@ -70,11 +70,9 @@ class Profile {
   //Saves the new family member and adds them to the database
   public function save($profile_id){
     if($profile_id == 0) {
-        echo 'Save';
       return $this->insert();
     }
     else {
-        echo 'Update';
       return $this->update();
     }
   }
@@ -103,6 +101,7 @@ class Profile {
 
   //Updates specified data in the database
   public function update() {
+      echo 'Profile ID: '.$this->profile_id;
     if($this->profile_id == 0)
       return null; // can't update something without an ID
 
