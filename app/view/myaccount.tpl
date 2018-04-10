@@ -67,10 +67,8 @@
                     <p>Tony Medovar</p>
 
 
-                <div data-role="main" class="ui-content">
-                    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
-
-                    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+                    <a href="#myPopup" data-toggle="popup">Show Popup Form</a>
+                    <div data-role="popup" id="myPopup">
                         <form method="post" action="/action_page_post.php">
                             <div>
                                 <h3>Login information</h3>
@@ -84,7 +82,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+
 
                 <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
@@ -120,18 +118,29 @@
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
-                        <label>Username: </label>
-                        <input type="text" value="kelhan18" class="input-xlarge" id="input-username">
-                        <label>First Name: *</label>
-                        <input type="text" value="Keller" class="input-xlarge" required>
-                        <label>Last Name: *</label>
-                        <input type="text" value="Han" class="input-xlarge" required>
-                        <label>Email: *</label>
-                        <input type="text" value="kelhan18@vt.edu" class="input-xlarge" required>
-                        <label>Address</label>
-                        <input type="text" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
-                        <label>Time Zone: *</label>
-                        <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge" required>
+                        <div class ="form-group">
+                            <label>Username: </label>
+                            <input type="text" value="kelhan18" class="input-xlarge" id="input-username">
+                        </div>
+                        <div class ="form-group">
+                            <label>First Name: *</label>
+                            <input type="text" value="Keller" class="input-xlarge" required>
+                        </div>
+                        <div class ="form-group">
+                            <label>Last Name: *</label>
+                            <input type="text" value="Han" class="input-xlarge" required>
+                        </div>
+                        <div class ="form-group">
+                            <label>Email: *</label>
+                            <input type="text" value="kelhan18@vt.edu" class="input-xlarge" required>
+                        </div>
+                        <div class ="form-group">
+                            <label>Address</label>
+                            <input type="text" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
+                        </div>
+                        <div class ="form-group">
+                            <label>Time Zone: *</label>
+                            <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge" required>
                             <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
                             <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
                             <option value="-10.0">(GMT -10:00) Hawaii</option>
@@ -164,10 +173,11 @@
                             <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
                             <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
                         </select>
-                        <br>
-                        <p>(* detonates required field)</p>
-                        <div>
-                            <button class="btn btn-lg btn-primary btn-block">Update</button>
+                            <br>
+                            <p>(* detonates required field)</p>
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block">Update</button>
+                            </div>
                         </div>
                     </form>
                 </div>
