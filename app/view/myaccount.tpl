@@ -67,7 +67,7 @@
                     <p>Tony Medovar</p>
 
 
-                    <a href="#myPopup" data-toggle="popup">Show Popup Form</a>
+                    <a href="#myPopup" data-rel="popup">Show Popup Form</a>
                     <div data-role="popup" id="myPopup">
                         <form method="post" action="/action_page_post.php">
                             <div>
@@ -83,7 +83,7 @@
                         </form>
                     </div>
 
-
+                <!--
                 <div class="col-sm-6 text-left">
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <label>To Follow: </label>
@@ -101,6 +101,7 @@
                         <button class="btn btn-primary" name="unfollowButton">Unfollow</button>
                     </form>
                 </div>
+                -->
 
 
                 </div>
@@ -186,8 +187,10 @@
                 <div class="tab-pane fade" id="password">
                     <h2>Change Password</h2>
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
-                        <label>New Password: *</label>
-                        <input type="password" class="input-xlarge" required>
+                        <div class ="form-group">
+                            <label>New Password: *</label>
+                            <input type="password" class="input-xlarge" required>
+                        </div>
                         <br>
                         <p>(* detonates required field)</p>
                         <div>
