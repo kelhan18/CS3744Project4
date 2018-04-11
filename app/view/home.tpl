@@ -15,7 +15,7 @@
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/forum">Forum</a>
     </li>
     <li class="nav-item">
-        <a class="nav-item nav-link" href="<?= BASE_URL ?>/myaccount">My Account</a>
+        <a class="nav-item nav-link" href="<?= BASE_URL ?>/myaccount/<?=profile->profile_id?>">My Account</a>
     </li>
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/logout">Logout</a>

@@ -16,7 +16,8 @@ class SiteController
     {
         switch ($action) {
             case 'home':
-                $this->home();
+                $profile_id = $_GET['profile_id'];
+                $this->home($profile_id);
                 break;
             case 'timeline':
                 $this->timeline();
@@ -217,9 +218,10 @@ class SiteController
 
 
     //Brings the user to the home page
-    public function home()
+    public function home($profile_id)
     {
         $pageTitle = 'Home';
+        $profile = Profile::getProfile($profile_id);
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/home.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';

@@ -13,7 +13,7 @@ RewriteEngine on
 #RewriteRule ^myfamily/?$ app/controller/siteController.php?action=myfamily [QSA,L]
 
 #New for Project 4
-RewriteRule ^$ app/controller/siteController.php?action=home [QSA,L]
+RewriteRule ^(\d+)/?$ app/controller/siteController.php?action=home&profile_id=$1 [QSA,L]
 RewriteRule ^logout/?$ app/controller/siteController.php?action=logout [QSA,L]
 RewriteRule ^login/?$ app/controller/siteController.php?action=login [QSA,L]
 RewriteRule ^login/findAccount/?$ app/controller/siteController.php?action=findAccount [QSA,L]
