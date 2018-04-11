@@ -3,6 +3,14 @@ body {
     background-image: url('../img/Icons/skyscraper.png');
 }
 
+.account-h1 {
+    color: white;
+    font-size: 4.5em;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    font-family: 'Indie Flower', cursive;
+}
+
 h1#home {
     color: #000;
     margin-top: 6%;
@@ -543,11 +551,4 @@ a:hover {
         margin-left: 10px;
     }
 
-    .account-h1 {
-        color: white;
-        font-size: 4.5em;
-        text-align: center;
-        -webkit-text-stroke: 1px black;
-        font-family: 'Indie Flower', cursive;
-    }
 }
