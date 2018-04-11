@@ -92,7 +92,6 @@ if(isset($_SESSION['username']))
                     <ul class="list-group">
 
                         <?php foreach($followers as $follower): ?>
-
                         <?php if($follower->follower == $profile->username): ?>
                         <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
 
@@ -164,14 +163,21 @@ if(isset($_SESSION['username']))
 
                     <!--for each make them in a row-->
                     <ul class="list-group">
+
+                        <?php foreach($followers as $follower): ?>
+                        <?php if($follower->username== $profile->username): ?>
+                        <?php $userProfile = Profile::getProfileByUsername($follower->follower)?>
+
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Lebron James
-                            <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
+                            <?= $follower->follower?>
+                            <span class="badge badge-primary badge-pill">
+                                            Following: <?= $userProfile->number_following?>
+                                            Followers: <?= $userProfile->number_followers?>
+                                        </span>
                         </li>
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Kevin Durant
-                            <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
-                        </li>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+
                     </ul>
 
                 </div>
