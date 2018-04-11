@@ -27,7 +27,7 @@
     <?php endif; ?>
 </ul>
 
-<div class="main">
+<div class="main story-main-background">
     <div class="main-content story-background">
         <br>
         <h1 class="custom-header">Medal Of Honor Recipients</h1>
@@ -63,8 +63,6 @@
                     <h4>Private First Class, U.S. Marine Corps</h4>
 
                 </header>
-
-
                 <div class="profile-bio">
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
                     <h4><strong>Born: </strong></h4><p>18 October 1924, Cleveland, Ohio.</p>

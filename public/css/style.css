@@ -33,6 +33,11 @@ body {
 .story-background {
     background-image: url('../img/Icons/stardust.png');
 }
+
+.story-main-background {
+    background-image: url('../img/Icons/fresh_snow.png');
+
+}
 h1#home {
     color: #000;
     margin-top: 6%;
