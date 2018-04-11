@@ -4,7 +4,7 @@ if(isset($_SESSION['username']))
   $profiles = Profile::getProfiles();
 ?>
 
-<body>
+<body class="myaccount-body">
 
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">

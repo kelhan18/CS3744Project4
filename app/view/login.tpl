@@ -1,4 +1,4 @@
-<body>
+<body class="login-body">
 <!-- Add your site or application content here -->
 <!--nav bar-->
 <ul class="nav nav-pills nav-justified justify-content-center">

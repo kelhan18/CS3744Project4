@@ -1,4 +1,4 @@
-<body>
+<body class="signup-body">
 <!--nav bar-->
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
@@ -26,7 +26,7 @@
 
 
 <div class="main">
-    <div class="main-content">
+    <div class="main-content forum-background">
 <div class = "container">
     <div class="wrapper">
       <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/signup/" name="Sign_Form" class="form-signin">

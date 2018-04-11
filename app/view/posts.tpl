@@ -1,4 +1,4 @@
-<body>
+<body class="posts-body">
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>">Home</a>
@@ -26,10 +26,10 @@
     <?php endif; ?>
 </ul>
 
-<div class="main">
+<div class="main forum-main-background">
     <!-- container -->
 
-    <div class="main-content">
+    <div class="main-content forum-background">
         <br>
         <h1 class="custom-header-post"><?= $topic->topic?></h1>
 

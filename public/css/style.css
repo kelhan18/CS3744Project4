@@ -1,8 +1,34 @@
-
 body {
     background-image: url('../img/Icons/skyscraper.png');
 }
 
+body.myaccount-body {
+    background-image: url('../img/Icons/sakura.png');
+}
+
+body.stories-body {
+    background-image: url('../img/Icons/fresh_snow.png');
+}
+
+body.forum-body {
+    background-image: url('../img/Icons/dark-triangles.png');
+}
+
+body.login-body {
+    background-image: url('../img/Icons/sakura.png');
+}
+
+body.timeline-body {
+    background-image: url('../img/Icons/fresh_snow.png');
+}
+
+body.signup-body {
+    background-image: url('../img/Icons/sakura.png');
+}
+
+body.posts-body {
+    background-image: url('../img/Icons/dark-triangles.png');
+}
 .account-h1 {
     color: white;
     font-size: 4.5em;

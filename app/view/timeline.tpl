@@ -1,5 +1,5 @@
 
-<body>
+<body class="timeline-body">
 <ul class="nav nav-pills nav-justified justify-content-center">
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>">Home</a>
