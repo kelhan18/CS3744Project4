@@ -72,11 +72,11 @@ if(isset($_SESSION['username']))
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <h1>Following</h1>
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-action list-group-item-light d-flex justify-content-between">
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Keller Han
                             <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
                         </li>
-                        <li class="list-group-item list-group-item-action list-group-item-light d-flex justify-content-between">
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Tony Medovar
                             <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
                         </li>
@@ -105,8 +105,14 @@ if(isset($_SESSION['username']))
                 <div class="tab-pane fade" role="tabpanel" id="followers">
                     <h1>Followers</h1>
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-action list-group-item-primary">Lebron James</li>
-                        <li class="list-group-item list-group-item-action list-group-item-primary">Kevin Durant</li>
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                            Lebron James
+                            <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
+                        </li>
+                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                            Kevin Durant
+                            <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
+                        </li>
                     </ul>
                 </div>
 
