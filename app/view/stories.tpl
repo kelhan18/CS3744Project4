@@ -32,6 +32,8 @@
         <br>
         <h1 class="custom-header">Medal Of Honor Recipients</h1>
 
+        <div class="content">
+
         <div class="row">
             <div class="profile-card">
                 <header>
@@ -164,6 +166,7 @@
                     <strong>Accredited to: </strong><p>New Jersey</p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </div>
