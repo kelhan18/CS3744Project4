@@ -208,9 +208,9 @@ if(isset($_SESSION['username']))
                                 </h1>
                             </div>
                             <div class="col-md-4">
-                                <h1 style="color: royalblue;">
+                                <h3 style="color: royalblue;">
                                     <u>Change Role</u>
-                                </h1>
+                                </h3>
                             </div>
                         </div>
 
