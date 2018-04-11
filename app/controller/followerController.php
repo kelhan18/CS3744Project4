@@ -42,7 +42,7 @@ class FollowerController
         $followId = $row['profile_id'];
 
         // If result matched $username and $password, table row must be 1 row
-        if($result->num_rows != 0 and $result2->num_rows != 0) {
+        if($result->num_rows != 0 and $result2->num_rows == 0) {
             $follower = new Follower();
             $follower->user    = $follow;
             $follower->follower = $myUsername;
