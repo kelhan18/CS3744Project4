@@ -5,6 +5,9 @@ if(isset($_SESSION['username']))
 else
   echo 'Not logged in, please sign-in!';
 
+if(!isset($_SESSION['role'])
+  echo ' Role: Unregistered User'
+
 ?>
 
 <!DOCTYPE html>
