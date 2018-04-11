@@ -63,8 +63,9 @@ class FollowerController
             else {
                 ob_start();
                 echo "You're already following them!";
-                ob_end_flush();
                 header('Location: '.BASE_URL.'/myaccount/');
+                exit();
+                ob_end_flush();
 
             }
 
