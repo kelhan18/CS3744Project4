@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="480" column="5" lean-forward="false" selection-start-line="480" selection-start-column="5" selection-end-line="480" selection-end-column="5" />
+            <state relative-caret-position="197">
+              <caret line="477" column="0" lean-forward="true" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,18 +37,18 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="1996" column="1" lean-forward="true" selection-start-line="1996" selection-start-column="1" selection-end-line="1996" selection-end-column="1" />
+            <state relative-caret-position="21">
+              <caret line="1959" column="28" lean-forward="true" selection-start-line="1959" selection-start-column="28" selection-end-line="1959" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="87" column="60" lean-forward="true" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
+            <state relative-caret-position="178">
+              <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -150,9 +149,9 @@
         <option value="$PROJECT_DIR$/app/view/login.tpl" />
         <option value="$PROJECT_DIR$/app/view/signup.tpl" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
-        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
       </list>
     </option>
   </component>
@@ -996,12 +995,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="47937000" />
+      <workItem from="1523373113654" duration="48231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69904000" />
+    <option name="totallyTimeSpent" value="70198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="589" y="77" width="1056" height="869" extended-state="0" />
@@ -1422,32 +1421,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="477" column="0" lean-forward="true" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1959" column="28" lean-forward="true" selection-start-line="1959" selection-start-column="28" selection-end-line="1959" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="87" column="60" lean-forward="true" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
+        <state relative-caret-position="178">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="1996" column="1" lean-forward="true" selection-start-line="1996" selection-start-column="1" selection-end-line="1996" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="480" column="5" lean-forward="false" selection-start-line="480" selection-start-column="5" selection-end-line="480" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

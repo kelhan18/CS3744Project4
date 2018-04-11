@@ -83,7 +83,7 @@ if(isset($_SESSION['username']))
                     </ul>
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <div class="input-group mb-1">
+                        <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" name="followButton" type="button">Follow</button>
@@ -92,7 +92,7 @@ if(isset($_SESSION['username']))
                     </form>
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <div class="input-group mb-1">
+                        <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
