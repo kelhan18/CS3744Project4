@@ -201,8 +201,8 @@ if(isset($_SESSION['username']))
                     <div id="postHolder">
 
                         <?php foreach($profiles as $profile): ?>
-                        <div class="row">
-                            <div class="panel panel-primary">
+                        <div class="container">
+                            <div class="row panel panel-primary">
                                 <div class="panel-heading">
                                     <?= $profile->firstname?> <?= $profile->lastname?>
                                 </div>
