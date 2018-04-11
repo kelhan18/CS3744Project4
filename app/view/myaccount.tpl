@@ -37,10 +37,6 @@ if(isset($_SESSION['username']))
     <div class="main-content">
 
             <ul class="nav nav-pills nav-justified justify-content-center">
-                <!--
-                <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
-                <li><a href="#profile" data-toggle="tab">Password</a></li>
-                -->
                 <li class="nav-item">
                     <a class="nav-item nav-link active" href="#activity-feed" data-toggle="tab">Activity</a>
                 </li>
@@ -69,12 +65,12 @@ if(isset($_SESSION['username']))
 
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane fade show active" role="tabpanel" id="activity-feed">
-                    <h2>Activity Feed</h2>
+                    <h1>Activity Feed</h1>
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
-                    <h2>Following</h2>
+                    <h1>Following</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action list-group-item-primary">Keller Han</li>
                         <li class="list-group-item list-group-item-action list-group-item-primary">Tony Medovar</li>
@@ -101,7 +97,7 @@ if(isset($_SESSION['username']))
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" role="tabpanel" id="followers">
-                    <h2>Followers</h2>
+                    <h1>Followers</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action list-group-item-primary">Lebron James</li>
                         <li class="list-group-item list-group-item-action list-group-item-primary">Kevin Durant</li>
@@ -110,7 +106,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="profile">
-                    <h2>Edit Profile Info</h2>
+                    <h1>Edit Profile Info</h1>
                     <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
@@ -178,7 +174,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="password">
-                    <h2>Change Password</h2>
+                    <h1>Change Password</h1>
                     <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
                             <label>Old Password: *</label>
@@ -197,21 +193,21 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
-                    <h1 style="align-content: center">List of Users</h1>
+                    <h1>List of Users</h1>
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <h1 style="color: royalblue">
                                     <u>Name</u>
                                 </h1>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <h1 style="margin-left:20px; color: royalblue">
                                     <u>Role</u>
                                 </h1>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <h1 style="color: royalblue;">
                                     <u>Change Role</u>
                                 </h1>
@@ -224,15 +220,15 @@ if(isset($_SESSION['username']))
                         <?php foreach($profiles as $profile): ?>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <h3 style="color: dodgerblue;">
                                         <?= $profile->firstname?> <?= $profile->lastname?>
                                     </h3>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                         <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
                                     </form>
