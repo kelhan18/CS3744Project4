@@ -197,9 +197,9 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
-                    <h2>List of Users</h2>
-                    <div id="postHolder">
+                    <h1>List of Users</h1>
 
+                    <div id="postHolder">
                         <?php foreach($profiles as $profile): ?>
 
                             <div class="row panel user-card">
@@ -217,8 +217,8 @@ if(isset($_SESSION['username']))
 
 
 
-                </div>
+                     </div>
 
-    </div>
+                </div>
 </div>
 </div>
