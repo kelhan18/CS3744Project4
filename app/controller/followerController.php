@@ -26,9 +26,9 @@ class FollowerController
 
     public function follow()
     {
-        $follow = $_POST['toFollow'];
+        $follow = $_POST['toFollow']; //Username of person to follow
+        $myUsername = $_POST['myUsername'];
         $myId   = $_POST['myId'];
-        #$profiles = Profile::getProfiles();
 
         $db = Db::instance();
 

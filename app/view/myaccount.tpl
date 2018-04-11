@@ -107,7 +107,8 @@ if(isset($_SESSION['username']))
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" name="toFollow" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <input type="hidden" name="myId" value="<?= $profile->username?>"/>
+                                        <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
+                                        <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
                                         <button class="btn btn-outline-primary" name="followButton" type="submit">Follow</button>
                                     </div>
                                 </div>
