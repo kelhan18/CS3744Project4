@@ -36,7 +36,14 @@ body {
 
 .story-main-background {
     background-image: url('../img/Icons/fresh_snow.png');
+}
 
+.forum-background {
+    background-image: url('../img/Icons/fresh_snow.png');
+}
+
+.forum-main-background {
+    background-image: url('../img/Icons/dark-triangles.png');
 }
 h1#home {
     color: #000;

@@ -27,10 +27,10 @@
     <?php endif; ?>
 </ul>
 
-<div class="main">
+<div class="main forum-main-background">
     <!-- container -->
 
-    <div class="main-content">
+    <div class="main-content forum-background">
         <br>
             <form method="POST" action="<?= BASE_URL ?>/topic/new/">
               <h1 class="custom-header"">Forum Discussion</h1>
