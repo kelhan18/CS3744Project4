@@ -46,9 +46,9 @@
                 </header>
 
                 <div class="profile-bio">
-                    <h5><strong>Place and date: </strong></h5><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
-                    <h5><strong>Born: </strong></h5><p>17 April 1924, Pulaski, Virginia.</p>
-                    <h5><strong>Accredited to: </strong></h5><p>District of Columbia.</p>
+                    <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
+                    <h4><strong>Born: </strong></h4><p>17 April 1924, Pulaski, Virginia.</p>
+                    <h4><strong>Accredited to: </strong></h4><p>District of Columbia.</p>
 
                 </div>
             </div>
