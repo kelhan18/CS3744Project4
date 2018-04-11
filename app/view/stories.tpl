@@ -66,9 +66,9 @@
 
 
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
-                    <strong>Born: </strong><p>18 October 1924, Cleveland, Ohio.</p>
-                    <strong>Accredited to: </strong><p>Oregon</p>
+                    <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
+                    <h4><strong>Born: </strong></h4><p>18 October 1924, Cleveland, Ohio.</p>
+                    <h4><strong>Accredited to: </strong></h4><p>Oregon</p>
 
                 </div>
             </div>
@@ -82,9 +82,9 @@
                     <h4>Private First Class, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
-                    <strong>Born: </strong><p>24 November 1925, Chicago, Illinois.</p>
-                    <strong>Accredited to: </strong><p>Minnesota</p>
+                    <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
+                    <h4><strong>Born: </strong></h4><p>24 November 1925, Chicago, Illinois.</p>
+                    <h4><strong>Accredited to: </strong></h4><p>Minnesota</p>
                 </div>
             </div>
 
@@ -95,10 +95,10 @@
                     <h4>Private First Class, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 25 September 1944.
+                    <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 25 September 1944.
                     </p>
-                    <strong>Born: </strong><p>12 August 1924, Mobile, Alabama. </p>
-                    <strong>Accredited to: </strong><p>Alabama</p>
+                    <h4><strong>Born: </strong></h4><p>12 August 1924, Mobile, Alabama. </p>
+                    <h4><strong>Accredited to: </strong></h4><p>Alabama</p>
                 </div>
             </div>
         </div>
@@ -111,10 +111,10 @@
                     <h4>Private, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 4 October 1944.
+                    <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 4 October 1944.
                     </p>
-                    <strong>Born: </strong><p>12 June 1923, Neafus, Kentucky. </p>
-                    <strong>Accredited to: </strong><p>Kentucky</p>
+                    <h4><strong>Born: </strong></h4><p>12 June 1923, Neafus, Kentucky. </p>
+                    <h4><strong>Accredited to: </strong></h4><p>Kentucky</p>
 
                 </div>
             </div>
@@ -126,11 +126,11 @@
                     <h4>Captain, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Peleliu Island, Palau group, 19-20 September 1944.
+                    <h4><strong>Place and date: </strong></h4><p>Peleliu Island, Palau group, 19-20 September 1944.
                     </p>
-                    <strong>Born: </strong><p>16 July 1919, Milton, Massachusetts.
+                    <h4><strong>Born: </strong></h4><p>16 July 1919, Milton, Massachusetts.
                     </p>
-                    <strong>Accredited to: </strong><p>Massachusetts</p>
+                    <h4><strong>Accredited to: </strong></h4><p>Massachusetts</p>
 
                 </div>
             </div>
@@ -146,10 +146,10 @@
                 </header>
 
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Peleliu Island, Palau group, 18 September 1944.
+                    <h4><strong>Place and date: </strong></h4><p>Peleliu Island, Palau group, 18 September 1944.
                     </p>
-                    <strong>Born: </strong><p>16 August 1923, Claude, Texas. </p>
-                    <strong>Accredited to: </strong><p>Texas</p>
+                    <h4><strong>Born: </strong></h4><p>16 August 1923, Claude, Texas. </p>
+                    <h4><strong>Accredited to: </strong></h4><p>Texas</p>
                 </div>
             </div>
 
@@ -160,10 +160,10 @@
                     <h4>First Lieutenant, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
-                    <strong>Place and date: </strong><p>Peleliu Island, Palau group, 15 September 1944.
+                    <h4><strong>Place and date: </strong></h4><p>Peleliu Island, Palau group, 15 September 1944.
                     </p>
-                    <strong>Born: </strong><p>11 May 1919, Lindenwold, New Jersey. </p>
-                    <strong>Accredited to: </strong><p>New Jersey</p>
+                    <h4><strong>Born: </strong></h4><p>11 May 1919, Lindenwold, New Jersey. </p>
+                    <h4><strong>Accredited to: </strong></h4><p>New Jersey</p>
                 </div>
             </div>
         </div>
