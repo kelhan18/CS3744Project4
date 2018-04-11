@@ -165,9 +165,8 @@ class SiteController
 		$profile->timezone     = $timezone;
         $profile->number_posts  = 0;
 
+        $_SESSION['role'] = $profile->role;
 		$profile_id = $profile->save(0);
-
-        echo 'Profile ID: '.$profile_id;
 
 
         if ($profile_id == null)
