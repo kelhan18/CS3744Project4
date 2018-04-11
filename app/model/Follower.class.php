@@ -33,7 +33,7 @@ class Follower {
 
             $follower = new Follower(); // instantiate
             $follower->id   = $row['id'];
-            $follower->username      = $row['user'];
+            $follower->username      = $row['username'];
             $follower->follower     = $row['follower'];
 
             return $follower; // return the member
@@ -43,12 +43,13 @@ class Follower {
     // return all Followers in an array
     public static function getFollowers() {
         $db = Db::instance();
-        $q = "SELECT id FROM `".self::DB_TABLE."`";
+        $q = "SELECT * FROM `".self::DB_TABLE."`";
         $result = $db->query($q);
+
         $followers = array();
         if($result->num_rows != 0) {
             while($row = $result->fetch_assoc()) {
-                $followers[] = self::getTopic($row['id']);
+                $followers[] = self::getFollower($row['id']);
             }
         }
         return $followers;
