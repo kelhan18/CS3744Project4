@@ -2033,7 +2033,7 @@
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
 			font-size: 5em;
-            font-color: #fff;
+            font-color: white;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
