@@ -72,7 +72,11 @@ if(isset($_SESSION['username']))
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane fade show in active" role="tabpanel" id="activity-feed">
                     <br>
-                    <h1 class="account-h1">Activity Feed</h1>
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="account-h1">Activity Feed</h1>
+                        </div>
+                    </div>
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
@@ -138,23 +142,35 @@ if(isset($_SESSION['username']))
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" role="tabpanel" id="followers">
                     <br>
-                    <h1 class="account-h1">Followers</h1>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Lebron James
-                            <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Kevin Durant
-                            <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
-                        </li>
-                    </ul>
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="account-h1">Followers</h1>
+                        </div>
+
+                        <!--for each make them in a row-->
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                Lebron James
+                                <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
+                            </li>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                Kevin Durant
+                                <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
 
 
                 <div class="tab-pane fade" role="tabpanel" id="profile">
                     <br>
-                    <h1 class="account-h1">Edit Profile Info</h1>
+                    <div class="container">
+                        <div class="row">
+                             <h1 class="account-h1">Edit Profile Info</h1>
+                        </div>
+
+                        <div class="row">
 
                     <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
@@ -219,34 +235,43 @@ if(isset($_SESSION['username']))
                             </div>
                         </div>
                     </form>
+                        </div>
+                    </div>
                 </div>
 
 
                 <div class="tab-pane fade" role="tabpanel" id="password">
                     <br>
-                    <h1 class="account-h1">Change Password</h1>
-                    <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
-                        <div class ="form-group">
-                            <h3>Old Password: *</h3>
-                            <input type="password" name="oldpassword" class="input-xlarge" required>
+                        <div class="container">
+                            <div class="row">
+                                <h1 class="account-h1">Change Password</h1>
+                                <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
+                                    <div class ="form-group">
+                                        <h3>Old Password: *</h3>
+                                        <input type="password" name="oldpassword" class="input-xlarge" required>
+                                    </div>
+                                    <div class ="form-group">
+                                        <h3>New Password: *</h3>
+                                        <input type="password" name="newpassword" class="input-xlarge" required>
+                                    </div>
+                                    <br>
+                                    <h5>(* detonates required field)</h5>
+                                    <div>
+                                        <button class="btn btn-lg btn-primary btn-block">Update</button>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
-                        <div class ="form-group">
-                            <h3>New Password: *</h3>
-                            <input type="password" name="newpassword" class="input-xlarge" required>
-                        </div>
-                        <br>
-                        <h5>(* detonates required field)</h5>
-                        <div>
-                            <button class="btn btn-lg btn-primary btn-block">Update</button>
-                        </div>
-                    </form>
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
                     <br>
-                    <h1 class="account-h1">List of Users</h1>
-
                     <div class="container">
+                        <div class="row">
+                            <h1 class="account-h1">List of Users</h1>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-5">
                                 <h1 style="color: royalblue">
@@ -265,10 +290,9 @@ if(isset($_SESSION['username']))
                             </div>
                         </div>
 
-                    </div>
+
 
                         <?php foreach($profiles as $profile): ?>
-                        <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
                                     <h3 style="color: dodgerblue;">
@@ -291,16 +315,19 @@ if(isset($_SESSION['username']))
                                 </div>
                             </div>
 
-                            </div>
+
                         <?php endforeach; ?>
+                    </div>
                 </div>
 
 
                 <div class="tab-pane fade" role="tabpanel" id="ownerpage">
                     <br>
-                    <h1 class="account-h1">List of Users</h1>
-
                     <div class="container">
+                        <div class="row">
+                            <h1 class="account-h1">List of Users</h1>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-5">
                                 <h1 style="color: royalblue">
@@ -319,9 +346,8 @@ if(isset($_SESSION['username']))
                             </div>
                         </div>
 
-                    </div>
                     <?php foreach($profiles as $profile): ?>
-                    <div class="container">
+
                         <div class="row">
                             <div class="col-md-5">
                                 <h3 style="color: dodgerblue;">
@@ -354,15 +380,13 @@ if(isset($_SESSION['username']))
                                 <?php endif; ?>
                             </div>
                         </div>
-
+                        <?php endforeach; ?>
                     </div>
-                    <?php endforeach; ?>
 
-
-                </div>
 
 
                 </div>
+
 
     </div>
 </div>
