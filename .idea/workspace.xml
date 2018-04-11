@@ -39,14 +39,14 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+            <state relative-caret-position="222">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <marker date="1523479695000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
-                <marker date="1523479695000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
-                <marker date="1523479695000" expanded="true" signature="1773:1985" ph="..." />
-                <marker date="1523479695000" expanded="true" signature="1967:1985" ph="{...}" />
-                <marker date="1523479695000" expanded="true" signature="1998:2096" ph="..." />
+                <marker date="1523479775000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
+                <marker date="1523479775000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
+                <marker date="1523479775000" expanded="true" signature="1773:1985" ph="..." />
+                <marker date="1523479775000" expanded="true" signature="1967:1985" ph="{...}" />
+                <marker date="1523479775000" expanded="true" signature="1998:2097" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1051,12 +1051,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="67305000" />
+      <workItem from="1523373113654" duration="67383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89272000" />
+    <option name="totallyTimeSpent" value="89350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="408" y="131" width="1136" height="869" extended-state="0" />
@@ -1511,14 +1511,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+        <state relative-caret-position="222">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <marker date="1523479695000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
-            <marker date="1523479695000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
-            <marker date="1523479695000" expanded="true" signature="1773:1985" ph="..." />
-            <marker date="1523479695000" expanded="true" signature="1967:1985" ph="{...}" />
-            <marker date="1523479695000" expanded="true" signature="1998:2096" ph="..." />
+            <marker date="1523479775000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
+            <marker date="1523479775000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
+            <marker date="1523479775000" expanded="true" signature="1773:1985" ph="..." />
+            <marker date="1523479775000" expanded="true" signature="1967:1985" ph="{...}" />
+            <marker date="1523479775000" expanded="true" signature="1998:2097" ph="..." />
           </folding>
         </state>
       </provider>

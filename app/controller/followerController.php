@@ -62,7 +62,7 @@ class FollowerController
             }
             else {
                 echo "<script> alert('You are already following them!');
-                    window.location = $baseurl</script>";
+                    window.location = $baseurl;</script>";
             }
 
 
