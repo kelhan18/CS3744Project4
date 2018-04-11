@@ -106,19 +106,19 @@
                         </div>
                         <div class ="form-group">
                             <label>First Name: *</label>
-                            <input type="text" name="firstname" value="Keller" class="input-xlarge" required>
+                            <input type="text" name="firstname" value="<?= $profile->firstname?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Last Name: *</label>
-                            <input type="text" name="lastname" value="Han" class="input-xlarge" required>
+                            <input type="text" name="lastname" value="<?= $profile->lastname?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Email: *</label>
-                            <input type="email" name="email" value="kelhan18@vt.edu" class="input-xlarge" required>
+                            <input type="email" name="email" value="<?= $profile->email?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
                             <label>Address</label>
-                            <input type="text" name="address" value="2877 Main Street, Blacksburg VA" class="input-xlarge">
+                            <input type="text" name="address" value="<?= $profile->address?>" class="input-xlarge">
                         </div>
                         <div class ="form-group">
                             <label>Time Zone: *</label>

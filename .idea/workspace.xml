@@ -69,8 +69,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="691">
+              <caret line="167" column="57" lean-forward="true" selection-start-line="167" selection-start-column="57" selection-end-line="167" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -79,8 +79,8 @@
       <file leaf-file-name="posts.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="259">
+              <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
               <folding>
                 <marker date="1523393916000" expanded="false" signature="2313:2356" ph="..." />
                 <marker date="1523393916000" expanded="false" signature="2443:2475" ph="..." />
@@ -181,8 +181,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="448" />
-    <option name="y" value="69" />
+    <option name="x" value="572" />
+    <option name="y" value="126" />
     <option name="width" value="1137" />
     <option name="height" value="869" />
   </component>
@@ -980,15 +980,15 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="28710000" />
+      <workItem from="1523373113654" duration="28931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50677000" />
+    <option name="totallyTimeSpent" value="50898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="448" y="69" width="1137" height="869" extended-state="0" />
+    <frame x="572" y="126" width="1137" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1414,8 +1414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state relative-caret-position="259">
+          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
           <folding>
             <marker date="1523393916000" expanded="false" signature="2313:2356" ph="..." />
             <marker date="1523393916000" expanded="false" signature="2443:2475" ph="..." />
@@ -1425,8 +1425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="691">
+          <caret line="167" column="57" lean-forward="true" selection-start-line="167" selection-start-column="57" selection-end-line="167" selection-end-column="57" />
           <folding />
         </state>
       </provider>
