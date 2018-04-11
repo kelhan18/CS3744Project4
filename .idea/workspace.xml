@@ -45,18 +45,18 @@
             <state relative-caret-position="348">
               <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
               <folding>
-                <marker date="1523487846000" expanded="true" signature="355:392" ph="DELETE FROM " />
-                <marker date="1523487846000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
-                <marker date="1523487846000" expanded="true" signature="1373:1407" ph="SELECT id FR... ${self::DB_TABLE}" />
-                <marker date="1523487846000" expanded="true" signature="2174:2281" ph="UPDATE `prof... " />
-                <marker date="1523487846000" expanded="true" signature="2174:2282" ph="UPDATE `prof... " />
-                <marker date="1523487846000" expanded="true" signature="2338:2445" ph="UPDATE `prof... " />
-                <marker date="1523487846000" expanded="true" signature="2507:2573" ph="INSERT INTO followers... " />
-                <marker date="1523487846000" expanded="true" signature="2926:3033" ph="UPDATE `prof... " />
-                <marker date="1523487846000" expanded="true" signature="3090:3197" ph="UPDATE `prof... " />
-                <marker date="1523487846000" expanded="true" signature="3258:3318" ph="DELETE FROM " />
-                <marker date="1523487846000" expanded="true" signature="3269:3317" ph="INSERT INTO followers... " />
-                <marker date="1523487846000" expanded="true" signature="3742:3903" ph="UPDATE `foll... " />
+                <marker date="1523487946000" expanded="true" signature="355:392" ph="DELETE FROM " />
+                <marker date="1523487946000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
+                <marker date="1523487946000" expanded="true" signature="1373:1407" ph="SELECT id FR... ${self::DB_TABLE}" />
+                <marker date="1523487946000" expanded="true" signature="2174:2281" ph="UPDATE `prof... " />
+                <marker date="1523487946000" expanded="true" signature="2174:2282" ph="UPDATE `prof... " />
+                <marker date="1523487946000" expanded="true" signature="2338:2445" ph="UPDATE `prof... " />
+                <marker date="1523487946000" expanded="true" signature="2507:2573" ph="INSERT INTO followers... " />
+                <marker date="1523487946000" expanded="true" signature="2926:3033" ph="UPDATE `prof... " />
+                <marker date="1523487946000" expanded="true" signature="3090:3197" ph="UPDATE `prof... " />
+                <marker date="1523487946000" expanded="true" signature="3258:3321" ph="DELETE FROM " />
+                <marker date="1523487946000" expanded="true" signature="3269:3320" ph="INSERT INTO followers... " />
+                <marker date="1523487946000" expanded="true" signature="3745:3906" ph="UPDATE `foll... " />
               </folding>
             </state>
           </provider>
@@ -1085,12 +1085,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="74987000" />
+      <workItem from="1523373113654" duration="75087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96954000" />
+    <option name="totallyTimeSpent" value="97054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="473" y="107" width="1136" height="869" extended-state="0" />
@@ -1556,18 +1556,18 @@
         <state relative-caret-position="348">
           <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
           <folding>
-            <marker date="1523487846000" expanded="true" signature="355:392" ph="DELETE FROM " />
-            <marker date="1523487846000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
-            <marker date="1523487846000" expanded="true" signature="1373:1407" ph="SELECT id FR... ${self::DB_TABLE}" />
-            <marker date="1523487846000" expanded="true" signature="2174:2281" ph="UPDATE `prof... " />
-            <marker date="1523487846000" expanded="true" signature="2174:2282" ph="UPDATE `prof... " />
-            <marker date="1523487846000" expanded="true" signature="2338:2445" ph="UPDATE `prof... " />
-            <marker date="1523487846000" expanded="true" signature="2507:2573" ph="INSERT INTO followers... " />
-            <marker date="1523487846000" expanded="true" signature="2926:3033" ph="UPDATE `prof... " />
-            <marker date="1523487846000" expanded="true" signature="3090:3197" ph="UPDATE `prof... " />
-            <marker date="1523487846000" expanded="true" signature="3258:3318" ph="DELETE FROM " />
-            <marker date="1523487846000" expanded="true" signature="3269:3317" ph="INSERT INTO followers... " />
-            <marker date="1523487846000" expanded="true" signature="3742:3903" ph="UPDATE `foll... " />
+            <marker date="1523487946000" expanded="true" signature="355:392" ph="DELETE FROM " />
+            <marker date="1523487946000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
+            <marker date="1523487946000" expanded="true" signature="1373:1407" ph="SELECT id FR... ${self::DB_TABLE}" />
+            <marker date="1523487946000" expanded="true" signature="2174:2281" ph="UPDATE `prof... " />
+            <marker date="1523487946000" expanded="true" signature="2174:2282" ph="UPDATE `prof... " />
+            <marker date="1523487946000" expanded="true" signature="2338:2445" ph="UPDATE `prof... " />
+            <marker date="1523487946000" expanded="true" signature="2507:2573" ph="INSERT INTO followers... " />
+            <marker date="1523487946000" expanded="true" signature="2926:3033" ph="UPDATE `prof... " />
+            <marker date="1523487946000" expanded="true" signature="3090:3197" ph="UPDATE `prof... " />
+            <marker date="1523487946000" expanded="true" signature="3258:3321" ph="DELETE FROM " />
+            <marker date="1523487946000" expanded="true" signature="3269:3320" ph="INSERT INTO followers... " />
+            <marker date="1523487946000" expanded="true" signature="3745:3906" ph="UPDATE `foll... " />
           </folding>
         </state>
       </provider>

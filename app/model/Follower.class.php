@@ -106,7 +106,7 @@ class Follower {
         `number_followers`     = `number_followers` - 1
         WHERE `profile_id` = $followId");
         $db->query($q1);
-        $q2 = sprintf("DELETE FROM followers WHERE `username` = %s, `follower` = %s;",
+        $q2 = sprintf("DELETE FROM followers WHERE `username` = %s AND `follower` = %s;",
             $db->escape($this->username),
             $db->escape($this->follower)
         );
