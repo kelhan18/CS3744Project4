@@ -77,8 +77,6 @@ class FollowerController
             ob_end_flush();
         }
 
-
-
     }
 
     public function unfollow()

@@ -2,6 +2,7 @@
 if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
   $profiles = Profile::getProfiles();
+  $following = Follower::getFollowers();
 ?>
 
 <body class="myaccount-body">
@@ -79,7 +80,6 @@ if(isset($_SESSION['username']))
                     </div>
                 </div>
 
-                <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <br>
                     <div class="container">
@@ -88,16 +88,50 @@ if(isset($_SESSION['username']))
                         </div>
 
 
+
+
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                Keller Han
-                                <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
-                            </li>
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                Tony Medovar
-                                <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
-                            </li>
+                        <?php foreach($profiles as $profile): ?>
+                            <?php if($following->follower == $profile->username): ?>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                    <?= $following->username?>
+                                    <span class="badge badge-primary badge-pill">
+                                        Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
+                                        </span>
+                                </li>
+                            
+                            <?php endforeach; ?>
                         </ul>
+
+
+
+                            <div class="col-md-5">
+                                <h3 style="color: dodgerblue;">
+                                    <?= $profile->firstname?> <?= $profile->lastname?>
+                                </h3>
+                            </div>
+                            <div class="col-md-3">
+                                <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <?php if($profile->role == "Normal User"): ?>
+                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+
+                                    <!--Store the profile id if they are normal user in profile_id-->
+                                    <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
+                                    <button type="submit" class="btn btn-xs btn-outline-danger">Make Admin</button>
+
+                                </form>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+=
+
+
+
+
+
 
 
                         <div class="row">
