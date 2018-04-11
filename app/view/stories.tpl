@@ -32,7 +32,7 @@
 
         <br>
         <br>
-        <h1 id="timeline-header">Medal Of Honor Recipients</h1>
+        <h1 class="custom-header">Medal Of Honor Recipients</h1>
 
         <div class="profile-card">
             <header>

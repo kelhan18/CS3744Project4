@@ -12,6 +12,15 @@ body {
     margin-bottom: 20px;
 }
 
+.custom-header {
+    color: white;
+    font-size: 4.5em;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    font-family: 'Lalezar', cursive;
+    margin-bottom: 20px;
+}
+
 h1#home {
     color: #000;
     margin-top: 6%;

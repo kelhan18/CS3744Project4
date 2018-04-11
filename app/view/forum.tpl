@@ -33,7 +33,7 @@
     <div class="main-content">
         <br>
             <form method="POST" action="<?= BASE_URL ?>/topic/new/">
-              <h3 class="form-signin-heading">Forum Discussion</h3>
+              <h1 class="custom-header"">Forum Discussion</h1>
               <hr class="colorgraph"><br>
               <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">New Discussion</button>
           </form>

@@ -41,8 +41,8 @@
     <section id="one" class="wrapper style1 special">
         <div class="inner">
             <header class="major">
-                <h1>The Battle of Peleliu, codenamed Operation Stalemate II by the US military,
-                was fought between the U.S. and Japan during WWII.</h1>
+                <h2>The Battle of Peleliu, codenamed Operation Stalemate II by the US military,
+                was fought between the U.S. and Japan during WWII.</h2>
                 <p>
                     It occured from September to November 1944 on the island of Peleliu in the Pacific.
                 </p>

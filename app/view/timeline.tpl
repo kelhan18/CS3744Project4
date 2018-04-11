@@ -27,7 +27,7 @@
     <?php endif; ?>
 </ul>
 
-<h1 id="timeline-header">Timeline of Events</h1>
+<h1 class="custom-header">Timeline of Events</h1>
 <section class="cd-timeline js-cd-timeline">
     <div class="cd-timeline__container">
         <div class="cd-timeline__block js-cd-block">
