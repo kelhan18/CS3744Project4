@@ -26,6 +26,7 @@ class FollowerController
 
     public function follow()
     {
+        $baseurl = BASE_URL;
         $follow = $_POST['toFollow']; //Username of person to follow
         $myUsername = $_POST['myUsername'];
         $myId   = $_POST['myId'];
@@ -61,7 +62,7 @@ class FollowerController
             }
             else {
                 echo "<script> alert('You are already following them!');
-                    </script>";
+                    window.location = $baseurl</script>";
             }
 
 

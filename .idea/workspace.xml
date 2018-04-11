@@ -39,14 +39,14 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="567">
+              <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
               <folding>
-                <marker date="1523479405000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
-                <marker date="1523479405000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
-                <marker date="1523479405000" expanded="true" signature="1744:1956" ph="..." />
-                <marker date="1523479405000" expanded="true" signature="1938:1956" ph="{...}" />
-                <marker date="1523479405000" expanded="true" signature="1969:2041" ph="..." />
+                <marker date="1523479695000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
+                <marker date="1523479695000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
+                <marker date="1523479695000" expanded="true" signature="1773:1985" ph="..." />
+                <marker date="1523479695000" expanded="true" signature="1967:1985" ph="{...}" />
+                <marker date="1523479695000" expanded="true" signature="1998:2096" ph="..." />
               </folding>
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="Follower.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Follower.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <marker date="1523478434000" expanded="true" signature="355:392" ph="DELETE FROM " />
                 <marker date="1523478434000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
@@ -74,8 +74,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -1051,12 +1051,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="67014000" />
+      <workItem from="1523373113654" duration="67305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88981000" />
+    <option name="totallyTimeSpent" value="89272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="408" y="131" width="1136" height="869" extended-state="0" />
@@ -1173,14 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1455,24 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <marker date="1523474160000" expanded="true" signature="2608:2670" ph="SELECT * FRO... profiles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
@@ -1492,10 +1466,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Follower.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <marker date="1523478434000" expanded="true" signature="355:392" ph="DELETE FROM " />
             <marker date="1523478434000" expanded="true" signature="663:697" ph="SELECT * FRO... %s" />
@@ -1509,16 +1499,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <marker date="1523474160000" expanded="true" signature="2608:2670" ph="SELECT * FRO... profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="567">
+          <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
           <folding>
-            <marker date="1523479405000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
-            <marker date="1523479405000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
-            <marker date="1523479405000" expanded="true" signature="1744:1956" ph="..." />
-            <marker date="1523479405000" expanded="true" signature="1938:1956" ph="{...}" />
-            <marker date="1523479405000" expanded="true" signature="1969:2041" ph="..." />
+            <marker date="1523479695000" expanded="true" signature="930:987" ph="SELECT profi... profiles" />
+            <marker date="1523479695000" expanded="true" signature="1005:1084" ph="SELECT * fro... followers" />
+            <marker date="1523479695000" expanded="true" signature="1773:1985" ph="..." />
+            <marker date="1523479695000" expanded="true" signature="1967:1985" ph="{...}" />
+            <marker date="1523479695000" expanded="true" signature="1998:2096" ph="..." />
           </folding>
         </state>
       </provider>
