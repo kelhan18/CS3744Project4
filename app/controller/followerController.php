@@ -61,8 +61,11 @@ class FollowerController
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
-                echo "<script> alert('You are already following them!');
-                    window.location = $baseurl;</script>";
+                ob_start();
+                echo "You're already following them!";
+                ob_end_flush();
+                header('Location: '.BASE_URL.'/myaccount/');
+
             }
 
 
