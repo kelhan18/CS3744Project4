@@ -197,24 +197,24 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
-                    <h1>List of Users</h1>
+                    <h1 style="align-content: center">List of Users</h1>
 
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <h2 style="color: royalblue">
+                                <h1 style="color: royalblue">
                                     <u>Name</u>
-                                </h2>
+                                </h1>
                             </div>
                             <div class="col-md-4">
-                                <h2 style="margin-left:20px; color: royalblue">
+                                <h1 style="margin-left:20px; color: royalblue">
                                     <u>Role</u>
-                                </h2>
+                                </h1>
                             </div>
                             <div class="col-md-4">
-                                <h2 style="color: royalblue;">
+                                <h1 style="color: royalblue;">
                                     <u>Change Role</u>
-                                </h2>
+                                </h1>
                             </div>
                         </div>
 
