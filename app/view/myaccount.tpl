@@ -121,27 +121,27 @@ if(isset($_SESSION['username']))
                     <h1>Edit Profile Info</h1>
                     <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
-                            <label>Username: </label>
+                            <h3>Username: </h3>
                             <input type="text" name="username" value="<?= $profile->username?>" class="input-xlarge" id="input-username">
                         </div>
                         <div class ="form-group">
-                            <label>First Name: *</label>
+                            <h3>First Name: *</h3>
                             <input type="text" name="firstname" value="<?= $profile->firstname?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
-                            <label>Last Name: *</label>
+                            <h3>Last Name: *</h3>
                             <input type="text" name="lastname" value="<?= $profile->lastname?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
-                            <label>Email: *</label>
+                            <h3>Email: *</h3>
                             <input type="email" name="email" value="<?= $profile->email?>" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
-                            <label>Address</label>
+                            <h3>Address</h3>
                             <input type="text" name="address" value="<?= $profile->address?>" class="input-xlarge">
                         </div>
                         <div class ="form-group">
-                            <label>Time Zone: *</label>
+                            <h3>Time Zone: *</h3>
                             <select name="timezone" id="DropDownTimezone" class="input-xlarge" required>
                                 <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
                                 <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
@@ -176,7 +176,7 @@ if(isset($_SESSION['username']))
                                 <option value="(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
                         </select>
                             <br>
-                            <p>(* detonates required field)</p>
+                            <h5>(* detonates required field)</h5>
                             <div>
                                 <button name="submit" value="updateProfile" type="submit" class="btn btn-lg btn-primary btn-block">Update</button>
                             </div>
