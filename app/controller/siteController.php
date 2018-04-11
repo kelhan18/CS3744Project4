@@ -162,8 +162,9 @@ class SiteController
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
 
+        /*
         $db = Db::instance();
-        $q = "SELECT * FROM profiles";
+        $q = "SELECT * FROM profiles WHERE profile_id= $profile->profile_id";
         $result = $db->query($q);
 
         $row = $result->fetch_assoc(); // get results as associative array
@@ -172,6 +173,9 @@ class SiteController
         if($result->num_rows != 0) {
             $_SESSION['number_posts'] = $row['number_posts'];
         }
+        */
+
+        $profile = new Profile();
 
         $profile->firstname    = $firstname;
         $profile->lastname     = $lastname;
