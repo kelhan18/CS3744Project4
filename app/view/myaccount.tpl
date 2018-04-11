@@ -91,28 +91,37 @@ if(isset($_SESSION['username']))
                     </ul>
 
                     <div class="row">
-                    <div class="col-md-6">
+                        <div class="col-md-6">
 
-                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary" name="followButton" type="button">Follow</button>
+                        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" name="followButton" type="button">Follow</button>
+                                </div>
                             </div>
+                        </form>
                         </div>
-                    </form>
-                    </div>
-                    <div class="col-md-6">
 
-                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary" name="unfollowButton" type="button">Unfollow</button>
-                            </div>
+                        <div class="col-md-6">
+                            <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-primary" name="unfollowButton" type="button">Unfollow</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
                     </div>
+                    <div class="row">
+                        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" target="iframe" name="Find_Account_Form" class="form-signin">
+                            <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Account</button>
+                        </form>
+
+                        <iframe name="iframe">
+
+                        </iframe>
                     </div>
                 </div>
 
