@@ -14,10 +14,10 @@ body {
 
 .custom-header {
     color: white;
-    font-size: 4.5em;
+    font-size: 7em;
     text-align: center;
     -webkit-text-stroke: 2px black;
-    font-family: 'Lalezar', cursive;
+    font-family: 'Rubik', sans-serif;
     margin-bottom: 20px;
 }
 

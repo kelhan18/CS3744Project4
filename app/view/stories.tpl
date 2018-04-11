@@ -29,8 +29,6 @@
 
 <div class="main">
     <div class="main-content">
-
-        <br>
         <br>
         <h1 class="custom-header">Medal Of Honor Recipients</h1>
 
