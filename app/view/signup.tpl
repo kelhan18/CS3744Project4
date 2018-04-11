@@ -44,10 +44,14 @@
           <div class="form-group">
               <label for="roleSelect">Site Role: *
               <select id="roleSelect">
-                  <option>Normal User</option>
-                  <option>Admin</option>
+                  <option value="normal">Normal User</option>
+                  <option value="admin">Admin</option>
               </select>
               <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
+          </div>
+          <div class="form-group">
+              <label for="isAdmin">Secret Password:
+                  <input type="text" name="secretpassword">
           </div>
           <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div>
           <div class="form-group"><label>Address: <input type="text" name="address" ></label></div>
