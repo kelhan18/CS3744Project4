@@ -85,6 +85,12 @@ class Profile {
       }
   }
 
+    public function saveRole($profile_id){
+        if($profile_id != 0) {
+            return $this->updateRole();
+        }
+    }
+
   //Inserts the family member into the database
   public function insert() {
     if($this->profile_id != 0)
@@ -154,5 +160,21 @@ class Profile {
         return $this->profile_id; // return this object's ID
     }
 
+    //Update Role
+    public function updateRole() {
+        if($this->profile_id == 0)
+            return null; // can't update something without an ID
+
+        $db = Db::instance(); // connect to db
+        $q = sprintf("UPDATE profiles SET
+        `role`    =  %s
+        WHERE `profile_id` = $this->profile_id",
+
+            $db->escape($this->role)
+        );
+
+        $query = $db->query($q); // execute query
+        return $this->profile_id; // return this object's ID
+    }
 
 }

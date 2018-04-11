@@ -243,6 +243,24 @@ class SiteController
 
     }
 
+    public function changeRole()
+    {
+        $newRole = "Admin";
+        $profID = $_POST['profile_id'];
+        $profile = new Profile();
+
+        $profile->role    = $newRole;
+        $profile->profile_id = $profID;
+
+        $profile_id = $profile->saveRole($profile->profile_id);
+
+        if ($profile_id == null)
+        {
+            header('Location: '.BASE_URL); exit();
+        }
+        header('Location: '.BASE_URL.'/myaccount/'); exit();
+    }
+
     public function follow()
     {
 

@@ -257,7 +257,11 @@ if(isset($_SESSION['username']))
                                 <div class="col-md-4">
                                     <?php if($profile->role == "Normal User"): ?>
                                     <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+
+                                        <!--Store the profile id if they are normal user in profile_id-->
+                                        <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
                                         <button type="button" class="btn btn-xs btn-outline-danger">Make Admin</button>
+
                                     </form>
                                     <?php endif; ?>
                                 </div>
