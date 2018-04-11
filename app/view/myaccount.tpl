@@ -72,7 +72,7 @@ if(isset($_SESSION['username']))
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <h1>Following</h1>
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-action list-group-item-light d-flex">
+                        <li class="list-group-item list-group-item-action list-group-item-light d-flex mr-auto p-2">
                             Keller Han
                             <span class="badge badge-primary badge-pill p-2">Following: 14</span>
                             <span class="badge badge-primary badge-pill p-2">Followers: 20</span>
