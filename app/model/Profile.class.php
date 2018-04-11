@@ -57,6 +57,37 @@ class Profile {
         return $profile; // return the member
       }
   }
+    //Get profile by username
+    public static function getProfileByUsername($username) {
+        $db = Db::instance(); // create db connection
+        // build query
+        $q = sprintf("SELECT * FROM `%s` WHERE `username` = %s;",
+            self::DB_TABLE,
+            $username
+        );
+        $result = $db->query($q); // execute query
+        if($result->num_rows == 0) {
+            return null;
+        } else {
+            $row = $result->fetch_assoc(); // get results as associative array
+
+            $profile = new Profile(); // instantiate
+            $profile->profile_id   = $row['profile_id'];
+            $profile->firstname    = $row['firstname'];
+            $profile->lastname     = $row['lastname'];
+            $profile->username     = $row['username'];
+            $profile->password     = $row['password'];
+            $profile->role         = $row['role'];
+            $profile->email        = $row['email'];
+            $profile->address      = $row['address'];
+            $profile->timezone     = $row['timezone'];
+            $profile->number_posts = $row['number_posts'];
+            $profile->number_following = $row['number_following'];
+            $profile->number_followers = $row['number_followers'];
+
+            return $profile; // return the member
+        }
+    }
 
   // return all Family Members in an array
   public static function getProfiles() {
