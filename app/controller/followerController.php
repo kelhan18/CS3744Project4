@@ -34,13 +34,15 @@ class FollowerController
 
         #Check if the person you want to follow is in database and the user/follower pair isnt already a thing
         $q = "SELECT profile_id FROM profiles WHERE username ='$follow'";
-        $result = $db->query($q, "SELECT * from followers WHERE username = '$follow' and follower ='$myUsername'");
+        $q2 = "SELECT * from followers WHERE username = '$follow' and follower ='$myUsername'";
+        $result = $db->query($q);
+        $result2 = $db->query($q2);
         $row = $result->fetch_assoc(); // get results as associative array
 
         $followId = $row['profile_id'];
 
         // If result matched $username and $password, table row must be 1 row
-        if($result->num_rows != 0) {
+        if($result->num_rows != 0 && $result2->num_rows != 0) {
             $follower = new Follower();
             $follower->user    = $follow;
             $follower->follower = $myUsername;
