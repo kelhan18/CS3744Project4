@@ -93,10 +93,13 @@ if(isset($_SESSION['username']))
                         <?php foreach($profiles as $profile): ?>
                         <?php foreach($followers as $follower): ?>
                             <?php if($follower->follower == $profile->username): ?>
-                            <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
+                                <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
 
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
                                 <?= $follower->username?>
+                                <?= $userProfile->username?>
+                                <?= $userProfile->firstname?>
+                                <?= $userProfile->password?>
                                 <span class="badge badge-primary badge-pill">
                                             Following: <?= $userProfile->number_following?>
                                             Followers: <?= $userProfile->number_followers?>
@@ -107,21 +110,6 @@ if(isset($_SESSION['username']))
                         <?php endforeach; ?>
                     </ul>
 
-
-
-                    <ul class="list-group">
-                        <?php foreach($followers as $follower): ?>
-                            <?php if($follower->follower == $profile->username): ?>
-                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                    <?= $follower->username?>
-                                    <span class="badge badge-primary badge-pill">
-                                        Following: <?= $profile->number_following?>
-                                        Followers: <?= $profile->number_followers?>
-                                    </span>
-                                </li>
-                        <?php endif; ?>
-                        <?php endforeach; ?>
-                    </ul>
 
 
                     <div class="row">
