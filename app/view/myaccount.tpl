@@ -64,7 +64,7 @@ if(isset($_SESSION['username']))
 
             </ul>
 
-            <div id="myTabContent">
+            <div id="myTabContent" class="tab-content">
 
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane active in" id="activity-feed">
