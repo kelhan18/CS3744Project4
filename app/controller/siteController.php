@@ -161,12 +161,15 @@ class SiteController
 
 		$profile_id = $profile->save(0);
 
+        echo 'Profile ID: '.$profile_id;
+
+		/*
         if ($profile_id == null)
         {
           header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/login/'); exit();
-
+        */
     }
 
 
