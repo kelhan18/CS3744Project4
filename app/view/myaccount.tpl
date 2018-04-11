@@ -203,9 +203,9 @@ if(isset($_SESSION['username']))
                             <div class="row panel">
                                 <div class="col-md-8  col-xs-12">
                                     <div class="header">
+                                        <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                         <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
                                         <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
-                                        <form method="POST" action="<?= BASE_URL ?>/changeRole">
                                             <button type="button" class="btn btn-sm btn-outline-danger">Change Role</button>
                                         </form>
                                     </div>
