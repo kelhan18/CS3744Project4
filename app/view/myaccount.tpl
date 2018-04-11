@@ -96,6 +96,7 @@ if(isset($_SESSION['username']))
                                         Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
                                         </span>
                                 </li>
+                            <?php endif; ?>
                             <?php endforeach; ?>
                         </ul>
 
