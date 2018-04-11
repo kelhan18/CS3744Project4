@@ -9,6 +9,7 @@ class Profile {
   public $lastname = '';
   public $username = '';
   public $password = '';
+  public $role = '';
   public $email = '';
   public $address = '';
   public $timezone = '';
@@ -43,6 +44,7 @@ class Profile {
         $profile->lastname     = $row['lastname'];
         $profile->username     = $row['username'];
         $profile->password     = $row['password'];
+        $profile->role         = $row['role'];
         $profile->email        = $row['email'];
         $profile->address      = $row['address'];
         $profile->timezone     = $row['timezone'];
@@ -89,12 +91,13 @@ class Profile {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `email`, `address`, `timezone`, `number_posts`)
+    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`, `timezone`, `number_posts`)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
       $db->escape($this->password),
+      $db->escape($this->role),
       $db->escape($this->email),
       $db->escape($this->address),
       $db->escape($this->timezone),

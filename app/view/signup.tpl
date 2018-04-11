@@ -34,12 +34,20 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit personal info -->
-          <label>First Name: *<input type="text" name="firstname" required="required"></label></br>
-          <label>Last Name: *<input type="text" name="lastname" required="required"></label></br>
-          <label>Username: *<input type="text" name="username" required="required"></label></br>
-          <label>Password: *<input type="text" name="password" required="required"></label></br>
-          <label>Email: *<input type="text" name="email" required="required"></label></br>
-          <label>Address: <input type="text" name="address" ></label></br>
+          <div class="form-group"><label>First Name: *<input type="text" name="firstname" required="required"></label></div></br>
+          <div class="form-group"><label>Last Name: *<input type="text" name="lastname" required="required"></label></div></br>
+          <div class="form-group"><label>Username: *<input type="text" name="username" required="required"></label></div></br>
+          <div class="form-group"><label>Password: *<input type="password" name="password" required="required"></label></div></br>
+          <div class="form-group">
+              <label for="roleSelect">Site Role</label>
+              <select class="form-control" id="roleSelect">
+                  <option>Normal User</option>
+                  <option>Admin</option>
+              </select>
+              <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
+          </div>
+          <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div></br>
+          <div class="form-group"><label>Address: <input type="text" name="address" ></label></div></br>
 
           <label>Time Zone: *</label>
           <select name="timezone" id="DropDownTimezone" class="input-xlarge" required="required">
