@@ -77,6 +77,12 @@ class Profile {
     }
   }
 
+  public function passwordSave($profile_id){
+      if($profile_id != 0) {
+          return $this->updatePassword();
+      }
+  }
+
   //Inserts the family member into the database
   public function insert() {
     if($this->topic_id != 0)
@@ -100,6 +106,7 @@ class Profile {
   }
 
   //Updates specified data in the database
+  //Doesnt handle password because password is on a seperate form
   public function update() {
     if($this->profile_id == 0)
       return null; // can't update something without an ID
@@ -109,7 +116,6 @@ class Profile {
     `firstname` = %s,
     `lastname`  = %s,
     `username`  =   %s,
-    `password`  =   %s,
     `email`     =   %s,
     `address`   =  %s,
     `timezone`    =  %s,
@@ -118,17 +124,32 @@ class Profile {
         $db->escape($this->firstname),
         $db->escape($this->lastname),
         $db->escape($this->username),
-        $db->escape($this->password),
         $db->escape($this->email),
         $db->escape($this->address),
         $db->escape($this->timezone),
         $db->escape($this->number_posts)
   );
 
-
     $query = $db->query($q); // execute query
     return $this->profile_id; // return this object's ID
   }
+
+  //Update password
+    public function updatePassword() {
+        if($this->profile_id == 0)
+            return null; // can't update something without an ID
+
+        $db = Db::instance(); // connect to db
+        $q = sprintf("UPDATE profiles SET
+        `password`    =  %s
+        WHERE `profile_id` = $this->profile_id",
+
+            $db->escape($this->password)
+        );
+
+        $query = $db->query($q); // execute query
+        return $this->profile_id; // return this object's ID
+    }
 
 
 }

@@ -100,7 +100,6 @@ if(isset($_SESSION['username']))
 
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
-                    <h4><?= $profile->firstname?></h4>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
@@ -171,8 +170,12 @@ if(isset($_SESSION['username']))
                     <h2>Change Password</h2>
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
+                            <label>Old Password: *</label>
+                            <input type="password" name="oldpassword" class="input-xlarge" required>
+                        </div>
+                        <div class ="form-group">
                             <label>New Password: *</label>
-                            <input type="password" name="password" class="input-xlarge" required>
+                            <input type="password" name="newpassword" class="input-xlarge" required>
                         </div>
                         <br>
                         <p>(* detonates required field)</p>

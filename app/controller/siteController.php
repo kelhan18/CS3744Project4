@@ -96,12 +96,14 @@ class SiteController
       $profile->profile_id   = $row['profile_id'];
       $profile->firstname    = $row['firstname'];
       $profile->number_posts = $row['number_posts'];
+      $profile->password     = $row['password'];
 
       // If result matched $username and $password, table row must be 1 row
       if($result->num_rows != 0) {
         $_SESSION['username'] = $profile->firstname;
         $_SESSION['profile_id'] = $profile->profile_id;
         $_SESSION['number_posts'] = $profile->number_posts;
+        $_SESSION['password'] = $profile->password;
         header('Location: '.BASE_URL); exit();
       } else {
         header('Location: '.BASE_URL);
@@ -157,7 +159,6 @@ class SiteController
         $username  	 = $_POST['username'];  // required
         $firstname 	 = $_POST['firstname']; // required
         $lastname 	 = $_POST['lastname'];  // required
-        $password  	 = $_POST['password'];  // required
         $email       = $_POST['email'];     // required
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
@@ -180,7 +181,6 @@ class SiteController
         $profile->firstname    = $firstname;
         $profile->lastname     = $lastname;
         $profile->username     = $username;
-        $profile->password     = $password;
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
@@ -201,7 +201,31 @@ class SiteController
 
     public function updatePassword()
     {
-        //When user updates password in profile page
+        $oldpassword     = $_POST['oldpassword'];
+        $newpassword  	 = $_POST['newpassword'];  // required
+
+        if($oldpassword == $_SESSION['password']) {
+
+            $profile = new Profile();
+
+            $profile->password     = $newpassword;
+            $profile->profile_id = $_SESSION['profile_id'];
+
+            $profile_id = $profile->passwordSave($profile->profile_id);
+            $message = "Password Successfully Changed";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+        }
+        else {
+            $message = "Old Password is incorrect";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+        }
+
+
+        if ($profile_id == null)
+        {
+            header('Location: '.BASE_URL); exit();
+        }
+        header('Location: '.BASE_URL.'/myaccount/'); exit();
     }
 
     public function follow()
