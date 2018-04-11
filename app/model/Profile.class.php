@@ -67,8 +67,9 @@ class Profile {
         $result = $db->query($q); // execute query
 
         if($result->num_rows == 0) {
-            echo "Username is: ".$user_name;
-            echo "ERROR";
+            echo "Result: ".$result;
+            echo " Username is: ".$user_name;
+            echo " ERROR";
             #return null;
         } else {
             $row = $result->fetch_assoc(); // get results as associative array
