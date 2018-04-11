@@ -52,8 +52,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="212" column="69" lean-forward="true" selection-start-line="212" selection-start-column="69" selection-end-line="212" selection-end-column="69" />
+            <state relative-caret-position="605">
+              <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -992,12 +992,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="43467000" />
+      <workItem from="1523373113654" duration="43521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65434000" />
+    <option name="totallyTimeSpent" value="65488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="685" y="173" width="1056" height="869" extended-state="0" />
@@ -1437,8 +1437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="212" column="69" lean-forward="true" selection-start-line="212" selection-start-column="69" selection-end-line="212" selection-end-column="69" />
+        <state relative-caret-position="605">
+          <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
           <folding />
         </state>
       </provider>

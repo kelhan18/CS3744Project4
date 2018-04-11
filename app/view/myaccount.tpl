@@ -216,9 +216,10 @@ if(isset($_SESSION['username']))
                             </div>
 
                             </div>
+                        <?php endforeach; ?>
                         </div>
                 </div>
-                    <?php endforeach; ?>
+
 
                 </div>
 
