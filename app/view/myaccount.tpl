@@ -118,7 +118,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="profile">
-                    <h1 style="color: white; font-size: 1.5em">Edit Profile Info</h1>
+                    <h1 style="color: white; font-size: 5em">Edit Profile Info</h1>
                     <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <h3>Username: </h3>
