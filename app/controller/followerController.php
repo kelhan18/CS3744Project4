@@ -42,26 +42,34 @@ class FollowerController
         $followId = $row['profile_id'];
 
         // If result matched $username and $password, table row must be 1 row
-        if($result->num_rows != 0 and $result2->num_rows == 0) {
-            $follower = new Follower();
-            $follower->user    = $follow;
-            $follower->follower = $myUsername;
+        if($result->num_rows != 0) {
+            if ($result2->num_rows == 0) {
+                $follower = new Follower();
+                $follower->user    = $follow;
+                $follower->follower = $myUsername;
 
-            $follower_id = $follower->save($followId, $myId);
+                $follower_id = $follower->save($followId, $myId);
 
-            if ($follower_id == null)
-            {
-                ob_start();
-                echo "Error occured. Follow request not processed";
+                if ($follower_id == null)
+                {
+                    echo "<script> alert('You are already following them!');
+                    </script>";
+                }
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
+
+            }
+            else {
+                ob_start();
+                echo "You are already following them!";
+                header('Location: '.BASE_URL.'/myaccount/');
                 ob_end_flush();
             }
-            header('Location: '.BASE_URL.'/myaccount/'); exit();
+
 
         } else {
             ob_start();
             echo "That person is not a valid user!";
-            #header('Location: '.BASE_URL.'/myaccount/');
+            header('Location: '.BASE_URL.'/myaccount/');
             ob_end_flush();
         }
 
