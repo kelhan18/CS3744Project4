@@ -156,25 +156,13 @@ class SiteController
 
     public function updateInfo()
     {
-        $username  	 = $_POST['username'];  // required
         $firstname 	 = $_POST['firstname']; // required
         $lastname 	 = $_POST['lastname'];  // required
+        $username  	 = $_POST['username'];  // required
         $email       = $_POST['email'];     // required
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
-
-        /*
-        $db = Db::instance();
-        $q = "SELECT * FROM profiles WHERE profile_id= $profile->profile_id";
-        $result = $db->query($q);
-
-        $row = $result->fetch_assoc(); // get results as associative array
-        $profile = new Profile();
-
-        if($result->num_rows != 0) {
-            $_SESSION['number_posts'] = $row['number_posts'];
-        }
-        */
+        $number_posts = $_SESSION['number_posts'];
 
         $profile = new Profile();
 
@@ -184,8 +172,9 @@ class SiteController
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
-        $profile->number_posts = $_SESSION['number_posts'];
-        $profile->profile_id = $_SESSION['profile_id'];
+        $profile->number_posts = $number_posts;
+        $profile->profile_id = $number_posts;
+        $_SESSION['number_posts'] = $profile->profile_id;
 
         $profile_id = $profile->save($profile->profile_id);
 
@@ -196,7 +185,6 @@ class SiteController
         header('Location: '.BASE_URL.'/myaccount/'); exit();
 
     }
-
 
 
     public function updatePassword()

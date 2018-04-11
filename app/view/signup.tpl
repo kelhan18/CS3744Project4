@@ -34,9 +34,9 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit personal info -->
-          <label>Username: *<input type="text" name="username" required="required"></label></br>
           <label>First Name: *<input type="text" name="firstname" required="required"></label></br>
           <label>Last Name: *<input type="text" name="lastname" required="required"></label></br>
+          <label>Username: *<input type="text" name="username" required="required"></label></br>
           <label>Password: *<input type="text" name="password" required="required"></label></br>
           <label>Email: *<input type="text" name="email" required="required"></label></br>
           <label>Address: <input type="text" name="address" ></label></br>
