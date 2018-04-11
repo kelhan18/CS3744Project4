@@ -65,6 +65,11 @@ class Profile {
             $user_name
         );
         $result = $db->query($q); // execute query
+
+        $row = $result->fetch_assoc();
+        echo "Correct username: ".$row['username'];
+
+
         if($result->num_rows == 0) {
             echo "Username is: ".$user_name;
             echo "ERROR";
