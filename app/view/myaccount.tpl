@@ -189,15 +189,15 @@ if(isset($_SESSION['username']))
                     <h1>Change Password</h1>
                     <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
-                            <label>Old Password: *</label>
+                            <h3>Old Password: *</h3>
                             <input type="password" name="oldpassword" class="input-xlarge" required>
                         </div>
                         <div class ="form-group">
-                            <label>New Password: *</label>
+                            <h3>New Password: *</h3>
                             <input type="password" name="newpassword" class="input-xlarge" required>
                         </div>
                         <br>
-                        <p>(* detonates required field)</p>
+                        <h5>(* detonates required field)</h5>
                         <div>
                             <button class="btn btn-lg btn-primary btn-block">Update</button>
                         </div>
