@@ -44,8 +44,8 @@
           <div class="form-group">
               <label for="roleSelect">Site Role: *
               <select id="roleSelect">
-                  <option value="normal">Normal User</option>
-                  <option value="admin">Admin</option>
+                  <option value="Normal User">Normal User</option>
+                  <option value="Admin">Admin</option>
               </select>
               <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
           </div>

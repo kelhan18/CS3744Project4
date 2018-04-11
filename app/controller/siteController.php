@@ -127,7 +127,11 @@ class SiteController
 		$firstname 	 = $_POST['firstname']; // required
 		$lastname 	 = $_POST['lastname'];  // required
 		$password  	 = $_POST['password'];  // required
+
         $role        = $_POST['role'];      // required
+        $adminRole = 'Admin';
+        $normalRole = 'Normal User';
+
         $passcode    = $_POST['passcode'];
 		$email       = $_POST['email'];     // required
         $address 	 = $_POST['address'];
@@ -143,11 +147,11 @@ class SiteController
 		$profile->username    	= $username;
 		$profile->password    	= $password;
 
-		if ($correctcode == $passcode) {
-            $profile->role = 'Normal User';
+		if ($correctcode != $passcode) {
+            $profile->role = $normalRole;
         }
         else {
-		    $profile->role = 'Admin';
+		    $profile->role = $adminRole;
         }
 
 		$profile->email        = $email;
