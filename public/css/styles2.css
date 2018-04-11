@@ -147,8 +147,8 @@
 
 .profile-card::after {
     content: '';
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     bottom: 0;
     box-shadow: 0 30px 50px rgba(0,0,0,0.3);

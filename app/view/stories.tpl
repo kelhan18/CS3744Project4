@@ -36,11 +36,14 @@
 
         <div class="row">
             <div class="profile-card">
+                <header>
 
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
 
                     <h1>Lewis Kenneth Bausell</h1>
                     <h4>Corporal, U.S. Marine Corps</h4>
+
+                </header>
 
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
@@ -52,12 +55,14 @@
 
 
             <div class="profile-card">
+                <header>
 
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/arthur.jpg">
 
                     <h1>Arthur J. Jackson</h1>
                     <h4>Private First Class, U.S. Marine Corps</h4>
 
+                </header>
 
 
                 <div class="profile-bio">
