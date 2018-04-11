@@ -3932,6 +3932,7 @@ tbody.collapse.show {
 
 .tab-content > .active {
   display: block;
+  background-image: url('../img/Icons/sakura.png');
 }
 
 .navbar {
