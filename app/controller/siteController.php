@@ -173,7 +173,7 @@ class SiteController
         $profile->address      = $address;
         $profile->timezone     = $timezone;
         $profile->number_posts = $number_posts;
-        $profile->profile_id = _SESSION['profile_id'];
+        $profile->profile_id = $_SESSION['profile_id'];
         $_SESSION['number_posts'] = $profile->number_posts;
 
         $profile_id = $profile->save($profile->profile_id);
