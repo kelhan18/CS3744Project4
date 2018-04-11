@@ -42,9 +42,6 @@ class SiteController
             case 'logout':
                 $this->logout();
                 break;
-            case 'topic':
-                $this->topic();
-                break;
 
             case 'updateInfo':
                 $this->updateInfo();
@@ -52,12 +49,7 @@ class SiteController
             case 'updatePassword':
                 $this->updatePassword();
                 break;
-            case 'follow':
-                $this->follow();
-                break;
-            case 'unfollow':
-                $this->unfollow();
-                break;
+
             case 'changeRole':
                 $this->changeRole();
                 break;
@@ -277,17 +269,6 @@ class SiteController
         }
         header('Location: '.BASE_URL.'/myaccount/'); exit();
     }
-
-    public function follow()
-    {
-
-    }
-
-    public function unfollow()
-    {
-
-    }
-
 
     //Brings the user to the home page
     public function home()

@@ -28,9 +28,11 @@ RewriteRule ^signup/?$ app/controller/siteController.php?action=signupProcess [Q
 RewriteRule ^myaccount/?$ app/controller/siteController.php?action=myAccount [QSA,L]
 RewriteRule ^updateInfo/?$ app/controller/siteController.php?action=updateInfo [QSA,L]
 RewriteRule ^updatePassword/?$ app/controller/siteController.php?action=updatePassword [QSA,L]
-RewriteRule ^follow/?$ app/controller/siteController.php?action=follow [QSA,L]
-RewriteRule ^unfollow/?$ app/controller/siteController.php?action=unfollow [QSA,L]
 RewriteRule ^changeRole/?$ app/controller/siteController.php?action=changeRole [QSA,L]
+
+#follower/following
+RewriteRule ^follow/?$ app/controller/followerController.php?action=follow [QSA,L]
+RewriteRule ^unfollow/?$ app/controller/followerController.php?action=unfollow [QSA,L]
 
 #topic
 

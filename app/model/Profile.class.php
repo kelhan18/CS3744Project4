@@ -14,6 +14,8 @@ class Profile {
   public $address = '';
   public $timezone = '';
   public $number_posts = 0;
+  public $number_following = 0;
+  public $number_followers = 0;
 
   //Deletes a profile with a specific id
   public static function delete($profile_id) {
@@ -49,6 +51,8 @@ class Profile {
         $profile->address      = $row['address'];
         $profile->timezone     = $row['timezone'];
         $profile->number_posts = $row['number_posts'];
+        $profile->number_following = $row['number_following'];
+        $profile->number_followers = $row['number_followers'];
 
         return $profile; // return the member
       }
@@ -97,8 +101,9 @@ class Profile {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`, `timezone`, `number_posts`)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %d);",
+    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`, 
+        `timezone`, `number_posts`, `number_following`, `number_followers`)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %d, %d, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
@@ -107,7 +112,11 @@ class Profile {
       $db->escape($this->email),
       $db->escape($this->address),
       $db->escape($this->timezone),
-      $db->escape($this->number_posts)
+      $db->escape($this->number_posts),
+      $db->escape($this->number_following),
+      $db->escape($this->number_followers)
+
+
       );
 
     $db->query($q); // execute query
@@ -128,7 +137,9 @@ class Profile {
     `email`     =   %s,
     `address`   =  %s,
     `timezone`    =  %s,
-    `number_posts`    =  %s
+    `number_posts`    =  %s,
+    `number_following`    =  %s,
+    `number_followers`    =  %s
     WHERE `profile_id` = $this->profile_id",
         $db->escape($this->firstname),
         $db->escape($this->lastname),
@@ -136,7 +147,9 @@ class Profile {
         $db->escape($this->email),
         $db->escape($this->address),
         $db->escape($this->timezone),
-        $db->escape($this->number_posts)
+        $db->escape($this->number_posts),
+        $db->escape($this->number_following),
+        $db->escape($this->number_followers)
   );
 
     $query = $db->query($q); // execute query
