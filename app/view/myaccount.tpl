@@ -52,9 +52,6 @@
                 </li>
             </ul>
 
-
-            <?php $profile = Profile::getProfile($post->profile_id)?>
-
             <div id="myTabContent" class="tab-content">
 
                 <!--Not sure how to implement yet -->
@@ -96,7 +93,8 @@
                 </div>
 
 
-
+                <?php $profile = Profile::getProfile($post->profile_id)?>
+                <h1><?= $profile->username?></h1>
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
