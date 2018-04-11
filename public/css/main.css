@@ -480,31 +480,6 @@
 		border-radius: 100%;
 	}
 
-	::-webkit-input-placeholder {
-		color: black; !important;
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		color: black; !important;
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		color: black; !important;
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		color: black; !important;
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
-		color: black; !important;
-		opacity: 1.0;
-	}
-
 /* Box */
 
 	.box {
