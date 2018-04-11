@@ -24,10 +24,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="signup.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/signup.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Profile.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="603">
               <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
               <folding>
                 <marker date="1523413639000" expanded="true" signature="526:569" ph="DELETE FROM " />
@@ -44,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/signup.tpl">
+      <file leaf-file-name="topicController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/topicController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="231">
+              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,44 +76,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="187" column="59" lean-forward="true" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="posts.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/posts.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="602">
               <caret line="64" column="14" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="64" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="187" column="28" lean-forward="true" selection-start-line="187" selection-start-column="28" selection-end-line="187" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1031,12 +1021,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="38375000" />
+      <workItem from="1523373113654" duration="38509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60342000" />
+    <option name="totallyTimeSpent" value="60476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="497" y="79" width="1126" height="869" extended-state="0" />
@@ -1349,14 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/topicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1531">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Post.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-659">
@@ -1376,24 +1358,6 @@
         <state relative-caret-position="211">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding>
-            <marker date="1523413639000" expanded="true" signature="526:569" ph="DELETE FROM " />
-            <marker date="1523413639000" expanded="true" signature="843:885" ph="SELECT * FRO... %s" />
-            <marker date="1523413639000" expanded="true" signature="1878:1885" ph="SELECT profi... ${self::DB_TABLE}" />
-            <marker date="1523413639000" expanded="true" signature="1878:1912" ph="SELECT * FRO... ${self::DB_TABLE}" />
-            <marker date="1523413639000" expanded="true" signature="2684:2858" ph="INSERT INTO profiles... " />
-            <marker date="1523413639000" expanded="true" signature="3555:3768" ph="UPDATE profi... " />
-            <marker date="1523413639000" expanded="true" signature="3555:3785" ph="UPDATE profi... " />
-            <marker date="1523413639000" expanded="true" signature="3555:4053" ph="UPDATE `prof... " />
-            <marker date="1523413639000" expanded="true" signature="4397:4474" ph="UPDATE profi... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1471,10 +1435,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/topicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+          <folding>
+            <marker date="1523413639000" expanded="true" signature="526:569" ph="DELETE FROM " />
+            <marker date="1523413639000" expanded="true" signature="843:885" ph="SELECT * FRO... %s" />
+            <marker date="1523413639000" expanded="true" signature="1878:1885" ph="SELECT profi... ${self::DB_TABLE}" />
+            <marker date="1523413639000" expanded="true" signature="1878:1912" ph="SELECT * FRO... ${self::DB_TABLE}" />
+            <marker date="1523413639000" expanded="true" signature="2684:2858" ph="INSERT INTO profiles... " />
+            <marker date="1523413639000" expanded="true" signature="3555:3768" ph="UPDATE profi... " />
+            <marker date="1523413639000" expanded="true" signature="3555:3785" ph="UPDATE profi... " />
+            <marker date="1523413639000" expanded="true" signature="3555:4053" ph="UPDATE `prof... " />
+            <marker date="1523413639000" expanded="true" signature="4397:4474" ph="UPDATE profi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="187" column="59" lean-forward="true" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
+        <state relative-caret-position="227">
+          <caret line="187" column="28" lean-forward="true" selection-start-line="187" selection-start-column="28" selection-end-line="187" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>

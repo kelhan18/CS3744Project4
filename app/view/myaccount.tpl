@@ -1,6 +1,7 @@
 <?php
 if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
+  $profiles = Profile::getProfiles();
 ?>
 
 <body>
@@ -195,9 +196,7 @@ if(isset($_SESSION['username']))
                 <div class="tab-pane fade" id="adminpage">
                     <h2>Administrator Page</h2>
                     <div id="postHolder">
-                        <?php foreach($posts as $post): ?>
-                        <?php $profile = Profile::getProfile($post->profile_id)?>
-
+                        <?php foreach($profiles as $profile): ?>
                         <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
                             <div class="row panel">
                                 <div class="col-md-8  col-xs-12">
