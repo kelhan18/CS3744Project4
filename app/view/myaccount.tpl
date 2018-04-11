@@ -205,8 +205,6 @@ if(isset($_SESSION['username']))
                                 <div class="col-md-4">
                                     <?= $profile->firstname?> <?= $profile->lastname?>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-4">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                 </div>
