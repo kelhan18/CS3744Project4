@@ -52,17 +52,16 @@ class FollowerController
 
                 if ($follower_id == null)
                 {
-                    echo "<script> alert('You are already following them!');
-                    </script>";
+
+                    echo "Error occured. Follow request not processed";
+                    #header('Location: '.BASE_URL.'/myaccount/'); exit();
+
                 }
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
-
             }
             else {
-                ob_start();
-                echo "You are already following them!";
-                header('Location: '.BASE_URL.'/myaccount/');
-                ob_end_flush();
+                echo "<script> alert('You are already following them!');
+                    </script>";
             }
 
 

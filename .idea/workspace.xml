@@ -39,15 +39,14 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="288">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
-                <marker date="1523479341000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
-                <marker date="1523479341000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
-                <marker date="1523479341000" expanded="true" signature="1705:1766" ph="..." />
-                <marker date="1523479341000" expanded="true" signature="1705:1777" ph="..." />
-                <marker date="1523479341000" expanded="true" signature="1705:1950" ph="..." />
-                <marker date="1523479341000" expanded="true" signature="1900:1950" ph="{...}" />
+                <marker date="1523479405000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
+                <marker date="1523479405000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
+                <marker date="1523479405000" expanded="true" signature="1744:1956" ph="..." />
+                <marker date="1523479405000" expanded="true" signature="1938:1956" ph="{...}" />
+                <marker date="1523479405000" expanded="true" signature="1969:2041" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1052,12 +1051,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="66949000" />
+      <workItem from="1523373113654" duration="67014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88916000" />
+    <option name="totallyTimeSpent" value="88981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="408" y="131" width="1136" height="869" extended-state="0" />
@@ -1512,15 +1511,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="288">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <marker date="1523479341000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
-            <marker date="1523479341000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
-            <marker date="1523479341000" expanded="true" signature="1705:1766" ph="..." />
-            <marker date="1523479341000" expanded="true" signature="1705:1777" ph="..." />
-            <marker date="1523479341000" expanded="true" signature="1705:1950" ph="..." />
-            <marker date="1523479341000" expanded="true" signature="1900:1950" ph="{...}" />
+            <marker date="1523479405000" expanded="true" signature="901:958" ph="SELECT profi... profiles" />
+            <marker date="1523479405000" expanded="true" signature="976:1055" ph="SELECT * fro... followers" />
+            <marker date="1523479405000" expanded="true" signature="1744:1956" ph="..." />
+            <marker date="1523479405000" expanded="true" signature="1938:1956" ph="{...}" />
+            <marker date="1523479405000" expanded="true" signature="1969:2041" ph="..." />
           </folding>
         </state>
       </provider>
