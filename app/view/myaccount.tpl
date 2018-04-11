@@ -3,6 +3,8 @@ if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
   $profiles = Profile::getProfiles();
   $followers = Follower::getFollowers();
+  $userProfile = Profile::getProfileByUsername($follower->username);
+
 ?>
 
 <body class="myaccount-body">
@@ -105,7 +107,7 @@ if(isset($_SESSION['username']))
                         <?php endforeach; ?>
                     </ul>
 
-                    
+
 
                     <ul class="list-group">
                         <?php foreach($followers as $follower): ?>
