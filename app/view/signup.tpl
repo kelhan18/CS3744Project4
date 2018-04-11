@@ -35,14 +35,14 @@
 
           <!-- Edit personal info -->
           <div class="form-group">
-              <label>First Name: *</label>
+              <label>First Name: *
                   <input type="text" name="firstname" required="required">
           </div>
           <div class="form-group"><label>Last Name: *<input type="text" name="lastname" required="required"></label></div>
           <div class="form-group"><label>Username: *<input type="text"  name="username" required="required"></label></div>
           <div class="form-group"><label>Password: *<input type="password"  name="password" required="required"></label></div>
           <div class="form-group">
-              <label for="roleSelect">Site Role: *</label>
+              <label for="roleSelect">Site Role: *
               <select id="roleSelect">
                   <option>Normal User</option>
                   <option>Admin</option>
@@ -52,7 +52,7 @@
           <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div>
           <div class="form-group"><label>Address: <input type="text" name="address" ></label></div>
 
-          <label>Time Zone: *</label>
+          <label>Time Zone: *
           <select name="timezone" id="DropDownTimezone" required="required">
               <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
               <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
