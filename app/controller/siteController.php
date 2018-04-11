@@ -209,23 +209,21 @@ class SiteController
             $profile = new Profile();
 
             $profile->password     = $newpassword;
+
+            //Adjust session password to the new one
+            $_SESSION['password'] = $profile->password;
+
             $profile->profile_id = $_SESSION['profile_id'];
-
             $profile_id = $profile->passwordSave($profile->profile_id);
-            $message = "Password Successfully Changed";
-            echo "<script type='text/javascript'>alert('$message');</script>";
-        }
-        else {
-            $message = "Old Password is incorrect";
-            echo "<script type='text/javascript'>alert('$message');</script>";
-        }
 
+        }
 
         if ($profile_id == null)
         {
             header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/myaccount/'); exit();
+
     }
 
     public function follow()
