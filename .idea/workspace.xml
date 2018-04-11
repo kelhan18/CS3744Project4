@@ -27,11 +27,11 @@
       <file leaf-file-name="siteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="172" column="43" lean-forward="true" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+            <state relative-caret-position="151">
+              <caret line="157" column="55" lean-forward="true" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
               <folding>
-                <marker date="1523405358000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
-                <marker date="1523405358000" expanded="true" signature="5183:5245" ph="SELECT * FRO... profiles" />
+                <marker date="1523405601000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
+                <marker date="1523405601000" expanded="true" signature="5183:5205" ph="SELECT * FRO... profiles" />
               </folding>
             </state>
           </provider>
@@ -977,12 +977,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="27639000" />
+      <workItem from="1523373113654" duration="27886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49606000" />
+    <option name="totallyTimeSpent" value="49853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="548" y="98" width="1137" height="869" extended-state="0" />
@@ -1419,11 +1419,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="172" column="43" lean-forward="true" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+        <state relative-caret-position="151">
+          <caret line="157" column="55" lean-forward="true" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
           <folding>
-            <marker date="1523405358000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
-            <marker date="1523405358000" expanded="true" signature="5183:5245" ph="SELECT * FRO... profiles" />
+            <marker date="1523405601000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
+            <marker date="1523405601000" expanded="true" signature="5183:5205" ph="SELECT * FRO... profiles" />
           </folding>
         </state>
       </provider>

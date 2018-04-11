@@ -163,11 +163,15 @@ class SiteController
         $timezone 	 = $_POST['timezone'];  // required
 
         $db = Db::instance();
-        $q = "SELECT * FROM profiles WHERE username='$un' and password='$pw'";
+        $q = "SELECT * FROM profiles";
         $result = $db->query($q);
 
         $row = $result->fetch_assoc(); // get results as associative array
         $profile = new Profile();
+
+        if($result->num_rows != 0) {
+            $_SESSION['number_posts'] = $row['number_posts'];
+        }
 
         $profile->firstname    = $firstname;
         $profile->lastname     = $lastname;
@@ -176,7 +180,7 @@ class SiteController
         $profile->email        = $email;
         $profile->address      = $address;
         $profile->timezone     = $timezone;
-        $profile->number_posts = $row['number_posts'];
+        $profile->number_posts = $_SESSION['number_posts'];
         $profile->profile_id = $_SESSION['profile_id'];
 
         $profile_id = $profile->save($profile->profile_id);
