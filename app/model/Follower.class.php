@@ -72,18 +72,18 @@ class Follower {
         WHERE `username` = $myId");
         $db->query($q);
 
-        $q = sprintf("UPDATE `profiles` SET
+        $q1 = sprintf("UPDATE `profiles` SET
         `number_followers`     = `number_followers` + 1
         WHERE `username` = $follow");
-        $db->query($q);
+        $db->query($q1);
 
-        $q = sprintf("INSERT INTO followers (`user`, `follower`)
+        $q2 = sprintf("INSERT INTO followers (`user`, `follower`)
     VALUES (%s, %s);",
             $db->escape($this->user),
             $db->escape($this->follower)
         );
 
-        $db->query($q); // execute query
+        $db->query($q2); // execute query
         return $db->getInsertID();
     }
 
