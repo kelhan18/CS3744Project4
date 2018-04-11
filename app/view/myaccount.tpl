@@ -64,7 +64,7 @@ if(isset($_SESSION['username']))
             <div id="myTabContent" class="tab-content">
 
                 <!--Not sure how to implement yet -->
-                <div class="tab-pane fade show active" role="tabpanel" id="activity-feed">
+                <div class="tab-pane fade in active" role="tabpanel" id="activity-feed">
                     <h1>Activity Feed</h1>
                 </div>
 
@@ -208,9 +208,9 @@ if(isset($_SESSION['username']))
                                 </h1>
                             </div>
                             <div class="col-md-4">
-                                <h3 style="color: royalblue;">
+                                <h1 style="color: royalblue;">
                                     <u>Change Role</u>
-                                </h3>
+                                </h1>
                             </div>
                         </div>
 
