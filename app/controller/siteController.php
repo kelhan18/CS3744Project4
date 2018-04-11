@@ -175,6 +175,7 @@ class SiteController
         $profile->number_posts = $number_posts;
         $profile->profile_id = $_SESSION['profile_id'];
         $_SESSION['number_posts'] = $profile->number_posts;
+        $_SESSION['username'] = $profile->username;
 
         $profile_id = $profile->save($profile->profile_id);
 
