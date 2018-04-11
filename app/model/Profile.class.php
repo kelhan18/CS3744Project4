@@ -71,8 +71,6 @@ class Profile {
 
   //Saves the new family member and adds them to the database
   public function save($profile_id){
-      echo 'Profile ID: '.$profile_id;
-
       if($profile_id == 0) {
       return $this->insert();
     }
@@ -89,7 +87,7 @@ class Profile {
 
   //Inserts the family member into the database
   public function insert() {
-    if($this->profile_id == 0)
+    if($this->profile_id != 0)
       return null;
 
     $db = Db::instance(); // connect to db

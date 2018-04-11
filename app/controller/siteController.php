@@ -138,8 +138,7 @@ class SiteController
         $timezone 	 = $_POST['timezone'];  // required
 
         if( empty($firstname) || empty($lastname) || empty($username) || empty($password)  || empty($email) || empty($timezone)) {
-			echo 'this is it';
-            #header('Location: '.BASE_URL); exit();
+            header('Location: '.BASE_URL); exit();
 		}
 
 		$profile = new Profile();
@@ -164,13 +163,13 @@ class SiteController
 
         echo 'Profile ID: '.$profile_id;
 
-        /*
+
         if ($profile_id == null)
         {
           header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/login/'); exit();
-        */
+
     }
 
 
