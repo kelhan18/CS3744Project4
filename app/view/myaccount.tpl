@@ -65,12 +65,12 @@ if(isset($_SESSION['username']))
 
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane fade show in active" role="tabpanel" id="activity-feed">
-                    <h1>Activity Feed</h1>
+                    <h1 class="account-h1">Activity Feed</h1>
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
-                    <h1>Following</h1>
+                    <h1 class="account-h1">Following</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Keller Han
@@ -103,7 +103,7 @@ if(isset($_SESSION['username']))
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" role="tabpanel" id="followers">
-                    <h1>Followers</h1>
+                    <h1 class="account-h1">Followers</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Lebron James
@@ -118,7 +118,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="profile">
-                    <h1 style="color: white; font-size: 5em">Edit Profile Info</h1>
+                    <h1 class="account-h1">Edit Profile Info</h1>
                     <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <h3>Username: </h3>
@@ -186,7 +186,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="password">
-                    <h1>Change Password</h1>
+                    <h1 class="account-h1">Change Password</h1>
                     <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
                             <h3>Old Password: *</h3>
@@ -205,7 +205,7 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
-                    <h1>List of Users</h1>
+                    <h1 class="account-h1">List of Users</h1>
 
                     <div class="container">
                         <div class="row">
