@@ -33,7 +33,7 @@
 
     <section id="banner">
         <div class="inner">
-            <h2>The Battle Of Peleliu</h2>
+            <h1>The Battle Of Peleliu</h1>
         </div>
     </section>
 
