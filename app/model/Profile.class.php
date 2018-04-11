@@ -58,15 +58,15 @@ class Profile {
       }
   }
     //Get profile by username
-    public static function getProfileByUsername($username) {
+    public static function getProfileByUsername($user_name) {
         $db = Db::instance(); // create db connection
         // build query
         $q = sprintf("SELECT * FROM `profiles` WHERE `username` = %s;",
-            $username
+            $user_name
         );
         $result = $db->query($q); // execute query
         if($result->num_rows == 0) {
-            echo "Username is: ".$username;
+            echo "Username is: ".$user_name;
             echo "ERROR";
             #return null;
         } else {
