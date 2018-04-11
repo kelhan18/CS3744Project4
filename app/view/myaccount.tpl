@@ -64,7 +64,7 @@ if(isset($_SESSION['username']))
             <div class="tab-content">
 
                 <!--Not sure how to implement yet -->
-                <div class="tab-pane fade in active" role="tabpanel" id="activity-feed">
+                <div class="tab-pane fade show in active" role="tabpanel" id="activity-feed">
                     <h1>Activity Feed</h1>
                 </div>
 
@@ -72,8 +72,8 @@ if(isset($_SESSION['username']))
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <h1>Following</h1>
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-action list-group-item-primary">Keller Han</li>
-                        <li class="list-group-item list-group-item-action list-group-item-primary">Tony Medovar</li>
+                        <li class="list-group-item list-group-item-action list-group-item-light">Keller Han</li>
+                        <li class="list-group-item list-group-item-action list-group-item-light">Tony Medovar</li>
                     </ul>
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
