@@ -105,7 +105,7 @@ if(isset($_SESSION['username']))
                 </div>
 
 
-                <div class="tab-pane fade" id="profile">
+                <div class=" fade" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
