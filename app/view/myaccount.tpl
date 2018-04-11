@@ -81,21 +81,27 @@ if(isset($_SESSION['username']))
                     </ul>
 
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                        <div class="input-group mb-1">
-                            <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" name="followButton" type="button">Follow</button>
-                            </div>
-                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Person to Follow"">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" name="unfollowButton" type="button">Follow</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
                     </form>
 
                     <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                        <div class="input-group mb-1">
-                            <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
-                            </div>
-                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Person to Unfollow"">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+
                     </form>
                 </div>
 
