@@ -61,8 +61,7 @@ class Profile {
     public static function getProfileByUsername($username) {
         $db = Db::instance(); // create db connection
         // build query
-        $q = sprintf("SELECT * FROM `%s` WHERE `username` = %s;",
-            self::DB_TABLE,
+        $q = sprintf("SELECT * FROM `profiles` WHERE `username` = %s;",
             $username
         );
         $result = $db->query($q); // execute query
