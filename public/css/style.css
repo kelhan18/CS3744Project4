@@ -3,7 +3,7 @@ body {
 }
 
 body.myaccount-body {
-    background-image: url('../img/Icons/sakura.png');
+    background-image: url('../img/Icons/fresh_snow.png');
 }
 
 body.stories-body {
@@ -15,7 +15,7 @@ body.forum-body {
 }
 
 body.login-body {
-    background-image: url('../img/Icons/sakura.png');
+    background-image: url('../img/Icons/pow-star.png');
 }
 
 body.timeline-body {
@@ -23,7 +23,7 @@ body.timeline-body {
 }
 
 body.signup-body {
-    background-image: url('../img/Icons/sakura.png');
+    background-image: url('../img/Icons/pow-star.png');
 }
 
 body.posts-body {
