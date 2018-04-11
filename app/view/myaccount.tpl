@@ -78,55 +78,61 @@ if(isset($_SESSION['username']))
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <br>
-                    <div class="row">
-                        <h1 class="account-h1">Following</h1>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Keller Han
-                            <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Tony Medovar
-                            <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
-                        </li>
-                    </ul>
-
-                    <div class="row">
-                        <div class="col-md-6">
-
-                        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-primary" name="followButton" type="button">Follow</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="account-h1">Following</h1>
                         </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                Keller Han
+                                <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
+                            </li>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                Tony Medovar
+                                <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
+                            </li>
+                        </ul>
 
-                        <div class="col-md-6">
-                            <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                            <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-primary" name="unfollowButton" type="button">Unfollow</button>
+                                        <button class="btn btn-outline-primary" name="followButton" type="button">Follow</button>
                                     </div>
                                 </div>
                             </form>
+                            </div>
+
+                            <div class="col-md-6">
+                                <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" name="unfollowButton" type="button">Unfollow</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" target="iframe" name="Find_Account_Form" class="form-signin">
-                            <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Users</button>
-                        </form>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" target="iframe" name="Find_Account_Form" class="form-signin">
+                                    <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Users</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe name="iframe">
 
-
-                    </div>
-                    <iframe name="iframe">
-
-                    </iframe>
+                                </iframe>
+                            </div>
+                     </div>
                 </div>
+
+
+
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" role="tabpanel" id="followers">
