@@ -28,7 +28,8 @@ class SiteController
                 $this->forum();
                 break;
             case 'myAccount':
-                $this->myAccount();
+                $profile_id = $_GET['profile_id'];
+                $this->myAccount($profile_id);
                 break;
             case 'findAccount':
                 $this->findAccount();
@@ -215,13 +216,6 @@ class SiteController
     }
 
 
-
-
-
-
-
-
-
     //Brings the user to the home page
     public function home()
     {
@@ -252,9 +246,10 @@ class SiteController
         include_once SYSTEM_PATH . '/view/forum.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-    public function myAccount()
+    public function myAccount($profile_id)
     {
         $pageTitle = 'My Account';
+        $profile = Profile::getProfile($profile_id);
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/myaccount.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
