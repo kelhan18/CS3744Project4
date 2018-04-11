@@ -41,8 +41,11 @@
 
         <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
             <div class="row panel">
-                <h3 class="responses">Responses <span class="label label-primary"><?= $mytopic->number_posts?></span></h3>
 
+                <button class="btn btn-primary" type="button">
+                    Responses <span class="badge"><?= $mytopic->number_posts?></span>
+                </button>
+              
                 <div class="col-md-8  col-xs-12">
                     <div class="header">
                         <h3 style="margin-left:20px;margin-top:8px;"><a href="<?= BASE_URL ?>/topic/view/<?= $mytopic->topic_id?>" style"color: black;text-decoration: none;"><?= $mytopic->topic?></a></h3>
