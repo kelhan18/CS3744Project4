@@ -37,15 +37,6 @@ class SiteController
             case 'login':
                 $this->login();
                 break;
-            case 'loginProcess':
-                if (isset($_POST['login'])) {
-                    $user = $_POST['user'];
-                    $pass = $_POST['pass'];
-                    $this->loginProcess($user, $pass);
-                } else if (isset($_POST['signup'])) {
-                    $this->signup();
-                }
-                break;
             case 'signupProcess':
                 $this->signupProcess();
                 break;
@@ -67,6 +58,15 @@ class SiteController
                 break;
             case 'unfollow':
                 $this->unfollow();
+                break;
+            case 'loginProcess':
+                if (isset($_POST['login'])) {
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $this->loginProcess($user, $pass);
+                } else if (isset($_POST['signup'])) {
+                    $this->signup();
+                }
                 break;
         }
     }
