@@ -33,8 +33,8 @@ if(isset($_SESSION['username']))
     <?php endif; ?>
 </ul>
 
-<div class="main">
-    <div class="main-content">
+<div class="main account-main-background">
+    <div class="main-content account-background">
 
             <ul class="nav nav-pills nav-justified justify-content-center">
                 <li class="nav-item">

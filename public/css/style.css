@@ -30,6 +30,14 @@ body {
     margin-bottom: 20px;
 }
 
+.account-background {
+    background-image: url('../img/Icons/sakura.png');
+}
+
+.account-main-background {
+    background-image: url('../img/Icons/fresh_snow.png');
+
+}
 .story-background {
     background-image: url('../img/Icons/stardust.png');
 }
