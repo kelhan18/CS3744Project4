@@ -95,6 +95,7 @@ class SiteController
       $profile = new Profile();
       $profile->profile_id   = $row['profile_id'];
       $profile->firstname    = $row['firstname'];
+      $profile->number_posts = $row['number_posts'];
 
       // If result matched $username and $password, table row must be 1 row
       if($result->num_rows != 0) {
