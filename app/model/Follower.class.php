@@ -65,6 +65,9 @@ class Follower {
         if($this->id != 0)
             return null;
 
+        echo "follow is: ".$follow;
+        echo "myID is: ".$myId;
+
         $db = Db::instance(); // connect to db
 
         $q = sprintf("UPDATE `profiles` SET
