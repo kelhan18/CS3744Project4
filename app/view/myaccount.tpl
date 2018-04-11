@@ -80,7 +80,7 @@ if(isset($_SESSION['username']))
                         <li class="list-group-item list-group-item-action list-group-item-primary">Tony Medovar</li>
                     </ul>
 
-                    <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
+                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <div class="input-group mb-1">
                             <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
@@ -89,7 +89,7 @@ if(isset($_SESSION['username']))
                         </div>
                     </form>
 
-                    <form method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
+                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
                         <div class="input-group mb-1">
                             <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
@@ -179,7 +179,7 @@ if(isset($_SESSION['username']))
 
                 <div class="tab-pane fade" role="tabpanel" id="password">
                     <h2>Change Password</h2>
-                    <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
+                    <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
                             <label>Old Password: *</label>
                             <input type="password" name="oldpassword" class="input-xlarge" required>
@@ -207,7 +207,7 @@ if(isset($_SESSION['username']))
                                     <?= $profile->firstname?> <?= $profile->lastname?>
                                 </div>
                                 <div class="panel-body">
-                                    <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+                                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                         <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
                                     </form>

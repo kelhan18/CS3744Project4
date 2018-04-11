@@ -29,7 +29,7 @@
     <div class="main-content">
 <div class = "container">
     <div class="wrapper">
-      <form method="POST" action="<?= BASE_URL ?>/signup/" name="Sign_Form" class="form-signin">
+      <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/signup/" name="Sign_Form" class="form-signin">
           <h3 class="form-signin-heading">Please Enter Your Information Below</h3>
           <hr class="colorgraph"><br>
 

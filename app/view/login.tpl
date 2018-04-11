@@ -30,7 +30,7 @@
 
 <div class = "container">
     <div class="wrapper2">
-        <form method="POST" action="<?= BASE_URL ?>/login/process/" name="Login_Form" class="form-signin">
+        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/process/" name="Login_Form" class="form-signin">
             <h3 class="form-signin-heading">Please Sign In!</h3>
             <hr class="colorgraph"><br>
 
