@@ -208,10 +208,12 @@ if(isset($_SESSION['username']))
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
-                                    <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
-                                </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+                                        <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
+                                    </form>
                                 </div>
                             </div>
 
