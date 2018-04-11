@@ -137,7 +137,7 @@ class SiteController
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
 
-        if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($role) || empty($email) || empty($timezone)) {
+        if( empty($firstname) || empty($lastname) || empty($username) || empty($password)  || empty($email) || empty($timezone)) {
 			header('Location: '.BASE_URL); exit();
 		}
 
@@ -163,13 +163,13 @@ class SiteController
 
         echo 'Profile ID: '.$profile_id;
 
-		/*
+
         if ($profile_id == null)
         {
           header('Location: '.BASE_URL); exit();
         }
         header('Location: '.BASE_URL.'/login/'); exit();
-        */
+
     }
 
 
