@@ -85,7 +85,7 @@ if(isset($_SESSION['username']))
                     </ul>
 
                     <div class="row">
-                    <div class="col-mid-6">
+                    <div class="col-md-6">
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <div class="input-group mb-3">
@@ -96,7 +96,7 @@ if(isset($_SESSION['username']))
                         </div>
                     </form>
                     </div>
-                    <div class="col-mid-6">
+                    <div class="col-md-6">
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
                         <div class="input-group mb-3">
