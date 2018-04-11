@@ -96,7 +96,9 @@ if(isset($_SESSION['username']))
                                 <li class="list-group-item list-group-item-action d-flex justify-content-between">
                                     <?= $follower->username?>
                                     <span class="badge badge-primary badge-pill">
-                                </span>
+                                        Following: <?= $profile->number_following?>
+                                        Followers: <?= $profile->number_followers?>
+                                    </span>
                                 </li>
                         <?php endif; ?>
                         <?php endforeach; ?>
