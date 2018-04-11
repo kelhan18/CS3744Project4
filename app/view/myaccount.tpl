@@ -2,7 +2,6 @@
 if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
   $profiles = Profile::getProfiles();
-  $following = Follower::getFollowers();
 ?>
 
 <body class="myaccount-body">
@@ -87,7 +86,17 @@ if(isset($_SESSION['username']))
                             <h1 class="account-h1">Following</h1>
                         </div>
 
-                        
+                        <ul class="list-group">
+                        <?php foreach($profiles as $profile): ?>
+                            <?php if($following->follower == $profile->username): ?>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                    <?= $following->username?>
+                                    <span class="badge badge-primary badge-pill">
+                                        Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
+                                        </span>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
 
                         <div class="row">
                             <div class="col-md-6">
