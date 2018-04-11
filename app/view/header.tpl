@@ -5,13 +5,6 @@ if(isset($_SESSION['username']))
 else
   echo 'Not logged in, please sign-in!';
 
-if(isset($_SESSION['role']) && $_SESSION['role'] == 'Admin')
-      echo ' Role: Admin'
-if(isset($_SESSION['role']) && $_SESSION['role'] == 'Normal User')
-      echo ' Role: Normal User'
-if(!isset($_SESSION['role'])
-  echo ' Role: Unregistered User'
-
 ?>
 
 <!DOCTYPE html>
