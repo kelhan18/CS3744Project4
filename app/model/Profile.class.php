@@ -87,12 +87,12 @@ class Profile {
 
   //Inserts the family member into the database
   public function insert() {
-    if($this->topic_id != 0)
+    if($this->profile_id == 0)
       return null;
 
     $db = Db::instance(); // connect to db
     $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`, `timezone`, `number_posts`)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %d);",
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %d);",
       $db->escape($this->firstname),
       $db->escape($this->lastname),
       $db->escape($this->username),
