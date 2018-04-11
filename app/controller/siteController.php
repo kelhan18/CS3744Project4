@@ -80,7 +80,7 @@ class SiteController
       foreach($profiles as $profile) {
         array_push($usernames, $profile->username);
       }
-      $json = array('usernames' => $usernames);
+      $json = array('Registered Users:' => $usernames);
       header('Content-Type: application/json'); // let client know it's Ajax
         $output = print_r(json_encode($json)); // print the JSON
         dumpArray($output);
