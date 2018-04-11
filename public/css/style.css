@@ -17,6 +17,15 @@ body {
     font-size: 7em;
     text-align: center;
     -webkit-text-stroke: 2px black;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+}
+
+.custom-header-post {
+    color: white;
+    font-size: 7em;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
     font-family: 'Rubik', sans-serif;
     margin-bottom: 20px;
 }

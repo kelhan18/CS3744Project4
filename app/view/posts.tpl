@@ -31,7 +31,7 @@
 
     <div class="main-content">
         <br>
-        <h1 class="custom-header"><?= $topic->topic?></h1>
+        <h1 class="custom-header-post"><?= $topic->topic?></h1>
 
             <!-- <form method="POST" action="<?= BASE_URL ?>/topic/newpost/<?= $topic->topic_id?>/" name="Post_Form" class="form-signin"> -->
             <form id="newPostForm" class="form-signin">
