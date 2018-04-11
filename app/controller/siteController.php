@@ -245,13 +245,23 @@ class SiteController
 
     public function changeRole()
     {
-        $newRole = "Admin";
+
+        $normal = "Normal User";
+        $admin = "Admin";
+
+        $targetRole = $_POST['target_role'];
         $profID = $_POST['profile_id'];
+
         $profile = new Profile();
 
-        $profile->role    = $newRole;
-        $profile->profile_id = $profID;
+        if ($targetRole == $normal) {
+            $profile->role  = $admin;
+        }
+        elseif ($targetRole == $admin) {
+            $profile->role = $normal;
+        }
 
+        $profile->profile_id = $profID;
         $profile_id = $profile->saveRole($profile->profile_id);
 
         if ($profile_id == null)

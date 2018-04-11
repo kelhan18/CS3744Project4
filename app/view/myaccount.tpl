@@ -59,6 +59,12 @@ if(isset($_SESSION['username']))
                     </li>
                 <?php endif; ?>
 
+                <?php if($_SESSION['role'] == 'Owner'): ?>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#ownerpage" data-toggle="tab">Owner Page</a>
+                </li>
+                <?php endif; ?>
+
             </ul>
 
             <div class="tab-content">
@@ -242,7 +248,6 @@ if(isset($_SESSION['username']))
 
                     </div>
 
-
                         <?php foreach($profiles as $profile): ?>
                         <div class="container">
                             <div class="row">
@@ -269,6 +274,69 @@ if(isset($_SESSION['username']))
 
                             </div>
                         <?php endforeach; ?>
+                </div>
+
+
+                <div class="tab-pane fade" role="tabpanel" id="ownerpage">
+                    <br>
+                    <h1 class="account-h1">List of Users</h1>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h1 style="color: royalblue">
+                                    <u>Name</u>
+                                </h1>
+                            </div>
+                            <div class="col-md-3">
+                                <h1 style="margin-left:20px; color: royalblue">
+                                    <u>Role</u>
+                                </h1>
+                            </div>
+                            <div class="col-md-4">
+                                <h1 style="color: royalblue;">
+                                    <u>Change Role</u>
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <?php foreach($profiles as $profile): ?>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h3 style="color: dodgerblue;">
+                                    <?= $profile->firstname?> <?= $profile->lastname?>
+                                </h3>
+                            </div>
+                            <div class="col-md-3">
+                                <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <?php if($profile->role == "Normal User"): ?>
+                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+
+                                    <!--Store the profile id if they are normal user in profile_id-->
+                                    <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
+                                    <button type="submit" class="btn btn-xs btn-outline-danger">Make Admin</button>
+
+                                </form>
+                                <?php endif; ?>
+                                <?php if($profile->role == "Admin"): ?>
+                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+
+                                    <!--Store the profile id if they are normal user in profile_id-->
+                                    <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
+                                    <input type="hidden" name="target_role" value="<?= $profile->role?>"/>
+                                    <button type="submit" class="btn btn-xs btn-outline-danger">Make Normal User</button>
+
+                                </form>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                    </div>
+                    <?php endforeach; ?>
 
 
                 </div>
