@@ -200,7 +200,6 @@ if(isset($_SESSION['username']))
                     <h2>List of Users</h2>
                     <div id="postHolder">
 
-
                         <?php foreach($profiles as $profile): ?>
                         <div class="user-card">
                             <div class="row panel">
