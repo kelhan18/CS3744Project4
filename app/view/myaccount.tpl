@@ -89,49 +89,24 @@ if(isset($_SESSION['username']))
                     </div>
 
 
-
                     <ul class="list-group">
+                        <?php foreach($profiles as $profile): ?>
                         <?php foreach($followers as $follower): ?>
                             <?php if($follower->follower == $profile->username): ?>
-                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                    <?= $follower->username?>
-                                    <span class="badge badge-primary badge-pill">
-                                        Following: <?= $profile->number_following?>
-                                        Followers: <?= $profile->number_followers?>
-                                    </span>
-                                </li>
-                        <?php endif; ?>
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                <?= $follower->username?>
+                                <span class="badge badge-primary badge-pill">
+                                            Following: <?= $profile->number_following?>
+                                            Followers: <?= $profile->number_followers?>
+                                        </span>
+                            </li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                         <?php endforeach; ?>
                     </ul>
 
 
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Keller Han
-                            <span class="badge badge-primary badge-pill">Following: 10 Followers: 14</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                            Tony Medovar
-                            <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
-                        </li>
-                    </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    
 
                     <div class="row">
                         <div class="col-md-6">
