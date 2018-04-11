@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles2.css" afterPath="$PROJECT_DIR$/public/css/styles2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/stories.tpl" afterPath="$PROJECT_DIR$/app/view/stories.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,21 +14,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+            <state relative-caret-position="427">
+              <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stories.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stories.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="405">
+              <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -190,8 +190,8 @@
         <option value="$PROJECT_DIR$/app/view/posts.tpl" />
         <option value="$PROJECT_DIR$/app/view/login.tpl" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/app/view/stories.tpl" />
         <option value="$PROJECT_DIR$/public/css/styles2.css" />
+        <option value="$PROJECT_DIR$/app/view/stories.tpl" />
       </list>
     </option>
   </component>
@@ -203,8 +203,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="514" />
-    <option name="y" value="57" />
+    <option name="x" value="512" />
+    <option name="y" value="82" />
     <option name="width" value="1056" />
     <option name="height" value="869" />
   </component>
@@ -1075,15 +1075,15 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="53341000" />
+      <workItem from="1523373113654" duration="53393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75308000" />
+    <option name="totallyTimeSpent" value="75360000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="514" y="57" width="1056" height="869" extended-state="0" />
+    <frame x="512" y="82" width="1056" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1518,18 +1518,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="427">
+          <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+    <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+        <state relative-caret-position="405">
+          <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
           <folding />
         </state>
       </provider>
