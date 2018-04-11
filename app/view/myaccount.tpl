@@ -200,6 +200,7 @@ if(isset($_SESSION['username']))
                     <h1>List of Users</h1>
                     <div id="postHolder">
                         <?php foreach($profiles as $profile): ?>
+                        <div class="container">
                             <div class="row">
                                 <div class="col-sm">
                                     <?= $profile->firstname?> <?= $profile->lastname?>
@@ -216,10 +217,10 @@ if(isset($_SESSION['username']))
 
                             </div>
                         </div>
+                </div>
                     <?php endforeach; ?>
 
                 </div>
 
     </div>
-</div>
 </div>
