@@ -45,7 +45,7 @@ class FollowerController
         if($result->num_rows != 0) {
             if ($result2->num_rows == 0) {
                 $follower = new Follower();
-                $follower->user    = $follow;
+                $follower->username    = $follow;
                 $follower->follower = $myUsername;
 
                 $follower_id = $follower->save($followId, $myId);
@@ -87,7 +87,7 @@ class FollowerController
         if($result->num_rows != 0) {
             if ($result2->num_rows != 0) {
                 $follower = new Follower();
-                $follower->user    = $unfollow;
+                $follower->username    = $unfollow;
                 $follower->follower = $myUsername;
 
                 $follower_id = $follower->saveUnfollow($followId, $myId);

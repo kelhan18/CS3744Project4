@@ -83,7 +83,7 @@ class Follower {
 
         $q2 = sprintf("INSERT INTO followers (`username`, `follower`)
     VALUES (%s, %s);",
-            $db->escape($this->user),
+            $db->escape($this->username),
             $db->escape($this->follower)
         );
 
@@ -109,7 +109,7 @@ class Follower {
 
         $q2 = sprintf("DELETE FROM followers (`username`, `follower`)
     VALUES (%s, %s);",
-            $db->escape($this->user),
+            $db->escape($this->username),
             $db->escape($this->follower)
         );
 
