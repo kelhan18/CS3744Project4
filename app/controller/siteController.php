@@ -82,8 +82,13 @@ class SiteController
       }
       $json = array('usernames' => $usernames);
       header('Content-Type: application/json'); // let client know it's Ajax
+        $output = print_r(json_encode($json)); // print the JSON
+        dumpArray($output);
+    }
+
+    public function dumpArray($json) {
         echo '<pre>';
-      print_r(json_encode($json)); // print the JSON
+        print_r(json_encode($json)); // print the JSON
         echo '</pre>';
     }
 
