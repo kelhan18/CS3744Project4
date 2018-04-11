@@ -77,6 +77,11 @@ class Follower {
         WHERE `profile_id` = $followId");
         $db->query($q1);
 
+
+
+
+
+
         $q2 = sprintf("INSERT INTO followers (`user`, `follower`)
     VALUES (%s, %s);",
             $db->escape($this->user),
@@ -86,6 +91,10 @@ class Follower {
         $db->query($q2); // execute query
         return $db->getInsertID();
     }
+
+
+
+
 
     //Updates specified data in the database
     public function update() {
