@@ -128,6 +128,8 @@ if(isset($_SESSION['username']))
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" name="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
+                                        <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
+                                        <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
                                         <button class="btn btn-outline-primary" name="unfollowButton" type="submit">Unfollow</button>
                                     </div>
                                 </div>

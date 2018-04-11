@@ -58,7 +58,10 @@ class Follower {
     //Saves the new user/follower and adds them to the database
     public function save($followId, $myId){
         return $this->insert($followId, $myId);
+    }
 
+    public function saveUnfollow($followId, $myId) {
+        return $this->remove($followId, $myId);
     }
 
     //Inserts the user/follower into the database
@@ -78,11 +81,6 @@ class Follower {
         WHERE `profile_id` = $followId");
         $db->query($q1);
 
-
-
-
-
-
         $q2 = sprintf("INSERT INTO followers (`username`, `follower`)
     VALUES (%s, %s);",
             $db->escape($this->user),
@@ -93,6 +91,31 @@ class Follower {
         return $db->getInsertID();
     }
 
+    public function remove($followId, $myId) {
+        if($this->id != 0)
+            return null;
+
+        $db = Db::instance(); // connect to db
+
+        $q = sprintf("UPDATE `profiles` SET
+        `number_following`     = `number_following` - 1
+        WHERE `profile_id` = $myId");
+        $db->query($q);
+
+        $q1 = sprintf("UPDATE `profiles` SET
+        `number_followers`     = `number_followers` - 1
+        WHERE `profile_id` = $followId");
+        $db->query($q1);
+
+        $q2 = sprintf("DELETE FROM followers (`username`, `follower`)
+    VALUES (%s, %s);",
+            $db->escape($this->user),
+            $db->escape($this->follower)
+        );
+
+        $db->query($q2); // execute query
+        return $db->getInsertID();
+    }
 
 
 

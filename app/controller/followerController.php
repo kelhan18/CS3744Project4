@@ -26,7 +26,6 @@ class FollowerController
 
     public function follow()
     {
-        $baseurl = BASE_URL;
         $follow = $_POST['toFollow']; //Username of person to follow
         $myUsername = $_POST['myUsername'];
         $myId   = $_POST['myId'];
@@ -53,36 +52,60 @@ class FollowerController
 
                 if ($follower_id == null)
                 {
-
-                    echo "Error occured. Follow request not processed";
-                    #header('Location: '.BASE_URL.'/myaccount/'); exit();
+                    header('Location: '.BASE_URL.'/myaccount/'); exit();
 
                 }
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
-                ob_start();
-                echo "You're already following them!";
                 header('Location: '.BASE_URL.'/myaccount/');
-                exit();
-                ob_end_flush();
-
             }
 
-
         } else {
-            ob_start();
-            echo "That person is not a valid user!";
             header('Location: '.BASE_URL.'/myaccount/');
-            ob_end_flush();
         }
 
     }
 
     public function unfollow()
     {
-        $unfollow = $_POST['toUnfollow'];
-        $profiles = Profile::getProfiles();
+        $unfollow = $_POST['toUnfollow']; //Username of person to follow
+        $myUsername = $_POST['myUsername'];
+        $myId   = $_POST['myId'];
+
+        $db = Db::instance();
+        #Check if the person you want to unfollow is in database and the user/follower pair is already a thing
+        $q = "SELECT profile_id FROM profiles WHERE username ='$unfollow'";
+        $q2 = "SELECT id from followers WHERE username = '$unfollow' and follower ='$myUsername'";
+        $result = $db->query($q);
+        $result2 = $db->query($q2);
+        $row = $result->fetch_assoc(); // get results as associative array
+
+        $followId = $row['profile_id'];
+
+        // If result matched $username and $password, table row must be 1 row
+        if($result->num_rows != 0) {
+            if ($result2->num_rows != 0) {
+                $follower = new Follower();
+                $follower->user    = $unfollow;
+                $follower->follower = $myUsername;
+
+                $follower_id = $follower->saveUnfollow($followId, $myId);
+
+                if ($follower_id == null)
+                {
+                    header('Location: '.BASE_URL.'/myaccount/'); exit();
+
+                }
+                header('Location: '.BASE_URL.'/myaccount/'); exit();
+            }
+            else {
+                header('Location: '.BASE_URL.'/myaccount/');
+            }
+
+        } else {
+            header('Location: '.BASE_URL.'/myaccount/');
+        }
     }
 
 }
