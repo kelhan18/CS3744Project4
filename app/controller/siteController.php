@@ -101,7 +101,7 @@ class SiteController
 
       // If result matched $username and $password, table row must be 1 row
       if($result->num_rows != 0) {
-        $_SESSION['username'] = $profile->firstname;
+        $_SESSION['username'] = $profile->username;
         $_SESSION['profile_id'] = $profile->profile_id;
         $_SESSION['number_posts'] = $profile->number_posts;
         $_SESSION['password'] = $profile->password;

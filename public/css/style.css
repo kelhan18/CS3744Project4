@@ -543,9 +543,4 @@ a:hover {
         margin-left: 10px;
     }
 
-    .user-card {
-        border: 1px solid black;
-        display: inline-block;
-    }
-
 }
