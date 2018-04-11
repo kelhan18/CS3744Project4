@@ -15,7 +15,7 @@ else
     <title><?= $pageTitle ?> | The Battle of Peleliu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Arima+Madurai|Cabin|Farsan|Inconsolata|Lalezar|Lobster|Mogra|Nunito|Nunito+Sans|Pacifico|Quicksand|Rakkas|Rasa|Rubik|Shrikhand|Suez+One|VT323|Yatra+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/public/css/styles2.css">
