@@ -64,7 +64,7 @@ if(isset($_SESSION['username']))
 
             </ul>
 
-            <div id="myTabContent" class="tab-content">
+            <div id="myTabContent">
 
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane active in" id="activity-feed">
@@ -105,7 +105,7 @@ if(isset($_SESSION['username']))
                 </div>
 
 
-                <div class="tab-pane" id="profile">
+                <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
