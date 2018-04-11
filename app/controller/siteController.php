@@ -82,7 +82,7 @@ class SiteController
       }
       $json = array('usernames' => $usernames);
       header('Content-Type: application/json'); // let client know it's Ajax
-      echo json_encode($json); // print the JSON
+      print_r(json_encode($json)); // print the JSON
     }
 
 //Runs the login process to gain access to the website
