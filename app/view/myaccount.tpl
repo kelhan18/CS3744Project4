@@ -1,3 +1,8 @@
+<?php
+if(isset($_SESSION['username']))
+  $profile = Profile::getProfile($_SESSION['profile_id']);
+?>
+
 <body>
 
 <ul class="nav nav-pills nav-justified justify-content-center">
@@ -95,7 +100,7 @@
 
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
-
+                    <h4><?= $profile->firstname?></h4>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
