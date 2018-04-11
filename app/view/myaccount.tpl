@@ -88,7 +88,7 @@ if(isset($_SESSION['username']))
                         <h1 class="account-h1">Following</h1>
                     </div>
 
-                    <!--
+
                     <ul class="list-group">
                         <?php foreach($profiles as $profile): ?>
                         <?php foreach($followers as $follower): ?>
@@ -104,24 +104,22 @@ if(isset($_SESSION['username']))
                         <?php endforeach; ?>
                         <?php endforeach; ?>
                     </ul>
-                    -->
 
+                    
 
                     <ul class="list-group">
                         <?php foreach($followers as $follower): ?>
-                        <?php if($follower->follower == $profile->username): ?>
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                <?= $follower->username?>
-                                <span class="badge badge-primary badge-pill">
-                                            Following: <?= $profile->number_following?>
-                                            Followers: <?= $profile->number_followers?>
-                                        </span>
-                            </li>
+                            <?php if($follower->follower == $profile->username): ?>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                    <?= $follower->username?>
+                                    <span class="badge badge-primary badge-pill">
+                                        Following: <?= $profile->number_following?>
+                                        Followers: <?= $profile->number_followers?>
+                                    </span>
+                                </li>
                         <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
-
-
 
 
                     <div class="row">
