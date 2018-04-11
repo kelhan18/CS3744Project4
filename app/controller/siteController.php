@@ -16,8 +16,7 @@ class SiteController
     {
         switch ($action) {
             case 'home':
-                $profile_id = $_GET['profile_id'];
-                $this->home($profile_id);
+                $this->home();
                 break;
             case 'timeline':
                 $this->timeline();
@@ -29,8 +28,7 @@ class SiteController
                 $this->forum();
                 break;
             case 'myAccount':
-                $profile_id = $_GET['profile_id'];
-                $this->myAccount($profile_id);
+                $this->myAccount();
                 break;
             case 'findAccount':
                 $this->findAccount();
@@ -218,10 +216,9 @@ class SiteController
 
 
     //Brings the user to the home page
-    public function home($profile_id)
+    public function home()
     {
         $pageTitle = 'Home';
-        $profile = Profile::getProfile($profile_id);
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/home.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
@@ -248,10 +245,9 @@ class SiteController
         include_once SYSTEM_PATH . '/view/forum.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
     }
-    public function myAccount($profile_id)
+    public function myAccount()
     {
         $pageTitle = 'My Account';
-        $profile = Profile::getProfile($profile_id);
         include_once SYSTEM_PATH . '/view/header.tpl';
         include_once SYSTEM_PATH . '/view/myaccount.tpl';
         include_once SYSTEM_PATH . '/view/footer.tpl';
