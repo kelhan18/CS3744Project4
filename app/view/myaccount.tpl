@@ -65,11 +65,13 @@ if(isset($_SESSION['username']))
 
                 <!--Not sure how to implement yet -->
                 <div class="tab-pane fade show in active" role="tabpanel" id="activity-feed">
+                    <br>
                     <h1 class="account-h1">Activity Feed</h1>
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
+                    <br>
                     <h1 class="account-h1">Following</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
@@ -81,6 +83,8 @@ if(isset($_SESSION['username']))
                             <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
                         </li>
                     </ul>
+
+                    <div class="row">
 
                     <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <div class="input-group mb-3">
@@ -99,10 +103,12 @@ if(isset($_SESSION['username']))
                             </div>
                         </div>
                     </form>
+                    </div>
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
                 <div class="tab-pane fade" role="tabpanel" id="followers">
+                    <br>
                     <h1 class="account-h1">Followers</h1>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
@@ -188,6 +194,7 @@ if(isset($_SESSION['username']))
 
 
                 <div class="tab-pane fade" role="tabpanel" id="password">
+                    <br>
                     <h1 class="account-h1">Change Password</h1>
                     <form class="navbar-form" method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
@@ -207,6 +214,7 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
+                    <br>
                     <h1 class="account-h1">List of Users</h1>
 
                     <div class="container">
