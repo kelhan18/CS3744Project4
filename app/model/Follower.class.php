@@ -55,18 +55,15 @@ class Follower {
     }
 
     //Saves the new user/follower and adds them to the database
-    public function save($follow, $myId){
-        return $this->insert($follow, $myId);
+    public function save($followId, $myId){
+        return $this->insert($followId, $myId);
 
     }
 
     //Inserts the user/follower into the database
-    public function insert($follow, $myId) {
+    public function insert($followId, $myId) {
         if($this->id != 0)
             return null;
-
-        echo "follow is: ".$follow;
-        echo "myID is: ".$myId;
 
         $db = Db::instance(); // connect to db
 
@@ -77,7 +74,7 @@ class Follower {
 
         $q1 = sprintf("UPDATE `profiles` SET
         `number_followers`     = `number_followers` + 1
-        WHERE `username` = $follow");
+        WHERE `profile_id` = $followId");
         $db->query($q1);
 
         $q2 = sprintf("INSERT INTO followers (`user`, `follower`)
