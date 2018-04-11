@@ -2,7 +2,7 @@
 if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
   $profiles = Profile::getProfiles();
-  $following = Follower::getFollowers();
+  $followers = Follower::getFollowers();
 ?>
 
 <body class="myaccount-body">
@@ -89,6 +89,21 @@ if(isset($_SESSION['username']))
                     </div>
 
 
+
+                    <ul class="list-group">
+                        <?php foreach($followers as $follower): ?>
+                            <?php if($follower->follower == $profile->username): ?>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                                    <?= $follower->username?>
+                                    <span class="badge badge-primary badge-pill">
+                                Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
+                                </span>
+                                </li>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+                    </ul>
+
+
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Keller Han
@@ -99,6 +114,22 @@ if(isset($_SESSION['username']))
                             <span class="badge badge-primary badge-pill">Following: 8 Followers: 12</span>
                         </li>
                     </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                     <div class="row">
