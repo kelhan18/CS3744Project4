@@ -40,8 +40,8 @@
 
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
 
-                    <h2>Lewis Kenneth Bausell</h2>
-                    <h3>Corporal, U.S. Marine Corps</h3>
+                    <h1>Lewis Kenneth Bausell</h1>
+                    <h4>Corporal, U.S. Marine Corps</h4>
 
                 </header>
 
@@ -60,7 +60,7 @@
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/arthur.jpg">
 
                     <h1>Arthur J. Jackson</h1>
-                    <h2>Private First Class, U.S. Marine Corps</h2>
+                    <h4>Private First Class, U.S. Marine Corps</h4>
 
                 </header>
 
@@ -77,9 +77,9 @@
         <div class="row">
             <div class="profile-card">
                 <header>
-                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
+                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
                     <h1>Richard Edward Kraus</h1>
-                    <h2>Private First Class, U.S. Marine Corps</h2>
+                    <h4>Private First Class, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
@@ -90,9 +90,9 @@
 
             <div class="profile-card">
                 <header>
-                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
+                    <img class="portrait img-fluid" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
                     <h1>John Dury New</h1>
-                    <h2>Private First Class, U.S. Marine Corps</h2>
+                    <h4>Private First Class, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 25 September 1944.
@@ -108,7 +108,7 @@
                 <header>
                     <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
                     <h1>Wesley Phelps</h1>
-                    <h2>Private, U.S. Marine Corps</h2>
+                    <h4>Private, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Island of Peleliu in the Palau group, 4 October 1944.
@@ -123,7 +123,7 @@
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/everett.jpg">
                     <h1>Everett Parker Pope</h1>
-                    <h2>Captain, U.S. Marine Corps</h2>
+                    <h4>Captain, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Peleliu Island, Palau group, 19-20 September 1944.
@@ -142,7 +142,7 @@
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/charles.jpg">
                     <h1>Charles Howard Roan</h1>
-                    <h2>Private First Class, U.S. Marine Corps</h2>
+                    <h4>Private First Class, U.S. Marine Corps</h4>
                 </header>
 
                 <div class="profile-bio">
@@ -157,7 +157,7 @@
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/carlton.jpg">
                     <h1>Carlton Robert Rouh</h1>
-                    <h2>First Lieutenant, U.S. Marine Corps</h2>
+                    <h4>First Lieutenant, U.S. Marine Corps</h4>
                 </header>
                 <div class="profile-bio">
                     <strong>Place and date: </strong><p>Peleliu Island, Palau group, 15 September 1944.
