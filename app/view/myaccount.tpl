@@ -202,20 +202,29 @@ if(isset($_SESSION['username']))
                         <?php foreach($profiles as $profile): ?>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <?= $profile->firstname?> <?= $profile->lastname?>
+                                </div>
+                                <div class="col-sm-4"
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm">
-                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
+
+                                </div>
+                                <div class="col-sm"
+                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                     <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
                                 </form>
                                 </div>
+                                <div class="col-sm"
+                                </div>
+                                 <div class="col-sm"
+                                 </div>
                             </div>
 
-                            </div>
+                        </div>
                         <?php endforeach; ?>
                         </div>
                 </div>
