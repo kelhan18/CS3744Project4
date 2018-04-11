@@ -104,13 +104,12 @@ if(isset($_SESSION['username']))
                         <?php endforeach; ?>
                         <?php endforeach; ?>
                     </ul>
-
                     -->
+
+
                     <ul class="list-group">
                         <?php foreach($followers as $follower): ?>
                         <?php if($follower->follower == $profile->username): ?>
-                        $profile = Profile::getProfile($_SESSION['profile_id']);
-
                             <li class="list-group-item list-group-item-action d-flex justify-content-between">
                                 <?= $follower->username?>
                                 <span class="badge badge-primary badge-pill">
