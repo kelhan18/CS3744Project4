@@ -260,7 +260,7 @@ if(isset($_SESSION['username']))
 
                                         <!--Store the profile id if they are normal user in profile_id-->
                                         <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
-                                        <button type="button" class="btn btn-xs btn-outline-danger">Make Admin</button>
+                                        <button type="submit" class="btn btn-xs btn-outline-danger">Make Admin</button>
 
                                     </form>
                                     <?php endif; ?>
