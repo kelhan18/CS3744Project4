@@ -68,15 +68,17 @@ if(isset($_SESSION['username']))
             <div id="myTabContent" class="tab-content">
 
                 <!--Not sure how to implement yet -->
-                <div class="tab-pane active in" id="activity-feed">
+                <div class="tab-pane fade show active" role="tabpanel" id="activity-feed">
                     <h2>Activity Feed</h2>
                 </div>
 
                 <!--Need to populate with following people in database for specific user -->
-                <div class="tab-pane fade" id="following">
+                <div class="tab-pane fade" id="following" role="tabpanel">
                     <h2>Following</h2>
-                    <p>Keller Han</p>
-                    <p>Tony Medovar</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action list-group-item-primary">Keller Han</li>
+                        <li class="list-group-item list-group-item-action list-group-item-primary">Tony Medovar</li>
+                    </ul>
 
                     <form method="POST" action="<?= BASE_URL ?>/follow" name="follow">
                         <div class="input-group mb-1">
@@ -98,15 +100,16 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
-                <div class="tab-pane fade" id="followers">
+                <div class="tab-pane fade" role="tabpanel" id="followers">
                     <h2>Followers</h2>
-                    <p>Lebron James</p>
-                    <p>Kevin Durant</p>
-
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action list-group-item-primary">Lebron James</li>
+                        <li class="list-group-item list-group-item-action list-group-item-primary">Kevin Durant</li>
+                    </ul>
                 </div>
 
 
-                <div class="tab-pane fade" id="profile">
+                <div class="tab-pane fade" role="tabpanel" id="profile">
                     <h2>Edit Profile Info</h2>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
@@ -174,7 +177,7 @@ if(isset($_SESSION['username']))
                 </div>
 
 
-                <div class="tab-pane fade" id="password">
+                <div class="tab-pane fade" role="tabpanel" id="password">
                     <h2>Change Password</h2>
                     <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
                         <div class ="form-group">
@@ -193,7 +196,7 @@ if(isset($_SESSION['username']))
                     </form>
                 </div>
 
-                <div class="tab-pane fade" id="adminpage">
+                <div class="tab-pane fade" role="tabpanel" id="adminpage">
                     <h2>List of Users</h2>
                     <div id="postHolder">
 
