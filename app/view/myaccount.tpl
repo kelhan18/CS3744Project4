@@ -203,17 +203,17 @@ if(isset($_SESSION['username']))
                         <div class="row">
                             <div class="col-md-4">
                                 <h2 style="color: royalblue">
-                                    Name
+                                    <u>Name</u>
                                 </h2>
                             </div>
                             <div class="col-md-4">
-                                <h2 style="color: royalblue">
-                                    Role
+                                <h2 style="margin-left:20px; color: royalblue">
+                                    <u>Role</u>
                                 </h2>
                             </div>
                             <div class="col-md-4">
                                 <h2 style="color: royalblue;">
-                                    Change Role
+                                    <u>Change Role</u>
                                 </h2>
                             </div>
                         </div>
