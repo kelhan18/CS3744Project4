@@ -34,10 +34,10 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit personal info -->
-          <div class="form-group"><label>First Name: *<input type="text" class="form-control" name="firstname" required="required"></label></div></br>
-          <div class="form-group"><label>Last Name: *<input type="text" class="form-control" name="lastname" required="required"></label></div></br>
-          <div class="form-group"><label>Username: *<input type="text" class="form-control" name="username" required="required"></label></div></br>
-          <div class="form-group"><label>Password: *<input type="password" class="form-control" name="password" required="required"></label></div></br>
+          <div class="form-group"><label>First Name: *<input type="text" class="form-control" name="firstname" required="required"></label></div><br>
+          <div class="form-group"><label>Last Name: *<input type="text" class="form-control" name="lastname" required="required"></label></div><br>
+          <div class="form-group"><label>Username: *<input type="text" class="form-control" name="username" required="required"></label></div><br>
+          <div class="form-group"><label>Password: *<input type="password" class="form-control" name="password" required="required"></label></div><br>
           <div class="form-group">
               <label for="roleSelect">Site Role: *</label>
               <select class="form-control" id="roleSelect">
@@ -46,8 +46,8 @@
               </select>
               <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
           </div>
-          <div class="form-group"><label>Email: *<input type="email" class="form-control" name="email" required="required"></label></div></br>
-          <div class="form-group"><label>Address: <input type="text" class="form-control" name="address" ></label></div></br>
+          <div class="form-group"><label>Email: *<input type="email" class="form-control" name="email" required="required"></label></div><br>
+          <div class="form-group"><label>Address: <input type="text" class="form-control" name="address" ></label></div><br>
 
           <label>Time Zone: *</label>
           <select name="timezone" id="DropDownTimezone" class="form-control"  required="required">
