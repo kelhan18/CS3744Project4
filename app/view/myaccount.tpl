@@ -255,14 +255,17 @@ if(isset($_SESSION['username']))
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                 </div>
                                 <div class="col-md-4">
+                                    <?php if($profile->role == "Normal User"): ?>
                                     <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
-                                        <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
+                                        <button type="button" class="btn btn-xs btn-outline-danger">Make Admin</button>
                                     </form>
+                                    <?php endif; ?>
                                 </div>
                             </div>
 
                             </div>
                         <?php endforeach; ?>
+
 
                 </div>
 

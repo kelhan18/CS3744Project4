@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Icons/pow-star.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/newtopic.tpl" afterPath="$PROJECT_DIR$/app/view/newtopic.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/siteController.php" afterPath="$PROJECT_DIR$/app/controller/siteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,81 +16,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="296">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="siteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+              <folding>
+                <marker date="1523467841000" expanded="true" signature="2660:2722" ph="SELECT * FRO... profiles" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stories.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/stories.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="63" lean-forward="true" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newtopic.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/newtopic.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/login.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeline.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/timeline.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/signup.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="467">
+              <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,15 +112,12 @@
         <option value="$PROJECT_DIR$/public/js/myjquery.js" />
         <option value="$PROJECT_DIR$/app/view/footer.tpl" />
         <option value="$PROJECT_DIR$/app/model/Topic.class.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/model/Profile.class.php" />
-        <option value="$PROJECT_DIR$/app/controller/siteController.php" />
         <option value="$PROJECT_DIR$/app/view/header.tpl" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/app/view/home.tpl" />
         <option value="$PROJECT_DIR$/public/css/styles2.css" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
         <option value="$PROJECT_DIR$/app/view/stories.tpl" />
         <option value="$PROJECT_DIR$/app/view/forum.tpl" />
         <option value="$PROJECT_DIR$/app/view/login.tpl" />
@@ -177,6 +126,9 @@
         <option value="$PROJECT_DIR$/app/view/signup.tpl" />
         <option value="$PROJECT_DIR$/app/view/newtopic.tpl" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/app/controller/siteController.php" />
+        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
       </list>
     </option>
   </component>
@@ -188,8 +140,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="588" />
-    <option name="y" value="118" />
+    <option name="x" value="496" />
+    <option name="y" value="233" />
     <option name="width" value="1056" />
     <option name="height" value="869" />
   </component>
@@ -1060,15 +1012,15 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="54934000" />
+      <workItem from="1523373113654" duration="56072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76901000" />
+    <option name="totallyTimeSpent" value="78039000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="588" y="118" width="1056" height="869" extended-state="0" />
+    <frame x="496" y="233" width="1056" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1374,24 +1326,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
-          <folding>
-            <marker date="1523419422000" expanded="true" signature="2569:2631" ph="SELECT * FRO... profiles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1482,22 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/signup.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/newtopic.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1506,10 +1424,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/signup.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding>
+            <marker date="1523467841000" expanded="true" signature="2660:2722" ph="SELECT * FRO... profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
           <folding />
         </state>
       </provider>

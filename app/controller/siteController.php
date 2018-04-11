@@ -58,6 +58,9 @@ class SiteController
             case 'unfollow':
                 $this->unfollow();
                 break;
+            case 'changeRole':
+                $this->changeRole();
+                break;
             case 'loginProcess':
                 if (isset($_POST['login'])) {
                     $user = $_POST['user'];

@@ -22,12 +22,15 @@ RewriteRule ^timeline/?$ app/controller/siteController.php?action=timeline [QSA,
 RewriteRule ^stories/?$ app/controller/siteController.php?action=stories [QSA,L]
 RewriteRule ^forum/?$ app/controller/siteController.php?action=forum [QSA,L]
 RewriteRule ^signup/?$ app/controller/siteController.php?action=signupProcess [QSA,L]
+
+
+#New for Project 5
 RewriteRule ^myaccount/?$ app/controller/siteController.php?action=myAccount [QSA,L]
 RewriteRule ^updateInfo/?$ app/controller/siteController.php?action=updateInfo [QSA,L]
 RewriteRule ^updatePassword/?$ app/controller/siteController.php?action=updatePassword [QSA,L]
 RewriteRule ^follow/?$ app/controller/siteController.php?action=follow [QSA,L]
 RewriteRule ^unfollow/?$ app/controller/siteController.php?action=unfollow [QSA,L]
-
+RewriteRule ^changeRole/?$ app/controller/siteController.php?action=changeRole [QSA,L]
 
 #topic
 
