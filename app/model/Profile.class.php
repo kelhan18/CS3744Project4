@@ -65,9 +65,10 @@ class Profile {
             $user_name
         );
         $result = $db->query($q); // execute query
+        $row2 = $result->fetch_array();
 
         if($result->num_rows == 0) {
-            echo "Result: ".$result;
+            echo "Result: ".$row2;
             echo " Username is: ".$user_name;
             echo " ERROR";
             #return null;
