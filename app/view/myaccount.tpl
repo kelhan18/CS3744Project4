@@ -198,7 +198,29 @@ if(isset($_SESSION['username']))
 
                 <div class="tab-pane fade" role="tabpanel" id="adminpage">
                     <h1>List of Users</h1>
-           
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 style="color: royalblue">
+                                    Name
+                                </h2>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 style="color: royalblue">
+                                    Role
+                                </h2>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 style="color: royalblue;">
+                                    Change Role
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                         <?php foreach($profiles as $profile): ?>
                         <div class="container">
                             <div class="row">
