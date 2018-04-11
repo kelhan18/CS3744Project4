@@ -194,12 +194,12 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" id="adminpage">
-                    <h2>Administrator Page</h2>
+                    <h2>List of Users</h2>
                     <div id="postHolder">
                         <?php foreach($profiles as $profile): ?>
                         <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
                             <div class="row panel">
-                                <div class="col-md-8  col-xs-12">
+                                <div>
                                     <div class="header">
                                         <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
                                         <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
