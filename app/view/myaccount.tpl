@@ -111,7 +111,7 @@ if(isset($_SESSION['username']))
 
                 <div class="tab-pane fade" role="tabpanel" id="profile">
                     <h2>Edit Profile Info</h2>
-                    <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
+                    <form class="navbar-form" method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
                             <input type="text" name="username" value="<?= $profile->username?>" class="input-xlarge" id="input-username">
