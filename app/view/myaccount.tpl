@@ -197,7 +197,7 @@ if(isset($_SESSION['username']))
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <h1 style="color: royalblue">
                                     <u>Name</u>
                                 </h1>
@@ -207,7 +207,7 @@ if(isset($_SESSION['username']))
                                     <u>Role</u>
                                 </h1>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <h1 style="color: royalblue;">
                                     <u>Change Role</u>
                                 </h1>
@@ -220,7 +220,7 @@ if(isset($_SESSION['username']))
                         <?php foreach($profiles as $profile): ?>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <h3 style="color: dodgerblue;">
                                         <?= $profile->firstname?> <?= $profile->lastname?>
                                     </h3>
@@ -228,7 +228,7 @@ if(isset($_SESSION['username']))
                                 <div class="col-md-3">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                         <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
                                     </form>
