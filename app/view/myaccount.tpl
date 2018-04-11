@@ -80,69 +80,6 @@ if(isset($_SESSION['username']))
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="following" role="tabpanel">
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                            <h1 class="account-h1">Following</h1>
-                        </div>
-
-                        <ul class="list-group">
-                        <?php foreach($profiles as $profile): ?>
-                            <?php if($following->follower == $profile->username): ?>
-                                <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                    <?= $following->username?>
-                                    <span class="badge badge-primary badge-pill">
-                                        Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
-                                        </span>
-                                </li>
-                            <?php endif; ?>
-                            <?php endforeach; ?>
-                        </ul>
-
-                        <div class="row">
-                            <div class="col-md-6">
-
-                            <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/follow" name="follow">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" name="toFollow" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
-                                        <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
-                                        <button class="btn btn-outline-primary" name="followButton" type="submit">Follow</button>
-                                    </div>
-                                </div>
-                            </form>
-                            </div>
-
-                            <div class="col-md-6">
-                                <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/unfollow" name="unfollow">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" name="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-primary" name="unfollowButton" type="submit">Unfollow</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-8">
-                                <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" target="iframe" name="Find_Account_Form" class="form-signin">
-                                    <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Users</button>
-                                </form>
-                            </div>
-                            <div class="col-md-4">
-                                <iframe name="iframe">
-
-                                </iframe>
-                            </div>
-                     </div>
-                </div>
-                </div>
-
-
 
 
                 <!--Need to populate with followers in database for specific user -->
