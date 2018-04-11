@@ -47,14 +47,14 @@ class FollowerController
 
             $follower_id = $follower->save($followId, $myId);
 
-            #if ($follower_id == null)
-            #{
-            #    ob_start();
-            #    echo "Error occured. Follow request not processed";
-            #    header('Location: '.BASE_URL.'/myaccount/'); exit();
-            #    ob_end_flush();
-            #}
-            #header('Location: '.BASE_URL.'/myaccount/'); exit();
+            if ($follower_id == null)
+            {
+                ob_start();
+                echo "Error occured. Follow request not processed";
+                header('Location: '.BASE_URL.'/myaccount/'); exit();
+                ob_end_flush();
+            }
+            header('Location: '.BASE_URL.'/myaccount/'); exit();
 
         } else {
             ob_start();
