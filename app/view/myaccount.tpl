@@ -205,9 +205,9 @@ if(isset($_SESSION['username']))
                                     <div class="header">
                                         <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
                                         <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
-                                        if(<?=$profile->role?> == 'Normal User') {
-                                            <h3>Normal User!!!!!</h3>
-                                        }
+                                        <form method="POST" action="<?= BASE_URL ?>/changeRole">
+                                            <button class="btn btn-sm btn-primary">Change Role</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
