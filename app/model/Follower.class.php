@@ -69,12 +69,12 @@ class Follower {
 
         $q = sprintf("UPDATE `profiles` SET
         `number_following`     = `number_following` + 1
-        WHERE `profile_id` = $myId");
+        WHERE `username` = $myId");
         $db->query($q);
 
         $q = sprintf("UPDATE `profiles` SET
         `number_followers`     = `number_followers` + 1
-        WHERE `profile_id` = $follow");
+        WHERE `username` = $follow");
         $db->query($q);
 
         $q = sprintf("INSERT INTO followers (`user`, `follower`)
