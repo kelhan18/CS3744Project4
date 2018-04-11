@@ -5,7 +5,7 @@ class Follower {
     const DB_TABLE = 'followers'; // database table name
     // database fields for this table
     public $id = 0;
-    public $user = '';
+    public $username = '';
     public $follower = '';
 
     //Deletes a profile with a specific id
@@ -33,7 +33,7 @@ class Follower {
 
             $follower = new Follower(); // instantiate
             $follower->id   = $row['id'];
-            $follower->user      = $row['user'];
+            $follower->username      = $row['user'];
             $follower->follower     = $row['follower'];
 
             return $follower; // return the member
@@ -82,7 +82,7 @@ class Follower {
 
 
 
-        $q2 = sprintf("INSERT INTO followers (`user`, `follower`)
+        $q2 = sprintf("INSERT INTO followers (`username`, `follower`)
     VALUES (%s, %s);",
             $db->escape($this->user),
             $db->escape($this->follower)
@@ -103,7 +103,7 @@ class Follower {
 
         $db = Db::instance(); // connect to db
         $q = sprintf("UPDATE `followers` SET
-    `user` =   $db->escape($this->user),
+    `username` =   $db->escape($this->user),
     `follower`     = $db->escape($this->follower)
     WHERE `id`     = $db->escape($this->id);");
 
