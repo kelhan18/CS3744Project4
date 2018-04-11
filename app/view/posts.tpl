@@ -45,26 +45,11 @@
                 <input type='hidden' id="topic_id" value="<?= $topic->topic_id ?>"></input>
                 <button id="postButton" class="btn btn-lg btn-primary btn-block">New Post</button>
             </form>
-            <!-- <button id="postButt">work??</button> -->
+
         <div id="postHolder">
           <?php foreach($posts as $post): ?>
           <?php $profile = Profile::getProfile($post->profile_id)?>
-            <!--
-          <div class="row_forum" >
-            <div class="profile-card">
-                <header>
-                  <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
-                  <h5 style="margin-left:20px;margin-top:8px;"><?= $post->description?></h5>
-                  <p  style="margin-left:20px;margin-top:8px;"><?= $post->date_posted?></p>
-                </header>
 
-                <div class="profile-bio">
-                  <div class="posts"><?= $profile->number_posts?></div>
-                  <p>Posts</p>
-                </div>
-            </div>
-          </div>
-          -->
             <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
                 <div class="row panel">
                     <div class="col-md-8  col-xs-12">

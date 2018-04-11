@@ -193,22 +193,22 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" id="adminpage">
-                    <h2>Change Password</h2>
-                    <form method="POST" id="tab2" action="<?= BASE_URL ?>/updatePassword" name="updatePasswordForm">
-                        <div class ="form-group">
-                            <label>Old Password: *</label>
-                            <input type="password" name="oldpassword" class="input-xlarge" required>
+                    <div id="postHolder">
+                        <?php foreach($posts as $post): ?>
+                        <?php $profile = Profile::getProfile($post->profile_id)?>
+
+                        <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="row panel">
+                                <div class="col-md-8  col-xs-12">
+                                    <div class="header">
+                                        <h4 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h4>
+                                        <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <?php endforeach; ?>
                         </div>
-                        <div class ="form-group">
-                            <label>New Password: *</label>
-                            <input type="password" name="newpassword" class="input-xlarge" required>
-                        </div>
-                        <br>
-                        <p>(* detonates required field)</p>
-                        <div>
-                            <button class="btn btn-lg btn-primary btn-block">Update</button>
-                        </div>
-                    </form>
                 </div>
 
     </div>
