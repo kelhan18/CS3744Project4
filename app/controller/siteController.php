@@ -94,7 +94,7 @@ class SiteController
       $row = $result->fetch_assoc(); // get results as associative array
       $profile = new Profile();
       $profile->profile_id   = $row['profile_id'];
-      $profile->firstname    = $row['firstname'];
+      $profile->username   = $row['username'];
       $profile->number_posts = $row['number_posts'];
       $profile->password     = $row['password'];
       $profile->role         = $row['role'];
