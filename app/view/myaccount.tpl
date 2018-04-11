@@ -207,7 +207,7 @@ if(isset($_SESSION['username']))
                                     <?= $profile->firstname?> <?= $profile->lastname?>
                                 </div>
                                 <div class="panel-body">
-                                    <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+                                    <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
                                     <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
                                         <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
                                     </form>
