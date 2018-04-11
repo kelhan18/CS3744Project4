@@ -2,6 +2,7 @@
 if(isset($_SESSION['username']))
   $profile = Profile::getProfile($_SESSION['profile_id']);
   $profiles = Profile::getProfiles();
+  $following = Follower::getFollowers();
 ?>
 
 <body class="myaccount-body">
@@ -393,4 +394,5 @@ if(isset($_SESSION['username']))
 
 
     </div>
+</div>
 </div>
