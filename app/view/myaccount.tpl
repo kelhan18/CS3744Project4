@@ -86,7 +86,7 @@ if(isset($_SESSION['username']))
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Person to Follow" aria-label="Person to Follow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" name="followButton" type="button">Follow</button>
+                                <button class="btn btn-outline-primary" name="followButton" type="button">Follow</button>
                             </div>
                         </div>
                     </form>
@@ -95,7 +95,7 @@ if(isset($_SESSION['username']))
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" name="unfollowButton" type="button">Unfollow</button>
+                                <button class="btn btn-outline-primary" name="unfollowButton" type="button">Unfollow</button>
                             </div>
                         </div>
                     </form>
