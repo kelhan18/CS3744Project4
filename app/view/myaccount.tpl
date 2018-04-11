@@ -41,7 +41,7 @@ if(isset($_SESSION['username']))
                 <li><a href="#profile" data-toggle="tab">Password</a></li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-item nav-link active" href="#activity-feed" data-toggle="tab">Activity Feed</a>
+                    <a class="nav-item nav-link active" href="#activity-feed" data-toggle="tab">Activity</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-item nav-link" href="#following" data-toggle="tab">Following</a>
