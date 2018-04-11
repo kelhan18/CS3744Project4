@@ -34,7 +34,10 @@
           <hr class="colorgraph"><br>
 
           <!-- Edit personal info -->
-          <div class="form-group"><label>First Name: *<input type="text" class="form-control" name="firstname" required="required"></label></div>
+          <div class="form-group">
+              <label>First Name: *</label>
+                  <input type="text" class="form-control" name="firstname" required="required">
+          </div>
           <div class="form-group"><label>Last Name: *<input type="text" class="form-control" name="lastname" required="required"></label></div>
           <div class="form-group"><label>Username: *<input type="text" class="form-control" name="username" required="required"></label></div>
           <div class="form-group"><label>Password: *<input type="password" class="form-control" name="password" required="required"></label></div>
