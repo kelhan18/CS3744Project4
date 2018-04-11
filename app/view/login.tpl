@@ -42,6 +42,8 @@
 
             <button class="btn btn-lg btn-primary btn-block"  name="login" value="Login" type="submit">Login</button>
             <button class="btn btn-lg btn-info btn-block"  name="signup" value="Signup" type="submit">Sign Up</button>
+        </form>
+        <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" name="Find_Account_Form" class="form-signin">
             <button class="btn btn-lg btn-secondary btn-block" name="findaccount" type="submit">Find Account</button>
 
         </form>

@@ -27,7 +27,7 @@
       <file leaf-file-name="siteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
+            <state relative-caret-position="2298">
               <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
               <folding>
                 <marker date="1523469296000" expanded="true" signature="2660:2722" ph="SELECT * FRO... profiles" />
@@ -1024,12 +1024,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="58336000" />
+      <workItem from="1523373113654" duration="58449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80303000" />
+    <option name="totallyTimeSpent" value="80416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="554" y="155" width="1056" height="869" extended-state="0" />
@@ -1369,14 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Profile.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1401,16 +1393,6 @@
         <state relative-caret-position="-2269">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding>
-            <marker date="1523469296000" expanded="true" signature="2660:2722" ph="SELECT * FRO... profiles" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1467,6 +1449,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2298">
+          <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding>
+            <marker date="1523469296000" expanded="true" signature="2660:2722" ph="SELECT * FRO... profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
           <folding />
         </state>
       </provider>
