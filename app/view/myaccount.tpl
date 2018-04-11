@@ -92,9 +92,9 @@ if(isset($_SESSION['username']))
                     <ul class="list-group">
                         <?php foreach($profiles as $profile): ?>
                         <?php foreach($followers as $follower): ?>
-                        <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
 
                         <?php if($follower->follower == $profile->username): ?>
+                        <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
 
                             <li class="list-group-item list-group-item-action d-flex justify-content-between">
                                 <?= $follower->username?>
@@ -107,7 +107,6 @@ if(isset($_SESSION['username']))
                         <?php endforeach; ?>
                         <?php endforeach; ?>
                     </ul>
-
 
 
                     <div class="row">
