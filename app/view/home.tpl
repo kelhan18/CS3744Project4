@@ -15,7 +15,7 @@
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/forum">Forum</a>
     </li>
     <li class="nav-item">
-        <a class="nav-item nav-link" href="<?= BASE_URL ?>/myaccount/<?=profile->profile_id?>">My Account</a>
+        <a class="nav-item nav-link" href="<?= BASE_URL ?>/myaccount">My Account</a>
     </li>
     <li class="nav-item">
         <a class="nav-item nav-link" href="<?= BASE_URL ?>/logout">Logout</a>
@@ -80,7 +80,7 @@
         </section>
         <section class="spotlight">
             <div class="image"><img src="<?= BASE_URL ?>/public/img/Icons/japan.jpg" alt="" /></div><div class="content">
-                <h2><i>Japanese Casualties</i></h2>
+                <h2><i>Japanese Casualties</h2>
                 <ul>
                     <li>10,900 Japanese participated</li>
                     <li>10,695 killed</li>
