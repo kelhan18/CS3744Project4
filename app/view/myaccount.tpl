@@ -78,7 +78,9 @@ if(isset($_SESSION['username']))
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <br>
-                    <h1 class="account-h1">Following</h1>
+                    <div class="row">
+                        <h1 class="account-h1">Following</h1>
+                    </div>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-action d-flex justify-content-between">
                             Keller Han
@@ -116,13 +118,14 @@ if(isset($_SESSION['username']))
                     </div>
                     <div class="row">
                         <form class="navbar-form" method="POST" action="<?= BASE_URL ?>/login/findAccount" target="iframe" name="Find_Account_Form" class="form-signin">
-                            <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Account</button>
+                            <button class="btn btn-secondary btn-block" name="findaccount" type="submit">Find Users</button>
                         </form>
 
-                        <iframe name="iframe">
 
-                        </iframe>
                     </div>
+                    <iframe name="iframe">
+
+                    </iframe>
                 </div>
 
                 <!--Need to populate with followers in database for specific user -->
