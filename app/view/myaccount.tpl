@@ -193,6 +193,7 @@ if(isset($_SESSION['username']))
                 </div>
 
                 <div class="tab-pane fade" id="adminpage">
+                    <h2>Administrator Page</h2>
                     <div id="postHolder">
                         <?php foreach($posts as $post): ?>
                         <?php $profile = Profile::getProfile($post->profile_id)?>
