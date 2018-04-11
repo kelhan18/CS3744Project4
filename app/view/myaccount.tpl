@@ -55,12 +55,12 @@ if(isset($_SESSION['username']))
                 <li class="nav-item">
                     <a class="nav-item nav-link" href="#password" data-toggle="tab">Password</a>
                 </li>
-                <?php
-                if($_SESSION['role'] == 'Admin')
+                <?php if(isset($_SESSION['role']) && ($_SESSION['role'] == 'Admin'): ?>
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="#adminpage" data-toggle="tab">Admin Page</a>
                     </li>
-                ?>
+
+                <?php endif; ?>
             </ul>
 
             <div id="myTabContent" class="tab-content">
