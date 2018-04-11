@@ -97,6 +97,7 @@ class SiteController
       $profile->firstname    = $row['firstname'];
       $profile->number_posts = $row['number_posts'];
       $profile->password     = $row['password'];
+      $profile->role         = $row['role'];
 
       // If result matched $username and $password, table row must be 1 row
       if($result->num_rows != 0) {
@@ -104,6 +105,7 @@ class SiteController
         $_SESSION['profile_id'] = $profile->profile_id;
         $_SESSION['number_posts'] = $profile->number_posts;
         $_SESSION['password'] = $profile->password;
+        $_SESSION['role'] = $profile->role;
         header('Location: '.BASE_URL); exit();
       } else {
         header('Location: '.BASE_URL);
