@@ -90,7 +90,7 @@ if(isset($_SESSION['username']))
 
 
                     <ul class="list-group">
-                        <?php foreach($profiles as $profile): ?>
+
                         <?php foreach($followers as $follower): ?>
 
                         <?php if($follower->follower == $profile->username): ?>
@@ -105,7 +105,7 @@ if(isset($_SESSION['username']))
                             </li>
                             <?php endif; ?>
                         <?php endforeach; ?>
-                        <?php endforeach; ?>
+
                     </ul>
 
 
@@ -159,7 +159,7 @@ if(isset($_SESSION['username']))
                 <br>
                 <div class="container">
                     <div class="row">
-                        <h1 class="account-h1">Followers</h1>
+                        <h1 class="account-h1">My Followers</h1>
                     </div>
 
                     <!--for each make them in a row-->
