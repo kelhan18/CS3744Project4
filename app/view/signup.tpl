@@ -36,24 +36,24 @@
           <!-- Edit personal info -->
           <div class="form-group">
               <label>First Name: *</label>
-                  <input type="text" class="form-control" name="firstname" required="required">
+                  <input type="text" name="firstname" required="required">
           </div>
-          <div class="form-group"><label>Last Name: *<input type="text" class="form-control" name="lastname" required="required"></label></div>
-          <div class="form-group"><label>Username: *<input type="text" class="form-control" name="username" required="required"></label></div>
-          <div class="form-group"><label>Password: *<input type="password" class="form-control" name="password" required="required"></label></div>
+          <div class="form-group"><label>Last Name: *<input type="text" name="lastname" required="required"></label></div>
+          <div class="form-group"><label>Username: *<input type="text"  name="username" required="required"></label></div>
+          <div class="form-group"><label>Password: *<input type="password"  name="password" required="required"></label></div>
           <div class="form-group">
               <label for="roleSelect">Site Role: *</label>
-              <select class="form-control" id="roleSelect">
+              <select id="roleSelect">
                   <option>Normal User</option>
                   <option>Admin</option>
               </select>
               <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
           </div>
-          <div class="form-group"><label>Email: *<input type="email" class="form-control" name="email" required="required"></label></div>
-          <div class="form-group"><label>Address: <input type="text" class="form-control" name="address" ></label></div>
+          <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div>
+          <div class="form-group"><label>Address: <input type="text" name="address" ></label></div>
 
           <label>Time Zone: *</label>
-          <select name="timezone" id="DropDownTimezone" class="form-control"  required="required">
+          <select name="timezone" id="DropDownTimezone" required="required">
               <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
               <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
               <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
