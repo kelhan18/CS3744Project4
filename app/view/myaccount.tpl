@@ -52,6 +52,9 @@
                 </li>
             </ul>
 
+
+            <?php $profile = Profile::getProfile($post->profile_id)?>
+
             <div id="myTabContent" class="tab-content">
 
                 <!--Not sure how to implement yet -->
@@ -99,7 +102,7 @@
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
-                            <input type="text" name="username" value="kelhan18" class="input-xlarge" id="input-username">
+                            <input type="text" name="username" value="<?= $profile->username?>" class="input-xlarge" id="input-username">
                         </div>
                         <div class ="form-group">
                             <label>First Name: *</label>
