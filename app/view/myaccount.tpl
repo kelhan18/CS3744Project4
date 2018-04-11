@@ -99,40 +99,9 @@ if(isset($_SESSION['username']))
                                         Following: <?= $profile->number_following> Followers: <?= $profile->number_followers?>
                                         </span>
                                 </li>
-                            
+
                             <?php endforeach; ?>
                         </ul>
-
-
-
-                            <div class="col-md-5">
-                                <h3 style="color: dodgerblue;">
-                                    <?= $profile->firstname?> <?= $profile->lastname?>
-                                </h3>
-                            </div>
-                            <div class="col-md-3">
-                                <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
-                            </div>
-                            <div class="col-md-4">
-                                <?php if($profile->role == "Normal User"): ?>
-                                <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
-
-                                    <!--Store the profile id if they are normal user in profile_id-->
-                                    <input type="hidden" name="profile_id" value="<?= $profile->profile_id?>"/>
-                                    <button type="submit" class="btn btn-xs btn-outline-danger">Make Admin</button>
-
-                                </form>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-
-=
-
-
-
-
-
-
 
                         <div class="row">
                             <div class="col-md-6">
