@@ -94,9 +94,9 @@
 
 
                 <?php $profile = Profile::getProfile($post->profile_id)?>
-                <h1><?= $profile->username?></h1>
                 <div class="tab-pane fade" id="profile">
                     <h2>Edit Profile Info</h2>
+                    <h1><?= $profile->username?></h1>
                     <form method="POST" id ="tab" action="<?= BASE_URL ?>/updateInfo" name="updateInfoForm">
                         <div class ="form-group">
                             <label>Username: </label>
