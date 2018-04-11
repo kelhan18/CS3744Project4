@@ -67,7 +67,8 @@ class Profile {
         );
         $result = $db->query($q); // execute query
         if($result->num_rows == 0) {
-            return null;
+            echo "ERRRORRRR";
+            #return null;
         } else {
             $row = $result->fetch_assoc(); // get results as associative array
 
