@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/siteController.php" afterPath="$PROJECT_DIR$/app/controller/siteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/login.tpl" afterPath="$PROJECT_DIR$/app/view/login.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +30,7 @@
             <state relative-caret-position="227">
               <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
               <folding>
-                <marker date="1523471059000" expanded="true" signature="2664:2726" ph="SELECT * FRO... profiles" />
+                <marker date="1523471142000" expanded="true" signature="2665:2727" ph="SELECT * FRO... profiles" />
               </folding>
             </state>
           </provider>
@@ -1025,12 +1024,12 @@
       <updated>1522183039024</updated>
       <workItem from="1522183040375" duration="2607000" />
       <workItem from="1522246244335" duration="2987000" />
-      <workItem from="1523373113654" duration="58939000" />
+      <workItem from="1523373113654" duration="59014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80906000" />
+    <option name="totallyTimeSpent" value="80981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="554" y="155" width="1056" height="869" extended-state="0" />
@@ -1475,7 +1474,7 @@
         <state relative-caret-position="227">
           <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
           <folding>
-            <marker date="1523471059000" expanded="true" signature="2664:2726" ph="SELECT * FRO... profiles" />
+            <marker date="1523471142000" expanded="true" signature="2665:2727" ph="SELECT * FRO... profiles" />
           </folding>
         </state>
       </provider>
