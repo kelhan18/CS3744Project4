@@ -38,7 +38,7 @@
             <div class="profile-card">
                 <header>
 
-                    <img class="portrait img-fluid" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
+                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
 
                     <h1>Lewis Kenneth Bausell</h1>
                     <h4>Corporal, U.S. Marine Corps</h4>
@@ -57,7 +57,7 @@
             <div class="profile-card">
                 <header>
 
-                    <img class="portrait img-fluid" src="<?= BASE_URL ?>/public/img/portraits/arthur.jpg">
+                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/arthur.jpg">
 
                     <h1>Arthur J. Jackson</h1>
                     <h4>Private First Class, U.S. Marine Corps</h4>
