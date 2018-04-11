@@ -63,13 +63,16 @@
 }
 
 #portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 80px;
     width: 80px;
 }
+
 .profile-card{
     text-align: center;
 }
-
 
 .profile-bio{
     padding: 20px;

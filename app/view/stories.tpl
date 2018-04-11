@@ -40,8 +40,8 @@
 
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/lewis.jpg">
 
-                    <h1>Lewis Kenneth Bausell</h1>
-                    <h2>Corporal, U.S. Marine Corps</h2>
+                    <h2>Lewis Kenneth Bausell</h2>
+                    <h3>Corporal, U.S. Marine Corps</h3>
 
                 </header>
 
@@ -77,7 +77,7 @@
         <div class="row">
             <div class="profile-card">
                 <header>
-                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
+                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
                     <h1>Richard Edward Kraus</h1>
                     <h2>Private First Class, U.S. Marine Corps</h2>
                 </header>
@@ -90,7 +90,7 @@
 
             <div class="profile-card">
                 <header>
-                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
+                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
                     <h1>John Dury New</h1>
                     <h2>Private First Class, U.S. Marine Corps</h2>
                 </header>
@@ -106,7 +106,7 @@
         <div class="row">
             <div class="profile-card">
                 <header>
-                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
+                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
                     <h1>Wesley Phelps</h1>
                     <h2>Private, U.S. Marine Corps</h2>
                 </header>
