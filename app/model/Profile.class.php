@@ -70,29 +70,7 @@ class Profile {
         echo "Correct username: ".$row['username'];
 
 
-        if($result->num_rows == 0) {
-            echo "Username is: ".$user_name;
-            echo "ERROR";
-            #return null;
-        } else {
-            $row = $result->fetch_assoc(); // get results as associative array
 
-            $profile = new Profile(); // instantiate
-            $profile->profile_id   = $row['profile_id'];
-            $profile->firstname    = $row['firstname'];
-            $profile->lastname     = $row['lastname'];
-            $profile->username     = $row['username'];
-            $profile->password     = $row['password'];
-            $profile->role         = $row['role'];
-            $profile->email        = $row['email'];
-            $profile->address      = $row['address'];
-            $profile->timezone     = $row['timezone'];
-            $profile->number_posts = $row['number_posts'];
-            $profile->number_following = $row['number_following'];
-            $profile->number_followers = $row['number_followers'];
-
-            return $profile; // return the member
-        }
     }
 
   // return all Family Members in an array
