@@ -202,7 +202,7 @@ if(isset($_SESSION['username']))
 
 
                         <?php foreach($profiles as $profile): ?>
-                        <div class="container">
+                        <div class="user-card">
                             <div class="row panel">
                                 <div class="col-md-8  col-xs-12">
                                     <div class="header">
