@@ -121,15 +121,19 @@ class SiteController
     }
 
     public function signupProcess() {
+        $correctcode = 'cookie123';
+
         $username  	 = $_POST['username'];  // required
 		$firstname 	 = $_POST['firstname']; // required
 		$lastname 	 = $_POST['lastname'];  // required
 		$password  	 = $_POST['password'];  // required
+        $role        = $_POST['role'];      // required
+        $passcode    = $_POST['passcode'];
 		$email       = $_POST['email'];     // required
         $address 	 = $_POST['address'];
         $timezone 	 = $_POST['timezone'];  // required
 
-        if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($email) || empty($timezone)) {
+        if( empty($firstname) || empty($lastname) || empty($username) || empty($password) || empty($role) || empty($email) || empty($timezone)) {
 			header('Location: '.BASE_URL); exit();
 		}
 
@@ -138,10 +142,18 @@ class SiteController
 		$profile->lastname     = $lastname;
 		$profile->username    	= $username;
 		$profile->password    	= $password;
+
+		if ($correctcode == $passcode) {
+            $profile->role = 'Normal User';
+        }
+        else {
+		    $profile->role = 'Admin';
+        }
+
 		$profile->email        = $email;
 		$profile->address      = $address;
 		$profile->timezone     = $timezone;
-        $profile->number_posts        = 0;
+        $profile->number_posts  = 0;
 
 		$profile_id = $profile->save(0);
 

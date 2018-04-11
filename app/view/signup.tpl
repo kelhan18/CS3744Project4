@@ -51,7 +51,7 @@
           </div>
           <div class="form-group">
               <label for="isAdmin">Secret Password:
-                  <input type="text" name="secretpassword">
+                  <input type="text" name="passcode">
           </div>
           <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div>
           <div class="form-group"><label>Address: <input type="text" name="address" ></label></div>
