@@ -78,7 +78,6 @@ if(isset($_SESSION['username']))
                 <!--Need to populate with following people in database for specific user -->
                 <div class="tab-pane fade" id="following" role="tabpanel">
                     <br>
-                    <div class="container">
                         <div class="row">
                             <h1 class="account-h1">Following</h1>
                         </div>
@@ -129,7 +128,7 @@ if(isset($_SESSION['username']))
                                 </iframe>
                             </div>
                      </div>
-                </div>
+
 
 
 
