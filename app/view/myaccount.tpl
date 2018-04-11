@@ -202,16 +202,17 @@ if(isset($_SESSION['username']))
 
                         <?php foreach($profiles as $profile): ?>
 
-                            <div class="row panel user-card">
-                                <div class="col-md-8  col-xs-12">
-                                    <div class="header">
-                                        <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
-                                        <h3 style="margin-left:20px;margin-top:8px;color: red;"><?= $profile->firstname?> <?= $profile->lastname?></h3>
-                                        <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
-                                            <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
-                                        </form>
-                                    </div>
+                            <div class="row panel panel-primary">
+                                <div class="panel-heading">
+                                    <?= $profile->firstname?> <?= $profile->lastname?>
                                 </div>
+                                <div class="panel-body">
+                                    <form method="POST" action="<?= BASE_URL ?>/changeRole" class="form-inline">
+                                    <h5 style="margin-left:20px;margin-top:8px;"><?= $profile->role?></h5>
+                                        <button type="button" class="btn btn-xs btn-outline-danger">Change Role</button>
+                                    </form>
+                                </div>
+
                             </div>
                             <?php endforeach; ?>
 
