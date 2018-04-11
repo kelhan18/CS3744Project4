@@ -41,8 +41,8 @@
             </ul>
 
             <button class="btn btn-lg btn-primary btn-block"  name="login" value="Login" type="submit">Login</button>
-            <button class="btn btn-lg btn-primary btn-block"  name="signup" value="Signup" type="submit">Sign Up</button>
+            <button class="btn btn-lg btn-info btn-block"  name="signup" value="Signup" type="submit">Sign Up</button>
         </form>
-        <button id="findAccount">Find Account</button>
+        <button class="btn btn-lg btn-secondary btn-block" name="findaccount" type="submit">Find Account</button>
     </div>
 </div>

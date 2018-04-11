@@ -28,7 +28,7 @@
 </ul>
 
 <div class="main">
-    <div class="main-content">
+    <div class="main-content story-background">
         <br>
         <h1 class="custom-header">Medal Of Honor Recipients</h1>
 
@@ -106,7 +106,7 @@
         <div class="row">
             <div class="profile-card">
                 <header>
-                    <img class="portrait img-circle" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
+                    <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
                     <h1>Wesley Phelps</h1>
                     <h4>Private, U.S. Marine Corps</h4>
                 </header>

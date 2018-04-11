@@ -30,6 +30,9 @@ body {
     margin-bottom: 20px;
 }
 
+.story-background {
+    background-image: url('../img/Icons/stardust.png');
+}
 h1#home {
     color: #000;
     margin-top: 6%;
