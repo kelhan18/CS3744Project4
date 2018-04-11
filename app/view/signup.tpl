@@ -47,10 +47,10 @@
                   <option value="Normal User">Normal User</option>
                   <option value="Admin">Admin</option>
               </select>
-              <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret password</small>
+              <small id="emailHelp" class="form-text text-muted">To Sign up as admin, must know secret passcode</small>
           </div>
           <div class="form-group">
-              <label for="isAdmin">Secret Password:
+              <label for="isAdmin">Secret Passcode:
                   <input type="text" name="passcode">
           </div>
           <div class="form-group"><label>Email: *<input type="email" name="email" required="required"></label></div>

@@ -122,16 +122,15 @@ class SiteController
 
     public function signupProcess() {
         $correctcode = 'cookie123';
+        $adminRole = 'Admin';
+        $normalRole = 'Normal User';
+        $noAddress = 'N/A';
 
         $username  	 = $_POST['username'];  // required
 		$firstname 	 = $_POST['firstname']; // required
 		$lastname 	 = $_POST['lastname'];  // required
 		$password  	 = $_POST['password'];  // required
-
         $role        = $_POST['role'];      // required
-        $adminRole = 'Admin';
-        $normalRole = 'Normal User';
-
         $passcode    = $_POST['passcode'];
 		$email       = $_POST['email'];     // required
         $address 	 = $_POST['address'];
@@ -155,7 +154,14 @@ class SiteController
         }
 
 		$profile->email        = $email;
-		$profile->address      = $address;
+
+		if ($address != "") {
+            $profile->address = $address;
+        }
+        else {
+		    $profile->address = $noAddress;
+        }
+
 		$profile->timezone     = $timezone;
         $profile->number_posts  = 0;
 
