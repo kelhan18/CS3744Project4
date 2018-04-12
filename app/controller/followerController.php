@@ -96,16 +96,15 @@ class FollowerController
 
                 $follower_id = $follower->saveUnfollow($unfollowId, $myId);
 
-                if ($follower_id == null)
-                {
-                    echo "<script>console.log('PHP: In if');</script>";
-                    // header('Location: '.BASE_URL.'/myaccount/'); exit();
-                }
-                echo "<script>console.log('PHP: After if');</script>";
+                // if ($follower_id == null)
+                // {
+                //     header('Location: '.BASE_URL.'/myaccount/'); exit();
+                // }
+
                 // Add the activity for the unfollower and for the unfollowee
                 Activity::addActivity($myId, 'you unfollowed '.$unfollow);
                 Activity::addActivity($unfollowId, $myUsername.' unfollowed you');
-                // header('Location: '.BASE_URL.'/myaccount/'); exit();
+                header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
                 header('Location: '.BASE_URL.'/myaccount/');
