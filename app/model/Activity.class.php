@@ -33,6 +33,7 @@ class Activity {
     );
 
     $result = $db->query($q); // execute query
+    return $db->getInsertID();
   }
 
   // adds a new activity
@@ -45,4 +46,5 @@ class Activity {
     );
 
     $result = $db->query($q); // execute query
+    return $db->getInsertID();
   }

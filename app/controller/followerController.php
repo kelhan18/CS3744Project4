@@ -65,11 +65,12 @@ class FollowerController
                 // $followeeAct->description = $myId.' followed you';
                 // $followeeAct->addActivity();
 
-                Activity::addActivity2(400, 'words');
-                // $testAct = new Activity();
-                // $testAct->profile_id = 400;
-                // $testAct->description = 'words';
-                // $testAct->addActivity();
+                // Activity::addActivity2(400, 'words');
+                $testAct = new Activity();
+                $testAct->profile_id = 400;
+                $testAct->description = 'words';
+                $actid = $testAct->addActivity();
+                echo($actid);
 
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
