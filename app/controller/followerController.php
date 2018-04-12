@@ -53,8 +53,18 @@ class FollowerController
                 if ($follower_id == null)
                 {
                     header('Location: '.BASE_URL.'/myaccount/'); exit();
-
                 }
+                // Adding the act of following and being followed with the
+                // respective profile_id's
+                $followerAct = new Activity();
+                $followerAct->profile_id = $myId;
+                $followerAct->description = 'you followed '.$follow;
+                $followerAct->addActivity();
+                $followeeAct = new Activity();
+                $followeeAct->profile_id = $followId;
+                $followeeAct->description = $myId.' followed you';
+                $followeeAct->addActivity();
+                
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
