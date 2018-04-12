@@ -67,7 +67,7 @@ class FollowerController
 
                 echo(Activity::returnZero());
 
-                header('Location: '.BASE_URL.'/myaccount/'); exit();
+                // header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
                 header('Location: '.BASE_URL.'/myaccount/');
