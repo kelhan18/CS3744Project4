@@ -32,7 +32,7 @@
 
           <!-- Edit topic info -->
           <label>New topic: <input class ="input-text" type="text" name="topic" required="required"></input></label></br>
-          <input type='hidden' id="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
+          <input type='hidden' name="profile_id" id="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
           <button class="btn btn-lg btn-primary btn-block"  name="submit" value="Create New Profile" type="submit">Create New Topic</button>
 
         </form>
