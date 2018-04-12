@@ -45,7 +45,7 @@ class TopicController
       $post = $_POST['description']; // required
       $profile_id = $_POST['profile_id'];
 
-      $topic = Topic::getTopic($topic_id);
+      // $topic = Topic::getTopic($topic_id);
 
       if( empty($post) ) {
         header('Location: '.BASE_URL); exit();
