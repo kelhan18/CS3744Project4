@@ -105,7 +105,7 @@ class FollowerController
                 // Add the activity for the unfollower and for the unfollowee
                 Activity::addActivity($myId, 'you unfollowed '.$unfollow);
                 Activity::addActivity($unfollowId, $myUsername.' unfollowed you');
-                header('Location: '.BASE_URL.'/myaccount/'); exit();
+                // header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
                 header('Location: '.BASE_URL.'/myaccount/');
