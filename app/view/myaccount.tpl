@@ -93,7 +93,7 @@ if(isset($_SESSION['username']))
 
                         <?php foreach($followers as $follower): ?>
                         <?php if($follower->follower == $profile->username): ?>
-                        <?php $userProfile = Profile::getProfileByUsername($follower->username)?>
+                        <?php $userProfile = Profile::getProfileByUsername("kelhan18")?>
 
                             <li class="list-group-item list-group-item-action d-flex justify-content-between">
                                 <?= $follower->username?>
