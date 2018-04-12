@@ -28,7 +28,7 @@ class Activity {
     $db = Db::instance();
     $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
     VALUES (%d, %s);",
-      $db->escape($this->profile_id),
+      $db->$this->profile_id,
       $db->escape($this->description)
     );
 
