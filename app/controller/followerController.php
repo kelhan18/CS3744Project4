@@ -85,7 +85,7 @@ class FollowerController
         $result2 = $db->query($q2);
         $row = $result->fetch_assoc(); // get results as associative array
 
-        $followId = $row['profile_id'];
+        $unfollowId = $row['profile_id'];
 
         // If result matched $username and $password, table row must be 1 row
         if($result->num_rows != 0) {
@@ -94,13 +94,15 @@ class FollowerController
                 $follower->username    = $unfollow;
                 $follower->follower = $myUsername;
 
-                $follower_id = $follower->saveUnfollow($followId, $myId);
+                $follower_id = $follower->saveUnfollow($unfollowId, $myId);
 
                 if ($follower_id == null)
                 {
                     header('Location: '.BASE_URL.'/myaccount/'); exit();
-
                 }
+                // Add the activity for the unfollower and for the unfollowee
+                Activity::addActivity($myId, 'you unfollowed '.$unfollow);
+                Activity::addActivity($unfollowId, $myUsername.' unfollowed you');
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
