@@ -24,28 +24,20 @@ class Activity {
   }
 
   // adds a new activity
-  public function addActivity() {
+  public function addActivity($profile_id, $description) {
     $db = Db::instance();
     $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
     VALUES (%d, %s);",
-      $db->$this->profile_id,
-      $db->escape($this->description)
+      $profile_id,
+      $db->escape($description)
     );
 
     $result = $db->query($q); // execute query
     return $db->getInsertID();
   }
 
-  // adds a new activity
-  public function addActivity2($prof_id, $desc) {
-    $db = Db::instance();
-    $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
-    VALUES (%d, %s);",
-      $db->$prof_id,
-      $db->escape($desc)
-    );
-
-    $result = $db->query($q); // execute query
-    return $db->getInsertID();
+  // returns returnZero
+  public function returnZero() {
+    return 0;
   }
 }
