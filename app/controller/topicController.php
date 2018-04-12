@@ -45,8 +45,6 @@ class TopicController
       $post = $_POST['description']; // required
       $profile_id = $_POST['profile_id'];
 
-      // $topic = Topic::getTopic($topic_id);
-
       if( empty($post) ) {
         header('Location: '.BASE_URL); exit();
       }
@@ -75,7 +73,8 @@ class TopicController
 
       $post = $result["censored-content"];
 
-      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic);
+      $topic = Topic::getTopic($topic_id);
+      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic->topic);
 
   		$mypost = new Post();
   		$mypost->description  = $post;
