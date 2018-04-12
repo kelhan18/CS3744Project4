@@ -22,19 +22,19 @@ class Activity {
   //   }
   //   return $activities;
   // }
-  //
-  // // adds a new activity
-  // public function addActivity($profile_id, $description) {
-  //   $db = Db::instance();
-  //   $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
-  //   VALUES (%d, %s);",
-  //     $profile_id,
-  //     $db->escape($description)
-  //   );
-  //
-  //   $result = $db->query($q); // execute query
-  //   return $db->getInsertID();
-  // }
+
+  // adds a new activity
+  public function addActivity($profile_id, $description) {
+    $db = Db::instance();
+    $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
+    VALUES (%d, %s);",
+      $profile_id,
+      $db->escape($description)
+    );
+
+    $result = $db->query($q); // execute query
+    return $db->getInsertID();
+  }
 
   // returns returnZero
   public function returnZero() {
