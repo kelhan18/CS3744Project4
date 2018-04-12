@@ -11,7 +11,9 @@ class Activity {
   // return all activities for a given profile id in an array
   public function getActivities($profile_id) {
     $db = Db::instance();
-    $q = "SELECT * FROM `".self::DB_TABLE."` WHERE `profile_id` = ".$profile_id;
+    $q = sprintf("SELECT * FROM activity WHERE `profile_id` = %d ORDER BY `id` DESC;",
+        $profile_id
+    );
     $result = $db->query($q);
 
     $activities = array();

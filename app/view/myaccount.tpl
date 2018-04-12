@@ -78,11 +78,9 @@ if(isset($_SESSION['username']))
                     <div class="row">
                         <h1 class="account-h1">Activity Feed</h1>
                         <?php foreach($activities as $activity): ?>
-                          <?php if($activity->profile_id == $_SESSION['profile_id']): ?>
                             <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                                <?= $activity->description?>
+                                <?= $activity ?>
                             </li>
-                          <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
