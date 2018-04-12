@@ -25,15 +25,16 @@ class Activity {
 
   // adds a new activity
   public function addActivity() {
-    $db = Db::instance();
-    $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
-    VALUES (%d, %s);",
-      $db->$this->profile_id,
-      $db->escape($this->description)
-    );
-
-    $result = $db->query($q); // execute query
-    return $db->getInsertID();
+    // $db = Db::instance();
+    // $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
+    // VALUES (%d, %s);",
+    //   $db->$this->profile_id,
+    //   $db->escape($this->description)
+    // );
+    //
+    // $result = $db->query($q); // execute query
+    // return $db->getInsertID();
+    return 'hi';
   }
 
   // adds a new activity
