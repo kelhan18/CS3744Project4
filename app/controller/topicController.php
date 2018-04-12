@@ -73,9 +73,6 @@ class TopicController
 
       $post = $result["censored-content"];
 
-      $topic = Topic::getTopic($topic_id);
-      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic->topic);
-
   		$mypost = new Post();
   		$mypost->description  = $post;
   		$mypost->date_posted  = date("Y-m-d");
@@ -85,6 +82,9 @@ class TopicController
 
   		$post_id = $mypost->save($profile_id, $topic_id);
       $profile = Profile::getProfile($profile_id);
+      $topic = Topic::getTopic($topic_id);
+      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic->topic);
+      
       if($post_id != 0) {
 			$json = array(
 				'success' => 'success',
