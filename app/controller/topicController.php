@@ -72,11 +72,10 @@ class TopicController
         "censor-character" => "*"
       );
 
-      // $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
-      // $result = json_decode($json, true);
-      //
-      // $post = $result["censored-content"];
-      //TODO remove comment
+      $json = curl_post_request("https://neutrinoapi.com/bad-word-filter", $postData);
+      $result = json_decode($json, true);
+
+      $post = $result["censored-content"];
 
   		$mypost = new Post();
   		$mypost->description  = $post;
