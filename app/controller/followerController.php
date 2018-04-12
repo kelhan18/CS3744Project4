@@ -54,22 +54,12 @@ class FollowerController
                 {
                     header('Location: '.BASE_URL.'/myaccount/'); exit();
                 }
-                // Adding the act of following and being followed with the
-                // respective profile_id's
-                // $followerAct = new Activity();
-                // $followerAct->profile_id = $myId;
-                // $followerAct->description = 'you followed '.$follow;
-                // $followerAct->addActivity();
-                // $followeeAct = new Activity();
-                // $followeeAct->profile_id = $followId;
-                // $followeeAct->description = $myId.' followed you';
-                // $followeeAct->addActivity();
 
+                // Add the activity for the follower and for the followee
                 Activity::addActivity($myId, 'you followed '.$follow);
-                // Activity::addActivity(400, 'pls work');
-                echo(Activity::returnZero());
+                Activity::addActivity($followId, $myUsername.' followed you');
 
-                // header('Location: '.BASE_URL.'/myaccount/'); exit();
+                header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
                 header('Location: '.BASE_URL.'/myaccount/');
