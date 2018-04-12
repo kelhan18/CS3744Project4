@@ -65,7 +65,8 @@ class FollowerController
                 // $followeeAct->description = $myId.' followed you';
                 // $followeeAct->addActivity();
 
-                Activity::addActivity(400, 'pls work');
+                Activity::addActivity($myId, 'you followed '.$follow);
+                // Activity::addActivity(400, 'pls work');
                 echo(Activity::returnZero());
 
                 // header('Location: '.BASE_URL.'/myaccount/'); exit();
