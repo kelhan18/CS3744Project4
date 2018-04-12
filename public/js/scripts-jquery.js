@@ -33,15 +33,17 @@ $(document).ready(function(){
     var post = $('#postfield').val();
     var profileid = $('#profile_id').val();
     var topicid = $('#topic_id').val();
+    var topictitle = $('#topic_title').val();
 
-    console.log("postButton clicked" + post + profileid + topicid);
+    console.log("postButton clicked" + post + profileid + topicid + topictitle);
     // send form data via Ajax
     $.post(
       window.location.href +'/newpost/',
       {
         description: post,
         profile_id: profileid,
-        topic_id: topicid
+        topic_id: topicid,
+        topic_title: topictitle
       },
       function(data){
         if(data.success == 'success') {
