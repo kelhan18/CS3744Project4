@@ -125,6 +125,7 @@ class TopicController
     public function topic()
     {
       $topic = $_POST['topic']; // required
+      $profile_id = $_POST['profile_id'];
 
   		if( empty($topic) ) {
   			header('Location: '.BASE_URL); exit();
