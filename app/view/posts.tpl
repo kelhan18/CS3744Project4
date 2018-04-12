@@ -43,6 +43,7 @@
                 <label>New Post: <input type="text" id="postfield" required="required"></input></label></br>
                 <input type='hidden' id="profile_id" value="<?PHP if(isset($_SESSION['profile_id'])){echo $_SESSION['profile_id'];}?>"></input>
                 <input type='hidden' id="topic_id" value="<?= $topic->topic_id ?>"></input>
+                <input type='hidden' id="topic_title" value="<?= $topic->topic ?>"></input>
                 <button id="postButton" class="btn btn-lg btn-primary btn-block">New Post</button>
             </form>
 
