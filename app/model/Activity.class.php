@@ -9,7 +9,7 @@ class Activity {
   public $description = '';
 
   // return all activities for a given profile id in an array
-  public static function getActivities($profile_id) {
+  public function getActivities($profile_id) {
     $db = Db::instance();
     $q = "SELECT * FROM `".self::DB_TABLE."` WHERE `profile_id` = ".$profile_id;
     $result = $db->query($q);
@@ -24,12 +24,24 @@ class Activity {
   }
 
   // adds a new activity
-  public static function addActivity() {
+  public function addActivity() {
     $db = Db::instance();
     $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
     VALUES (%d, %s);",
       $db->$this->profile_id,
       $db->escape($this->description)
+    );
+
+    $result = $db->query($q); // execute query
+  }
+
+  // adds a new activity
+  public function addActivity2($prof_id, $desc) {
+    $db = Db::instance();
+    $q = sprintf("INSERT INTO `activity` (`profile_id`, `description`)
+    VALUES (%d, %s);",
+      $db->$prof_id,
+      $db->escape($desc)
     );
 
     $result = $db->query($q); // execute query
