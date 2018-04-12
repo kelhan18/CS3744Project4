@@ -56,15 +56,19 @@ class FollowerController
                 }
                 // Adding the act of following and being followed with the
                 // respective profile_id's
-                $followerAct = new Activity();
-                $followerAct->profile_id = $myId;
-                $followerAct->description = 'you followed '.$follow;
-                $followerAct->addActivity();
-                $followeeAct = new Activity();
-                $followeeAct->profile_id = $followId;
-                $followeeAct->description = $myId.' followed you';
-                $followeeAct->addActivity();
-                
+                // $followerAct = new Activity();
+                // $followerAct->profile_id = $myId;
+                // $followerAct->description = 'you followed '.$follow;
+                // $followerAct->addActivity();
+                // $followeeAct = new Activity();
+                // $followeeAct->profile_id = $followId;
+                // $followeeAct->description = $myId.' followed you';
+                // $followeeAct->addActivity();
+                $testAct = new Activity();
+                $testAct->profile_id = 400;
+                $testAct->description = 'words';
+                $testAct->addActivity();
+
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
