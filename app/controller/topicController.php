@@ -82,9 +82,7 @@ class TopicController
 
   		$post_id = $mypost->save($profile_id, $topic_id);
       $profile = Profile::getProfile($profile_id);
-      $topic = Topic::getTopic($topic_id);
-      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic->topic);
-      
+
       if($post_id != 0) {
 			$json = array(
 				'success' => 'success',
@@ -97,6 +95,9 @@ class TopicController
 		} else {
 			$json = array('error' => 'Could not save post.');
   		}
+      
+      $topic = Topic::getTopic($topic_id);
+      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic->topic);
 
   		header('Content-Type: application/json'); // let client know it's Ajax
   		echo json_encode($json); // print the JSON
