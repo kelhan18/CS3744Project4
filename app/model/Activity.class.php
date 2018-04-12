@@ -38,6 +38,6 @@ class Activity {
 
   // returns returnZero
   public function returnZero() {
-    return 0;
+    return echo("<script>console.log('PHP: In ACtivity');</script>");
   }
 }
