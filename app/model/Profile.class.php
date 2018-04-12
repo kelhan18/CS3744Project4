@@ -62,7 +62,7 @@ class Profile {
         $db = Db::instance(); // create db connection
         // build query
         $q = sprintf("SELECT * FROM `profiles` WHERE `username` = %s;",
-            $user_name
+            $db->escape($user_name)
         );
         $result = $db->query($q); // execute query
 
