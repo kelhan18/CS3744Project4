@@ -8,6 +8,22 @@ class Activity {
   public $profile_id = 0;
   public $description = '';
 
+  public function getAllActivities($followings_id){
+    $db = Db::instance();
+    $f = implode(",", $followings_id);
+    $q = sprintf("SELECT * FROM activity WHERE `profile_id` IN (%s) ORDER BY `id` DESC;",
+                  $f);
+    $result = $db->query($q);
+
+    $activities = array();
+    if($result->num_rows != 0) {
+      while($row = $result->fetch_assoc()) {
+        $activities[] = $row['description'];
+      }
+    }
+    return $activities;
+  }
+
   // return all activities for a given profile id in an array
   public function getActivities($profile_id) {
     $db = Db::instance();
