@@ -35,9 +35,4 @@ class Activity {
     $result = $db->query($q); // execute query
     return $db->getInsertID();
   }
-
-  // returns returnZero
-  public function returnZero() {
-    return "<script>console.log('PHP: In ACtivity');</script>";
-  }
 }
