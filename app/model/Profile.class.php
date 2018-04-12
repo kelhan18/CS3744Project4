@@ -134,7 +134,7 @@ class Profile {
       return null;
 
     $db = Db::instance(); // connect to db
-    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`, 
+    $q = sprintf("INSERT INTO profiles (`firstname`, `lastname`, `username`, `password`, `role`, `email`, `address`,
         `timezone`, `number_posts`, `number_following`, `number_followers`)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %d, %d, %d);",
       $db->escape($this->firstname),
