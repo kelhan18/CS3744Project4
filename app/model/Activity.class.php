@@ -10,9 +10,10 @@ class Activity {
 
   public function getAllActivities($followings_id){
     $db = Db::instance();
-    $f = implode(",", $followings_id);
-    $q = sprintf("SELECT * FROM activity WHERE `profile_id` IN (%s) ORDER BY `id` DESC;",
-                  $f);
+    // $f = implode(",", $followings_id);
+    // $q = sprintf("SELECT * FROM activityhome WHERE `profile_id` IN (%s) ORDER BY `id` DESC;",
+    //               $f);
+    $q = sprintf("SELECT * FROM activityhome ORDER BY `id` DESC;");
     $result = $db->query($q);
 
     $activities = array();

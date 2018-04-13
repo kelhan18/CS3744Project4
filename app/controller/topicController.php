@@ -158,6 +158,7 @@ class TopicController
 
       // Adds the activity of the profile creating the topic
       Activity::addActivity($profile_id, 'you created the topic: '.$topic);
+      Activity::addHomeActivity('The topic \''.$topic.'\' was created');
 
   		$mytopic = new Topic();
   		$mytopic->topic        = $topic;
