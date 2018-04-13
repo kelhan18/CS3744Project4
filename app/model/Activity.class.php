@@ -53,4 +53,15 @@ class Activity {
     $result = $db->query($q); // execute query
     return $db->getInsertID();
   }
+
+  public function addHomeActivity($description) {
+    $db = Db::instance();
+    $q = sprintf("INSERT INTO `activityhome` (`description`)
+    VALUES (%s);",
+      $db->escape($description)
+    );
+
+    $result = $db->query($q); // execute query
+    return $db->getInsertID();
+  }
 }

@@ -58,6 +58,7 @@ class FollowerController
                 // Add the activity for the follower and for the followee
                 Activity::addActivity($myId, 'you followed '.$follow);
                 Activity::addActivity($followId, $myUsername.' followed you');
+                Activity::addHomeActivity($myUsername.' followed '.$follow);
 
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
@@ -104,6 +105,7 @@ class FollowerController
                 // Add the activity for the unfollower and for the unfollowee
                 Activity::addActivity($myId, 'you unfollowed '.$unfollow);
                 Activity::addActivity($unfollowId, $myUsername.' unfollowed you');
+                Activity::addHomeActivity($myUsername.' unfollowed '.$unfollow);
                 header('Location: '.BASE_URL.'/myaccount/'); exit();
             }
             else {
