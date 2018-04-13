@@ -46,8 +46,7 @@ class TopicController
       $profile_id = $_POST['profile_id'];
       $topic = $_POST['topic_title'];
 
-      // $topic = Topic::getTopic($topic_id);
-      Activity::addActivity($profile_id, 'you added a post in the topic: '.$topic);
+      Activity::addActivity($profile_id, 'you added a post in the topic \''.$topic.'\'');
 
       if( empty($post) ) {
         header('Location: '.BASE_URL); exit();
@@ -157,7 +156,7 @@ class TopicController
       $topic = $result["censored-content"];
 
       // Adds the activity of the profile creating the topic
-      Activity::addActivity($profile_id, 'you created the topic: '.$topic);
+      Activity::addActivity($profile_id, 'you created the topic \''.$topic.'\'');
       Activity::addHomeActivity('The topic \''.$topic.'\' was created');
 
   		$mytopic = new Topic();
