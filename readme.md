@@ -7,6 +7,7 @@ The main audience is people interested in The Battle of Peleliu, but the general
 * HTML/CSS/JS
 * PHP/Jquery/AJAX/JSON
 * MySQL
+* Neutrino API: Bad-word Filter
 * MVC Architecture
 * Bootstrap Front-end Framework
 * Google Fonts/Subtle Pattern Backgrounds
