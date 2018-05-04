@@ -304,37 +304,7 @@ if(isset($_SESSION['username']))
                     <script src="//d3js.org/d3.v3.min.js"></script>
                     <script>
 
-                        $(document).ready(function() {
-                           drawCollapsibleTree('<?= BASE_URL ?>/json/');     //Handle this
-                            $('#changeBox').hide();
 
-                            $('#unfollowButton').click(function() {
-                                $.post(
-                                    '<?= BASE_URL ?>/tree/unfollow/' + $('myID').val(),
-                                    {
-                                        'to_unfollow': $('toUnfollow').val(),
-                                    },
-                                    function(data) {
-                                        if(data.success == 'success') {
-                                            $('#changeBox').hide();
-                                        }
-                                        else {
-                                            alert('Server error: ' + data.error);
-                                        }
-                                    })
-                                    .fail(function() {
-                                        alert("Ajax call failed");
-                                    });
-                            });
-                        });
-
-                        function editFollowing(name, id) {
-                            var username = name
-                            $('#changeBox').show();
-                            $('#toUnfollow').val(username);
-
-                        }
-                    function drawCollapsibleTree(jsonUrl) {
                         var margin = {top: 20, right: 120, bottom: 20, left: 120},
                             width = 960 - margin.right - margin.left,
                             height = 800 - margin.top - margin.bottom;
@@ -355,7 +325,7 @@ if(isset($_SESSION['username']))
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                        d3.json(jsonUrl, function(error, flare) {
+                        d3.json("<?= BASE_URL ?>/app/view/flare.json", function(error, flare) {
                             if (error) throw error;
 
                             root = flare;
@@ -478,7 +448,7 @@ if(isset($_SESSION['username']))
                             }
                             update(d);
                         }
-                    }
+
 
 
                     </script>
