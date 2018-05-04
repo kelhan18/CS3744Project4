@@ -35,6 +35,7 @@
         <div class="content">
 
         <div class="row">
+            <a id="LewisCit" href="#">
             <div class="profile-card">
                 <header>
 
@@ -49,9 +50,9 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
                     <h4><strong>Born: </strong></h4><p>17 April 1924, Pulaski, Virginia.</p>
                     <h4><strong>Accredited to: </strong></h4><p>District of Columbia.</p>
-                    <a id="LewisCit" href="#">Citation</a>
                 </div>
             </div>
+            </a>
 
 
             <div class="profile-card">
