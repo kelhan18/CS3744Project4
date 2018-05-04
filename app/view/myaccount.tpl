@@ -313,6 +313,7 @@ if(isset($_SESSION['username']))
                                     '<?= BASE_URL ?>/tree/unfollow/' + $('myID').val(),
                                     {
                                         'to_unfollow': $('toUnfollow').val(),
+                                        'my_username': $('myUsername').val()
                                     },
                                     function(data) {
                                         if(data.success == 'success') {
@@ -476,8 +477,6 @@ if(isset($_SESSION['username']))
                             update(d);
                         }
                     }
-
-
                     </script>
                     </div>
 

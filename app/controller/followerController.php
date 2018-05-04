@@ -24,8 +24,12 @@ class FollowerController
             case 'followJSON':
                 $this->followJSON();
                 break;
+            case 'treeUnfollow':
+                $this->treeUnfollow();
+                break;
         }
     }
+
 
     public function followJSON() {
         $userID = $_SESSION['username'];
@@ -164,6 +168,34 @@ class FollowerController
 
         } else {
             header('Location: '.BASE_URL.'/myaccount/');
+        }
+    }
+
+    public function treeUnfollow()
+    {
+        $myId = $_GET['id'];
+        $unfollow = $_POST['to_unfollow'];
+        $myUsername = $_POST['my_username'];
+
+        $db = Db::instance();
+        #Check if the person you want to unfollow is in database and the user/follower pair is already a thing
+        $q = "SELECT profile_id FROM profiles WHERE username ='$unfollow'";
+        $q2 = "SELECT id from followers WHERE username = '$unfollow' and follower ='$myUsername'";
+        $result = $db->query($q);
+        $result2 = $db->query($q2);
+        $row = $result->fetch_assoc(); // get results as associative array
+
+        $unfollowId = $row['profile_id'];
+
+        // If result matched $username and $password, table row must be 1 row
+        if ($result->num_rows != 0) {
+            if ($result2->num_rows != 0) {
+                $follower = new Follower();
+                $follower->username = $unfollow;
+                $follower->follower = $myUsername;
+
+                $follower_id = $follower->saveUnfollow($unfollowId, $myId);
+            }
         }
     }
 

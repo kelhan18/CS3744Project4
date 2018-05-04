@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/followerController.php" afterPath="$PROJECT_DIR$/app/controller/followerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,16 +16,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/flare.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,26 +26,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="followerController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="99" lean-forward="false" selection-start-line="36" selection-start-column="99" selection-end-line="36" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="519">
+              <caret line="192" column="43" lean-forward="true" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
               <folding>
-                <marker date="1525447617000" expanded="true" signature="2264:2321" ph="SELECT profi... profiles" />
-                <marker date="1525447617000" expanded="true" signature="2339:2418" ph="SELECT id fr... followers" />
-                <marker date="1525447617000" expanded="true" signature="4047:4106" ph="SELECT profi... profiles" />
-                <marker date="1525447617000" expanded="true" signature="4124:4205" ph="SELECT id fr... followers" />
+                <marker date="1525448793000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
+                <marker date="1525448793000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
+                <marker date="1525448793000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
+                <marker date="1525448793000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
+                <marker date="1525448793000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
+                <marker date="1525448793000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="471" column="63" lean-forward="false" selection-start-line="471" selection-start-column="63" selection-end-line="471" selection-end-column="63" />
+            <state relative-caret-position="298">
+              <caret line="305" column="0" lean-forward="true" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,8 +158,8 @@
         <option value="$PROJECT_DIR$/app/view/stories.tpl" />
         <option value="$PROJECT_DIR$/app/view/flare.json" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/app/controller/followerController.php" />
         <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
+        <option value="$PROJECT_DIR$/app/controller/followerController.php" />
       </list>
     </option>
   </component>
@@ -980,12 +984,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="14678000" />
+      <workItem from="1525129967176" duration="15321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115283000" />
+    <option name="totallyTimeSpent" value="115926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1226" height="869" extended-state="0" />
@@ -1376,10 +1380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/app/view/flare.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1394,32 +1398,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/flare.json">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="540">
+          <caret line="36" column="99" lean-forward="false" selection-start-line="36" selection-start-column="99" selection-end-line="36" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="305" column="0" lean-forward="true" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="519">
+          <caret line="192" column="43" lean-forward="true" selection-start-line="192" selection-start-column="43" selection-end-line="192" selection-end-column="43" />
           <folding>
-            <marker date="1525447617000" expanded="true" signature="2264:2321" ph="SELECT profi... profiles" />
-            <marker date="1525447617000" expanded="true" signature="2339:2418" ph="SELECT id fr... followers" />
-            <marker date="1525447617000" expanded="true" signature="4047:4106" ph="SELECT profi... profiles" />
-            <marker date="1525447617000" expanded="true" signature="4124:4205" ph="SELECT id fr... followers" />
+            <marker date="1525448793000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
+            <marker date="1525448793000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
+            <marker date="1525448793000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
+            <marker date="1525448793000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
+            <marker date="1525448793000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
+            <marker date="1525448793000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="471" column="63" lean-forward="false" selection-start-line="471" selection-start-column="63" selection-end-line="471" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
