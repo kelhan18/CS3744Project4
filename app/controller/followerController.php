@@ -69,7 +69,6 @@ class FollowerController
         $json = array(
             'name' => "Me",
             'children' => $jsonChildren,
-            'userID' => $userID
         );
 
         header('Content-Type: application/json');
