@@ -889,6 +889,11 @@ ul.breadcrumb li a:hover {
   font-size: 14px;
 }
 
+.footer p {
+    font-size: 10px;
+    line-height: 0;
+}
+
 .input-text {
     color: black;
 }
