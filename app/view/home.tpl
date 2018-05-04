@@ -118,8 +118,6 @@
               <?php endif; ?>
             </div>
         </section>
-
-    <?php if(isset($_SESSION['username'])):
     <section id="one" class="wrapper style1 special">
         <style>
 
@@ -344,6 +342,5 @@
             }
         </script>
         </section>
-    <?php endif; ?>
 </div>
 
