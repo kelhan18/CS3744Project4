@@ -195,8 +195,18 @@ class FollowerController
                 $follower->follower = $myUsername;
 
                 $follower_id = $follower->saveUnfollow($unfollowId, $myId);
+                $json = array (
+                    'success' => 'success'
+                );
+            }
+            else {
+                $json = array (
+                    'error' => 'User does not exist.'
+                );
             }
         }
+        header('Content-Type: application/json');
+        echo json_encode($json);
     }
 
 }
