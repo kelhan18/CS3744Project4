@@ -40,22 +40,12 @@ class FollowerController
         $jsonChildren[] = $x;
         $jsonChildren[] = $y;
 
-        $jsonLinks = array();
-
-        foreach($followers as $follower) {
-            $jsonFollowing = array(
-                'username' => $follower->username,
-                'follower' => $follower->follower
-            );
-            $jsonLinks[] = $jsonFollowing;
-        }
-
         $json = array(
             'name' => 'Me',
             'children' => $jsonChildren
         );
         header('Content-Type: application/json');
-
+        print_r(json_encode($json));
         echo json_encode($json);
 
 
