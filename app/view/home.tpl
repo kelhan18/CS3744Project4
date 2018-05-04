@@ -146,6 +146,7 @@
 
         <div class="input-group mb-3" id="changeBox">
             <h3>Person to Unfollow</h3>
+            <br>
             <input type="text" class="form-control" id="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <input type="hidden" id="myUsername" value="<?= $profile->username?>"/>
