@@ -166,5 +166,6 @@
             </div>
         </div>
         </div>
+        <p>Source: http://www.worldwar2history.info/II/Medal-of-Honor/Peleliu-Island.html</p>
     </div>
 </div>

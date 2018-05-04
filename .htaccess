@@ -33,6 +33,7 @@ RewriteRule ^changeRole/?$ app/controller/siteController.php?action=changeRole [
 #follower/following
 RewriteRule ^follow/?$ app/controller/followerController.php?action=follow [QSA,L]
 RewriteRule ^unfollow/?$ app/controller/followerController.php?action=unfollow [QSA,L]
+RewriteRule ^json/?$ app/controller/followerController.php?action=followJSON
 
 #topic
 

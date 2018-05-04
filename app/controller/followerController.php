@@ -21,9 +21,49 @@ class FollowerController
             case 'unfollow':
                 $this->unfollow();
                 break;
+            case 'followJSON':
+                $this->followJSON();
+                break;
         }
     }
 
+    public function followJSON() {
+        $followingNodeGroup = 1;
+        $followerNodeGroup = 2;
+
+        $followers = Follower::getFollowers();
+
+        $jsonNodes = array();
+        $x = array(
+            'id' => 'Following'
+        );
+        $y = array(
+            'id' => 'Followers'
+        );
+        $jsonNodes[] = $x;
+        $jsonNodes[] = $y;
+
+        $jsonLinks = array();
+
+        foreach($followers as $follower) {
+            $jsonFollowing = array(
+                'username' => $follower->username,
+                'follower' => $follower->follower
+            );
+            $jsonLinks[] = $jsonFollowing;
+        }
+
+        $jsonNodes = array_values($jsonNodes);
+
+        $json = array(
+            'nodes' => $jsonNodes,
+            'links' => $jsonLinks
+        );
+        header('Content-Type: application/json');
+        echo json_encode($json);
+
+
+    }
     public function follow()
     {
         $follow = $_POST['toFollow']; //Username of person to follow
