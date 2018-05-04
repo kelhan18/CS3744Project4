@@ -35,13 +35,13 @@ class FollowerController
 
         $jsonNodes = array();
         $x = array(
-            'id' => 'Following'
+            'name:' => 'Following'
         );
         $y = array(
-            'id' => 'Followers'
+            'name:' => 'Followers'
         );
-        $jsonNodes[] = $x;
-        $jsonNodes[] = $y;
+        $jsonChildren[] = $x;
+        $jsonChildren[] = $y;
 
         $jsonLinks = array();
 
@@ -53,11 +53,9 @@ class FollowerController
             $jsonLinks[] = $jsonFollowing;
         }
 
-        $jsonNodes = array_values($jsonNodes);
-
         $json = array(
-            'nodes' => $jsonNodes,
-            'links' => $jsonLinks
+            'name' => "Me",
+            'children' => $jsonChildren
         );
         header('Content-Type: application/json');
         echo json_encode($json);

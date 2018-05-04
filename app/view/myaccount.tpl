@@ -290,9 +290,51 @@ if(isset($_SESSION['username']))
                         }
 
                     </style>
+
+                    <div class="input-group mb-3" id="changeBox">
+                        <input type="text" class="form-control" name="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
+                            <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
+                            <button class="btn btn-outline-primary" id="unfollowButton" name="unfollowButton" type="submit">Unfollow</button>
+                        </div>
+
+                    </div>
+
                     <script src="//d3js.org/d3.v3.min.js"></script>
                     <script>
 
+                        $(document).ready(function() {
+                           drawCollapsibleTree('<?= BASE_URL ?>/json/');     //Handle this
+                            $('#changeBox').hide();
+
+                            $('#unfollowButton').click(function() {
+                                $.post(
+                                    '<?= BASE_URL ?>/tree/unfollow/' + $('myID').val(),
+                                    {
+                                        'to_unfollow': $('toUnfollow').val(),
+                                    },
+                                    function(data) {
+                                        if(data.success == 'success') {
+                                            $('#changeBox').hide();
+                                        }
+                                        else {
+                                            alert('Server error: ' + data.error);
+                                        }
+                                    })
+                                    .fail(function() {
+                                        alert("Ajax call failed");
+                                    });
+                            });
+                        });
+
+                        function editFollowing(name, id) {
+                            var username = name
+                            $('#changeBox').show();
+                            $('#toUnfollow').val(username);
+
+                        }
+                    function drawCollapsibleTree(jsonUrl) {
                         var margin = {top: 20, right: 120, bottom: 20, left: 120},
                             width = 960 - margin.right - margin.left,
                             height = 800 - margin.top - margin.bottom;
@@ -313,7 +355,7 @@ if(isset($_SESSION['username']))
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                        d3.json("<?= BASE_URL ?>/app/view/flare.json", function(error, flare) {
+                        d3.json(jsonUrl, function(error, flare) {
                             if (error) throw error;
 
                             root = flare;
@@ -351,7 +393,10 @@ if(isset($_SESSION['username']))
                             var nodeEnter = node.enter().append("g")
                                 .attr("class", "node")
                                 .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-                                .on("click", click);
+                                .on("click", click)
+                                //.on("click", function(d) {
+                                //    editFollowing(d.id, d.item_id);
+                                //});
 
                             nodeEnter.append("circle")
                                 .attr("r", 1e-6)
@@ -424,6 +469,7 @@ if(isset($_SESSION['username']))
                         // Toggle children on click.
                         function click(d) {
                             if (d.children) {
+                                editFollowing(d.id, d.item_id);
                                 d._children = d.children;
                                 d.children = null;
                             } else {
@@ -432,8 +478,13 @@ if(isset($_SESSION['username']))
                             }
                             update(d);
                         }
+                    }
+
 
                     </script>
+
+
+
 
 
                 </div>
