@@ -343,6 +343,7 @@
                 }
             }
         </script>
-
-    </section>
+        </section>
     <?php endif; ?>
+</div>
+
