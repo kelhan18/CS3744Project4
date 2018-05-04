@@ -310,7 +310,7 @@ if(isset($_SESSION['username']))
 
                             $('#unfollowButton').click(function() {
                                 $.post(
-                                    '<?= BASE_URL ?>/tree/unfollow/' + $('myID').val(),
+                                    '<?= BASE_URL ?>/tree/unfollow/' + $('#myID').val(),
                                     {
                                         'to_unfollow': $('toUnfollow').val(),
                                         'my_username': $('myUsername').val()
