@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/flare.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +52,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="341" column="34" lean-forward="true" selection-start-line="341" selection-start-column="34" selection-end-line="341" selection-end-column="34" />
+            <state relative-caret-position="362">
+              <caret line="356" column="0" lean-forward="true" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -959,12 +957,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="7060000" />
+      <workItem from="1525129967176" duration="7096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107665000" />
+    <option name="totallyTimeSpent" value="107701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="205" y="74" width="1226" height="869" extended-state="0" />
@@ -1393,8 +1391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="341" column="34" lean-forward="true" selection-start-line="341" selection-start-column="34" selection-end-line="341" selection-end-column="34" />
+        <state relative-caret-position="362">
+          <caret line="356" column="0" lean-forward="true" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
           <folding />
         </state>
       </provider>
