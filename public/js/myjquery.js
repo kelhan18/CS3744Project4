@@ -32,8 +32,16 @@ $(document).ready(function(){
   });
 
   $("#ArthurCit").click(function() {
-
+          alert();
   });
+
+  $("#RichardCit").click(function() {
+          var cit = 'Unhesitatingly volunteering for the extremely hazardous mission of evacuating a wounded comrade from the front lines, Pfc. Kraus and three companions courageously made their way forward and successfully penetrated the lines for some distance before the enemy opened with an intense, devastating barrage of hand grenades which forced the stretcher party to take cover and subsequently abandon the mission. While returning to the rear, they observed two men approaching who appeared to be Marines and immediately demanded the password. When, instead of answering, one of the two Japanese threw a hand grenade into the midst of the group, Pfc. Kraus heroically flung himself upon the grenade and, covering it with his body, absorbed the full impact of the explosion and was instantly killed. By his prompt action and great personal valor in the face of almost certain death, he saved the lives of his three companions, and his loyal spirit of self-sacrifice reflects the highest';
+          var cit2 = ' credit upon himself and the U.S. Naval Service. He gallantly gave his life for his comrades.';
+          alert(cit + cit2);
+  });
+
+
 
   // Removes the last relationship added
   $('#removeLastButton').on("click", function(){

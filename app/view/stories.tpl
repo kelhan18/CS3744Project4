@@ -50,11 +50,13 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau Group, 15 September 1944. </p>
                     <h4><strong>Born: </strong></h4><p>17 April 1924, Pulaski, Virginia.</p>
                     <h4><strong>Accredited to: </strong></h4><p>District of Columbia.</p>
+                    <h4><strong>Click for Citation</strong></h4>
                 </div>
             </div>
             </a>
 
 
+            <a id="ArthurCit" href="#">
             <div class="profile-card">
                 <header>
 
@@ -68,13 +70,15 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
                     <h4><strong>Born: </strong></h4><p>18 October 1924, Cleveland, Ohio.</p>
                     <h4><strong>Accredited to: </strong></h4><p>Oregon</p>
-                    <a id="ArthurCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
 
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="row">
+            <a id="RichardCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/richard.jpg">
@@ -85,10 +89,12 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
                     <h4><strong>Born: </strong></h4><p>24 November 1925, Chicago, Illinois.</p>
                     <h4><strong>Accredited to: </strong></h4><p>Minnesota</p>
-                    <a id="RichardCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
                 </div>
             </div>
+            </a>
 
+            <a id="JohnCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait img-fluid" src="<?= BASE_URL ?>/public/img/portraits/john.jpg">
@@ -100,12 +106,14 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>12 August 1924, Mobile, Alabama. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Alabama</p>
-                    <a id="JohnCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="row">
+            <a id="WesleyCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/wesley.jpg">
@@ -117,11 +125,13 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>12 June 1923, Neafus, Kentucky. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Kentucky</p>
-                    <a id="WesleyCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
 
                 </div>
             </div>
+            </a>
 
+            <a id="EverettCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/everett.jpg">
@@ -134,14 +144,16 @@
                     <h4><strong>Born: </strong></h4><p>16 July 1919, Milton, Massachusetts.
                     </p>
                     <h4><strong>Accredited to: </strong></h4><p>Massachusetts</p>
-                    <a id="EverettCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
 
                 </div>
             </div>
+            </a>
         </div>
 
         <div class="row">
 
+            <a id="CharlesCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/charles.jpg">
@@ -154,10 +166,12 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>16 August 1923, Claude, Texas. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Texas</p>
-                    <a id="CharlesCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
                 </div>
             </div>
+            </a>
 
+            <a id="CarltonCit" href="#">
             <div class="profile-card">
                 <header>
                     <img class="portrait" src="<?= BASE_URL ?>/public/img/portraits/carlton.jpg">
@@ -169,9 +183,10 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>11 May 1919, Lindenwold, New Jersey. </p>
                     <h4><strong>Accredited to: </strong></h4><p>New Jersey</p>
-                    <a id="CarltonCit" href="#">Citation</a>
+                    <h4><strong>Click for Citation</strong></h4>
                 </div>
             </div>
+            </a>
         </div>
         </div>
         <p id="test">Source: http://www.worldwar2history.info/II/Medal-of-Honor/Peleliu-Island.html</p>
