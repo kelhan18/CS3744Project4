@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/followerController.php" afterPath="$PROJECT_DIR$/app/controller/followerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="478" column="38" lean-forward="true" selection-start-line="478" selection-start-column="38" selection-end-line="478" selection-end-column="38" />
+            <state relative-caret-position="583">
+              <caret line="474" column="63" lean-forward="false" selection-start-line="474" selection-start-column="63" selection-end-line="474" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -981,12 +980,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="14300000" />
+      <workItem from="1525129967176" duration="14474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114905000" />
+    <option name="totallyTimeSpent" value="115079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1226" height="869" extended-state="0" />
@@ -1418,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="478" column="38" lean-forward="true" selection-start-line="478" selection-start-column="38" selection-end-line="478" selection-end-column="38" />
+        <state relative-caret-position="583">
+          <caret line="474" column="63" lean-forward="false" selection-start-line="474" selection-start-column="63" selection-end-line="474" selection-end-column="63" />
           <folding />
         </state>
       </provider>

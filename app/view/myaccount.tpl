@@ -469,10 +469,10 @@ if(isset($_SESSION['username']))
                         // Toggle children on click.
                         function click(d) {
                             if (d.children) {
-                                editFollowing(d.id, d.item_id);
                                 d._children = d.children;
                                 d.children = null;
                             } else {
+                                editFollowing(d.id, d.item_id);
                                 d.children = d._children;
                                 d._children = null;
                             }
