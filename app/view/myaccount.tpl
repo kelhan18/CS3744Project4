@@ -394,9 +394,9 @@ if(isset($_SESSION['username']))
                                 .attr("class", "node")
                                 .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
                                 .on("click", click)
-                                //.on("click", function(d) {
-                                //    editFollowing(d.id, d.item_id);
-                                //});
+                                .on("click", function(d) {
+                                    editFollowing(d.id, d.item_id);
+                                });
 
                             nodeEnter.append("circle")
                                 .attr("r", 1e-6)
@@ -472,7 +472,6 @@ if(isset($_SESSION['username']))
                                 d._children = d.children;
                                 d.children = null;
                             } else {
-                                editFollowing(d.id, d.item_id);
                                 d.children = d._children;
                                 d._children = null;
                             }
