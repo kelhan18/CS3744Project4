@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/footer.tpl" afterPath="$PROJECT_DIR$/app/view/footer.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles2.css" afterPath="$PROJECT_DIR$/public/css/styles2.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,21 +72,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="893" column="19" lean-forward="false" selection-start-line="893" selection-start-column="19" selection-end-line="893" selection-end-column="19" />
+            <state relative-caret-position="63">
+              <caret line="871" column="18" lean-forward="true" selection-start-line="871" selection-start-column="18" selection-end-line="871" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -187,8 +185,8 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/controller/followerController.php" />
         <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
-        <option value="$PROJECT_DIR$/app/view/footer.tpl" />
         <option value="$PROJECT_DIR$/public/css/styles2.css" />
+        <option value="$PROJECT_DIR$/app/view/footer.tpl" />
       </list>
     </option>
   </component>
@@ -1013,12 +1011,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="17335000" />
+      <workItem from="1525129967176" duration="17414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117940000" />
+    <option name="totallyTimeSpent" value="118019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="231" y="22" width="1226" height="869" extended-state="0" />
@@ -1456,18 +1454,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
+    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="63">
+          <caret line="871" column="18" lean-forward="true" selection-start-line="871" selection-start-column="18" selection-end-line="871" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles2.css">
+    <entry file="file://$PROJECT_DIR$/app/view/footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="893" column="19" lean-forward="false" selection-start-line="893" selection-start-column="19" selection-end-line="893" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding />
         </state>
       </provider>
