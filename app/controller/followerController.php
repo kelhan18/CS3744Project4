@@ -207,7 +207,6 @@ class FollowerController
         }
         header('Content-Type: application/json');
         echo json_encode($json);
-        header("Refresh:0");
     }
 
 }

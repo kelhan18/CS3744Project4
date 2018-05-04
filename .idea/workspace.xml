@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/followerController.php" afterPath="$PROJECT_DIR$/app/controller/followerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,39 +35,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="followerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+            <state relative-caret-position="241">
+              <caret line="184" column="12" lean-forward="false" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
               <folding>
-                <marker date="1525464481000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
-                <marker date="1525464481000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
-                <marker date="1525464481000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
-                <marker date="1525464481000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
-                <marker date="1525464481000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
-                <marker date="1525464481000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
+                <marker date="1525464541000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
+                <marker date="1525464541000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
+                <marker date="1525464541000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
+                <marker date="1525464541000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
+                <marker date="1525464541000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
+                <marker date="1525464541000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="335" column="66" lean-forward="true" selection-start-line="335" selection-start-column="66" selection-end-line="335" selection-end-column="66" />
+            <state relative-caret-position="350">
+              <caret line="484" column="48" lean-forward="false" selection-start-line="484" selection-start-column="48" selection-end-line="484" selection-end-column="48" />
               <folding>
-                <marker date="1525463833000" expanded="false" signature="27583:27599" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="27797:27831" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="28029:28046" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="28380:28398" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="28635:28667" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="29885:29901" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="30099:30133" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="30331:30348" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="30681:30699" ph="..." />
-                <marker date="1525463833000" expanded="false" signature="30936:30968" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="27644:27660" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="27858:27892" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="28090:28107" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="28441:28459" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="28696:28728" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="29946:29962" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="30160:30194" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="30392:30409" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="30742:30760" ph="..." />
+                <marker date="1525464603000" expanded="false" signature="30997:31029" ph="..." />
               </folding>
             </state>
           </provider>
@@ -183,10 +184,10 @@
         <option value="$PROJECT_DIR$/app/view/stories.tpl" />
         <option value="$PROJECT_DIR$/app/view/flare.json" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
         <option value="$PROJECT_DIR$/public/css/styles2.css" />
         <option value="$PROJECT_DIR$/app/view/footer.tpl" />
         <option value="$PROJECT_DIR$/app/controller/followerController.php" />
+        <option value="$PROJECT_DIR$/app/view/myaccount.tpl" />
       </list>
     </option>
   </component>
@@ -1011,12 +1012,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="17855000" />
+      <workItem from="1525129967176" duration="17965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118460000" />
+    <option name="totallyTimeSpent" value="118570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="122" y="83" width="1226" height="869" extended-state="0" />
@@ -1436,36 +1437,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+    <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="335" column="66" lean-forward="true" selection-start-line="335" selection-start-column="66" selection-end-line="335" selection-end-column="66" />
+        <state relative-caret-position="241">
+          <caret line="184" column="12" lean-forward="false" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
           <folding>
-            <marker date="1525463833000" expanded="false" signature="27583:27599" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="27797:27831" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="28029:28046" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="28380:28398" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="28635:28667" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="29885:29901" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="30099:30133" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="30331:30348" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="30681:30699" ph="..." />
-            <marker date="1525463833000" expanded="false" signature="30936:30968" ph="..." />
+            <marker date="1525464541000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
+            <marker date="1525464541000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
+            <marker date="1525464541000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
+            <marker date="1525464541000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
+            <marker date="1525464541000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
+            <marker date="1525464541000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
+    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+        <state relative-caret-position="350">
+          <caret line="484" column="48" lean-forward="false" selection-start-line="484" selection-start-column="48" selection-end-line="484" selection-end-column="48" />
           <folding>
-            <marker date="1525464481000" expanded="true" signature="2360:2417" ph="SELECT profi... profiles" />
-            <marker date="1525464481000" expanded="true" signature="2435:2514" ph="SELECT id fr... followers" />
-            <marker date="1525464481000" expanded="true" signature="4143:4202" ph="SELECT profi... profiles" />
-            <marker date="1525464481000" expanded="true" signature="4220:4301" ph="SELECT id fr... followers" />
-            <marker date="1525464481000" expanded="true" signature="5940:5999" ph="SELECT profi... profiles" />
-            <marker date="1525464481000" expanded="true" signature="6017:6098" ph="SELECT id fr... followers" />
+            <marker date="1525464603000" expanded="false" signature="27644:27660" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="27858:27892" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="28090:28107" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="28441:28459" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="28696:28728" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="29946:29962" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="30160:30194" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="30392:30409" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="30742:30760" ph="..." />
+            <marker date="1525464603000" expanded="false" signature="30997:31029" ph="..." />
           </folding>
         </state>
       </provider>

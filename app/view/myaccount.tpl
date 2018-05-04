@@ -302,6 +302,7 @@ if(isset($_SESSION['username']))
                     </div>
 
                     <script src="//d3js.org/d3.v3.min.js"></script>
+                        <div>
                     <script>
 
                         $(document).ready(function() {
@@ -487,6 +488,7 @@ if(isset($_SESSION['username']))
                         }
                     }
                     </script>
+                        </div>
                     </div>
 
                 </div>
