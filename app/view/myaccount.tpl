@@ -264,7 +264,7 @@ if(isset($_SESSION['username']))
                                 </div>
                             </div>
                         </form>
-                    </div>
+
 
 
                     <style>
@@ -486,7 +486,7 @@ if(isset($_SESSION['username']))
 
 
 
-
+                    </div>
                 </div>
             </div>
 

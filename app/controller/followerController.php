@@ -28,9 +28,6 @@ class FollowerController
     }
 
     public function followJSON() {
-        $followingNodeGroup = 1;
-        $followerNodeGroup = 2;
-
         $followers = Follower::getFollowers();
 
         $jsonNodes = array();
@@ -52,7 +49,7 @@ class FollowerController
             );
             $jsonLinks[] = $jsonFollowing;
         }
-
+        
         $json = array(
             'name' => "Me",
             'children' => $jsonChildren
