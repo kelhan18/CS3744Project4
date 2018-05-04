@@ -5,6 +5,11 @@
     margin-top: 20px; /* Add a top margin to avoid content overlay */
 }
 
+#test {
+    color: white;
+    margin-top: 5px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
@@ -1450,8 +1455,4 @@ button:hover, a:hover {
         }
     }
 
-    #test {
-        color: white;
-        margin-top: 5px;
-    }
 }
