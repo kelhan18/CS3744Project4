@@ -28,14 +28,38 @@ class FollowerController
     }
 
     public function followJSON() {
+        $userID = $_SESSION['profile_id'];
         $followers = Follower::getFollowers();
+        $followerTest = array();
+        $followingTest = array();
+
+        foreach($followers as $follower) {
+            if ($follower->username == $userID) {
+                $followerTest = array(
+                    'name' => $follower->follower
+                );
+            }
+
+        }
+
+        foreach($followers as $follower) {
+            if ($follower->follower == $userID) {
+                $followingTest = array(
+                    'name' => $follower->username
+                );
+            }
+
+        }
+
 
         $jsonChildren = array();
         $x = array(
-            'name' => "Following"
+            'name' => "Following",
+            'children' => $followingTest
         );
         $y = array(
-            'name' => "Followers"
+            'name' => "Followers",
+            'children' => $followerTest
         );
         $jsonChildren[] = $x;
         $jsonChildren[] = $y;
