@@ -26,6 +26,11 @@ $(document).ready(function(){
           $(".addfam").append(data);
   });
 
+  //On button press insert new information into table
+  $("#LewisCit").click(function() {
+          alert('Something');
+  });
+
   // Removes the last relationship added
   $('#removeLastButton').on("click", function(){
     $('#relationships tr:last').remove();
