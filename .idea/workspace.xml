@@ -37,8 +37,8 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="305" column="24" lean-forward="false" selection-start-line="305" selection-start-column="24" selection-end-line="305" selection-end-column="24" />
+            <state relative-caret-position="324">
+              <caret line="268" column="0" lean-forward="true" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="205" />
-    <option name="y" value="74" />
+    <option name="x" value="328" />
+    <option name="y" value="22" />
     <option name="width" value="1226" />
     <option name="height" value="869" />
   </component>
@@ -957,15 +957,15 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="8114000" />
+      <workItem from="1525129967176" duration="8267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108719000" />
+    <option name="totallyTimeSpent" value="108872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="205" y="74" width="1226" height="869" extended-state="0" />
+    <frame x="328" y="22" width="1226" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1391,8 +1391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="305" column="24" lean-forward="false" selection-start-line="305" selection-start-column="24" selection-end-line="305" selection-end-column="24" />
+        <state relative-caret-position="324">
+          <caret line="268" column="0" lean-forward="true" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding />
         </state>
       </provider>
