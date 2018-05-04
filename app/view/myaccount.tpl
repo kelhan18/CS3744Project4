@@ -267,6 +267,7 @@ if(isset($_SESSION['username']))
 
                 </div>
             </div>
+            </div>
 
 
             <div class="tab-pane fade" role="tabpanel" id="password">

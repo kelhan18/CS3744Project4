@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1effc39d-5cc5-4365-9fea-c8f1d3c77949" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/siteController.php" afterPath="$PROJECT_DIR$/app/controller/siteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/home.tpl" afterPath="$PROJECT_DIR$/app/view/home.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/myaccount.tpl" afterPath="$PROJECT_DIR$/app/view/myaccount.tpl" />
     </list>
@@ -56,19 +55,19 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+            <state relative-caret-position="434">
+              <caret line="267" column="22" lean-forward="true" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
               <folding>
-                <marker date="1525466553000" expanded="false" signature="17244:17260" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="17458:17492" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="17690:17707" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="18041:18059" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="18296:18328" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="19546:19562" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="19760:19794" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="19992:20009" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="20342:20360" ph="..." />
-                <marker date="1525466553000" expanded="false" signature="20597:20629" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="17263:17279" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="17477:17511" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="17709:17726" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="18060:18078" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="18315:18347" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="19565:19581" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="19779:19813" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="20011:20028" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="20361:20379" ph="..." />
+                <marker date="1525466650000" expanded="false" signature="20616:20648" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,8 +76,8 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="332" column="38" lean-forward="true" selection-start-line="332" selection-start-column="38" selection-end-line="332" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="319" column="14" lean-forward="true" selection-start-line="319" selection-start-column="14" selection-end-line="319" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1035,12 +1034,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="19434000" />
+      <workItem from="1525129967176" duration="19585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120039000" />
+    <option name="totallyTimeSpent" value="120190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="122" y="77" width="1226" height="869" extended-state="0" />
@@ -1469,27 +1468,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+        <state relative-caret-position="434">
+          <caret line="267" column="22" lean-forward="true" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
           <folding>
-            <marker date="1525466553000" expanded="false" signature="17244:17260" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="17458:17492" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="17690:17707" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="18041:18059" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="18296:18328" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="19546:19562" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="19760:19794" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="19992:20009" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="20342:20360" ph="..." />
-            <marker date="1525466553000" expanded="false" signature="20597:20629" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="17263:17279" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="17477:17511" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="17709:17726" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="18060:18078" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="18315:18347" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="19565:19581" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="19779:19813" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20011:20028" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20361:20379" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20616:20648" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="332" column="38" lean-forward="true" selection-start-line="332" selection-start-column="38" selection-end-line="332" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="319" column="14" lean-forward="true" selection-start-line="319" selection-start-column="14" selection-end-line="319" selection-end-column="14" />
           <folding />
         </state>
       </provider>
