@@ -205,8 +205,7 @@ class FollowerController
                 );
             }
         }
-        header('Content-Type: application/json');
-        echo json_encode($json);
+
         header('Location: '.BASE_URL.'/myaccount/'); exit();
     }
 
