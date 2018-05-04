@@ -34,7 +34,7 @@ RewriteRule ^changeRole/?$ app/controller/siteController.php?action=changeRole [
 RewriteRule ^follow/?$ app/controller/followerController.php?action=follow [QSA,L]
 RewriteRule ^unfollow/?$ app/controller/followerController.php?action=unfollow [QSA,L]
 RewriteRule ^json/?$ app/controller/followerController.php?action=followJSON [QSA,L]
-RewriteRule ^tree/unfollow/(\d+)/?$ app/controller/followerController.php?Action=treeUnfollow&id=$1 [QSA,L]
+RewriteRule ^tree/unfollow/(\d+)/?$ app/controller/followerController.php?action=treeUnfollow&id=$1 [QSA,L]
 #topic
 
 RewriteRule ^topic/new/?$ app/controller/topicController.php?action=newTopic [QSA,L]

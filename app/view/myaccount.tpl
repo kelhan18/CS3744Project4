@@ -292,10 +292,10 @@ if(isset($_SESSION['username']))
                     </style>
 
                     <div class="input-group mb-3" id="changeBox">
-                        <input type="text" class="form-control" name="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" id="toUnfollow" placeholder="Person to Unfollow" aria-label="Person to Unfollow" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
-                            <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
+                            <input type="hidden" id="myUsername" value="<?= $profile->username?>"/>
+                            <input type="hidden" id="myId" value="<?= $profile->profile_id?>"/>
                             <button class="btn btn-outline-primary" id="unfollowButton" name="unfollowButton" type="submit">Unfollow</button>
                         </div>
 
@@ -309,13 +309,22 @@ if(isset($_SESSION['username']))
                             $('#changeBox').hide();
 
                             $('#unfollowButton').click(function() {
+
+                              var toUnfollow = $('#toUnfollow').val();
+                              var myusername = $('#myUsername').val();
+                              var myID = $('#myId').val();
+
+                              //debugging
+                              console.log("unfollowButton clicked" + toUnfollow + myusername + myID);
+
                                 $.post(
-                                    '<?= BASE_URL ?>/tree/unfollow/' + $('#myID').val(),
+                                    '<?= BASE_URL ?>/tree/unfollow/' + myID,
                                     {
-                                        'to_unfollow': $('toUnfollow').val(),
-                                        'my_username': $('myUsername').val()
+                                        to_unfollow: toUnfollow,
+                                        my_username: myusername
                                     },
                                     function(data) {
+                                      console.log(data);
                                         if(data.success == 'success') {
                                             $('#changeBox').hide();
                                         }
@@ -470,7 +479,7 @@ if(isset($_SESSION['username']))
                                 d._children = d.children;
                                 d.children = null;
                             } else {
-                                editFollowing(d.id, d.item_id);
+                              editFollowing(d.id, d.item_id);
                                 d.children = d._children;
                                 d._children = null;
                             }
