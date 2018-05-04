@@ -44,7 +44,7 @@
       <file leaf-file-name="myaccount.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="-1430">
               <caret line="267" column="22" lean-forward="true" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
               <folding>
                 <marker date="1525466650000" expanded="false" signature="17263:17279" ph="..." />
@@ -65,8 +65,18 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="342" column="17" lean-forward="true" selection-start-line="342" selection-start-column="17" selection-end-line="342" selection-end-column="17" />
+            <state relative-caret-position="617">
+              <caret line="347" column="4" lean-forward="false" selection-start-line="347" selection-start-column="4" selection-end-line="347" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -120,16 +130,6 @@
               <folding>
                 <marker date="1525466553000" expanded="true" signature="2608:2670" ph="SELECT * FRO... profiles" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forum.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/forum.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="129" lean-forward="false" selection-start-line="51" selection-start-column="105" selection-end-line="51" selection-end-column="129" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -230,8 +230,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
-    <option name="y" value="77" />
+    <option name="x" value="55" />
+    <option name="y" value="97" />
     <option name="width" value="1226" />
     <option name="height" value="869" />
   </component>
@@ -1093,15 +1093,15 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="20101000" />
+      <workItem from="1525129967176" duration="20307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120706000" />
+    <option name="totallyTimeSpent" value="120912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="122" y="77" width="1226" height="869" extended-state="0" />
+    <frame x="55" y="97" width="1226" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1225,13 +1225,6 @@
         <state relative-caret-position="211">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1498,25 +1491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="267" column="22" lean-forward="true" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
-          <folding>
-            <marker date="1525466650000" expanded="false" signature="17263:17279" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="17477:17511" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="17709:17726" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="18060:18078" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="18315:18347" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="19565:19581" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="19779:19813" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="20011:20028" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="20361:20379" ph="..." />
-            <marker date="1525466650000" expanded="false" signature="20616:20648" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/Icons/skyscraper.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1546,10 +1520,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/myaccount.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1430">
+          <caret line="267" column="22" lean-forward="true" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
+          <folding>
+            <marker date="1525466650000" expanded="false" signature="17263:17279" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="17477:17511" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="17709:17726" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="18060:18078" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="18315:18347" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="19565:19581" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="19779:19813" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20011:20028" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20361:20379" ph="..." />
+            <marker date="1525466650000" expanded="false" signature="20616:20648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="342" column="17" lean-forward="true" selection-start-line="342" selection-start-column="17" selection-end-line="342" selection-end-column="17" />
+        <state relative-caret-position="617">
+          <caret line="347" column="4" lean-forward="false" selection-start-line="347" selection-start-column="4" selection-end-line="347" selection-end-column="4" />
           <folding />
         </state>
       </provider>
