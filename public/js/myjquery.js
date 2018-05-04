@@ -80,7 +80,7 @@ $(document).ready(function(){
             alert(cit + cit2);
     });
 
-    $("#CharlesCit").click(function() {
+    $("#CarltonCit").click(function() {
             alert(' Before permitting his men to use an enemy dugout as a position for an 81-mm. mortar observation post, 1st Lt. Rouh made a personal reconnaissance of the pillbox and, upon entering, was severely wounded by Japanese rifle fire from within. Emerging from the dugout, he was immediately assisted by 2 Marines to a less exposed area but, while receiving first aid, was further endangered by an enemy grenade which was thrown into their midst. Quick to act in spite of his weakened condition, he lurched to a crouching position and thrust both men aside, placing his own body between them and the grenade and taking the full blast of the explosion himself. His exceptional spirit of loyalty and self-sacrifice in the face of almost certain death reflects the highest credit upon 1st Lt. Rouh and the U.S. Naval Service. ');
     });
 
