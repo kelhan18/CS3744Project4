@@ -40,7 +40,6 @@ class FollowerController
                 );
                 $followerTest[] = $test;
             }
-
         }
 
         foreach($followers as $follower) {
@@ -50,9 +49,7 @@ class FollowerController
                 );
                 $followingTest[] = $test;
             }
-
         }
-
 
         $jsonChildren = array();
         $x = array(

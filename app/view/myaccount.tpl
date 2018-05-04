@@ -482,11 +482,8 @@ if(isset($_SESSION['username']))
 
 
                     </script>
-
-
-
-
                     </div>
+
                 </div>
             </div>
 
