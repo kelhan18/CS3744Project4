@@ -35,18 +35,20 @@ class FollowerController
 
         foreach($followers as $follower) {
             if ($follower->username == $userID) {
-                $followerTest = array(
+                $test = array(
                     'name' => $follower->follower
                 );
+                $followerTest[] = $test;
             }
 
         }
 
         foreach($followers as $follower) {
             if ($follower->follower == $userID) {
-                $followingTest = array(
+                $test = array(
                     'name' => $follower->username
                 );
+                $followingTest = $test;
             }
 
         }
