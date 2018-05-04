@@ -313,7 +313,7 @@ if(isset($_SESSION['username']))
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                        d3.json("flare.json", function(error, flare) {
+                        d3.json("<?= BASE_URL ?>/app/view/flare.json", function(error, flare) {
                             if (error) throw error;
 
                             root = flare;
