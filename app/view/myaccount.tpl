@@ -302,10 +302,9 @@ if(isset($_SESSION['username']))
                     </div>
 
                     <script src="//d3js.org/d3.v3.min.js"></script>
-                        <div>
                     <script>
 
-                        $(document).ready(function() {
+                        $('#profile').click(function() {
                            drawCollapsibleTree('<?= BASE_URL ?>/json/');     //Handle this
                             $('#changeBox').hide();
 
@@ -488,7 +487,7 @@ if(isset($_SESSION['username']))
                         }
                     }
                     </script>
-                        </div>
+
                     </div>
 
                 </div>
