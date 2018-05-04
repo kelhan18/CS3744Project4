@@ -1,3 +1,8 @@
+<?php
+if(isset($_SESSION['username']))
+  $profile = Profile::getProfile($_SESSION['profile_id']);
+?>
+
 <body class="landing">
 
 <ul class="nav nav-pills nav-justified justify-content-center">
@@ -107,7 +112,7 @@
                     endif;
                   endforeach;
                   $activities = Activity::getAllActivities($followings); ?>
-                  
+
                   <h1>Activity Feed</h1>
                   <?php foreach($activities as $activity): ?>
                       <li> <?= $activity ?> </li>
@@ -118,7 +123,7 @@
               <?php endif; ?>
             </div>
         </section>
-    
+
     <section id="one" class="wrapper style1 special">
 
         <style>
@@ -144,7 +149,7 @@
             }
 
         </style>
-
+        <?php if(isset($_SESSION['username'])): ?>
         <div class="input-group mb-3" id="changeBox">
             <h3>Person to Unfollow</h3>
             <br>
@@ -158,6 +163,7 @@
         </div>
 
         <script src="//d3js.org/d3.v3.min.js"></script>
+
         <script>
 
             $(document).ready(function() {
@@ -183,6 +189,7 @@
                             console.log(data);
                             if(data.success == 'success') {
                                 $('#changeBox').hide();
+                                location.reload();
                             }
                             else {
                                 alert('Server error: ' + data.error);
@@ -343,6 +350,6 @@
                 }
             }
         </script>
+        <?php endif; ?>
         </section>
 </div>
-
