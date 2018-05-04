@@ -95,6 +95,30 @@
         </section>
     </section>
 
+    <section id="three" class="wrapper style3 special">
+            <div class="inner">
+              <?php if(isset($_SESSION['username'])):
+                 $followers = Follower::getFollowers();
+                 $followings = array($_SESSION['profile_id']);
+                 foreach($followers as $follower):
+                    if($follower->follower == $_SESSION['username']):
+                         $userProfile = Profile::getProfileByUsername($follower->username);
+                         $followings[] = $userProfile->profile_id;
+                    endif;
+                  endforeach;
+                  $activities = Activity::getAllActivities($followings); ?>
+                  
+                  <h1>Activity Feed</h1>
+                  <?php foreach($activities as $activity): ?>
+                      <li> <?= $activity ?> </li>
+                  <?php endforeach; ?>
+
+              <?php else: ?>
+                <h1>Log In To See Personalized Activity Feed</h1>
+              <?php endif; ?>
+            </div>
+        </section>
+
     <section id="one" class="wrapper style1 special">
         <style>
 
@@ -318,27 +342,3 @@
         </script>
 
     </section>
-
-    <section id="three" class="wrapper style3 special">
-            <div class="inner">
-              <?php if(isset($_SESSION['username'])):
-                 $followers = Follower::getFollowers();
-                 $followings = array($_SESSION['profile_id']);
-                 foreach($followers as $follower):
-                    if($follower->follower == $_SESSION['username']):
-                         $userProfile = Profile::getProfileByUsername($follower->username);
-                         $followings[] = $userProfile->profile_id;
-                    endif;
-                  endforeach;
-                  $activities = Activity::getAllActivities($followings); ?>
-                  
-                  <h1>Activity Feed</h1>
-                  <?php foreach($activities as $activity): ?>
-                      <li> <?= $activity ?> </li>
-                  <?php endforeach; ?>
-
-              <?php else: ?>
-                <h1>Log In To See Personalized Activity Feed</h1>
-              <?php endif; ?>
-            </div>
-        </section>
