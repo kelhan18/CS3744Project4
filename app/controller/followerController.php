@@ -55,8 +55,8 @@ class FollowerController
             'children' => $jsonChildren
         );
         header('Content-Type: application/json');
-        $json_output = json_decode($json, true);
-        console.log(JSON.stringify($json_output));
+        $json_output = json_decode($json);
+        print_r($json_output);
         echo json_encode($json);
 
 
