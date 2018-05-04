@@ -30,6 +30,7 @@ class FollowerController
     public function followJSON() {
         $followers = Follower::getFollowers();
 
+        $jsonChildren = array();
         $x = array(
             'name:' => 'Following'
         );
@@ -50,7 +51,7 @@ class FollowerController
         }
 
         $json = array(
-            'name' => "Me",
+            'name' => 'Me',
             'children' => $jsonChildren
         );
         header('Content-Type: application/json');
