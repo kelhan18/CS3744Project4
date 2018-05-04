@@ -48,7 +48,7 @@ class FollowerController
                 $test = array(
                     'name' => $follower->username
                 );
-                $followingTest = $test;
+                $followingTest[] = $test;
             }
 
         }

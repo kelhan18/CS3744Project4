@@ -27,8 +27,8 @@
       <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/flare.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -37,13 +37,13 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+            <state relative-caret-position="245">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <marker date="1525447368000" expanded="true" signature="2265:2322" ph="SELECT profi... profiles" />
-                <marker date="1525447368000" expanded="true" signature="2340:2419" ph="SELECT id fr... followers" />
-                <marker date="1525447368000" expanded="true" signature="4048:4107" ph="SELECT profi... profiles" />
-                <marker date="1525447368000" expanded="true" signature="4125:4206" ph="SELECT id fr... followers" />
+                <marker date="1525447421000" expanded="true" signature="2267:2324" ph="SELECT profi... profiles" />
+                <marker date="1525447421000" expanded="true" signature="2342:2421" ph="SELECT id fr... followers" />
+                <marker date="1525447421000" expanded="true" signature="4050:4109" ph="SELECT profi... profiles" />
+                <marker date="1525447421000" expanded="true" signature="4127:4208" ph="SELECT id fr... followers" />
               </folding>
             </state>
           </provider>
@@ -980,12 +980,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="13914000" />
+      <workItem from="1525129967176" duration="13966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114519000" />
+    <option name="totallyTimeSpent" value="114571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1226" height="869" extended-state="0" />
@@ -1384,14 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/flare.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/siteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3298">
@@ -1410,15 +1402,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/flare.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        <state relative-caret-position="245">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <marker date="1525447368000" expanded="true" signature="2265:2322" ph="SELECT profi... profiles" />
-            <marker date="1525447368000" expanded="true" signature="2340:2419" ph="SELECT id fr... followers" />
-            <marker date="1525447368000" expanded="true" signature="4048:4107" ph="SELECT profi... profiles" />
-            <marker date="1525447368000" expanded="true" signature="4125:4206" ph="SELECT id fr... followers" />
+            <marker date="1525447421000" expanded="true" signature="2267:2324" ph="SELECT profi... profiles" />
+            <marker date="1525447421000" expanded="true" signature="2342:2421" ph="SELECT id fr... followers" />
+            <marker date="1525447421000" expanded="true" signature="4050:4109" ph="SELECT profi... profiles" />
+            <marker date="1525447421000" expanded="true" signature="4127:4208" ph="SELECT id fr... followers" />
           </folding>
         </state>
       </provider>
