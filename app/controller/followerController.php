@@ -28,7 +28,7 @@ class FollowerController
     }
 
     public function followJSON() {
-        $userID = $_SESSION['profile_id'];
+        $userID = $_SESSION['username'];
         $followers = Follower::getFollowers();
         $followerTest = array();
         $followingTest = array();
