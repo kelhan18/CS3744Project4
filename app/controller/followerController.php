@@ -49,11 +49,12 @@ class FollowerController
             );
             $jsonLinks[] = $jsonFollowing;
         }
-        
+
         $json = array(
             'name' => "Me",
             'children' => $jsonChildren
         );
+        echo $json;
         header('Content-Type: application/json');
         echo json_encode($json);
 
