@@ -38,6 +38,7 @@ class FollowerController
             'name:' => 'Followers'
         );
         $jsonChildren[] = $x;
+        $jsonChildren[] = $x;
         $jsonChildren[] = $y;
 
         $jsonLinks = array();
