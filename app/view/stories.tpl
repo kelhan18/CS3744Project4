@@ -67,6 +67,7 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 18 September 1944. </p>
                     <h4><strong>Born: </strong></h4><p>18 October 1924, Cleveland, Ohio.</p>
                     <h4><strong>Accredited to: </strong></h4><p>Oregon</p>
+                    <a id="ArthurCit" href="#">Citation</a>
 
                 </div>
             </div>
@@ -83,6 +84,7 @@
                     <h4><strong>Place and date: </strong></h4><p>Island of Peleliu in the Palau group, 5 October 1944.</p>
                     <h4><strong>Born: </strong></h4><p>24 November 1925, Chicago, Illinois.</p>
                     <h4><strong>Accredited to: </strong></h4><p>Minnesota</p>
+                    <a id="RichardCit" href="#">Citation</a>
                 </div>
             </div>
 
@@ -97,6 +99,7 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>12 August 1924, Mobile, Alabama. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Alabama</p>
+                    <a id="JohnCit" href="#">Citation</a>
                 </div>
             </div>
         </div>
@@ -113,6 +116,7 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>12 June 1923, Neafus, Kentucky. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Kentucky</p>
+                    <a id="WesleyCit" href="#">Citation</a>
 
                 </div>
             </div>
@@ -129,6 +133,7 @@
                     <h4><strong>Born: </strong></h4><p>16 July 1919, Milton, Massachusetts.
                     </p>
                     <h4><strong>Accredited to: </strong></h4><p>Massachusetts</p>
+                    <a id="EverettCit" href="#">Citation</a>
 
                 </div>
             </div>
@@ -148,6 +153,7 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>16 August 1923, Claude, Texas. </p>
                     <h4><strong>Accredited to: </strong></h4><p>Texas</p>
+                    <a id="CharlesCit" href="#">Citation</a>
                 </div>
             </div>
 
@@ -162,6 +168,7 @@
                     </p>
                     <h4><strong>Born: </strong></h4><p>11 May 1919, Lindenwold, New Jersey. </p>
                     <h4><strong>Accredited to: </strong></h4><p>New Jersey</p>
+                    <a id="CarltonCit" href="#">Citation</a>
                 </div>
             </div>
         </div>
