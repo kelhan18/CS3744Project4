@@ -296,7 +296,7 @@ if(isset($_SESSION['username']))
                         <div class="input-group-append">
                             <input type="hidden" name="myUsername" value="<?= $profile->username?>"/>
                             <input type="hidden" name="myId" value="<?= $profile->profile_id?>"/>
-                            <button class="btn btn-outline-primary" name="unfollowButton" type="submit">Unfollow</button>
+                            <button class="btn btn-outline-primary" id="unfollowButton" name="unfollowButton" type="submit">Unfollow</button>
                         </div>
 
                     </div>
@@ -304,11 +304,11 @@ if(isset($_SESSION['username']))
                     <script src="//d3js.org/d3.v3.min.js"></script>
                     <script>
 
-                        $(document).read(function() {
+                        $(document).ready(function() {
                            drawCollapsibleTree('<?= BASE_URL ?>/json/');     //Handle this
                             $('#changeBox').hide();
 
-                            $('editButton').click(function() {
+                            $('#unfollowButton').click(function() {
                                 $.post(
                                     '<?= BASE_URL ?>/tree/unfollow/' + $('myID').val(),
                                     {
@@ -355,7 +355,7 @@ if(isset($_SESSION['username']))
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                        d3.json("flare.json", function(error, flare) {
+                        d3.json(jsonUrl, function(error, flare) {
                             if (error) throw error;
 
                             root = flare;
