@@ -49,7 +49,7 @@ if(isset($_SESSION['username']))
                 <a class="nav-item nav-link" href="#followers" data-toggle="tab">Followers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-item nav-link" href="#profile" data-toggle="tab">Profile</a>
+                <a class="nav-item nav-link" id="d3-profile" href="#profile" data-toggle="tab">Profile</a>
             </li>
             <li class="nav-item">
                 <a class="nav-item nav-link" href="#password" data-toggle="tab">Password</a>
@@ -304,7 +304,7 @@ if(isset($_SESSION['username']))
                     <script src="//d3js.org/d3.v3.min.js"></script>
                     <script>
 
-                        $('#profile').click(function() {
+                        $('#d3-profile').click(function() {
                            drawCollapsibleTree('<?= BASE_URL ?>/json/');     //Handle this
                             $('#changeBox').hide();
 
