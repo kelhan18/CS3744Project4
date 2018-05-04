@@ -47,13 +47,13 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="593">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <marker date="1525445910000" expanded="true" signature="1526:1583" ph="SELECT profi... profiles" />
-                <marker date="1525445910000" expanded="true" signature="1601:1680" ph="SELECT id fr... followers" />
-                <marker date="1525445910000" expanded="true" signature="3309:3368" ph="SELECT profi... profiles" />
-                <marker date="1525445910000" expanded="true" signature="3386:3467" ph="SELECT id fr... followers" />
+                <marker date="1525446022000" expanded="true" signature="1555:1612" ph="SELECT profi... profiles" />
+                <marker date="1525446022000" expanded="true" signature="1630:1709" ph="SELECT id fr... followers" />
+                <marker date="1525446022000" expanded="true" signature="3338:3397" ph="SELECT profi... profiles" />
+                <marker date="1525446022000" expanded="true" signature="3415:3496" ph="SELECT id fr... followers" />
               </folding>
             </state>
           </provider>
@@ -304,7 +304,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.followerController.php">
+    <configuration default="false" name="followerController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/controller/followerController.php">
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -949,6 +952,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.followerController.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.followerController.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -967,12 +978,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="12474000" />
+      <workItem from="1525129967176" duration="12614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113079000" />
+    <option name="totallyTimeSpent" value="113219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="172" y="22" width="1226" height="869" extended-state="0" />
@@ -1399,13 +1410,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="593">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <marker date="1525445910000" expanded="true" signature="1526:1583" ph="SELECT profi... profiles" />
-            <marker date="1525445910000" expanded="true" signature="1601:1680" ph="SELECT id fr... followers" />
-            <marker date="1525445910000" expanded="true" signature="3309:3368" ph="SELECT profi... profiles" />
-            <marker date="1525445910000" expanded="true" signature="3386:3467" ph="SELECT id fr... followers" />
+            <marker date="1525446022000" expanded="true" signature="1555:1612" ph="SELECT profi... profiles" />
+            <marker date="1525446022000" expanded="true" signature="1630:1709" ph="SELECT id fr... followers" />
+            <marker date="1525446022000" expanded="true" signature="3338:3397" ph="SELECT profi... profiles" />
+            <marker date="1525446022000" expanded="true" signature="3415:3496" ph="SELECT id fr... followers" />
           </folding>
         </state>
       </provider>
