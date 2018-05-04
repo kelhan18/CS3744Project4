@@ -37,13 +37,13 @@
       <file leaf-file-name="followerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="472">
+              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
               <folding>
-                <marker date="1525447121000" expanded="true" signature="2266:2323" ph="SELECT profi... profiles" />
-                <marker date="1525447121000" expanded="true" signature="2341:2420" ph="SELECT id fr... followers" />
-                <marker date="1525447121000" expanded="true" signature="4049:4108" ph="SELECT profi... profiles" />
-                <marker date="1525447121000" expanded="true" signature="4126:4207" ph="SELECT id fr... followers" />
+                <marker date="1525447222000" expanded="true" signature="2299:2356" ph="SELECT profi... profiles" />
+                <marker date="1525447222000" expanded="true" signature="2374:2453" ph="SELECT id fr... followers" />
+                <marker date="1525447222000" expanded="true" signature="4082:4141" ph="SELECT profi... profiles" />
+                <marker date="1525447222000" expanded="true" signature="4159:4240" ph="SELECT id fr... followers" />
               </folding>
             </state>
           </provider>
@@ -968,12 +968,12 @@
       <workItem from="1522246244335" duration="2987000" />
       <workItem from="1523373113654" duration="76750000" />
       <workItem from="1524755851832" duration="1888000" />
-      <workItem from="1525129967176" duration="13680000" />
+      <workItem from="1525129967176" duration="13779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114285000" />
+    <option name="totallyTimeSpent" value="114384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1226" height="869" extended-state="0" />
@@ -1400,13 +1400,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/followerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="472">
+          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
           <folding>
-            <marker date="1525447121000" expanded="true" signature="2266:2323" ph="SELECT profi... profiles" />
-            <marker date="1525447121000" expanded="true" signature="2341:2420" ph="SELECT id fr... followers" />
-            <marker date="1525447121000" expanded="true" signature="4049:4108" ph="SELECT profi... profiles" />
-            <marker date="1525447121000" expanded="true" signature="4126:4207" ph="SELECT id fr... followers" />
+            <marker date="1525447222000" expanded="true" signature="2299:2356" ph="SELECT profi... profiles" />
+            <marker date="1525447222000" expanded="true" signature="2374:2453" ph="SELECT id fr... followers" />
+            <marker date="1525447222000" expanded="true" signature="4082:4141" ph="SELECT profi... profiles" />
+            <marker date="1525447222000" expanded="true" signature="4159:4240" ph="SELECT id fr... followers" />
           </folding>
         </state>
       </provider>
